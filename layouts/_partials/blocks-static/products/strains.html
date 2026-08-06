@@ -1,0 +1,28 @@
+<section class="bg-secondary-100 py-14 lg:py-20" aria-label="Tulpinile Eubiotic">
+  <div class="container grid gap-6 lg:grid-cols-2 max-w-lg">
+    {{- range .items -}}
+      {{- $imagePath := partial "components/image-resource" (dict "page" $.page "name" .image) -}}
+      <article class="grid gap-4 sm:grid-cols-2">
+        <div class="p-4 flex min-h-48 items-center rounded-md bg-white shadow-md">
+          {{- if $imagePath -}}
+            {{ partial "components/image-responsive" (dict
+              "path" $imagePath
+              "class" "h-40 w-full object-contain"
+              "loading" "lazy"
+              "fetchPriority" "auto"
+              "alt" .alt
+              "format" "webp"
+              "quality" 86
+              "widths" (slice 240 360 480)
+              "sizes" "(max-width: 639px) calc(100vw - 32px), 25vw"
+            ) }}
+          {{- end -}}
+        </div>
+        <div class="flex min-h-48 flex-col items-center justify-center rounded-md bg-[#00549f] p-6 text-center text-white shadow-md">
+          <p class="text-base font-semibold leading-6">{{ .introduction | safeHTML }}</p>
+          <a class="mt-5 inline-flex rounded-full bg-white px-7 py-3 text-base font-bold text-[#00549f] transition hover:bg-primary-50" href="{{ .href }}" target="_blank" rel="noopener noreferrer">Află mai multe</a>
+        </div>
+      </article>
+    {{- end -}}
+  </div>
+</section>

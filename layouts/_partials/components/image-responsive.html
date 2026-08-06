@@ -50,7 +50,7 @@
     {{ warnf "Unable to get remote resource %q" $path }}
   {{ end }}
 {{- else -}}
-  {{- $imageResource = resources.Get $path -}}
+  {{- $imageResource = resources.Get (strings.TrimPrefix "/" $path) -}}
 {{- end }}
 
 {{ if $imageResource }}

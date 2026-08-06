@@ -1,0 +1,43 @@
+{{- $imagePath := partial "components/image-resource" (dict "page" .page "name" .image) -}}
+
+<section class="relative isolate overflow-hidden bg-white pb-20 pt-32 lg:flex lg:min-h-[52rem] lg:flex-col lg:pb-8 lg:pt-36" id="top" aria-labelledby="product-title">
+  <span class="absolute -left-20 top-24 -z-10 size-64 rounded-full bg-primary-100 lg:-left-16 lg:top-24 lg:size-72" aria-hidden="true"></span>
+  <span class="absolute left-[10%] top-4 -z-10 size-28 rounded-full bg-primary-50 lg:left-[10%] lg:size-36" aria-hidden="true"></span>
+  <span class="absolute bottom-24 right-[-4rem] -z-10 size-56 rounded-full bg-primary-50 lg:right-[-3rem] lg:size-72" aria-hidden="true"></span>
+
+  <div class="container grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
+    <div>
+      {{- if $imagePath -}}
+        {{ partial "components/image-responsive" (dict
+          "path" $imagePath
+          "class" "mx-auto object-contain w-auto"
+          "loading" "eager"
+          "fetchPriority" "high"
+          "alt" .title
+          "format" "webp"
+          "quality" 86
+          "widths" (slice 320 480 640)
+          "sizes" "(max-width: 1023px) 75vw, 25vw"
+        ) }}
+      {{- end -}}
+    </div>
+
+    <div>
+      <h1 class="text-2xl font-bold uppercase text-primary-500 lg:text-5xl" id="product-title">{{ .title }}</h1>
+      <h2 class="mt-4 text-xl font-bold leading-tight text-primary-500 lg:text-3xl">{{ .productName | safeHTML }}</h2>
+      <p class="text-lg font-bold text-primary-500 lg:text-3xl">{{ .heading }}</p>
+      <div class="mt-4 text-base leading-6 text-secondary-800">{{ .introduction | safeHTML }}</div>
+      <a class="btn-primary mt-6 text-base" href="{{ .ctaHref }}">{{ .ctaLabel }}</a>
+    </div>
+  </div>
+
+  <div class="container mt-10 hidden text-base text-secondary-500 lg:mt-auto lg:block lg:pt-10">
+    <nav aria-label="Breadcrumb">
+      <a class="hover:text-primary-500" href="/">Acasă</a>
+      <span aria-hidden="true"> &gt; </span>
+      <a class="hover:text-primary-500" href="/gama-eubiotic/">Gama Eubiotic</a>
+      <span aria-hidden="true"> &gt; </span>
+      <span aria-current="page">{{ .page.Title }}</span>
+    </nav>
+  </div>
+</section>

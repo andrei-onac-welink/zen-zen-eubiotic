@@ -1,5 +1,6 @@
 {{/* Usage:
   {{ $image := partial "components/image-resource" (dict "path" .background_image) }}
+  {{ $image := partial "components/image-resource" (dict "page" .page "name" .image) }}
   {{ $image := partial "components/image-resource" (dict "path" "images/hero/hero-image.webp") }}
   {{ $image := partial "components/image-resource" (dict "path" "https://cdn.example.com/hero-image.webp") }}
 
@@ -10,11 +11,19 @@
 */}}
 
 {{- $path := .path | default "" -}}
+{{- if and (not $path) .page .name -}}
+  {{- $resource := where .page.Params.resources "name" .name -}}
+  {{- with $resource -}}
+    {{- with index . 0 -}}
+      {{- $path = .src | default "" -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
 {{- if $path -}}
   {{- if or (strings.HasPrefix $path "http://") (strings.HasPrefix $path "https://") -}}
     {{- $path -}}
   {{- else -}}
-    {{- with resources.Get $path -}}
+    {{- with resources.Get (strings.TrimPrefix "/" $path) -}}
       {{- .RelPermalink -}}
     {{- else -}}
       {{- $path -}}
