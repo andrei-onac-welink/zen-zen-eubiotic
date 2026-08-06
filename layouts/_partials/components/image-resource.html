@@ -1,0 +1,23 @@
+{{/* Usage:
+  {{ $image := partial "components/image-resource" (dict "path" .background_image) }}
+  {{ $image := partial "components/image-resource" (dict "path" "images/hero/hero-image.webp") }}
+  {{ $image := partial "components/image-resource" (dict "path" "https://cdn.example.com/hero-image.webp") }}
+
+  Returns:
+  - External image URL unchanged (http/https)
+  - Hugo image resource path as .RelPermalink when found via resources.Get
+  - Original path as fallback when image resource is not found
+*/}}
+
+{{- $path := .path | default "" -}}
+{{- if $path -}}
+  {{- if or (strings.HasPrefix $path "http://") (strings.HasPrefix $path "https://") -}}
+    {{- $path -}}
+  {{- else -}}
+    {{- with resources.Get $path -}}
+      {{- .RelPermalink -}}
+    {{- else -}}
+      {{- $path -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}

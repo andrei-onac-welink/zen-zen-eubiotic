@@ -1,0 +1,31 @@
+# Documentation: https://gohugo.io/configuration/imaging/#processing-options
+
+anchor = 'smart'
+bgColor = 'ffffff'
+resampleFilter = 'lanczos'
+
+[avif]
+compression = 'lossy'
+encoderSpeed = 10
+hint = 'photo'
+quality = 85
+
+[exif]
+disableDate = false
+disableLatLong = false
+excludeFields = 'GPS|Exif|Exposure[M|P|B]|Contrast|Resolution|Sharp|JPEG|Metering|Sensing|Saturation|ColorSpace|Flash|WhiteBalance'
+includeFields = ''
+
+[jpeg]
+quality = 85
+
+[meta]
+fields = ['! *{GPS,Exif,Exposure[MPB],Contrast,Resolution,Sharp,JPEG,Metering,Sensing,Saturation,ColorSpace,Flash,WhiteBalance}*']
+sources = ['exif', 'iptc']
+
+[webp]
+compression = 'lossy'
+hint = 'photo'
+method = 2
+quality = 85
+useSharpYuv = false

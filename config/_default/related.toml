@@ -1,0 +1,29 @@
+# Documentation: https://gohugo.io/configuration/related-content/
+
+includeNewer = true
+threshold = 80
+toLower = false
+
+[[indices]]
+name = 'keywords'
+applyFilter = false
+type = 'basic'
+weight = 40
+
+[[indices]]
+name = 'date'
+applyFilter = false
+type = 'basic'
+weight = 10
+
+[[indices]]
+applyFilter = false
+name = 'tags'
+type = 'basic'
+weight = 40
+
+[[indices]]
+applyFilter = false
+name = 'news'
+type = 'basic'
+weight = 50

@@ -1,0 +1,2 @@
+# Cloudflare Pages uses this file to detect Hugo and persist .cache.
+# Canonical Hugo configuration remains in config/_default and config/<environment>.

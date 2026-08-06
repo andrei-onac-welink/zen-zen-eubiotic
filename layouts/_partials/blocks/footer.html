@@ -1,0 +1,6 @@
+<footer class="site-footer | mt-auto bg-neutral-200 py-4">
+  <div class="container">
+    <small class="text-base">© <span class="js-copyright-year">{{ now.Year }}</span> {{ site.Copyright | safeHTML }}</small>
+    <script>document.querySelector('.js-copyright-year').textContent = new Date().getFullYear();</script>
+  </div>
+</footer>

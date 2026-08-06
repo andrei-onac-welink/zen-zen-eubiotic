@@ -1,0 +1,23 @@
+{
+  "aria": {
+    "nav": {
+      "home": { "other": "Return to homepage" },
+      "main": { "other": "Main navigation" },
+      "sidebar": { "other": "Sidebar navigation" },
+      "footer": { "other": "Footer navigation" },
+      "social": { "other": "Social links" }
+    },
+    "generic": {
+      "section": { "other": "Section" }
+    },
+    "link": {
+      "next": { "other": "Next section" },
+      "newTab": { "other": "Opens in a new tab" },
+      "back": { "other": "Back to previous page" }
+    },
+    "button": {
+      "closeModal": { "other": "Close modal" },
+      "openModal": { "other": "Open modal" }
+    }
+  }
+}

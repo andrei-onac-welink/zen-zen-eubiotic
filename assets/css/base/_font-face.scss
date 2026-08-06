@@ -1,0 +1,28 @@
+/* @font-face format() keywords
+   embedded-opentype   → .eot
+   opentype            → .otf, .ttf
+   truetype            → .ttf
+   woff                → .woff
+   woff2               → .woff2
+
+   Recommended src order (best → fallback):
+   woff2 → woff → opentype/truetype
+*/
+
+@layer base {
+  @font-face {
+    font-family: 'Open Sans';
+    font-weight: 100 800;
+    font-style: normal;
+    font-display: swap;
+    src: url('/fonts/open-sans/OpenSans-VariableFont_wdth,wght.ttf') format('truetype');
+  }
+
+  @font-face {
+    font-family: 'Open Sans';
+    font-weight: 100 800;
+    font-style: italic;
+    font-display: swap;
+    src: url('/fonts/open-sans/OpenSans-Italic-VariableFont_wdth,wght.ttf') format('truetype');
+  }
+}

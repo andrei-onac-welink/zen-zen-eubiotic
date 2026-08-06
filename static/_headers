@@ -1,0 +1,10 @@
+# Block indexing on ALL pages.dev URLs (prod + previews)
+https://:project.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+
+https://:version.:project.pages.dev/*
+  X-Robots-Tag: noindex, nofollow
+
+# Allow indexing on your real domain
+https://boilerplate.com/*
+  X-Robots-Tag: index, follow

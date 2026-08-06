@@ -1,0 +1,26 @@
+# Documentation: https://gohugo.io/configuration/privacy/
+
+[disqus]
+disable = false
+
+[googleAnalytics]
+disable = false
+respectDoNotTrack = true
+
+[instagram]
+disable = false
+simple = false
+
+[vimeo]
+disable = false
+enableDNT = false
+simple = false
+
+[x]
+disable = false
+enableDNT = false
+simple = false
+
+[youTube]
+disable = false
+privacyEnhanced = false

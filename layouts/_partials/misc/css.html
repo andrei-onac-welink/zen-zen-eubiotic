@@ -1,0 +1,31 @@
+{{ with resources.Get "css/main.scss" }}
+  {{ $sassOptions := dict
+    "transpiler" "dartsass"
+    "outputStyle" (cond hugo.IsDevelopment "expanded" "compressed")
+    "targetPath" "main.css"
+    "vars" site.Params.styles
+    "enableSourceMap" hugo.IsDevelopment
+    "includePaths" (slice "node_modules")
+    "silenceDeprecations" (slice "import")
+    "silenceDependencyDeprecations" true
+  }}
+
+  {{ $tailwindOptions := dict
+    "minify" (not hugo.IsDevelopment)
+  }}
+
+  {{ $postcssOptions := dict
+    "inlineImports" true
+    "noMap" (not hugo.IsDevelopment)
+  }}
+
+  {{ with . | css.Sass $sassOptions | css.TailwindCSS $tailwindOptions | css.PostCSS $postcssOptions }}
+    {{ if hugo.IsDevelopment }}
+      <link rel="stylesheet" href="{{ .RelPermalink }}" type="text/css" media="all" />
+    {{ else }}
+      {{ with . | fingerprint "sha384" }}
+        <link rel="stylesheet" href="{{ .RelPermalink }}" type="text/css" media="all" integrity="{{ .Data.Integrity }}" crossorigin="anonymous" />
+      {{ end }}
+    {{ end }}
+  {{ end }}
+{{ end }}

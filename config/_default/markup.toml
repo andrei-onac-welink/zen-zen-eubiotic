@@ -1,0 +1,31 @@
+# Documentation: https://gohugo.io/configuration/markup/
+
+[goldmark]
+[goldmark.extensions]
+strikethrough = true
+
+[goldmark.renderer]
+unsafe = true
+
+[goldmark.parser]
+wrapStandAloneImageWithinParagraph = false
+
+[goldmark.parser.attribute]
+block = true
+
+[goldmark.extensions.extras.delete]
+enable = false
+[goldmark.extensions.extras.insert]
+enable = false
+[goldmark.extensions.extras.mark]
+enable = true
+# To avoid a conflict1, if you enable the “subscript” feature of the Extras extension, you must disable the Strikethrough extension:
+[goldmark.extensions.extras.subscript]
+enable = false
+[goldmark.extensions.extras.superscript]
+enable = true
+
+[tableOfContents]
+endLevel = 3
+ordered = false
+startLevel = 2

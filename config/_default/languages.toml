@@ -1,0 +1,7 @@
+# Documentation: https://gohugo.io/configuration/languages/#language-settings
+
+[en]
+direction = 'ltr'
+label = 'English'
+locale = 'en-US'
+weight = 1

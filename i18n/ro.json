@@ -1,0 +1,23 @@
+{
+  "aria": {
+    "nav": {
+      "home": { "other": "Înapoi la pagina principală" },
+      "main": { "other": "Navigare principală" },
+      "sidebar": { "other": "Navigare în bara laterală" },
+      "footer": { "other": "Navigare în subsol" },
+      "social": { "other": "Linkuri sociale" }
+    },
+    "generic": {
+      "section": { "other": "Secțiune" }
+    },
+    "link": {
+      "next": { "other": "Secțiunea următoare" },
+      "newTab": { "other": "Se deschide într-un tab nou" },
+      "back": { "other": "Înapoi la pagina anterioară" }
+    },
+    "button": {
+      "closeModal": { "other": "Închide fereastra modală" },
+      "openModal": { "other": "Deschide fereastra modală" }
+    }
+  }
+}

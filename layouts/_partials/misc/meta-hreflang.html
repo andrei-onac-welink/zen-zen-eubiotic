@@ -1,0 +1,15 @@
+{{- $canonical := .Store.Get "meta:canonical" }}
+{{- if not $canonical }}
+  {{- $canonical = .Permalink }}
+{{- end }}
+
+{{- if .IsTranslated }}
+  {{- $urlSuffix := strings.TrimPrefix .Permalink $canonical }}
+  {{- range .AllTranslations }}
+    {{- $href := urls.JoinPath .Permalink $urlSuffix "/" }}
+    {{ if .Language.IsDefault }}
+      <link rel="alternate" hreflang="x-default" href="{{ $href }}">
+    {{- end }}
+    <link rel="alternate" hreflang="{{ .Language.Locale }}" href="{{ $href }}">
+  {{- end }}
+{{- end }}

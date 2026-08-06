@@ -1,0 +1,20 @@
+# Documentation: https://gohugo.io/configuration/build/
+# Documentation: https://gohugo.io/configuration/build/#cache-busters
+# Tailwind: https://gohugo.io/functions/css/tailwindcss/#setup
+
+noJSConfigInAssets = false
+useResourceCacheWhen = 'fallback'
+
+[buildStats]
+disableClasses = false
+disableIDs = false
+disableTags = false
+enable = true
+
+[[cachebusters]]
+source = 'assets/notwatching/hugo_stats\.json'
+target = 'css'
+
+[[cachebusters]]
+source = '(postcss|tailwind)\.config\.(js|mjs|cjs|ts)'
+target = 'css'

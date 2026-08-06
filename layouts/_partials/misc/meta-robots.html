@@ -1,0 +1,14 @@
+{{- if ne hugo.Environment "production" }}
+  <meta name="robots" content="noindex, nofollow">
+  <meta name="googlebot" content="noindex, nofollow">
+{{- else if eq hugo.Environment "production" }}
+  {{- $isPager := .Store.Get "meta:isPager" }}
+  {{- $noindex := or $isPager (in (slice "taxonomy" "term" "404") .Kind) }}
+  {{- if $noindex }}
+    <meta name="robots" content="noindex, follow">
+    <meta name="googlebot" content="noindex, follow">
+  {{- else }}
+    <meta name="robots" content="index, follow">
+    <meta name="googlebot" content="index, follow, snippet, archive">
+  {{- end }}
+{{- end }}

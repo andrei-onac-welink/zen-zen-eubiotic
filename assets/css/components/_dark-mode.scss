@@ -1,0 +1,9 @@
+@layer compontents {
+  :root:has(.js-dark-mode-toggle:checked) {
+    @apply scheme-light;
+  }
+
+  :root:not(:has(.js-dark-mode-toggle:checked)) {
+    @apply scheme-dark;
+  }
+}

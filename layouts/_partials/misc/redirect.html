@@ -1,0 +1,6 @@
+{{ if eq .Layout "thank-you" }}
+  <meta http-equiv="refresh" content="5; url={{- site.Home.RelPermalink -}}" />
+{{ end }}
+{{ if eq .Kind "404" }}
+  <meta http-equiv="refresh" content="5; url={{- site.Home.RelPermalink -}}" />
+{{ end }}

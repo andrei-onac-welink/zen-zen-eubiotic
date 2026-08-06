@@ -1,0 +1,21 @@
+# Documentation: https://gohugo.io/configuration/segments/
+
+# all --renderSegments default,basic-page,static-page
+
+[default]
+[[default.excludes]]
+output = 'rss'
+[[default.includes]]
+kind = '{home,term,taxonomy,sitemap,sitemapindex,404}'
+
+[basic-page]
+[[basic-page.excludes]]
+output = 'rss'
+[[basic-page.includes]]
+path = '{/basic-page,/basic-page/**}'
+
+[static-page]
+[[static-page.excludes]]
+output = 'rss'
+[[static-page.includes]]
+path = '{/static-page,/static-page/**}'

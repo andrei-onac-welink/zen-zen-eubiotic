@@ -1,0 +1,25 @@
+{{- define "bodyClass" -}} {{ .Kind }}-{{ .Type }} list--default--{{ .Page.LinkTitle | anchorize -}} {{- end -}}
+
+{{ define "header" }}
+  {{ partialCached "blocks/header" . .Section .RelPermalink }}
+{{ end }}
+
+{{ define "main" }}
+
+  <section class="my-10 md:my-24" aria-label="Section - {{ .Page.Title | plainify }}">
+    <div class="container">
+      <h1 class="h1 | mb-8">{{ .Title | plainify }}</h1>
+      {{ range .Pages }}
+        <h2>
+          <a href="{{ .RelPermalink }}">{{ .LinkTitle | plainify }}</a>
+        </h2>
+        {{ .Summary }}
+      {{ end }}
+    </div>
+  </section>
+
+{{ end }}
+
+{{ define "footer" }}
+  {{ partialCached "blocks/footer" . .Section .RelPermalink }}
+{{ end }}

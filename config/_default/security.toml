@@ -1,0 +1,25 @@
+# Documentation: https://gohugo.io/configuration/security/
+
+# whether to use shortcodes inside other shortcodes
+allowContent = ['! ^text/html$']
+enableInlineShortcodes = true
+
+[exec]
+allow = ['^(dart-)?sass(-embedded)?$', '^go$', '^git$', '^node$', '^npx$', '^postcss$', '^tailwindcss$', '^babel$']
+osEnv = ['(?i)^((HTTPS?|NO)_PROXY|PATH(EXT)?|APPDATA|TE?MP|TERM|GO\w+|(XDG_CONFIG_)?HOME|USERPROFILE|SSH_AUTH_SOCK|DISPLAY|LANG|SYSTEMDRIVE|PROGRAMDATA)$']
+
+[funcs]
+getenv = ['^HUGO_', '^CI$', '^USER$', '^HOME$', '^MEILISEARCH_']
+
+[http]
+methods = ['(?i)GET|POST']
+urls = ['(?i)^https?://[a-z0-9]', '! ^https?://\d+\.', '! (?i)localhost', '! (?i)^https?://[^/?#]*@']
+
+[node]
+[node.permissions]
+allowAddons = ['tailwindcss']
+allowChildProcess = ['tailwindcss']
+allowRead = ['.']
+allowWorker = ['tailwindcss']
+allowWrite = []
+disable = false

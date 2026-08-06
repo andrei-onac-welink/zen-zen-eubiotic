@@ -1,0 +1,92 @@
+{{- /*
+Renders an HTML details element.
+
+@param {string} [class] The value of the element's class attribute.
+@param {string} [name] The value of the element's name attribute.
+@param {string} [summary] The content of the child summary element.
+@param {string} [label] The optional label rendered before the chevron icon.
+@param {string} [title] The value of the element's title attribute.
+@param {bool} [open=false] Whether to initially display the content of the details element.
+
+@reference https://developer.mozilla.org/en-US/docs/Web/HTML/Element/details
+
+@examples
+
+  {{< details >}}
+  A basic collapsible section.
+  {{< /details >}}
+
+  {{< details summary="Custom Summary Text" >}}
+  Showing custom `summary` text.
+  {{< /details >}}
+
+  {{< details summary="Open Details" open=true >}}
+  Contents displayed initially by using `open`.
+  {{< /details >}}
+
+  {{< details summary="Styled Content" class="my-custom-class" >}}
+  Content can be styled with CSS by specifying a `class`.
+
+  Target details element:
+
+  ```css
+  details.my-custom-class { }
+  ```
+
+  Target summary element:
+
+  ```css
+  details.my-custom-class > summary > * { }
+  ```
+
+  Target inner content:
+
+  ```css
+  details.my-custom-class > :not(summary) { }
+  ```
+  {{< /details >}}
+
+  {{< details summary="Grouped Details" name="my-details" >}}
+  Specifying a `name` allows elements to be connected, with only one able to be open at a time.
+  {{< /details >}}
+
+*/}}
+
+{{- /* Get arguments. */}}
+{{- $class := or (.Get "class") "" }}
+{{- $name := or (.Get "name") "" }}
+{{- $summary := or (.Get "summary") "Details" }}
+{{- $label := or (.Get "label") "" }}
+{{- $title := or (.Get "title") "" }}
+{{- $svgClass := "shrink-0 size-6 group-open:rotate-180" }}
+{{- if $label }}
+  {{- $svgClass = printf "%s %s" "ms-2" $svgClass }}
+{{- else }}
+  {{- $svgClass = printf "%s %s" "ms-auto" $svgClass }}
+{{- end }}
+{{- $open := false }}
+{{- if in (slice "false" false 0) (.Get "open") }}
+  {{- $open = false }}
+{{- else if in (slice "true" true 1) (.Get "open") }}
+  {{- $open = true }}
+{{- end }}
+
+{{- /* Render. */}}
+<details
+  {{- with $class }} class="group {{ . }}" {{- end }}
+  {{- with $name }} name="{{ . }}" {{- end }}
+  {{- with $open }} open {{- end }}
+  {{- with $title }} title="{{ . }}" {{- end -}}>
+  <summary class="bg-[var(--bg-color)] p-5 rounded-lg flex items-center cursor-pointer select-none">
+    <span>{{ $summary | .Page.RenderString }}</span>
+    {{- with $label }}
+      <span class="ms-auto text-base font-medium">{{ . | $.Page.RenderString }}</span>
+    {{- end }}
+    <svg class="{{ $svgClass }}" aria-hidden="true" focusable="false">
+      <use href="#chevron-up-icon"></use>
+    </svg>
+  </summary>
+  <div class="px-5 py-3">
+    {{ .Inner | .Page.RenderString (dict "display" "block") -}}
+  </div>
+</details>

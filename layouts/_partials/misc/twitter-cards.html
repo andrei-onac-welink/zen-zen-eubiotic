@@ -1,0 +1,87 @@
+{{ $lookups := partialCached "funcs/site-page-lookups" site site.Language.Name }}
+{{ $configData := $lookups.configData | default dict }}
+
+{{ $twitterImageURL := "" }}
+{{ $imagePath := "" }}
+{{ $socialImageResizeSpec := "1200x630 Center q70" }}
+{{ if .Params.metaTags.twitterCard.image.url }}
+  {{ $imagePath = .Params.metaTags.twitterCard.image.url }}
+{{ else if .Params.metaTags.openGraph.image.url }}
+  {{ $imagePath = .Params.metaTags.openGraph.image.url }}
+{{ else if .Params.metaTags.seo.image.url }}
+  {{ $imagePath = .Params.metaTags.seo.image.url }}
+{{ else if .Params.featuredImage.url }}
+  {{ $imagePath = .Params.featuredImage.url }}
+{{ end }}
+
+{{ if $imagePath }}
+  {{ $twitterImageURL = partialCached "funcs/strapi-social-image" (dict
+    "path" $imagePath
+    "resizeSpec" $socialImageResizeSpec
+    "errorLabel" "twitter:image"
+    ) $imagePath $socialImageResizeSpec }}
+{{ end }}
+
+{{ if and (not $twitterImageURL) $configData.site.openGraph.url }}
+  {{ $twitterImageURL = partialCached "funcs/strapi-social-image" (dict
+    "path" $configData.site.openGraph.url
+    "resizeSpec" $socialImageResizeSpec
+    "errorLabel" "twitter:image fallback"
+    ) $configData.site.openGraph.url $socialImageResizeSpec }}
+{{ end }}
+
+{{ if $twitterImageURL }}
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:image" content="{{ $twitterImageURL }}">
+{{ else }}
+  {{ $images := partial "_funcs/get-page-images" . }}
+  {{ with index $images 0 }}
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="{{ .Permalink }}">
+  {{ else }}
+    <meta name="twitter:card" content="summary">
+  {{- end }}
+{{- end }}
+
+{{ $twitterTitle := "" }}
+{{ if .Params.metaTags.twitterCard.title }}
+  {{ $twitterTitle = .Params.metaTags.twitterCard.title }}
+{{ else if .Params.metaTags.openGraph.title }}
+  {{ $twitterTitle = .Params.metaTags.openGraph.title }}
+{{ else if .Params.metaTags.seo.title }}
+  {{ $twitterTitle = .Params.metaTags.seo.title }}
+{{ else }}
+  {{ $twitterTitle = .Title }}
+{{ end }}
+{{ with $twitterTitle | plainify }}
+  <meta name="twitter:title" content="{{ . }}">
+{{- end }}
+
+{{ $twitterDescription := "" }}
+{{ if .Params.metaTags.twitterCard.description }}
+  {{ $twitterDescription = .Params.metaTags.twitterCard.description }}
+{{ else if .Params.metaTags.openGraph.description }}
+  {{ $twitterDescription = .Params.metaTags.openGraph.description }}
+{{ else if .Params.metaTags.seo.description }}
+  {{ $twitterDescription = .Params.metaTags.seo.description }}
+{{ else if .Description }}
+  {{ $twitterDescription = .Description }}
+{{ else if .Summary }}
+  {{ $twitterDescription = .Summary }}
+{{ end }}
+{{ with $twitterDescription | plainify | htmlUnescape }}
+  <meta name="twitter:description" content="{{ trim . "\n\r\t " }}">
+{{ end }}
+
+{{ $twitterSite := "" }}
+{{ with site.Params.social }}
+  {{ if reflect.IsMap . }}
+    {{ with .twitter }}
+      {{ $content := . }}
+      {{ if not (strings.HasPrefix . "@") }}
+        {{ $content = printf "@%v" . }}
+      {{ end }}
+      <meta name="twitter:site" content="{{ $content }}">
+    {{ end }}
+  {{ end }}
+{{ end }}

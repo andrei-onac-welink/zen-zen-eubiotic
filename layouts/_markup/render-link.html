@@ -1,0 +1,24 @@
+{{- $u := urls.Parse .Destination -}}
+{{- $href := $u.String -}}
+
+{{- if strings.HasPrefix $u.String "#" -}}
+  {{- $href = printf "%s#%s" .PageInner.RelPermalink $u.Fragment -}}
+{{- else if and $href (not $u.IsAbs) -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- with or
+    ($.PageInner.GetPage $path)
+    ($.PageInner.Resources.Get $path)
+    (resources.Get $path)
+  -}}
+    {{- $href = .RelPermalink -}}
+    {{- with $u.RawQuery -}}
+      {{- $href = printf "%s?%s" $href . -}}
+    {{- end -}}
+    {{- with $u.Fragment -}}
+      {{- $href = printf "%s#%s" $href . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<a class="link-primary | hover:underline wrap-break-word" href="{{ $href | safeURL }}" draggable="false" {{ with .Title }} title="{{ . }}" {{ end }} {{ if $u.IsAbs }} target="_blank" rel="external nofollow noopener noreferrer" aria-label='{{ .Text }} - ({{ T "aria.link.newTab" }})' {{ end }}>{{ .Text }}</a>
+{{- /**/ -}}

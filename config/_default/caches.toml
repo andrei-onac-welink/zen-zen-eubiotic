@@ -1,0 +1,29 @@
+# Documentation: https://gohugo.io/configuration/caches/
+
+[assets]
+dir = ':resourceDir/_gen'
+maxAge = 0
+
+[images]
+dir = ':resourceDir/_gen'
+maxAge = 0
+
+[getresource]
+dir = ':cacheDir/:project'
+maxAge = 0
+
+[misc]
+dir = ':cacheDir/:project'
+maxAge = 0
+
+[modulegitinfo]
+dir = ':cacheDir/modules'
+maxAge = 0
+
+[modulequeries]
+dir = ':cacheDir/modules'
+maxAge = 0
+
+[modules]
+dir = ':cacheDir/modules'
+maxAge = 0

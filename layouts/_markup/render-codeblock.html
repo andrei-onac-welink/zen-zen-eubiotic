@@ -1,0 +1,20 @@
+<figure class="highlight">
+  {{- with .Attributes.title }}
+    <figcaption>
+      <span class="inline-flex items-center rounded-md bg-pink-100 px-2 py-1 text-xs font-medium text-pink-700">{{ . | markdownify }}</span>
+    </figcaption>
+  {{- end }}
+  {{- if transform.CanHighlight .Type }}
+    <pre tabindex="0" class="chroma">
+      <code class="language-{{ .Type }}" data-lang="{{ .Type }}">
+        {{- with transform.HighlightCodeBlock . -}}
+          {{ .Inner }}
+        {{- end -}}
+      </code>
+    </pre>
+  {{- else }}
+    <pre tabindex="0">
+      <code class="language-{{ .Type }}" data-lang="{{ .Type }}">{{ .Inner }}</code>
+    </pre>
+  {{- end }}
+</figure>

@@ -1,0 +1,112 @@
+{{- /*
+  Fetch all pages from a Strapi collection endpoint and merge data.
+  Argument: base path or URL without explicit page number, e.g. "/api/works?pLevel".
+  Behavior:
+    - In production and staging: fetches published items (Strapi default).
+    - In other environments: fetches draft first, then published; prefers draft when duplicates.
+  Returns: { "data": [ ...merged items... ], "meta": <meta of first page (published)> }
+*/ -}}
+
+{{- $base := . -}}
+{{- /* Normalize to absolute URL if resource path given */ -}}
+{{- if strings.HasPrefix $base "/" -}}
+  {{- $base = partialCached "funcs/strapi-url" $base $base -}}
+{{- end -}}
+
+{{- $remoteOpts := partialCached "funcs/strapi-remote-opts" $base $base -}}
+{{- $all := slice -}}
+{{- $meta := dict -}}
+
+{{- /* Determine which bases to fetch: include drafts only outside production-like environments. */ -}}
+{{- $bases := slice -}}
+{{- if not (or (eq hugo.Environment "production") (eq hugo.Environment "staging")) -}}
+  {{- $sep := cond (strings.Contains $base "?") "&" "?" -}}
+  {{- $bases = $bases | append (printf "%s%sstatus=draft" $base $sep) -}}
+  {{- $bases = $bases | append $base -}}
+{{- else -}}
+  {{- $bases = slice $base -}}
+{{- end -}}
+
+{{- /* Iterate each base (published, and optionally draft) and merge paginated data. */ -}}
+{{- range $i, $b := $bases -}}
+  {{- $pageParam := "pagination[page]" -}}
+  {{- $sepLocal := cond (strings.Contains $b "?") "&" "?" -}}
+  {{- $firstURL := printf "%s%s%s=%d" $b $sepLocal $pageParam 1 -}}
+  {{- $pageCount := 1 -}}
+
+  {{- with try (resources.GetRemote $firstURL $remoteOpts) -}}
+    {{- with .Err -}}
+      {{- warnf "Unable to get remote resource %s: %s" $firstURL . -}}
+    {{- else with .Value -}}
+      {{- $resp := . | transform.Unmarshal (dict "format" "json") -}}
+      {{- with $resp.data -}}
+        {{- range . -}}
+          {{- $all = $all | append . -}}
+        {{- end -}}
+      {{- end -}}
+      {{- with $resp.meta -}}
+        {{- if eq $b $base -}}
+          {{- /* Keep meta from the published fetch */ -}}
+          {{- $meta = . -}}
+        {{- end -}}
+        {{- with .pagination.pageCount -}}
+          {{- $pageCount = . -}}
+        {{- end -}}
+      {{- end -}}
+    {{- else -}}
+      {{- warnf "Unable to get remote resource %s" $firstURL -}}
+    {{- end -}}
+  {{- end -}}
+
+  {{- if gt $pageCount 1 -}}
+    {{- range seq 2 $pageCount -}}
+      {{- $pageURL := printf "%s%s%s=%d" $b $sepLocal $pageParam . -}}
+      {{- with try (resources.GetRemote $pageURL $remoteOpts) -}}
+        {{- with .Err -}}
+          {{- warnf "Unable to get remote resource %s: %s" $pageURL . -}}
+        {{- else with .Value -}}
+          {{- $resp := . | transform.Unmarshal (dict "format" "json") -}}
+          {{- with $resp.data -}}
+            {{- range . -}}
+              {{- $all = $all | append . -}}
+            {{- end -}}
+          {{- end -}}
+        {{- else -}}
+          {{- warnf "Unable to get remote resource %s" $pageURL -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /*
+  Deduplicate by documentId (or id fallback) preferring drafts.
+  Additionally, compute a strapiStatus per documentId:
+    - "published" if any version has a non-null publishedAt
+    - "unpublished" otherwise
+  Attach strapiStatus to each returned item for adapters to consume.
+*/ -}}
+{{- $result := slice -}}
+{{- $seen := dict -}}
+{{- $hasPublished := dict -}}
+
+{{- /* First pass: record which documentIds have a published version */ -}}
+{{- range $all -}}
+  {{- $docID := .documentId | default .id -}}
+  {{- if .publishedAt -}}
+    {{- $hasPublished = merge $hasPublished (dict $docID true) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- /* Second pass: keep first occurrence (draft-preferred) and attach status */ -}}
+{{- range $all -}}
+  {{- $docID := .documentId | default .id -}}
+  {{- if not (isset $seen $docID) -}}
+    {{- $status := cond (isset $hasPublished $docID) "published" "unpublished" -}}
+    {{- $item := merge . (dict "strapiStatus" $status) -}}
+    {{- $result = $result | append $item -}}
+    {{- $seen = merge $seen (dict $docID true) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict "data" $result "meta" $meta) -}}

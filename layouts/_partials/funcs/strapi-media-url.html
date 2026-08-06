@@ -1,0 +1,18 @@
+{{- /*
+  Compose a full URL for a Strapi media path.
+  Media stored on S3/MinIO arrives as an absolute (presigned) URL and is
+  returned unchanged; relative paths get site.Params.strapiBaseURL prepended.
+  Usage: {{ $url := partialCached "funcs/strapi-media-url" .Params.featuredImage.url .Params.featuredImage.url }}
+*/ -}}
+
+{{- $path := printf "%v" (. | default "") -}}
+{{- $url := $path -}}
+
+{{- if not (strings.HasPrefix $path "http") -}}
+  {{- if not (strings.HasPrefix $path "/") -}}
+    {{- $path = printf "/%s" $path -}}
+  {{- end -}}
+  {{- $url = printf "%s%s" site.Params.strapiBaseURL $path -}}
+{{- end -}}
+
+{{- return $url -}}

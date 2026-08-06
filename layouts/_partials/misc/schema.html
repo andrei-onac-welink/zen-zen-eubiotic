@@ -1,0 +1,30 @@
+<!--Global Schema-->
+<script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "WebSite",
+    "@id": {{ site.BaseURL | safeURL }},
+    "url": {{ site.BaseURL | safeURL }},
+    "name": "{{ site.Title | plainify }}",
+    "description": "{{- .Params.description | plainify | safeHTML -}}",
+    "inLanguage": "{{ site.Language.Locale }}",
+    "thumbnailUrl": {{ site.Params.logo | replaceRE "^static/" "" | absURL | safeURL }},
+    "license": "{{ site.Copyright }}"
+  }
+</script>
+
+<!--Breadcrumbs-->
+<script type='application/ld+json'>
+  {{- $items := slice -}}
+  {{- $i := 1 -}}
+  {{- range .Ancestors.Reverse -}}
+    {{- if and .Title .Permalink -}}
+      {{- $items = $items | append (dict "@type" "ListItem" "position" $i "name" (.Title | plainify) "url" .Permalink "item" .Permalink) -}}
+      {{- $i = add $i 1 -}}
+    {{- end -}}
+  {{- end -}}
+  {{- if and .Title .Permalink -}}
+    {{- $items = $items | append (dict "@type" "ListItem" "position" $i "name" (.Title | plainify) "url" .Permalink "item" .Permalink) -}}
+  {{- end -}}
+  {{- dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items | jsonify | safeJS -}}
+</script>

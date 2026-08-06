@@ -1,0 +1,7 @@
+# Documentation: https://gohugo.io/configuration/permalinks/
+
+[[permalinks]]
+pattern = "/:slugorcontentbasename/"
+[permalinks.target]
+kind = "{page,section}"
+path = "{/basic-page,/basic-page/**,/static-page,/static-page/**}"

@@ -1,0 +1,22 @@
+{{- $canonical := .Permalink }}
+{{- $isPager := false }}
+{{- $nextPermalink := "" }}
+{{- $prevPermalink := "" }}
+
+{{- with .Store.Get "paginator" }}
+  {{- $canonical = .URL | absLangURL }}
+  {{- if gt .PageNumber 1 }}
+    {{- $isPager = true }}
+  {{- end }}
+  {{- with .Prev }}
+    {{- $prevPermalink = .URL | absLangURL }}
+  {{- end }}
+  {{- with .Next }}
+    {{- $nextPermalink = .URL | absLangURL }}
+  {{- end }}
+{{- end }}
+
+{{- .Store.Set "meta:canonical" $canonical }}
+{{- .Store.Set "meta:isPager" $isPager }}
+{{- .Store.Set "meta:prev" $prevPermalink }}
+{{- .Store.Set "meta:next" $nextPermalink }}

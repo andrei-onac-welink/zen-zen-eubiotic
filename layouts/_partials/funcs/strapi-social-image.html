@@ -1,0 +1,20 @@
+{{- $path := .path | default "" -}}
+{{- $resizeSpec := .resizeSpec | default "1200x630 Center q70" -}}
+{{- $errorLabel := .errorLabel | default "social:image" -}}
+{{- $imageURL := "" -}}
+
+{{- if $path -}}
+  {{- $fullImageURL := partialCached "funcs/strapi-media-url" $path $path -}}
+  {{- $remoteOpts := partialCached "funcs/strapi-remote-opts" $fullImageURL $fullImageURL -}}
+  {{- with try (resources.GetRemote $fullImageURL $remoteOpts) -}}
+    {{- if .Err -}}
+      {{- warnf "Error fetching %s %q: %s" $errorLabel $fullImageURL .Err -}}
+    {{- else -}}
+      {{- with .Value -}}
+        {{- $imageURL = (.Fill $resizeSpec).Permalink -}}
+      {{- end -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return $imageURL -}}

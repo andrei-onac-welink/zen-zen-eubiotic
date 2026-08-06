@@ -1,0 +1,24 @@
+{{- /*
+  Description: Build resources.GetRemote options for Strapi requests.
+  Includes Authorization header when HUGO_STRAPI_TOKEN is set.
+  Pass the target URL so the header is only sent to the Strapi host —
+  presigned S3/MinIO URLs reject requests carrying an Authorization header.
+  Usage: {{ $remoteOpts := partialCached "funcs/strapi-remote-opts" $url $url }}
+*/ -}}
+
+{{- $headers := dict -}}
+
+{{- $isStrapiHost := true -}}
+{{- if eq (printf "%T" .) "string" -}}
+  {{- if strings.HasPrefix . "http" -}}
+    {{- $isStrapiHost = strings.HasPrefix . site.Params.strapiBaseURL -}}
+  {{- end -}}
+{{- end -}}
+
+{{- if $isStrapiHost -}}
+  {{- with getenv "HUGO_STRAPI_TOKEN" -}}
+    {{- $headers = dict "Authorization" (printf "Bearer %s" .) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict "headers" $headers) -}}

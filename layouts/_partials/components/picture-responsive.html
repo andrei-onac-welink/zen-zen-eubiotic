@@ -1,0 +1,154 @@
+{{/* Usage:
+  {{ partial "components/picture-responsive" (dict
+    "sources" (slice
+      (dict
+        "path" "images/hero/hero-mobile.webp"
+        "media" "(max-width: 1024px)"
+        "widths" (slice 200 400 800)
+        "sizes" "(max-width: 320px) 200px, (max-width: 576px) 400px"
+      )
+      (dict
+        "path" "images/hero/hero-desktop.webp"
+        "media" "(min-width: 1024px)"
+        "widths" (slice 1000 1200)
+        "sizes" "(max-width: 1200px) 1000px, (max-width: 1400px) 1200px"
+      )
+    )
+    "pictureClass" "relative"
+    "imgClass" "rounded shadow-md"
+    "loading" "eager"
+    "fetchPriority" "high"
+    "alt" "Placeholder alt for image"
+    "formats" (slice "webp" "png")
+    "quality" 80
+    "widths" (slice 800 1200)
+    "sizes" "(max-width: 768px) 800px, (max-width: 1200px) 1200px"
+  ) }}
+*/}}
+
+{{- $pictureClass := (print (.pictureClass | default "") " select-none") -}}
+{{- $imgClass := (print (.imgClass | default "") " select-none") -}}
+{{- $loading := .loading | default "eager" -}}
+{{- $fetchPriority := .fetchPriority | default "high" -}}
+{{- $alt := .alt | default "" -}}
+{{- $widths := .widths | default (slice 2560) -}}
+{{- $formats := .formats | default (slice "webp") -}}
+{{- $quality := .quality | default "" -}}
+{{- $sizes := .sizes | default "(min-width: 0) 100vw" -}}
+{{- $supportedOutputFormats := slice "avif" "bmp" "gif" "jpeg" "png" "tiff" "webp" -}}
+{{- $normalizedFormats := slice -}}
+{{- range $rawFormat := $formats -}}
+  {{- $format := lower $rawFormat -}}
+  {{- if eq $format "jpg" -}}
+    {{- $format = "jpeg" -}}
+  {{- end -}}
+  {{- if not (in $supportedOutputFormats $format) -}}
+    {{- warnf "Unsupported image output format %q in picture-responsive, falling back to webp" $rawFormat -}}
+    {{- $format = "webp" -}}
+  {{- end -}}
+  {{- if not (in $normalizedFormats $format) -}}
+    {{- $normalizedFormats = $normalizedFormats | append $format -}}
+  {{- end -}}
+{{- end -}}
+{{- if eq (len $normalizedFormats) 0 -}}
+  {{- $normalizedFormats = slice "webp" -}}
+{{- end -}}
+
+{{- $sources := .sources | default slice -}}
+{{- $fallbackSource := dict -}}
+{{- if gt (len $sources) 0 -}}
+  {{- $fallbackSource = index $sources 0 -}}
+{{- end -}}
+
+{{/* Build remote opts via partial (Authorization header if token set) */}}
+{{ $remoteOpts := partial "funcs/strapi-remote-opts" . }}
+
+<picture class="{{ $pictureClass }}">
+  {{ range $source := $sources }}
+    {{- $path := $source.path -}}
+    {{- $sourceMedia := $source.media | default "" -}}
+    {{- $sourceWidths := $source.widths | default $widths -}}
+    {{- $sourceSizes := $source.sizes | default $sizes -}}
+
+    {{- $imageResource := "" -}}
+    {{- if (strings.HasPrefix $path "http") -}}
+      {{ with try (resources.GetRemote $path $remoteOpts) }}
+        {{- if .Err }}
+          {{ warnf "Error fetching remote image %q: %s" $path .Err }}
+        {{- else if .Value }}
+          {{- $imageResource = .Value -}}
+        {{- end }}
+      {{ else }}
+        {{ warnf "Unable to get remote resource %q" $path }}
+      {{ end }}
+    {{- else -}}
+      {{- $imageResource = resources.Get $path -}}
+    {{- end }}
+
+    {{ if $imageResource }}
+      {{ if eq $imageResource.MediaType.MainType "image" }}
+        {{ if eq $imageResource.MediaType.SubType "svg" }}
+          <source {{ if $sourceMedia }} media="{{ $sourceMedia }}" {{ end }} srcset='{{ $imageResource.RelPermalink }}' type="image/svg+xml" />
+        {{ else if not (reflect.IsImageResourceProcessable $imageResource) }}
+          <source {{ if $sourceMedia }} media="{{ $sourceMedia }}" {{ end }} srcset='{{ $imageResource.RelPermalink }}' type="{{ $imageResource.MediaType.Type }}" />
+        {{ else }}
+          {{ $sortedSourceWidths := sort $sourceWidths }}
+          {{ range $format := $normalizedFormats }}
+            {{ $srcset := slice }}
+            {{ range $width := $sortedSourceWidths }}
+              {{- $resizeStr := printf "%dx %s" $width $format -}}
+              {{- if $quality }}{{- $resizeStr = printf "%s q%d" $resizeStr $quality -}}{{ end }}
+              {{- $resized := $imageResource.Resize $resizeStr -}}
+              {{- $srcset = $srcset | append (printf "%s %dw" $resized.RelPermalink $width) -}}
+            {{ end }}
+            <source {{ if $sourceMedia }} media="{{ $sourceMedia }}" {{ end }} srcset='{{ delimit $srcset ", " }}' sizes="{{ $sourceSizes }}" type="image/{{ $format }}" />
+          {{ end }}
+        {{ end }}
+      {{ else }}
+        <img class="{{ $imgClass }}" src='{{ $imageResource.RelPermalink }}' alt="{{ $alt }}" loading="{{ $loading }}" fetchpriority="{{ $fetchPriority }}" draggable="false" />
+      {{ end }}
+    {{ end }}
+  {{ end }}
+
+  {{/* Default image (first source's first format) */}}
+  {{ if gt (len $sources) 0 }}
+    {{- $defaultPath := $fallbackSource.path -}}
+    {{- $defaultResource := "" -}}
+    {{- if (strings.HasPrefix $defaultPath "http") -}}
+      {{ with try (resources.GetRemote $defaultPath $remoteOpts) }}
+        {{- if .Err }}
+          {{ warnf "Error fetching remote image %q: %s" $defaultPath .Err }}
+        {{- else if .Value }}
+          {{- $defaultResource = .Value -}}
+        {{- end }}
+      {{ else }}
+        {{ warnf "Unable to get remote resource %q" $defaultPath }}
+      {{ end }}
+    {{- else -}}
+      {{- $defaultResource = resources.Get $defaultPath -}}
+    {{- end }}
+
+    {{ if $defaultResource }}
+      {{ if and (eq $defaultResource.MediaType.MainType "image") (eq $defaultResource.MediaType.SubType "svg") }}
+        <img class="{{ $imgClass }}" src="{{ $defaultResource.RelPermalink }}" alt="{{ $alt }}" loading="{{ $loading }}" fetchpriority="{{ $fetchPriority }}" draggable="false" />
+      {{ else if not (reflect.IsImageResourceProcessable $defaultResource) }}
+        <img class="{{ $imgClass }}" src="{{ $defaultResource.RelPermalink }}" alt="{{ $alt }}" loading="{{ $loading }}" fetchpriority="{{ $fetchPriority }}" draggable="false" width="{{ $defaultResource.Width }}" height="{{ $defaultResource.Height }}" />
+      {{ else }}
+        {{- $defaultFormat := index $normalizedFormats 0 -}}
+        {{- $sortedWidths := sort $widths -}}
+        {{- $placeholderResizeStr := "40x webp q5" -}}
+        {{- $placeholderImage := $defaultResource.Resize $placeholderResizeStr -}}
+        {{- $placeholderFilter := images.GaussianBlur 5 -}}
+        {{- $placeholderImage = $placeholderImage.Filter $placeholderFilter -}}
+        {{- $placeholderStyle := printf "background-image:url('%s');background-size:cover;background-position:center;background-repeat:no-repeat;filter:blur(5px);" $placeholderImage.RelPermalink -}}
+        {{- $srcResizeStr := printf "%dx %s" (index $sortedWidths (sub (len $sortedWidths) 1)) $defaultFormat -}}
+        {{- if $quality }}{{- $srcResizeStr = printf "%s q%d" $srcResizeStr $quality -}}{{ end }}
+        {{- $dimResizeStr := printf "%dx %s" (index $sortedWidths 0) $defaultFormat -}}
+        {{- if $quality }}{{- $dimResizeStr = printf "%s q%d" $dimResizeStr $quality -}}{{ end }}
+        {{- $defaultImg := $defaultResource.Resize $srcResizeStr -}}
+        {{- $dimImg := $defaultResource.Resize $dimResizeStr -}}
+        <img class="{{ $imgClass }}" src="{{ $defaultImg.RelPermalink }}" alt="{{ $alt }}" loading="{{ $loading }}" fetchpriority="{{ $fetchPriority }}" draggable="false" width="{{ $dimImg.Width }}" height="{{ $dimImg.Height }}" style="{{ $placeholderStyle | safeCSS }}" onload="this.style.backgroundImage='none';this.style.backgroundColor='transparent';this.style.filter='none';" />
+      {{- end }}
+    {{ end }}
+  {{- end }}
+</picture>

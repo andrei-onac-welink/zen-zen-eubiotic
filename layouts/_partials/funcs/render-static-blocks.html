@@ -1,0 +1,49 @@
+{{- /*
+Render order:
+1. blocks-static/<folder>/<component>.html
+2. blocks-static/<component>.html
+
+Use `folder` when only some blocks come from a subfolder:
+
+blocks:
+  - component: "playlist"
+    folder: "new-page"
+    title: "Example title"
+
+Use `blocksFolder` when the whole page uses one subfolder:
+
+blocksFolder: "other-new-page"
+blocks:
+  - component: "hero"
+  - component: "content"
+
+Examples:
+- blocks-static/new-page/playlist.html
+- blocks-static/other-new-page/hero.html
+- blocks-static/content.html
+*/ -}}
+
+{{- $page := . -}}
+{{- $defaultFolder := $page.Params.blocksFolder | default "" -}}
+
+{{- range $page.Params.blocks }}
+  {{- $component := .component -}}
+  {{- $partialPath := printf "blocks-static/%s.html" $component -}}
+  {{- $folder := or .folder $defaultFolder -}}
+  {{- $blockData := merge . (dict "page" $page) -}}
+
+  {{- if $folder }}
+    {{- $folderPartialPath := printf "blocks-static/%s/%s.html" $folder $component -}}
+    {{- if templates.Exists (printf "_partials/%s" $folderPartialPath) }}
+      {{- partial $folderPartialPath $blockData -}}
+    {{- else if templates.Exists (printf "_partials/%s" $partialPath) }}
+      {{- partial $partialPath $blockData -}}
+    {{- else }}
+      {{- warnf "Block template not found: %s or fallback %s (component: %s, folder: %s, page: %s)" $folderPartialPath $partialPath $component $folder $page.RelPermalink -}}
+    {{- end }}
+  {{- else if templates.Exists (printf "_partials/%s" $partialPath) }}
+    {{- partial $partialPath $blockData -}}
+  {{- else }}
+    {{- warnf "Block template not found: %s (component: %s, page: %s)" $partialPath $component $page.RelPermalink -}}
+  {{- end }}
+{{- end }}

@@ -1,0 +1,19 @@
+{{- $canonical := .Store.Get "meta:canonical" }}
+{{- if not $canonical }}
+  {{- $canonical = .Permalink }}
+{{- end }}
+
+{{- if and (or .IsHome .IsPage .IsSection) (not .Sitemap.Disable) }}
+  {{- if .Params.canonical }}
+    <link rel="canonical" href="{{ .Params.canonical }}">
+  {{- else if and (ne .Kind "404") (ne .Sitemap.Disable true) }}
+    <link rel="canonical" href="{{ $canonical }}">
+  {{- end }}
+{{- end }}
+
+{{- with .Store.Get "meta:prev" }}
+  <link rel="prev" href="{{ . }}">
+{{- end }}
+{{- with .Store.Get "meta:next" }}
+  <link rel="next" href="{{ . }}">
+{{- end }}

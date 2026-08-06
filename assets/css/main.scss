@@ -1,0 +1,16 @@
+@use 'sass:meta';
+
+@layer theme, base, general, vendor, components, utilities;
+
+@include meta.load-css('tailwindcss');
+@include meta.load-css('theme');
+@include meta.load-css('base');
+@include meta.load-css('vendor');
+@include meta.load-css('components');
+@include meta.load-css('utilities');
+
+@source 'hugo_stats.json';
+
+@custom-variant has-hover (@media (hover: hover));
+@custom-variant dark (&:where([data-theme=dark], [data-theme=dark] *));
+@custom-variant aria-current (&[aria-current="page"]);

@@ -1,0 +1,89 @@
+{{- $u := urls.Parse .Destination -}}
+{{- $src := $u.String -}}
+{{- $imageResource := "" -}}
+
+{{- if $u.IsAbs -}}
+  {{- if strings.HasPrefix .Destination "http" -}}
+    {{- $remoteOpts := partialCached "funcs/strapi-remote-opts" .Destination .Destination -}}
+    {{- with try (resources.GetRemote .Destination $remoteOpts) -}}
+      {{- if .Err -}}
+        {{- warnf "Error fetching remote image %q: %s" $.Destination .Err -}}
+      {{- else if .Value -}}
+        {{- $imageResource = .Value -}}
+        {{- $src = $imageResource.RelPermalink -}}
+      {{- end -}}
+    {{- else -}}
+      {{- warnf "Unable to get remote resource %q" .Destination -}}
+    {{- end -}}
+  {{- end -}}
+{{- else -}}
+  {{- $path := strings.TrimPrefix "./" $u.Path -}}
+  {{- with or (.PageInner.Resources.Get $path) (resources.Get $path) -}}
+    {{- $imageResource = . -}}
+    {{- $src = .RelPermalink -}}
+    {{- with $u.RawQuery -}}
+      {{- $src = printf "%s?%s" $src . -}}
+    {{- end -}}
+    {{- with $u.Fragment -}}
+      {{- $src = printf "%s#%s" $src . -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $placeholderStyle := "" -}}
+{{- if and $imageResource (eq $imageResource.MediaType.MainType "image") (ne $imageResource.MediaType.SubType "svg") (reflect.IsImageResourceProcessable $imageResource) -}}
+  {{- $placeholderImage := ($imageResource.Resize "40x webp q5").Filter (images.GaussianBlur 5) -}}
+  {{- $placeholderStyle = printf "background-image:url('%s');background-size:cover;background-position:center;background-repeat:no-repeat;filter:blur(5px);" $placeholderImage.RelPermalink -}}
+{{- end -}}
+
+{{- $userStyle := "" -}}
+{{- $userOnload := "" -}}
+{{- range $k, $v := .Attributes -}}
+  {{- if $v -}}
+    {{- if eq $k "style" -}}
+      {{- $userStyle = printf "%v" $v -}}
+    {{- else if eq $k "onload" -}}
+      {{- $userOnload = printf "%v" $v -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $styleAttr := $userStyle -}}
+{{- if $placeholderStyle -}}
+  {{- if $styleAttr -}}
+    {{- $styleAttr = printf "%s;%s" $placeholderStyle $styleAttr -}}
+  {{- else -}}
+    {{- $styleAttr = $placeholderStyle -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $onloadAttr := $userOnload -}}
+{{- if $placeholderStyle -}}
+  {{- $placeholderOnload := "this.style.backgroundImage='none';this.style.backgroundColor='transparent';this.style.filter='none';" -}}
+  {{- if $onloadAttr -}}
+    {{- $onloadAttr = printf "%s;%s" $onloadAttr $placeholderOnload -}}
+  {{- else -}}
+    {{- $onloadAttr = $placeholderOnload -}}
+  {{- end -}}
+{{- end -}}
+
+<img src="{{ $src }}" alt="{{ .PlainText }}" draggable="false"
+  {{- with .Title }} title="{{ . }}" {{- end -}}
+  {{- with $imageResource -}}
+    {{- if eq .MediaType.MainType "image" -}}
+      {{- with .Width }} width="{{ . }}"{{- end -}}
+      {{- with .Height }} height="{{ . }}"{{- end -}}
+    {{- end -}}
+  {{- end -}}
+  {{- with $styleAttr -}}
+    {{- printf " style=%q" (. | safeCSS) | safeHTMLAttr -}}
+  {{- end -}}
+  {{- with $onloadAttr -}}
+    {{- printf " onload=%q" . | safeHTMLAttr -}}
+  {{- end -}}
+  {{- range $k, $v := .Attributes -}}
+    {{- if and $v (ne $k "style") (ne $k "onload") -}}
+      {{- printf " %s=%q" $k ($v | transform.HTMLEscape) | safeHTMLAttr -}}
+    {{- end -}}
+  {{- end -}}>
+{{- /**/ -}}

@@ -1,0 +1,46 @@
+# Documentation:
+# https://gohugo.io/configuration/module/#hugo-version
+# https://gohugo.io/configuration/module/#mounts
+
+[hugoVersion]
+min = '0.164.0'
+
+[[mounts]]
+disableWatch = false
+source = 'archetypes'
+target = 'archetypes'
+
+[[mounts]]
+disableWatch = false
+source = 'assets'
+target = 'assets'
+
+[[mounts]]
+disableWatch = false
+source = 'content'
+target = 'content'
+
+[[mounts]]
+disableWatch = false
+source = 'data'
+target = 'data'
+
+[[mounts]]
+disableWatch = false
+source = 'i18n'
+target = 'i18n'
+
+[[mounts]]
+disableWatch = false
+source = 'layouts'
+target = 'layouts'
+
+[[mounts]]
+disableWatch = false
+source = 'static'
+target = 'static'
+
+[[mounts]]
+disableWatch = true
+source = 'hugo_stats.json'
+target = 'assets/notwatching/hugo_stats.json'

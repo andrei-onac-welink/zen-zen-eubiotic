@@ -1,0 +1,39 @@
+# Hugo default output directory
+/public/
+/resources/
+/assets/jsconfig.json
+hugo_stats.json
+/.hugo_build.lock
+/exampleSite/resources/
+/exampleSite/.hugo_build.lock
+
+node_modules/
+build/
+temp/*
+!temp/context/
+!temp/context/**
+
+.idea
+.vscode
+.env
+
+# Yarn 2 files
+/.yarn/install-state.gz
+
+# OSX
+.DS_Store
+
+# Linux
+.directory
+
+## OS Files
+# Windows
+Thumbs.db
+ehthumbs.db
+Desktop.ini
+$RECYCLE.BIN/
+
+# Prebuild folders & files
+#/prebuild/content
+/prebuild/public
+/prebuild/.hugo_build.lock

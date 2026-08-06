@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<!--[if lte 8]><html class="pre-ie9" lang="{{ or site.Language.Locale site.Language.Name }}" dir="{{ or site.Language.Direction `ltr` }}"><![endif]-->
+<!--[if gte IE 9]><!--><html class="no-js scroll-smooth" lang="{{ or site.Language.Locale site.Language.Name }}" dir="{{ or site.Language.Direction `ltr` }}"><!--<![endif]-->
+{{ block "pagination" . }}{{ end }}
+{{ partial "misc/head" . }}
+
+{{ $status := cond .Params.strapiStatus (cond (eq .Params.strapiStatus "published") "published" "unpublished") (cond .Draft "unpublished" "published") }}
+<body class='{{ block "bodyClass" . }}{{ end }} | overflow-x-hidden status--{{ $status }}'>
+  <a class="sr-only bg-black text-white" href="#main" draggable="false">Skip to Main Content</a>
+  {{ partialCached "misc/gtm-body" . }}
+  {{ partialCached "misc/sprite" . }}
+
+  <div class="site-content | flex flex-col min-h-svh">
+    {{ block "header" . }}{{ end }}
+
+    <main class="main | overflow-x-hidden" id="main">
+      {{ block "main" . }}{{ end }}
+    </main>
+
+    {{ block "footer" . }}{{ end }}
+  </div>
+
+  {{ partialCached "misc/script" . }}
+</body>
+</html>

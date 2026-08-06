@@ -1,0 +1,3 @@
+# https://gohugo.io/configuration/introduction/#configuration-directory
+
+baseURL = 'https://develop.boilerplate.pages.dev/'

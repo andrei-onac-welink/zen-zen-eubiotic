@@ -1,0 +1,25 @@
+{{- define "bodyClass" -}} {{ .Kind }}-{{ .Type }} list--static-page--{{ .Page.LinkTitle | anchorize -}} {{- end -}}
+
+{{ define "header" }}
+  {{ partialCached "blocks/header" . .Section .RelPermalink }}
+{{ end }}
+
+{{ define "main" }}
+
+  {{ if .Params.blocks }}
+    {{ partialCached "funcs/render-static-blocks" . .Section .RelPermalink }}
+  {{ else }}
+    <section class="my-10 md:my-24" aria-label="Section - {{ .Page.Title | plainify }}">
+      <div class="container">
+        <article class="markdown-content mx-auto">
+          {{ .Content | markdownify }}
+        </article>
+      </div>
+    </section>
+  {{ end }}
+
+{{ end }}
+
+{{ define "footer" }}
+  {{ partialCached "blocks/footer" . .Section .RelPermalink }}
+{{ end }}

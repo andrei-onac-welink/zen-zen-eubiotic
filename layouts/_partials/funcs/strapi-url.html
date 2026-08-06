@@ -1,0 +1,11 @@
+{{- /*
+  Compose a full Strapi URL from a resource path.
+  Usage: {{ $url := partialCached "funcs/strapi-url" "/api/homepage?pLevel" "/api/homepage?pLevel" }}
+*/ -}}
+
+{{- $path := . -}}
+{{- if not (strings.HasPrefix $path "/") -}}
+  {{- $path = printf "/%s" $path -}}
+{{- end -}}
+
+{{- return (printf "%s%s" site.Params.strapiBaseURL $path) -}}

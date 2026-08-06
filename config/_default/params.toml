@@ -1,0 +1,7 @@
+# Documentation: https://gohugo.io/configuration/params/
+
+strapiBaseURL = 'http://boilerplate-strapi:1337'
+
+logo = 'static/logo.svg'
+description = 'Boilerplate Description All Website'
+images = ['images/opengraph.jpg']

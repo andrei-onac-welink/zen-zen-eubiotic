@@ -1,0 +1,30 @@
+{{- /*
+  Fetch a JSON response from Strapi.
+  Argument: absolute URL or resource path (e.g. "/api/works?pLevel").
+  Returns: parsed JSON (map) or nil on error.
+*/ -}}
+
+{{- $input := . -}}
+{{- $url := $input -}}
+
+{{- /* If a resource path is provided, compose full URL */ -}}
+{{- if strings.HasPrefix $input "/" -}}
+  {{- $url = partialCached "funcs/strapi-url" $input $input -}}
+{{- end -}}
+
+{{- $remoteOpts := partialCached "funcs/strapi-remote-opts" $url $url -}}
+
+{{- with try (resources.GetRemote $url $remoteOpts) -}}
+  {{- with .Err -}}
+    {{- warnf "Unable to get remote resource %s: %s" $url . -}}
+    {{- return -}}
+  {{- else with .Value -}}
+    {{- /* Force JSON to avoid front matter auto-detection on strings */ -}}
+    {{- return (.| transform.Unmarshal (dict "format" "json")) -}}
+  {{- else -}}
+    {{- warnf "Unable to get remote resource %s" $url -}}
+    {{- return -}}
+  {{- end -}}
+{{- else -}}
+  {{- return -}}
+{{- end -}}

@@ -1,0 +1,34 @@
+{{- define "bodyClass" -}} {{ .Kind }}-{{ .Type }} page--basic-page--{{ .Page.LinkTitle | anchorize -}} {{- end -}}
+
+{{ define "header" }}
+  {{ partialCached "blocks/header" . .Section .RelPermalink }}
+{{ end }}
+
+{{ define "main" }}
+
+  <section class="my-10 md:my-24" aria-label="Section - {{ .Page.Title | plainify }}">
+    {{ with .Params.externalBlocks }}
+      {{ range . }}
+        {{ $machineName := strings.TrimPrefix "blocks." .__component }}
+        {{ $partialPath := printf "blocks-external/%s.html" $machineName }}
+        {{ if templates.Exists (printf "_partials/%s" $partialPath) }}
+          {{ partial $partialPath . }}
+        {{ else }}
+          {{ warnf "External block template not found: %s (component: %s)" $partialPath .__component }}
+        {{ end }}
+      {{ end }}
+    {{ end }}
+
+    <div class="container">
+      <h1 class="h1 | mb-8">{{ .Title | plainify }}</h1>
+      <article class="markdown-content">
+        {{ .Content | markdownify }}
+      </article>
+    </div>
+  </section>
+
+{{ end }}
+
+{{ define "footer" }}
+  {{ partialCached "blocks/footer" . .Section .RelPermalink }}
+{{ end }}

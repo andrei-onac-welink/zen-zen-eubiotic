@@ -1,0 +1,26 @@
+{{- $configData := dict -}}
+{{- range where site.Pages "Type" "_single" -}}
+  {{- if eq .Params.apiID "config" -}}
+    {{- $configData = .Params.data -}}
+  {{- end -}}
+{{- end -}}
+
+{{- $basicPageSection := site.GetPage "section" "basic-page" -}}
+{{- $basicPagePages := slice -}}
+{{- with $basicPageSection -}}
+  {{- $basicPagePages = .Pages -}}
+{{- end -}}
+{{- $basicPageByDocumentId := dict -}}
+{{- range $basicPagePages -}}
+  {{- $page := . -}}
+  {{- with $page.Params.documentId -}}
+    {{- $basicPageByDocumentId = merge $basicPageByDocumentId (dict . $page) -}}
+  {{- end -}}
+{{- end -}}
+
+{{- return (dict
+  "configData" $configData
+  "basicPageByDocumentId" $basicPageByDocumentId
+  "basicPagePages" $basicPagePages
+  "basicPageSection" $basicPageSection
+) -}}

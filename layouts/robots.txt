@@ -1,0 +1,17 @@
+User-agent: *
+
+{{ if eq hugo.Environment "production" }}
+Allow: /
+{{ range $taxonomy, $_ := site.Taxonomies }}
+  {{- with site.GetPage "taxonomy" $taxonomy -}}
+    Disallow: {{ .RelPermalink }}
+  {{- end }}
+{{ end }}
+{{- end }}
+
+{{- if ne hugo.Environment "production" }}
+Disallow: /
+{{- end }}
+
+Host: {{ .Permalink }}
+Sitemap: {{ "/sitemap.xml" | absLangURL }}

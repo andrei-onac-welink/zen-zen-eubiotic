@@ -1,0 +1,30 @@
+{{/*
+CSV Row Mapper Function
+Usage: {{ $rowMap := partial "funcs/csv-row-mapper.html" (dict "csvData" $csvData "row" $row) }}
+
+Parameters:
+- csvData: The full CSV data array
+- row: The current row data array
+
+Returns: A map where keys are column names and values are the row values
+*/}}
+
+{{ $csvData := .csvData }}
+{{ $row := .row }}
+
+{{/* Get the header row (first row) to map column names to indexes */}}
+{{ $headers := index $csvData 0 }}
+{{ $rowMap := dict }}
+
+{{/* Create a map with column names as keys and row values as values */}}
+{{ range $index, $header := $headers }}
+  {{ $columnName := strings.TrimSpace $header }}
+  {{ if lt $index (len $row) }}
+    {{ $value := index $row $index | strings.TrimSpace }}
+    {{ $rowMap = merge $rowMap (dict $columnName $value) }}
+  {{ else }}
+    {{ $rowMap = merge $rowMap (dict $columnName "") }}
+  {{ end }}
+{{ end }}
+
+{{ return $rowMap }}

@@ -1,0 +1,44 @@
+# Main Menu
+[[main]]
+name        = 'Home'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Home'
+parent      = ''
+pageRef     = '/'
+identifier  = 'home'
+weight      = 10
+
+[[main]]
+name        = 'About'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'About'
+parent      = ''
+pageRef     = 'about'
+identifier  = 'about'
+weight      = 20
+
+[[main]]
+name        = 'Services'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Services'
+parent      = ''
+pageRef     = 'services'
+identifier  = 'services'
+weight      = 30
+
+[[main]]
+name        = 'Contact'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Contact'
+parent      = ''
+pageRef     = 'contact'
+identifier  = 'contact'
+weight      = 40
