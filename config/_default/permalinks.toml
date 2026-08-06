@@ -5,3 +5,9 @@ pattern = "/:slugorcontentbasename/"
 [permalinks.target]
 kind = "{page,section}"
 path = "{/basic-page,/basic-page/**,/static-page,/static-page/**}"
+
+[[permalinks]]
+pattern = "/gama-eubiotic/:slugorcontentbasename/"
+[permalinks.target]
+kind = "{page}"
+path = "{/product/**}"

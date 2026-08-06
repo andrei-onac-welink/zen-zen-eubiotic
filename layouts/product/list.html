@@ -1,0 +1,90 @@
+{{- define "bodyClass" -}} {{ .Kind }}-{{ .Type }} list--product--{{ .Page.LinkTitle | anchorize -}} {{- end -}}
+
+{{ define "header" }}
+  {{ partialCached "blocks/header" . .Section .RelPermalink }}
+{{ end }}
+
+{{ define "main" }}
+  {{- $heroPath := "" -}}
+  {{- with .Params.resources -}}
+    {{- with index . 0 -}}
+      {{- $heroPath = strings.TrimPrefix "/" .src -}}
+    {{- end -}}
+  {{- end -}}
+
+  <section class="relative isolate flex h-140 items-end justify-center overflow-hidden bg-secondary-700 pb-8 text-white lg:h-152 lg:pb-10" aria-labelledby="products-title">
+    {{- if $heroPath -}}
+      {{ partial "components/image-responsive" (dict
+        "path" $heroPath
+        "class" "absolute inset-0 -z-20 size-full object-cover object-center"
+        "loading" "eager"
+        "fetchPriority" "high"
+        "alt" ""
+        "format" "webp"
+        "quality" 84
+        "widths" (slice 640 960 1280 1600)
+        "sizes" "100vw"
+      ) }}
+    {{- end -}}
+    <span class="absolute inset-0 -z-10 bg-(image:--color-gradient-primary-500)" aria-hidden="true"></span>
+    <span class="absolute -bottom-20 right-[-4rem] -z-10 size-40 rounded-full bg-primary-500/85 lg:-bottom-16 lg:right-[22%] lg:size-24" aria-hidden="true"></span>
+    <span class="absolute bottom-7 right-[15%] -z-10 size-5 rounded-full bg-primary-500 lg:bottom-9 lg:right-[28%] lg:size-8" aria-hidden="true"></span>
+    <h1 class="text-2xl font-bold uppercase drop-shadow-md lg:text-4xl" id="products-title">{{ .Title }}</h1>
+    <div class="container absolute inset-x-0 bottom-4 hidden text-base lg:block">
+      <nav aria-label="Breadcrumb">
+        <a class="transition-colors hover:text-primary-100" href="/">Acasă</a>
+        <span aria-hidden="true"> &gt; </span>
+        <span aria-current="page">{{ .Title }}</span>
+      </nav>
+    </div>
+  </section>
+
+  <section class="bg-white pb-12 pt-4 lg:py-16" aria-label="Produsele Eubiotic">
+    <div class="container">
+      <div class="space-y-16 lg:space-y-20">
+        {{- range .RegularPages.ByWeight -}}
+          {{- $imagePath := "" -}}
+          {{- with .Params.resources -}}
+            {{- with index . 0 -}}
+              {{- $imagePath = strings.TrimPrefix "/" .src -}}
+            {{- end -}}
+          {{- end -}}
+          {{- $headingID := printf "product-%s" (.Title | anchorize) -}}
+
+          <article class="grid items-center gap-7 lg:grid-cols-5 lg:gap-12" aria-labelledby="{{ $headingID }}">
+            <a class="block lg:col-span-2" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+              {{- if $imagePath -}}
+                {{ partial "components/image-responsive" (dict
+                  "path" $imagePath
+                  "class" "mx-auto w-full object-contain"
+                  "loading" "lazy"
+                  "fetchPriority" "auto"
+                  "alt" .Title
+                  "format" "webp"
+                  "quality" 84
+                  "widths" (slice 320 480 640)
+                  "sizes" "(max-width: 639px) calc(100vw - 32px), (max-width: 1023px) calc(100vw - 64px), 40vw"
+                ) }}
+              {{- end -}}
+            </a>
+
+            <div class="lg:col-span-3">
+              <h2 class="text-xl font-bold text-primary-500 lg:text-2xl" id="{{ $headingID }}">
+                <a class="transition-colors hover:text-primary-700" href="{{ .RelPermalink }}">{{ .Title }}</a>
+              </h2>
+              <div class="mt-4 text-base leading-6 text-secondary-700 [&>p]:mb-3 [&>p:last-child]:mb-0">
+                {{ .Content }}
+              </div>
+              <a class="btn-primary mt-5 text-base" href="{{ .RelPermalink }}">Află mai multe</a>
+            </div>
+          </article>
+        {{- end -}}
+      </div>
+    </div>
+  </section>
+
+{{ end }}
+
+{{ define "footer" }}
+  {{ partialCached "blocks/footer" . .Section .RelPermalink }}
+{{ end }}
