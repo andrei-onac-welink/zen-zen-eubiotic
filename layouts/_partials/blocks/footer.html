@@ -1,6 +1,73 @@
-<footer class="site-footer | mt-auto bg-neutral-200 py-4">
-  <div class="container">
-    <small class="text-base">© <span class="js-copyright-year">{{ now.Year }}</span> {{ site.Copyright | safeHTML }}</small>
+<footer class="site-footer | mt-auto bg-[#eeeeee] text-base text-[#4d4d4d]">
+  <div class="container grid gap-10 py-14 md:grid-cols-2 lg:grid-cols-4 lg:gap-12 lg:py-20">
+    <section aria-label="Despre Eubiotic">
+      <img class="mb-5 h-auto w-[165px]" src="https://www.eubiotic.ro/wp-content/uploads/logo-eubiotic.svg" width="470" height="92" alt="Eubiotic" loading="lazy" draggable="false" />
+      <p class="max-w-[260px] text-base leading-6">Marcă înregistrată a Labormed Pharma, o companie Zentiva</p>
+      <p class="mt-7 text-base font-semibold">Urmărește-ne pe:</p>
+      <div class="mt-3 flex gap-3" aria-label="Rețele sociale">
+        {{ range slice
+          (dict "name" "Facebook" "label" "f" "url" "https://www.facebook.com/EubioticRomania")
+          (dict "name" "Instagram" "label" "◎" "url" "https://www.instagram.com/eubiotic.ro/")
+          (dict "name" "LinkedIn" "label" "in" "url" "https://www.linkedin.com/company/zentiva/")
+          (dict "name" "YouTube" "label" "▶" "url" "https://www.youtube.com/")
+        }}
+          <a class="grid size-8 place-items-center rounded-full bg-primary-500 text-base font-bold text-white hover:bg-primary-700" href="{{ .url }}" target="_blank" rel="noreferrer" aria-label="{{ .name }}">{{ .label }}</a>
+        {{ end }}
+      </div>
+    </section>
+
+    <section aria-labelledby="footer-blog-title">
+      <h2 class="mb-5 text-base font-bold" id="footer-blog-title">Ultimele articole de pe Blog</h2>
+      <div class="space-y-4">
+        {{ range slice
+          (dict "title" "Eubiotic Baby: Cum să susții dezvoltarea sănătoasă a copilului" "date" "31 ianuarie 2025" "image" "https://www.eubiotic.ro/wp-content/uploads/2-300x169.png" "url" "/eubiotic-baby-cum-sa-sustii-dezvoltarea-sanatoasa-a-copilului/")
+          (dict "title" "Ce trebuie să știi despre enteroviroza la copii" "date" "3 decembrie 2024" "image" "https://www.eubiotic.ro/wp-content/uploads/despre-enteroviroza-la-copii-300x300.png" "url" "/despre-enteroviroza-la-copii-simptomatologie-si-combaterea-enterovirozelor/")
+          (dict "title" "Ce este disbioza? Cauze, factori de risc" "date" "3 decembrie 2024" "image" "https://www.eubiotic.ro/wp-content/uploads/disbioza-300x300.png" "url" "/ce-este-disbioza-cauze-factori-de-risc-diagnostic-si-prevenire/")
+        }}
+          <a class="group grid grid-cols-[54px_1fr] gap-3" href="{{ .url }}">
+            <img class="size-[54px] rounded-sm object-cover" src="{{ .image }}" width="300" height="300" alt="" loading="lazy" draggable="false" />
+            <span>
+              <span class="block text-base font-semibold leading-4 group-hover:text-primary-500">{{ .title }}</span>
+              <span class="mt-1 block text-base text-secondary-500">{{ .date }}</span>
+            </span>
+          </a>
+        {{ end }}
+      </div>
+    </section>
+
+    <section aria-labelledby="footer-links-title">
+      <h2 class="mb-5 text-base font-bold" id="footer-links-title">Legături rapide</h2>
+      <ul class="m-0 list-none space-y-2 p-0 text-base">
+        <li><a class="hover:text-primary-500" href="/gama-eubiotic/">Gama Eubiotic</a></li>
+        <li><a class="hover:text-primary-500" href="/cumpara/">Cumpără</a></li>
+        <li><a class="hover:text-primary-500" href="/contact/">Contact</a></li>
+        <li><a class="hover:text-primary-500" href="/microbiomul/">Microbiomul</a></li>
+        <li><a class="hover:text-primary-500" href="/diaree/">Diaree</a></li>
+        <li><a class="hover:text-primary-500" href="/constipatie/">Constipație</a></li>
+        <li><a class="hover:text-primary-500" href="/colici/">Colici</a></li>
+        <li><a class="hover:text-primary-500" href="/balonare/">Balonare</a></li>
+        <li><a class="hover:text-primary-500" href="/farmacovigilenta/">Farmacovigilență</a></li>
+      </ul>
+    </section>
+
+    <section aria-labelledby="footer-contact-title">
+      <h2 class="mb-5 text-base font-bold" id="footer-contact-title">Ia legătura cu noi</h2>
+      <p class="text-base leading-6">Poți lua legătura cu noi accesând pagina de contact <a class="font-semibold text-primary-500 underline underline-offset-2" href="/contact/">de aici</a>.</p>
+    </section>
+  </div>
+
+  <div class="bg-[#aaaaaa] px-5 py-8 text-center text-base leading-5 text-white md:px-8">
+    <nav class="mb-3 flex flex-wrap justify-center gap-x-5 gap-y-1" aria-label="Linkuri juridice">
+      <a class="hover:text-primary-100" href="/termeni-si-conditii/">Termeni și condiții</a>
+      <a class="hover:text-primary-100" href="/privacy-policy/">Politică de confidențialitate</a>
+      <a class="hover:text-primary-100" href="/politica-de-cookie-uri/">Politica de cookie-uri</a>
+      <button class="hover:text-primary-100" type="button">Schimbați preferințele cookie-urilor</button>
+    </nav>
+    <small class="text-base">©<span class="js-copyright-year">{{ now.Year }}</span> <strong class="uppercase">{{ site.Title }}<sup>®</sup></strong> | {{ site.Copyright | safeHTML }}</small>
     <script>document.querySelector('.js-copyright-year').textContent = new Date().getFullYear();</script>
   </div>
+
+  <a class="fixed bottom-4 right-4 z-40 grid size-10 place-items-center rounded-full bg-primary-500 text-white shadow-lg hover:bg-primary-700" href="#top" aria-label="Înapoi sus">
+    <svg class="size-5" aria-hidden="true" focusable="false"><use href="#arrow-up-icon"></use></svg>
+  </a>
 </footer>

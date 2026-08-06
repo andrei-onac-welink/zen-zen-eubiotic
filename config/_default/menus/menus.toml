@@ -1,36 +1,80 @@
 # Main Menu
 [[main]]
-name        = 'Home'
+name        = 'Acasă'
 url         = ''
 pre         = ''
 post        = ''
-title       = 'Home'
+title       = 'Acasă'
 parent      = ''
 pageRef     = '/'
 identifier  = 'home'
 weight      = 10
 
 [[main]]
-name        = 'About'
+name        = 'Despre'
 url         = ''
 pre         = ''
 post        = ''
-title       = 'About'
+title       = 'Despre Eubiotic'
 parent      = ''
-pageRef     = 'about'
+pageRef     = 'despre-eubiotic'
 identifier  = 'about'
 weight      = 20
 
 [[main]]
-name        = 'Services'
+name        = 'Gama Eubiotic'
 url         = ''
 pre         = ''
 post        = ''
-title       = 'Services'
+title       = 'Gama Eubiotic'
 parent      = ''
-pageRef     = 'services'
-identifier  = 'services'
+pageRef     = 'gama-eubiotic'
+identifier  = 'products'
 weight      = 30
+
+[[main]]
+name        = 'Podcast'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Podcast'
+parent      = ''
+pageRef     = 'podcast'
+identifier  = 'podcast'
+weight      = 40
+
+[[main]]
+name        = 'Blog'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Blog'
+parent      = ''
+pageRef     = 'blog'
+identifier  = 'blog'
+weight      = 50
+
+[[main]]
+name        = 'Farmacovigilență'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Farmacovigilență'
+parent      = ''
+pageRef     = 'farmacovigilenta'
+identifier  = 'pharmacovigilance'
+weight      = 60
+
+[[main]]
+name        = 'Cumpără'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Cumpără'
+parent      = ''
+pageRef     = 'cumpara'
+identifier  = 'buy'
+weight      = 70
 
 [[main]]
 name        = 'Contact'
@@ -41,4 +85,4 @@ title       = 'Contact'
 parent      = ''
 pageRef     = 'contact'
 identifier  = 'contact'
-weight      = 40
+weight      = 80

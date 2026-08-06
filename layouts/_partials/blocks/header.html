@@ -1,65 +1,23 @@
-<header class="site-header">
-  <div class="sticky top-0 isolate z-100 w-full text-center bg-gray-100 text-gray-800">
-    <span class="max-lg:absolute start-0 top-0 w-full h-full z-200 pointer-events-none"></span>
-    <div class="static container py-2 flex items-center justify-between gap-4 max-lg:[&:has(.nav-toggle:checked)_.site-nav]:border-t max-lg:[&:has(.nav-toggle:checked)_.site-nav]:max-h-[80vh] max-lg:[&:has(.nav-toggle:checked)_.site-nav]:opacity-100 max-lg:[&:has(.nav-toggle:checked)_.site-nav]:pointer-events-auto max-lg:[&:has(.nav-toggle:checked)_.burger]:text-white max-lg:[&:has(.nav-toggle:checked)_.burger]:bg-primary-500">
-      <a class="relative z-300 shrink-0 block" href="{{ site.Home.RelPermalink }}" draggable="false">
-        <svg class="shrink-0 size-10" aria-hidden="true" focusable="false">
-          <use href="#home-icon"></use>
-        </svg>
-        <span class="sr-only bg-black text-white">{{ site.Title }}</span>
-      </a>
-      <fieldset class="order-1 lg:order-2 relative z-400 flex items-center justify-center gap-2">
-        <legend class="block">
-          <span class="sr-only bg-black text-white">Toggle Mobile menu and Theme Switcher</span>
-        </legend>
-        <label class="inline-flex items-center justify-center outline-primary-500 has-[input:focus-visible]:outline-3 has-[input:focus-visible]:outline-solid lg:hidden">
-          <span class="sr-only bg-black text-white">Open Menu</span>
-          <input class="nav-toggle | sr-only bg-black text-white" type="checkbox" aria-controls="site-nav" />
-          <svg class="shrink-0 size-8 p-1 rounded-md" aria-hidden="true" focusable="false">
-            <use href="#menu-icon"></use>
-          </svg>
-        </label>
-        <label class="inline-flex shrink-0 font-medium rounded-full cursor-pointer outline-primary-500 has-[input:focus-visible]:outline-3 has-[input:focus-visible]:outline-solid">
-          <input class="js-dark-mode-toggle | sr-only bg-black text-white peer" type="checkbox" role="switch" />
-          <span class="inline-flex shrink-0 justify-center items-center [&_.icon-sun]:hidden peer-checked:[&_.icon-sun]:block peer-checked:[&_.icon-moon]:hidden">
-            <span class="sr-only bg-black text-white">Switch Theme Mode</span>
-            <svg class="shrink-0 size-8 p-1" aria-hidden="true" focusable="false">
-              <use class="icon-moon block" href="#moon-icon"></use>
-              <use class="icon-sun hidden" href="#sun-icon"></use>
-            </svg>
-          </span>
-        </label>
-      </fieldset>
-      <nav class="site-nav | order-2 lg:order-1 max-lg:overflow-hidden border-[#e7e4e4] dark:border-black max-lg:bg-transparent absolute z-10 top-full start-0 w-full text-start max-lg:max-h-0 max-lg:opacity-0 pointer-events-none max-lg:will-change-[max-height,opacity] max-lg:transition-[max-height,opacity] max-lg:duration-300 max-lg:ease-in-out lg:relative lg:flex lg:justify-end lg:items-center lg:text-start lg:transition-none lg:opacity-100 lg:pointer-events-auto lg:visible lg:bg-none lg:top-[initial] lg:start-[initial]" aria-label="Main Navigation">
-        <menu class="bg-transparent max-lg:bg-white max-lg:dark:bg-gray-900 max-lg:dark:text-white max-lg:p-5 m-0 list-none *:mb-4 lg:flex lg:gap-4 font-sans last:mb-0">
-          {{ range site.Menus.main }}
-            <li class="max-lg:container max-sm:px-0 max-md:px-6 max-lg:px-8 lg:mb-0 flex max-lg:justify-start items-center gap-4 text-base font-bold relative">
-              {{ if .HasChildren }}
-                <details class="js-dropdown-hover | group/menu-item relative" name="menu">
-                  <summary class="list-none flex items-center uppercase text-center transition hover:text-accent-700 cursor-pointer">
-                    <span>{{ .Name }}</span>
-                    <svg class="shrink-0 size-6 rotate-180 group-open/menu-item:rotate-0" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
-                      <use href="#chevron-up-icon"></use>
-                    </svg>
-                  </summary>
-                  <div class="lg:absolute -start-1/2 top-full z-50 min-w-[340px]">
-                    <span class="block pt-3 lg:pt-[21px]"></span>
-                    <menu class="lg:p-4 bg-white dark:bg-gray-900 ps-0 ms-0 mb-0 list-none lg:shadow-lg lg:rounded-b-xl" aria-label="Main Navigation Children">
-                      {{ range .Children }}
-                        <li class="px-2 mb-2 last:mb-0">
-                          <a class="invisible group-open/menu-item:visible w-full block text-lg transition text-gray-900/80 dark:text-white/80 hover:text-accent-700 aria-current:text-accent-700" href="{{ .URL }}" {{ if eq $.RelPermalink .URL }} aria-current="page" {{ end }} {{ if .Params.rel }} rel="{{ .Params.rel }}" {{ end }} {{ if .Params.target }} target="{{ .Params.target }}" {{ end }} draggable="false">{{ .Name }}</a>
-                        </li>
-                      {{ end }}
-                    </menu>
-                  </div>
-                </details>
-              {{ else }}
-                <a class="uppercase text-center transition hover:text-accent-700 aria-current:text-accent-700" href="{{ .URL }}" {{ if eq $.RelPermalink .URL }} aria-current="page" {{ end }} {{ if .Params.rel }} rel="{{ .Params.rel }}" {{ end }} {{ if .Params.target }} target="{{ .Params.target }}" {{ end }} draggable="false">{{ .Name }}</a>
-              {{ end }}
-            </li>
-          {{ end }}
-        </menu>
-      </nav>
-    </div>
+<header class="site-header group | fixed inset-x-0 top-0 z-50 bg-linear-to-b from-black/45 via-black/15 to-transparent text-white [--header-height:70px] transition-[background-color,background-image,box-shadow,color,backdrop-filter] duration-300 data-[scrolled=true]:bg-white/95 data-[scrolled=true]:bg-none data-[scrolled=true]:text-[#4d4d4d] data-[scrolled=true]:shadow-lg data-[scrolled=true]:backdrop-blur-md lg:[--header-height:110px] data-[scrolled=true]:[--header-height:56px] lg:data-[scrolled=true]:[--header-height:64px]" data-scrolled="false">
+  <div class="flex h-[var(--header-height)] w-full items-center justify-between px-4 transition-[height] duration-300 sm:px-8 lg:px-6 xl:px-10">
+    <a class="relative z-20 block w-[118px] shrink-0 transition-[width] duration-300 group-data-[scrolled=true]:w-[100px] lg:w-[132px] lg:group-data-[scrolled=true]:w-[108px]" href="{{ site.Home.RelPermalink }}" aria-label="Eubiotic - Acasă" draggable="false">
+      <img class="block h-auto w-full brightness-0 invert transition-[filter] duration-300 group-data-[scrolled=true]:brightness-100 group-data-[scrolled=true]:invert-0" src="https://www.eubiotic.ro/wp-content/uploads/logo-eubiotic.svg" width="470" height="92" alt="Eubiotic" fetchpriority="high" draggable="false" />
+    </a>
+
+    <input class="nav-toggle | peer sr-only" type="checkbox" id="site-navigation-toggle" aria-controls="site-navigation" />
+    <label class="relative z-20 grid size-10 cursor-pointer place-items-center lg:hidden" for="site-navigation-toggle">
+      <span class="sr-only bg-black text-white">Deschide meniul</span>
+      <svg class="size-6" aria-hidden="true" focusable="false"><use href="#menu-icon"></use></svg>
+    </label>
+
+    <nav class="fixed inset-x-0 top-[var(--header-height)] z-10 h-[calc(100svh-var(--header-height))] translate-x-full overflow-y-auto bg-white px-6 py-10 text-[#4d4d4d] transition-[top,height,transform] duration-300 peer-checked:translate-x-0 lg:static lg:h-auto lg:translate-x-0 lg:overflow-visible lg:bg-transparent lg:p-0 lg:text-white lg:group-data-[scrolled=true]:text-[#4d4d4d]" id="site-navigation" aria-label="Navigație principală">
+      <menu class="m-0 flex list-none flex-col items-center gap-7 p-0 lg:flex-row lg:gap-6 xl:gap-8">
+        {{ range site.Menus.main }}
+          <li>
+            <a class="block text-center text-base font-bold uppercase tracking-wide transition hover:text-primary-500 aria-current:text-primary-500 lg:hover:text-primary-300 lg:aria-current:text-primary-300 lg:group-data-[scrolled=true]:hover:text-primary-500 lg:group-data-[scrolled=true]:aria-current:text-primary-500" href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}aria-current="page"{{ end }} draggable="false">{{ .Name }}</a>
+          </li>
+        {{ end }}
+      </menu>
+    </nav>
   </div>
 </header>

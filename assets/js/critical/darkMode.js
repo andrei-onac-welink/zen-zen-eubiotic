@@ -2,7 +2,6 @@ const THEME_STORAGE_KEY = 'theme';
 const DARK_THEME = 'dark';
 const LIGHT_THEME = 'light';
 const DARK_MODE_TOGGLES = '.js-dark-mode-toggle';
-const prefersDarkScheme = window.matchMedia('(prefers-color-scheme: dark)');
 const root = document.documentElement;
 
 function getStoredTheme() {
@@ -26,7 +25,7 @@ function resolveTheme() {
     return storedTheme;
   }
 
-  return prefersDarkScheme.matches ? DARK_THEME : LIGHT_THEME;
+  return LIGHT_THEME;
 }
 
 function updateToggleInputs(theme) {
@@ -71,14 +70,4 @@ if (document.readyState === 'loading') {
   document.addEventListener('DOMContentLoaded', initDarkModeToggle);
 } else {
   initDarkModeToggle();
-}
-
-if (typeof prefersDarkScheme.addEventListener === 'function') {
-  prefersDarkScheme.addEventListener('change', (event) => {
-    if (getStoredTheme() !== null) return;
-
-    const theme = event.matches ? DARK_THEME : LIGHT_THEME;
-    applyTheme(theme);
-    updateToggleInputs(theme);
-  });
 }

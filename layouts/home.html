@@ -1,17 +1,233 @@
-{{- define "bodyClass" -}} {{ .Kind }}-{{ .Type }} {{ .Page.LinkTitle | anchorize -}} {{- end -}}
+{{- define "bodyClass" -}}home-page bg-white text-[#4d4d4d]{{- end -}}
 
 {{ define "header" }}
   {{ partialCached "blocks/header" . .Section .RelPermalink }}
 {{ end }}
 
 {{ define "main" }}
-
-  <section class="my-10 md:my-24" aria-label="Section - Above the fold">
-    <div class="container">
-      <h1 class="h1 | mb-8">{{ .Title | plainify }}</h1>
+  <section class="relative isolate flex min-h-svh items-end justify-center overflow-hidden bg-[#4d4d4d] pb-[13vh] text-white" id="top" aria-labelledby="hero-title">
+    <video class="absolute inset-0 -z-20 size-full object-cover object-center" autoplay muted loop playsinline preload="metadata" poster="https://www.eubiotic.ro/wp-content/uploads/video-cover.jpg" aria-hidden="true">
+      <source src="/video/eubiotic-travel-20s-digital.mp4" type="video/mp4" />
+    </video>
+    <span class="absolute inset-0 -z-10 bg-[#4d4d4d]/35" aria-hidden="true"></span>
+    <div class="flex flex-col items-center text-center">
+      <h1 class="text-lg font-semibold drop-shadow-sm sm:text-xl" id="hero-title">Ține viața în echilibru</h1>
+      <a class="mt-5 inline-flex items-center justify-center rounded-full bg-primary-500 px-7 py-4 text-base font-bold uppercase text-white shadow-lg transition hover:-translate-y-1 hover:bg-primary-700 sm:text-base" href="#beneficii">Află cum te ajută Eubiotic</a>
     </div>
   </section>
 
+  <section class="bg-primary-500 text-white" id="beneficii" aria-label="Beneficiile Eubiotic">
+    <div class="container grid gap-16 py-24 text-center md:grid-cols-2 md:gap-x-10 lg:grid-cols-4 lg:gap-8 lg:py-28">
+      <article class="flex flex-col items-center">
+        <svg class="mb-5 size-14" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M20 6h24M26 6v16L14 44a9 9 0 0 0 8 14h20a9 9 0 0 0 8-14L38 22V6M21 40h22M25 48h14" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+        </svg>
+        <h2 class="text-xl font-bold">Tulpini recomandate</h2>
+        <p class="mt-4 max-w-[270px] text-base leading-6">Conține tulpini bacteriene benefice organismului recomandate de Organizația Mondială de Gastro-Enterologie</p>
+      </article>
+      <article class="flex flex-col items-center">
+        <svg class="mb-5 size-14" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M32 6a20 20 0 0 0-20 20c0 18 12 29 20 32 8-3 20-14 20-32A20 20 0 0 0 32 6Zm-9 21 6 6 12-13M20 44c5 3 19 3 24 0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+        </svg>
+        <h2 class="text-xl font-bold">Garanția viabilității</h2>
+        <p class="mt-4 max-w-[270px] text-base leading-6">Viabilitatea bacteriilor este garantată prin teste specifice</p>
+      </article>
+      <article class="flex flex-col items-center">
+        <svg class="mb-5 size-14" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <circle cx="32" cy="32" r="10" fill="none" stroke="currentColor" stroke-width="2" /><circle cx="13" cy="25" r="5" fill="none" stroke="currentColor" stroke-width="2" /><circle cx="48" cy="15" r="6" fill="none" stroke="currentColor" stroke-width="2" /><circle cx="51" cy="43" r="5" fill="none" stroke="currentColor" stroke-width="2" /><circle cx="20" cy="50" r="4" fill="none" stroke="currentColor" stroke-width="2" /><path d="m22 28-4-1m22-6 4-3m-4 21 6 2m-20 0-4 6" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="2" />
+        </svg>
+        <h2 class="text-xl font-bold">Bacterii benefice</h2>
+        <p class="mt-4 max-w-[270px] text-base leading-6">Fiecare produs Eubiotic conține o combinație de microorganisme benefice ce sunt susținute de studii clinice publicate</p>
+      </article>
+      <article class="flex flex-col items-center">
+        <svg class="mb-5 size-14" viewBox="0 0 64 64" aria-hidden="true" focusable="false">
+          <path d="M9 53c1-9 7-14 15-14s14 5 15 14M17 25a7 7 0 1 0 14 0 7 7 0 0 0-14 0Zm22 4a6 6 0 1 0 12 0 6 6 0 0 0-12 0Zm0 12c8-2 15 3 16 12" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" />
+        </svg>
+        <h2 class="text-xl font-bold">Microfloră sănătoasă</h2>
+        <p class="mt-4 max-w-[270px] text-base leading-6">Reechilibrează microflora intestinală în situațiile în care este necesară regenerarea acesteia</p>
+      </article>
+    </div>
+  </section>
+
+  <section class="bg-white px-4 py-20 text-center sm:px-8 lg:py-28" aria-labelledby="products-title">
+    <div class="container">
+      <h2 class="text-3xl font-bold uppercase text-primary-500 lg:text-4xl" id="products-title">Gama Eubiotic</h2>
+      <p class="mx-auto mt-3 max-w-2xl text-base font-semibold lg:text-base">Gamă complexă adaptată fiecărei vârste, din prima zi de viață</p>
+
+      <div class="swiper-container container relative mt-14 px-8 sm:px-14">
+        <button class="product-prev | absolute left-0 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center text-secondary-500 hover:text-primary-500" type="button" aria-label="Produsul anterior">
+          <svg class="size-8" aria-hidden="true" focusable="false"><use href="#chevron-left-icon"></use></svg>
+        </button>
+        <div class="swiper js-swiper" data-swiper-prev=".product-prev" data-swiper-next=".product-next">
+          <div class="swiper-wrapper items-center">
+            {{ range slice
+              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/box-Eubiotic-imunoflu_dr-800px.png" "alt" "Eubiotic ImunoFlu")
+              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-baby-stick-20-dr-small.png" "alt" "Eubiotic Baby la plicuri")
+              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-baby-picaturi-dr-small-1.png" "alt" "Eubiotic Baby picături")
+              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-capsule-dr.png" "alt" "Eubiotic capsule")
+              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/Eubiotic-Forte-800px.png" "alt" "Eubiotic Forte")
+              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-baby-stick-10-dr-small.png" "alt" "Eubiotic Baby 10 plicuri")
+            }}
+              <div class="swiper-slide flex min-h-[290px] items-center justify-center">
+                <img class="mx-auto object-contain " src="{{ .src }}" alt="{{ .alt }}" loading="lazy" draggable="false" />
+              </div>
+            {{ end }}
+          </div>
+        </div>
+        <button class="product-next | absolute right-0 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center text-secondary-500 hover:text-primary-500" type="button" aria-label="Produsul următor">
+          <svg class="size-8" aria-hidden="true" focusable="false"><use href="#chevron-right-icon"></use></svg>
+        </button>
+      </div>
+
+      <a class="mt-12 inline-flex rounded-full bg-primary-500 px-8 py-4 text-base font-bold uppercase text-white shadow-sm transition hover:-translate-y-1 hover:bg-primary-700" href="/gama-eubiotic/">Vezi întreaga gamă Eubiotic</a>
+    </div>
+  </section>
+
+  <section class="relative isolate flex min-h-svh overflow-hidden bg-[#061728] bg-cover bg-center text-white" style="background-image:url('https://www.eubiotic.ro/wp-content/uploads/hero-video-bkg.jpg')" aria-labelledby="immunity-title">
+    <span class="absolute inset-0 -z-10 bg-[#061728]/15" aria-hidden="true"></span>
+    <div class="container flex w-full items-stretch">
+      <div class="flex w-full flex-col justify-center bg-primary-500/72 px-7 py-20 text-left backdrop-saturate-150 sm:px-12 lg:w-[600px] lg:px-14 lg:py-24">
+        <h2 class="text-4xl font-extrabold uppercase leading-[1.08] sm:text-5xl" id="immunity-title">Beneficii multiple pentru tine și imunitatea ta!</h2>
+        <p class="mt-5 text-base font-semibold sm:text-base">Află mai multe despre cum te ajută Eubiotic ImunoFlu</p>
+        <a class="w-full group relative mt-12 block overflow-hidden rounded-sm shadow-2xl" href="/gama-eubiotic/eubiotic-imunoflu/" aria-label="Descoperă Eubiotic ImunoFlu">
+          <img class="aspect-video w-full object-cover" src="https://www.eubiotic.ro/wp-content/uploads/eubiotic-imunoflu-video.jpg" srcset="https://www.eubiotic.ro/wp-content/uploads/eubiotic-imunoflu-video-768x428.jpg 768w, https://www.eubiotic.ro/wp-content/uploads/eubiotic-imunoflu-video-1024x571.jpg 1024w, https://www.eubiotic.ro/wp-content/uploads/eubiotic-imunoflu-video-1536x856.jpg 1536w" sizes="(max-width: 767px) calc(100vw - 56px), 320px" alt="Eubiotic ImunoFlu" loading="lazy" draggable="false" />
+          <span class="absolute inset-0 grid place-items-center bg-black/5 transition group-hover:bg-black/15">
+            <span class="grid size-14 place-items-center rounded-full bg-white/90 text-primary-500 shadow-lg">
+              <svg class="ml-1 size-6" aria-hidden="true" focusable="false"><use href="#player-play-icon"></use></svg>
+            </span>
+          </span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <section class="bg-primary-50 px-4 py-20 sm:px-8 lg:py-24" aria-labelledby="blog-title">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold uppercase text-primary-500 lg:text-4xl" id="blog-title">Blog Eubiotic®</h2>
+        <p class="mx-auto mt-3 max-w-3xl text-base font-semibold lg:text-base">Cele mai noi articole de pe blogul Eubiotic®, tips&amp;tricks pentru vacanțe reușite și multe altele</p>
+      </div>
+
+      <div class="container mt-12 grid gap-7 md:grid-cols-3">
+        <article class="group flex overflow-hidden rounded-sm bg-white shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl">
+          <a class="flex w-full flex-col" href="/eubiotic-baby-cum-sa-sustii-dezvoltarea-sanatoasa-a-copilului/">
+            <div class="relative">
+              <img class="aspect-[16/9] w-full object-cover" src="https://www.eubiotic.ro/wp-content/uploads/2-768x432.png" srcset="https://www.eubiotic.ro/wp-content/uploads/2-300x169.png 300w, https://www.eubiotic.ro/wp-content/uploads/2-768x432.png 768w, https://www.eubiotic.ro/wp-content/uploads/2-1024x576.png 1024w" sizes="(max-width: 767px) calc(100vw - 32px), 284px" alt="Mamă și copil" loading="lazy" draggable="false" />
+              <span class="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/45 to-transparent opacity-100 transition-opacity duration-300 ease-in-out group-hover:opacity-0" aria-hidden="true"></span>
+              <span class="absolute right-3 top-3 z-10 rounded-full bg-primary-500 px-3 py-1 text-[10px] font-bold uppercase text-white">Bebeluși</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <time class="text-[10px] uppercase text-secondary-500" datetime="2025-01-31">31 ianuarie 2025</time>
+              <h3 class="mt-3 text-xl font-bold leading-tight transition-colors duration-300 ease-in-out group-hover:text-primary-500">Eubiotic Baby: Cum să susții dezvoltarea sănătoasă a copilului</h3>
+              <p class="mt-4 pb-4 line-clamp-4 text-base leading-6 text-secondary-600">Dezvoltarea sănătoasă a unui bebeluș depinde de o multitudine de factori, printre care se numără o nutriție adecvată și susținerea microbiomului intestinal.</p>
+              <span class="mt-auto inline-flex items-center gap-3 text-base font-semibold transition-colors duration-300 ease-in-out group-hover:text-primary-500">Citește mai departe <span class="grid size-8 place-items-center rounded-full bg-[#4d4d4d] text-white transition-colors duration-300 ease-in-out group-hover:bg-primary-500"><svg class="size-4" aria-hidden="true" focusable="false"><use href="#chevron-right-icon"></use></svg></span></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="group flex overflow-hidden rounded-sm bg-white shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl">
+          <a class="flex w-full flex-col" href="/despre-enteroviroza-la-copii-simptomatologie-si-combaterea-enterovirozelor/">
+            <div class="relative">
+              <img class="aspect-[16/9] w-full object-cover object-[center_38%]" src="https://www.eubiotic.ro/wp-content/uploads/despre-enteroviroza-la-copii-768x768.png" srcset="https://www.eubiotic.ro/wp-content/uploads/despre-enteroviroza-la-copii-300x300.png 300w, https://www.eubiotic.ro/wp-content/uploads/despre-enteroviroza-la-copii-768x768.png 768w, https://www.eubiotic.ro/wp-content/uploads/despre-enteroviroza-la-copii-1024x1024.png 1024w" sizes="(max-width: 767px) calc(100vw - 32px), 284px" alt="Copil cu disconfort abdominal" loading="lazy" draggable="false" />
+              <span class="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/45 to-transparent opacity-100 transition-opacity duration-300 ease-in-out group-hover:opacity-0" aria-hidden="true"></span>
+              <span class="absolute right-3 top-3 z-10 rounded-full bg-primary-500 px-3 py-1 text-[10px] font-bold uppercase text-white">Blog</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <time class="text-[10px] uppercase text-secondary-500" datetime="2024-12-03">3 decembrie 2024</time>
+              <h3 class="mt-3 text-xl font-bold leading-tight transition-colors duration-300 ease-in-out group-hover:text-primary-500">Ce trebuie să știi despre enteroviroza la copii: simptomatologie și combatere</h3>
+              <p class="mt-4 pb-4 line-clamp-4 text-base leading-6 text-secondary-600">Enterovirozele reprezintă un grup de infecții virale care afectează în principal tractul gastrointestinal și sunt frecvente la copii.</p>
+              <span class="mt-auto inline-flex items-center gap-3 text-base font-semibold transition-colors duration-300 ease-in-out group-hover:text-primary-500">Citește mai departe <span class="grid size-8 place-items-center rounded-full bg-[#4d4d4d] text-white transition-colors duration-300 ease-in-out group-hover:bg-primary-500"><svg class="size-4" aria-hidden="true" focusable="false"><use href="#chevron-right-icon"></use></svg></span></span>
+            </div>
+          </a>
+        </article>
+
+        <article class="group flex overflow-hidden rounded-sm bg-white shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl">
+          <a class="flex w-full flex-col" href="/ce-este-disbioza-cauze-factori-de-risc-diagnostic-si-prevenire/">
+            <div class="relative">
+              <img class="aspect-[16/9] w-full object-cover object-center" src="https://www.eubiotic.ro/wp-content/uploads/disbioza-768x768.png" srcset="https://www.eubiotic.ro/wp-content/uploads/disbioza-300x300.png 300w, https://www.eubiotic.ro/wp-content/uploads/disbioza-768x768.png 768w, https://www.eubiotic.ro/wp-content/uploads/disbioza-1024x1024.png 1024w" sizes="(max-width: 767px) calc(100vw - 32px), 284px" alt="Ilustrație a microbiomului intestinal" loading="lazy" draggable="false" />
+              <span class="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/45 to-transparent opacity-100 transition-opacity duration-300 ease-in-out group-hover:opacity-0" aria-hidden="true"></span>
+              <span class="absolute right-3 top-3 z-10 rounded-full bg-primary-500 px-3 py-1 text-[10px] font-bold uppercase text-white">Blog</span>
+            </div>
+            <div class="flex flex-1 flex-col p-6">
+              <time class="text-[10px] uppercase text-secondary-500" datetime="2024-12-03">3 decembrie 2024</time>
+              <h3 class="mt-3 text-xl font-bold leading-tight transition-colors duration-300 ease-in-out group-hover:text-primary-500">Ce este disbioza? Cauze, factori de risc, diagnostic și prevenire</h3>
+              <p class="mt-4 pb-4 line-clamp-4 text-base leading-6 text-secondary-600">Disbioza reprezintă dezechilibrul microorganismelor care trăiesc în și pe corpul nostru, în special în tractul gastrointestinal.</p>
+              <span class="mt-auto inline-flex items-center gap-3 text-base font-semibold transition-colors duration-300 ease-in-out group-hover:text-primary-500">Citește mai departe <span class="grid size-8 place-items-center rounded-full bg-[#4d4d4d] text-white transition-colors duration-300 ease-in-out group-hover:bg-primary-500"><svg class="size-4" aria-hidden="true" focusable="false"><use href="#chevron-right-icon"></use></svg></span></span>
+            </div>
+          </a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <section class="relative isolate bg-cover bg-center text-white" style="background-image:url('https://www.eubiotic.ro/wp-content/uploads/counter-bkg-homepage-eubiotic.jpg')" aria-label="Eubiotic în cifre">
+    <span class="absolute inset-0 -z-10 bg-[#4d4d4d]/55" aria-hidden="true"></span>
+    <div class="container grid gap-14 py-20 text-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 lg:py-24">
+      <div><strong class="block text-6xl leading-none">8</strong><span class="mt-3 block text-base">tipuri de bacterii benefice</span></div>
+      <div><strong class="block text-6xl leading-none">5</strong><span class="mt-3 block text-base">produse în gama Eubiotic</span></div>
+      <div><strong class="block text-6xl leading-none">+5M</strong><span class="mt-3 block text-base">5.496.921 cutii de Eubiotic vândute în ultimii 6 ani*</span></div>
+      <div><strong class="block text-6xl leading-none">19 ani</strong><span class="mt-3 block text-base">de Eubiotic în România</span></div>
+    </div>
+  </section>
+
+  <section class="bg-[#fafafa] py-20 lg:py-28" aria-labelledby="faq-title">
+    <div class="container">
+      <div class="text-center">
+        <h2 class="text-3xl font-bold uppercase text-primary-500 lg:text-4xl" id="faq-title">Întrebări frecvente</h2>
+        <p class="mx-auto mt-3 max-w-3xl text-base font-semibold lg:text-base">Cele mai frecvente întrebări despre ce este și cum se utilizează Eubiotic®</p>
+      </div>
+
+      <div class="mt-14 grid items-center gap-6 lg:grid-cols-2 lg:gap-5">
+        <img class="aspect-[3/2] w-full object-cover" src="https://www.eubiotic.ro/wp-content/uploads/happy-young-family-with-little-children-resting-n-2022-11-02-02-40-27-utc-1024x683.jpg" srcset="https://www.eubiotic.ro/wp-content/uploads/happy-young-family-with-little-children-resting-n-2022-11-02-02-40-27-utc-768x512.jpg 768w, https://www.eubiotic.ro/wp-content/uploads/happy-young-family-with-little-children-resting-n-2022-11-02-02-40-27-utc-1024x683.jpg 1024w, https://www.eubiotic.ro/wp-content/uploads/happy-young-family-with-little-children-resting-n-2022-11-02-02-40-27-utc-1536x1024.jpg 1536w" sizes="(max-width: 991px) 100vw, 50vw" alt="Familie petrecând timp împreună în natură" loading="lazy" draggable="false" />
+
+        <div class="space-y-5">
+          <details class="group bg-white p-5 shadow-sm lg:p-6">
+            <summary class="flex list-none items-center justify-between gap-6 text-base font-bold">
+              <span>Când se ia Eubiotic, înainte sau după antibiotic?</span>
+              <span class="shrink-0 text-secondary-700" aria-hidden="true">
+                <svg class="size-6 group-open:hidden" focusable="false"><use href="#plus-icon"></use></svg>
+                <svg class="hidden size-6 group-open:block" focusable="false"><use href="#minus-icon"></use></svg>
+              </span>
+            </summary>
+            <div class="mt-6 space-y-4 text-base leading-6 text-secondary-600">
+              <p>În cazul în care sunteți sub tratament cu antibiotice, se recomandă administrarea Eubiotic® la <strong>3 ore după antibiotic.</strong></p>
+              <p>Pentru toate produsele din gama Eubiotic® <a class="font-semibold text-primary-500" href="/intrebari-frecvente-despre-eubiotic/cand-se-ia-eubiotic-inainte-sau-dupa-antibiotic/">citește tot răspunsul.</a></p>
+            </div>
+          </details>
+
+          <details class="group bg-white p-5 shadow-sm lg:p-6">
+            <summary class="flex list-none items-center justify-between gap-6 text-base font-bold">
+              <span>Ce este Eubiotic? Pentru ce se utilizează?</span>
+              <span class="shrink-0 text-secondary-700" aria-hidden="true">
+                <svg class="size-6 group-open:hidden" focusable="false"><use href="#plus-icon"></use></svg>
+                <svg class="hidden size-6 group-open:block" focusable="false"><use href="#minus-icon"></use></svg>
+              </span>
+            </summary>
+            <div class="mt-6 space-y-4 text-base leading-6 text-secondary-600">
+              <p>Produsele Eubiotic® sunt suplimente alimentare care suplimentează flora intestinală naturală cu microorganisme vii.</p>
+              <p>Pentru toate produsele din gama Eubiotic® <a class="font-semibold text-primary-500" href="/intrebari-frecvente-despre-eubiotic/ce-este-eubiotic-pentru-ce-se-utilizeaza/">citește tot răspunsul.</a></p>
+            </div>
+          </details>
+
+          <details class="group bg-white p-5 shadow-sm lg:p-6">
+            <summary class="flex list-none items-center justify-between gap-6 text-base font-bold">
+              <span>Cum se administrează Eubiotic?</span>
+              <span class="shrink-0 text-secondary-700" aria-hidden="true">
+                <svg class="size-6 group-open:hidden" focusable="false"><use href="#plus-icon"></use></svg>
+                <svg class="hidden size-6 group-open:block" focusable="false"><use href="#minus-icon"></use></svg>
+              </span>
+            </summary>
+            <div class="mt-6 space-y-4 text-base leading-6 text-secondary-600">
+              <p><strong>EUBIOTIC® Capsule</strong></p>
+              <p>Este recomandat copiilor de peste 6 ani și adulților.</p>
+              <p>Utilizare: 1-2 capsule EUBIOTIC® zilnic, cu o cantitate suficientă de lichid aflat la temperatura camerei, preferabil în timpul mesei.</p>
+              <p>Pentru toate produsele din gama Eubiotic® <a class="font-semibold text-primary-500" href="/intrebari-frecvente-despre-eubiotic/cum-se-administreaza-eubiotic/">citește tot răspunsul.</a></p>
+            </div>
+          </details>
+        </div>
+      </div>
+    </div>
+  </section>
 {{ end }}
 
 {{ define "footer" }}

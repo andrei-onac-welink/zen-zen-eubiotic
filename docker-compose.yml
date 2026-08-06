@@ -27,7 +27,7 @@ services:
           npm install --check-files
         fi
         echo 'Running Hugo server...'
-        hugo server --bind 0.0.0.0 --disableLiveReload --baseURL=https://${PROJECT_NAMESPACE}.localhost/ --appendPort=false -D --gc --logLevel info --templateMetrics --templateMetricsHints
+        hugo server --bind 0.0.0.0 --disableLiveReload --baseURL=https://${PROJECT_NAMESPACE}.localhost/ --appendPort=false -D --logLevel info --templateMetrics --templateMetricsHints
       "
     labels:
       - "traefik.enable=true"

@@ -5,7 +5,7 @@ baseURL = 'https://eubiotic.localhost/'
 title = 'Eubiotic'
 
 # website copyright
-copyright = 'EUBIOTIC® | EUBIOTIC® este marca inregistrata a Labormed – O companie Zentiva | Toate drepturile rezervate'
+copyright = 'EUBIOTIC<sup>®</sup> este marca inregistrata a Labormed – O companie Zentiva | Toate drepturile rezervate'
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = 'en'
