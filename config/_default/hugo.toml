@@ -1,11 +1,11 @@
 # https://gohugo.io/configuration/introduction/#configuration-directory
 
-baseURL = 'https://boilerplate.localhost/'
+baseURL = 'https://eubiotic.localhost/'
 # website title
-title = 'Boilerplate'
+title = 'Eubiotic'
 
 # website copyright
-copyright = 'Copyright: Boilerplate'
+copyright = 'EUBIOTIC® | EUBIOTIC® este marca inregistrata a Labormed – O companie Zentiva | Toate drepturile rezervate'
 
 # determines default content language ["en", "zh-cn", "fr", "pl", ...]
 defaultContentLanguage = 'en'

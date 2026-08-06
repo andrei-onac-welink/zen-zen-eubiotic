@@ -1,7 +1,7 @@
 {
-  "name": "welink-hugo-boilerplate",
+  "name": "eubiotic",
   "version": "1.0.0",
-  "description": "A Hugo boilerplate with Tailwind",
+  "description": "Eubiotic Website",
   "main": "main.js",
   "scripts": {
     "format": "prettier . --write",

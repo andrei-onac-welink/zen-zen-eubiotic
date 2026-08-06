@@ -1,7 +1,5 @@
 # Documentation: https://gohugo.io/configuration/params/
 
-strapiBaseURL = 'http://boilerplate-strapi:1337'
-
 logo = 'static/logo.svg'
-description = 'Boilerplate Description All Website'
+description = 'Descoperă produsele Eubiotic, suplimente create special pentru a susține sănătatea digestivă și imunitară prin bacterii benefice recomandate de specialiști.'
 images = ['images/opengraph.jpg']
