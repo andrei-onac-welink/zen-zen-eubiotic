@@ -1,5 +1,5 @@
 # Documentation: https://gohugo.io/configuration/params/
 
-logo = 'static/logo.svg'
+logo = 'static/logo-eubiotic.svg'
 description = 'Descoperă produsele Eubiotic, suplimente create special pentru a susține sănătatea digestivă și imunitară prin bacterii benefice recomandate de specialiști.'
 images = ['images/opengraph.jpg']
