@@ -26,7 +26,14 @@
       <h1 class="text-2xl font-bold uppercase text-primary-500 lg:text-5xl" id="product-title">{{ .title }}</h1>
       <h2 class="mt-4 text-xl font-bold leading-tight text-primary-500 lg:text-3xl">{{ .productName | safeHTML }}</h2>
       <p class="text-lg font-bold text-primary-500 lg:text-3xl">{{ .heading }}</p>
-      <div class="mt-4 text-base leading-6 text-secondary-800">{{ .introduction | safeHTML }}</div>
+      {{- with .introduction -}}
+        <div class="mt-4 text-base leading-6 text-secondary-800">{{ . | safeHTML }}</div>
+      {{- end -}}
+      {{- with .paragraphs -}}
+        <div class="mt-4 space-y-4 text-base leading-6 text-secondary-800">
+          {{- range . -}}<p>{{ . | safeHTML }}</p>{{- end -}}
+        </div>
+      {{- end -}}
       <a class="btn-primary mt-6 text-base" href="{{ .ctaHref }}">{{ .ctaLabel }}</a>
     </div>
   </div>
