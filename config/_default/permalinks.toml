@@ -11,3 +11,9 @@ pattern = "/gama-eubiotic/:slugorcontentbasename/"
 [permalinks.target]
 kind = "{page}"
 path = "{/product/**}"
+
+[[permalinks]]
+pattern = "/intrebari-frecvente-despre-eubiotic/:slugorcontentbasename/"
+[permalinks.target]
+kind = "{page}"
+path = "{/faq/**}"

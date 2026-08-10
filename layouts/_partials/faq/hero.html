@@ -1,0 +1,36 @@
+{{- $page := .page -}}
+{{- $section := cond $page.IsSection $page $page.Parent -}}
+{{- $backgroundImage := partial "components/image-resource" (dict "page" $section "name" "image") -}}
+
+<section class="relative isolate flex h-112 items-end justify-center overflow-hidden bg-secondary-800 pb-10 text-white lg:h-120 lg:pb-12" id="top" aria-labelledby="faq-hero-title">
+  {{- if $backgroundImage -}}
+    {{ partial "components/image-responsive" (dict
+      "path" $backgroundImage
+      "class" "absolute inset-0 -z-20 size-full object-cover object-center"
+      "loading" "eager"
+      "fetchPriority" "high"
+      "alt" ""
+      "format" "webp"
+      "quality" 84
+      "widths" (slice 640 960 1280 1600 1920)
+      "sizes" "100vw"
+    ) }}
+  {{- end -}}
+  <span class="absolute inset-0 -z-10 bg-(image:--color-gradient-primary-500)" aria-hidden="true"></span>
+
+  <h1 class="text-center text-3xl font-bold uppercase drop-shadow-md lg:text-5xl" id="faq-hero-title">{{ $section.LinkTitle | default $section.Title }}</h1>
+
+  <div class="container absolute inset-x-0 bottom-4 hidden text-base lg:block">
+    <nav aria-label="Breadcrumb">
+      <a class="transition-colors hover:text-primary-100" href="{{ site.Home.RelPermalink }}">Acasă</a>
+      <span aria-hidden="true"> &gt; </span>
+      {{- if $page.IsSection -}}
+        <span aria-current="page">{{ $section.LinkTitle | default $section.Title }}</span>
+      {{- else -}}
+        <a class="transition-colors hover:text-primary-100" href="{{ $section.RelPermalink }}">{{ $section.LinkTitle | default $section.Title }}</a>
+        <span aria-hidden="true"> &gt; </span>
+        <span aria-current="page">{{ $page.LinkTitle | default $page.Title }}</span>
+      {{- end -}}
+    </nav>
+  </div>
+</section>
