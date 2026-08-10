@@ -12,7 +12,11 @@
   {{- if not (strings.HasPrefix $path "/") -}}
     {{- $path = printf "/%s" $path -}}
   {{- end -}}
-  {{- $url = printf "%s%s" site.Params.strapiBaseURL $path -}}
+  {{- with site.Params.strapiBaseURL -}}
+    {{- $url = printf "%s%s" . $path -}}
+  {{- else -}}
+    {{- $url = $path -}}
+  {{- end -}}
 {{- end -}}
 
 {{- return $url -}}

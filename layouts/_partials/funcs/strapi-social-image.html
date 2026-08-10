@@ -4,14 +4,48 @@
 {{- $imageURL := "" -}}
 
 {{- if $path -}}
-  {{- $fullImageURL := partialCached "funcs/strapi-media-url" $path $path -}}
-  {{- $remoteOpts := partialCached "funcs/strapi-remote-opts" $fullImageURL $fullImageURL -}}
-  {{- with try (resources.GetRemote $fullImageURL $remoteOpts) -}}
-    {{- if .Err -}}
-      {{- warnf "Error fetching %s %q: %s" $errorLabel $fullImageURL .Err -}}
-    {{- else -}}
-      {{- with .Value -}}
+  {{- if strings.HasPrefix $path "http" -}}
+    {{- $remoteOpts := partialCached "funcs/strapi-remote-opts" $path $path -}}
+    {{- with try (resources.GetRemote $path $remoteOpts) -}}
+      {{- if .Err -}}
+        {{- warnf "Error fetching %s %q: %s" $errorLabel $path .Err -}}
+      {{- else -}}
+        {{- with .Value -}}
+          {{- if reflect.IsImageResourceProcessable . -}}
+            {{- $imageURL = (.Fill $resizeSpec).Permalink -}}
+          {{- else -}}
+            {{- $imageURL = .Permalink -}}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+  {{- else -}}
+    {{- $localPath := strings.TrimPrefix "/" $path -}}
+    {{- with resources.Get $localPath -}}
+      {{- if reflect.IsImageResourceProcessable . -}}
         {{- $imageURL = (.Fill $resizeSpec).Permalink -}}
+      {{- else -}}
+        {{- $imageURL = .Permalink -}}
+      {{- end -}}
+    {{- else -}}
+      {{- with site.Params.strapiBaseURL -}}
+        {{- $fullImageURL := partialCached "funcs/strapi-media-url" $path $path -}}
+        {{- $remoteOpts := partialCached "funcs/strapi-remote-opts" $fullImageURL $fullImageURL -}}
+        {{- with try (resources.GetRemote $fullImageURL $remoteOpts) -}}
+          {{- if .Err -}}
+            {{- warnf "Error fetching %s %q: %s" $errorLabel $fullImageURL .Err -}}
+          {{- else -}}
+            {{- with .Value -}}
+              {{- if reflect.IsImageResourceProcessable . -}}
+                {{- $imageURL = (.Fill $resizeSpec).Permalink -}}
+              {{- else -}}
+                {{- $imageURL = .Permalink -}}
+              {{- end -}}
+            {{- end -}}
+          {{- end -}}
+        {{- end -}}
+      {{- else -}}
+        {{- warnf "Unable to resolve local %s %q and no Strapi base URL is configured" $errorLabel $path -}}
       {{- end -}}
     {{- end -}}
   {{- end -}}

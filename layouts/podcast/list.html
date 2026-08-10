@@ -1,0 +1,106 @@
+{{- define "bodyClass" -}} {{ .Kind }}-{{ .Type }} list--podcast--{{ .Page.LinkTitle | anchorize -}} {{- end -}}
+
+{{ define "header" }}
+  {{ partialCached "blocks/header" . .Section .RelPermalink }}
+{{ end }}
+
+{{ define "main" }}
+  {{- $desktopImage := partial "components/image-resource" (dict "page" . "name" "imageDesktop") -}}
+  {{- $mobileImage := partial "components/image-resource" (dict "page" . "name" "imageMobile") -}}
+
+  <section class="bg-white" id="top" aria-label="Podcast Eubiotic">
+    {{- if or $desktopImage $mobileImage -}}
+      <figure class="mx-auto max-w-4xl">
+        {{- $sources := slice -}}
+        {{- with $desktopImage -}}
+          {{- $sources = $sources | append (dict
+            "path" (strings.TrimPrefix "/" .)
+            "media" "(min-width: 577px)"
+            "widths" (slice 640 960 1200)
+            "sizes" "(min-width: 1200px) 1200px, 100vw"
+          ) -}}
+        {{- end -}}
+        {{- with $mobileImage -}}
+          {{- $sources = $sources | append (dict
+            "path" (strings.TrimPrefix "/" .)
+            "media" "(max-width: 576px)"
+            "widths" (slice 320 480 640)
+            "sizes" "100vw"
+          ) -}}
+        {{- end -}}
+
+        {{ partial "components/picture-responsive" (dict
+          "sources" $sources
+          "pictureClass" "block"
+          "imgClass" "block h-auto w-full"
+          "loading" "eager"
+          "fetchPriority" "high"
+          "alt" "Podcast De vorbă cu Bioticel"
+          "formats" (slice "webp")
+          "quality" 86
+          "widths" (slice 640 960 1200)
+          "sizes" "(min-width: 1200px) 1200px, 100vw"
+        ) }}
+      </figure>
+    {{- end -}}
+
+    {{- with .Content -}}
+      <div class="container pb-10 lg:pb-12">
+        <div class="space-y-5 text-base leading-7 text-secondary-700 [&_p]:m-0">{{ . }}</div>
+      </div>
+    {{- end -}}
+  </section>
+
+  <section class="bg-white pb-16 lg:pb-24" aria-label="Episoade podcast">
+    <div class="container">
+      {{- with .RegularPages -}}
+        <div class="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+          {{- range .ByWeight -}}
+            {{- $episodeImage := partial "components/image-resource" (dict "page" . "name" "image") -}}
+            {{- $headingID := printf "podcast-%s" (.Title | anchorize) -}}
+            {{- $episodeNumber := .Params.episode | default .Weight -}}
+
+            <article class="group flex overflow-hidden rounded-sm bg-white shadow-md transition-shadow duration-300 hover:shadow-xl" aria-labelledby="{{ $headingID }}">
+              <div class="flex w-full flex-col">
+                <a class="block overflow-hidden bg-secondary-100" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+                  {{- if $episodeImage -}}
+                    {{ partial "components/image-responsive" (dict
+                      "path" $episodeImage
+                      "class" "aspect-[16/9] w-full object-cover transition-transform duration-300 group-hover:scale-[1.025]"
+                      "loading" "lazy"
+                      "fetchPriority" "auto"
+                      "alt" .Title
+                      "format" "webp"
+                      "quality" 82
+                      "widths" (slice 320 480 640 800)
+                      "sizes" "(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) 50vw, 33vw"
+                    ) }}
+                  {{- end -}}
+                </a>
+
+                <div class="flex flex-1 flex-col p-6">
+                  {{- if $episodeNumber -}}
+                    <span class="text-base font-bold text-primary-500">Episodul {{ $episodeNumber }}</span>
+                  {{- end -}}
+                  <h2 class="mt-2 text-xl font-bold leading-tight text-secondary-700 transition-colors group-hover:text-primary-500" id="{{ $headingID }}">
+                    <a class="block" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                  </h2>
+                  <p class="mt-4 line-clamp-5 text-base leading-6 text-secondary-600">{{ .Summary | plainify }}</p>
+                  <div class="mt-auto pt-5">
+                    <a class="btn-primary | px-4 py-2 text-base" href="{{ .RelPermalink }}">Ascultă aici</a>
+                  </div>
+                </div>
+              </div>
+            </article>
+          {{- end -}}
+        </div>
+      {{- else -}}
+        <p class="text-center text-base text-secondary-600">Episoadele vor fi disponibile în curând.</p>
+      {{- end -}}
+    </div>
+  </section>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partialCached "blocks/footer" . .Section .RelPermalink }}
+{{ end }}
