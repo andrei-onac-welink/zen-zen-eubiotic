@@ -23,6 +23,7 @@ resources:
   - name: beach
     src: '/images/products/extras/two-year-old-toddler-playing-on-beach-.webp'
     title: 'Copil jucându-se pe plajă'
+    
 blocksFolder: 'products'
 blocks:
   - component: 'hero'
@@ -35,6 +36,7 @@ blocks:
       - 'Eubiotic Baby<sup>®</sup> este recomandat în situațiile în care este necesară regenerarea florei intestinale, în cazul tulburărilor de tranzit intestinal și/sau al folosirii de antibiotice.'
     ctaLabel: 'Citește prospectul'
     ctaHref: '/gama-eubiotic/eubiotic-baby-20/prospect-eubiotic-baby-20/'
+    
   - component: 'strains'
     items:
       - image: 'bb12'
@@ -49,6 +51,7 @@ blocks:
         alt: 'Logo Lactobacillus paracasei L. CASEI 431'
         introduction: 'Află ce beneficii aduce <strong>Lactobacillus paracasei, L. CASEI 431<sup>®</sup></strong>, pentru copilul tău chiar de la producător'
         href: 'https://www.chr-hansen.com/'
+        
   - component: 'details'
     ariaLabel: 'Beneficiile tulpinilor Eubiotic Baby'
     paragraphs:
@@ -60,6 +63,7 @@ blocks:
       - 'Reduce durata episoadelor diareice<sup>1</sup>'
       - 'Scade frecvența colicilor/iritabilității de cauză digestivă<sup>2</sup>'
       - 'Reduce riscul apariției diareei cu rotavirus<sup>3</sup>'
+      
   - component: 'usage'
     image: 'beach'
     title: 'Cui se adresează Eubiotic Baby Stick?'
@@ -75,6 +79,7 @@ blocks:
       - title: 'Utilizare'
         items:
           - '1 stick pe zi'
+          
   - component: 'references'
     title: 'Referințe:'
     items:

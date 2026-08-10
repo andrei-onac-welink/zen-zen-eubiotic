@@ -14,6 +14,7 @@ resources:
   - name: family
     src: '/images/products/extras/happy-family-in-garden-looking-at-plants-on-sunny-2022-09-27-00-46-36-utc-scaled.webp'
     title: 'Familie în grădină'
+    
 blocksFolder: 'products'
 blocks:
   - component: 'hero'
@@ -30,6 +31,7 @@ blocks:
       - '<em>*UFC – unități formatoare de colonii</em>'
     ctaLabel: 'Citește prospectul'
     ctaHref: '/gama-eubiotic/eubiotic-forte/prospect-eubiotic-forte/'
+    
   - component: 'details'
     ariaLabel: 'Microflora intestinală și microbiota'
     paragraphs:
@@ -50,6 +52,7 @@ blocks:
           - 'Balonarea'
           - 'Constipația'
           - 'Infecțiile fungice'
+          
   - component: 'ingredients'
     title: 'Ingrediente EUBIOTIC<sup>®</sup> Forte'
     subtitle: 'Ingrediente/capsulă vegetală'
@@ -58,6 +61,7 @@ blocks:
       - '<strong>Asocierea celor două microorganisme – Saccharomyces cerevisiae var. boulardii și Lactobacillus rhamnosus GG</strong> a fost studiată pentru rolul asupra tranzitului intestinal și echilibrarea acestuia.'
       - '<strong>Saccharomyces cerevisiae var. boulardii</strong> este un microorganism viu (o tulpină de drojdie) care colonizează rapid intestinul și supraviețuiește acidității gastrice. Saccharomyces cerevisiae var. boulardii este studiată pentru rolul asupra stimulării producției de acizi grași cu catenă scurtă, în special a butiratului. Butiratul, un compus care se regăsește în mod normal în flora intestinală sănătoasă, are rolul de a regla multe funcții intestinale – de la stimularea creșterii și diferențierii celulelor mucoasei intestinale, la efecte imunomodulatoare și până la absorbția fluidelor.'
       - '<strong>Lactobacillus rhamnosus GG</strong> este o tulpină prezentă în mod natural în flora intestinală. Lactobacillus rhamnosus este și una dintre cele mai documentate bacterii benefice, peste 1000 de publicații științifice și 300 de studii clinice demonstrându-i beneficiile. Este un microorganism bine studiat pentru rolul asupra sistemului digestiv la prematuri, nou-născuți, copii, femei însărcinate, adulți și vârstnici.<br>Lactobacillus rhamnosus GG are o toleranță ridicată la aciditatea gastrică și la sucurile biliare, putând supraviețui trecerii prin tractul gastrointestinal.'
+      
   - component: 'usage'
     image: 'family'
     overlayVariant: 'primary'

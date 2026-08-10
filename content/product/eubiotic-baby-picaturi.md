@@ -20,6 +20,7 @@ resources:
   - name: baby
     src: '/images/products/extras/baby-white-bg.avif'
     title: 'Bebeluș'
+    
 blocksFolder: 'products'
 blocks:
   - component: 'hero'
@@ -32,6 +33,7 @@ blocks:
       - 'Eubiotic Baby<sup>®</sup> picături este recomandat în situațiile în care este necesară regenerarea florei intestinale, cum ar fi cazurile de diaree produsă de consumul de antibiotice și agenți patogeni: virusuri, bacterii, paraziți.'
     ctaLabel: 'Citește prospectul'
     ctaHref: '/gama-eubiotic/eubiotic-baby-picaturi/prospect-eubiotic-baby-picaturi/'
+    
   - component: 'strains'
     items:
       - image: 'bb12'
@@ -42,6 +44,7 @@ blocks:
         alt: 'Logo Lactobacillus rhamnosus LGG'
         introduction: 'Află ce beneficii aduce <strong>Lactobacillus rhamnosus, LGG<sup>®</sup></strong>, pentru copilul tău chiar de la producător'
         href: 'https://www.chr-hansen.com/'
+        
   - component: 'details'
     ariaLabel: 'Beneficiile tulpinilor Eubiotic Baby Picături'
     sections:
@@ -74,6 +77,7 @@ blocks:
               - 'Creșterea răspunsului imun la copiii născuți prin cezariană'
               - 'Reducerea riscului de infecții respiratorii'
               - 'Reducerea riscului alergiilor'
+              
   - component: 'usage'
     image: 'baby'
     overlayVariant: 'primary'
@@ -94,6 +98,7 @@ blocks:
           - 'Produsul nu trebuie dizolvat în lichide fierbinți pentru a nu afecta culturile lactice vii. Eubiotic Baby picături nu schimbă gustul alimentelor sau băuturilor cu care sunt amestecate.'
           - 'În cazul în care produsul se administrează pentru compensarea efectelor adverse ale antibioticelor, se recomandă administrarea Eubiotic Baby picături la un interval de 3 ore după administrarea acestora și încă o săptămână după terminarea tratamentului cu antibiotic.'
           - 'A se agita bine înainte de utilizare. Produsul nu se refrigerează.'
+          
   - component: 'references'
     title: 'Referințe:'
     items:

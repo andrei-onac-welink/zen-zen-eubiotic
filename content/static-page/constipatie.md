@@ -17,6 +17,7 @@ resources:
   - name: studies
     src: '/images/about/laboratory-worker-studying-blood-samples.jpg'
     title: 'Cercetător care studiază probe de sânge'
+    
 blocksFolder: 'static-pages'
 blocks:
   - component: 'hero'
@@ -26,6 +27,7 @@ blocks:
       - label: 'Despre'
         href: '/despre/eubiotic/'
       - label: 'Constipație'
+        
   - component: 'content-row'
     ariaLabel: 'Ce este constipația'
     title: 'Constipația este în general descrisă ca având mai puțin de trei scaune pe săptămână.'
@@ -39,6 +41,7 @@ blocks:
       - name: 'introduction'
         alt: 'Femeie care resimte disconfort abdominal'
         class: 'mx-auto aspect-[4/3] w-full object-cover object-center'
+        
   - component: 'usage'
     folder: 'products'
     image: 'causes'
@@ -52,6 +55,7 @@ blocks:
           - 'Afectarea mușchilor pelvieni, implicații în tranzitul intestinal'
           - 'Afecțiuni hormonale (diabet, hipotiroidism, hiperparatiroidism)'
     footnote: '1. Adaptat după: <a class="font-semibold underline" href="https://www.mayoclinic.org/diseases-conditions/constipation/symptoms-causes/syc-20354253" target="_blank" rel="noopener noreferrer">Constipation – Symptoms and causes – Mayo Clinic</a>'
+    
   - component: 'content-row'
     ariaLabel: 'Studii despre modificarea tranzitului intestinal'
     title: '<em class="underline decoration-2 underline-offset-8">Studii</em>'

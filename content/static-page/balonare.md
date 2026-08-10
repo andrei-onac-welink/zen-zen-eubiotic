@@ -17,6 +17,7 @@ resources:
   - name: studies
     src: '/images/about/senior-scientist-in-chemical.png'
     title: 'Cercetător care lucrează într-un laborator'
+    
 blocksFolder: 'static-pages'
 blocks:
   - component: 'hero'
@@ -27,6 +28,7 @@ blocks:
       - label: 'Despre'
         href: '/despre/eubiotic/'
       - label: 'Balonare'
+        
   - component: 'content-row'
     ariaLabel: 'Ce este balonarea'
     title: 'Balonarea este un simptom comun al organismului uman<sup>1</sup>.'
@@ -37,6 +39,7 @@ blocks:
       - name: 'introduction'
         alt: 'Femeie care ține două cartonașe ce simbolizează disconfortul abdominal'
         class: 'mx-auto aspect-[4/3] w-full object-cover object-center'
+        
   - component: 'usage'
     folder: 'products'
     image: 'causes'
@@ -44,6 +47,7 @@ blocks:
     title: 'Cauze'
     paragraphs:
       - 'Principalii factori favorizanți sunt mesele îmbelșugate, consumul de dulciuri, stresul sau anumite tulburări de natură hormonală. Mai mult, datele statistice susțin că la femei această senzație neplăcută de balonare este de două ori mai frecventă decât la bărbați. De asemenea, antibioticele determină balonarea excesivă a abdomenului. Ele distrug bacteriile prezente în mod normal în tractul digestiv, care ajută la digestia alimentelor.'
+      
   - component: 'content-row'
     ariaLabel: 'Studii despre balonare și refacerea microbiomului'
     title: '<em class="underline decoration-2 underline-offset-8">Studii</em>'

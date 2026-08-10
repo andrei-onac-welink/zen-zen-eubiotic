@@ -20,6 +20,7 @@ resources:
   - name: family
     src: '/images/products/extras/happy-young-family-with-little-children-resting-n-2022-11-02-02-40-27-utc-scaled.jpg'
     title: 'Familie în aer liber'
+    
 blocksFolder: 'products'
 blocks:
   - component: 'hero'
@@ -30,6 +31,7 @@ blocks:
     image: 'image'
     ctaLabel: 'Citește prospectul'
     ctaHref: '/gama-eubiotic/eubiotic-capsule/prospect-eubiotic/'
+    
   - component: 'strains'
     items:
       - image: 'bb12'
@@ -40,6 +42,7 @@ blocks:
         alt: 'Logo Lactobacillus acidophilus LA-5'
         introduction: 'Află ce beneficii aduce <strong>Lactobacillus acidophilus, LA-5<sup>®</sup></strong>, chiar de la producător'
         href: 'https://www.chr-hansen.com/'
+        
   - component: 'details'
     paragraphs:
       - 'EUBIOTIC<sup>®</sup> este o combinație de culturi lactice vii (<strong>Bifidobacterium animalis</strong>, tulpina <strong>BB-12<sup>®</sup></strong>) și <strong>Lactobacillus acidophilus</strong>, tulpina <strong>LA-5<sup>®</sup></strong> într-o cantitate de 4×10<sup>9</sup> UFC (unități formatoare de colonii)/ capsulă.'
@@ -48,6 +51,7 @@ blocks:
       - '<strong>Lactobacillus acidophilus</strong> tulpina <strong>LA-5<sup>®</sup></strong> este o bacterie benefică bine studiată pentru rolul asupra sistemului digestiv.'
       - 'Asocierea acestor două tulpini bacteriene benefice (tulpina <strong>BB-12<sup>®</sup></strong> și tulpina <strong>LA-5<sup>®</sup></strong>) – asociere cu efect sinergic – a fost studiată pentru rolul asupra tranzitului intestinal și echilibrarea acestuia. O altă direcție de cercetare științifică implică rolul asocierii tulpinilor <strong>BB-12<sup>®</sup></strong> și <strong>LA-5<sup>®</sup></strong> atât asupra sistemului imunitar cât și asupra compoziției microbiotei (inclusiv după administrarea de antibiotice).'
       - 'Tulpina bacteriană <strong>BB-12<sup>®</sup></strong> a Bifidobacterium animalis este sigură pentru consumul uman; a primit statutul QPS18 (Prezumție calificată de siguranță). A fost testată în studii clinice umane la niveluri de până la cel puțin 100 miliarde UFC/zi (unități formatoare de colonii), fără probleme de siguranță.'
+      
   - component: 'usage'
     image: 'family'
     title: 'Cui se adresează Eubiotic?'
@@ -60,6 +64,7 @@ blocks:
         paragraphs:
           - '1-2 capsule EUBIOTIC<sup>®</sup> zilnic, cu o cantitate suficientă de lichid aflat la temperatura camerei, preferabil în timpul mesei.'
           - 'În cazul în care sunteți sub tratament cu antibiotice se recomandă administrarea EUBIOTIC<sup>®</sup> la 2-3 ore după acestea. Se recomandă continuarea administrării de EUBIOTIC<sup>®</sup> timp de 7 – 20 zile după întreruperea administrării de antibiotic.'
+          
   - component: 'references'
     title: 'Referințe:'
     items:

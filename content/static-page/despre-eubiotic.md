@@ -19,6 +19,7 @@ resources:
   - name: zentiva
     src: '/images/about/Zentiva-Romania-60-de-ani-de-activitate-neintrerupta.png'
     title: 'Zentiva România – 60 de ani de activitate neîntreruptă'
+    
 blocksFolder: 'static-pages'
 blocks:
   - component: 'hero'
@@ -28,6 +29,7 @@ blocks:
       - label: 'Despre'
         href: '/despre/eubiotic/'
       - label: 'Eubiotic<sup>®</sup>'
+        
   - component: 'content-row'
     ariaLabel: 'Despre brandul Eubiotic'
     compactImages: true
@@ -40,6 +42,7 @@ blocks:
         alt: 'Logo Chr. Hansen'
       - name: 'bioCare'
         alt: 'Logo BioCare Copenhagen'
+        
   - component: 'content-row'
     ariaLabel: 'Labormed și Zentiva'
     background: 'muted'
@@ -50,6 +53,7 @@ blocks:
     images:
       - name: 'labormed'
         alt: 'Labormed, o companie Zentiva'
+        
   - component: 'content-row'
     ariaLabel: 'Zentiva în România'
     mobileImageFirst: true

@@ -17,6 +17,7 @@ resources:
   - name: usage
     src: '/images/products/extras/imunoflu-administrare.avif'
     title: 'Microorganisme benefice'
+    
 blocksFolder: 'products'
 blocks:
   - component: 'hero'
@@ -29,6 +30,7 @@ blocks:
       - '<strong>Tulpinile de bacterii benefice</strong> din compoziția EUBIOTIC<sup>®</sup> ImunoFLU conțin culturi lactice vii ce fac parte din flora intestinală deseori afectată de o dietă și un stil de viață nesănătoase, de utilizarea antibioticelor sau de stres.'
     ctaLabel: 'Citește prospectul'
     ctaHref: '/gama-eubiotic/eubiotic-imunoflu/prospect-eubiotic-imunoflu/'
+    
   - component: 'details'
     ariaLabel: 'Bacterii benefice, vitamine și zinc'
     paragraphs:
@@ -52,6 +54,7 @@ blocks:
         paragraphs:
           - 'Este un mineral esențial, implicat activ în generarea răspunsului imun antiviral înnăscut și dobândit, are rol antioxidant, protejând celulele față de stresul oxidativ și contribuie la procesul diviziunii celulare.'
           - 'Zincul este o componentă vitală a multor enzime din corpul uman și contribuie la funcția cognitivă normală, la menținerea fertilității și reproducerii normale, precum și la sănătatea sistemului osos, a pielii, părului, unghiilor și vederii.'
+          
   - component: 'composition'
     image: 'composition'
     alt: 'Diagramă cu cele două straturi ale comprimatului Eubiotic ImunoFLU'
@@ -62,6 +65,7 @@ blocks:
       - '<strong>Ingredientele din compoziția EUBIOTIC<sup>®</sup> ImunoFLU:</strong> Vitamina D, Vitamina C și Zinc în doze ce asigură cel puțin 100% din aportul zilnic recomandat de EFSA și tulpinile de bacterii benefice intens studiate ajută organismul să se apere eficient împotriva agenților patogeni.'
       - '<strong>EUBIOTIC<sup>®</sup> ImunoFLU folosește tehnologia CRYO-PROTECTION.</strong>'
       - 'Utilizarea acesteia protejează bacteriile benefice de factorii mecanici și termici în timpul procesului de producție și depozitare a produsului. Acest lucru permite o mai bună adaptare și supraviețuire a acestora în lumenul intestinal și dezvoltarea unei activități biologice ridicate.'
+      
   - component: 'usage'
     image: 'usage'
     overlayVariant: 'primary'

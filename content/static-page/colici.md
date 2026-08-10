@@ -14,6 +14,7 @@ resources:
   - name: causes
     src: '/images/about/the-legs-of-the-baby.png'
     title: 'Bebeluș întins pe un fundal deschis'
+    
 blocksFolder: 'static-pages'
 blocks:
   - component: 'hero'
@@ -24,6 +25,7 @@ blocks:
       - label: 'Despre'
         href: '/despre/eubiotic/'
       - label: 'Colici'
+        
   - component: 'content-row'
     ariaLabel: 'Ce sunt colicile'
     title: 'Colicile reprezintă dureri, crampe abdominale care creează o stare de disconfort și agitație bebelușului.'
@@ -34,6 +36,7 @@ blocks:
       - name: 'introduction'
         alt: 'Picioarele unui bebeluș învelit într-o pătură albă'
         class: 'mx-auto aspect-[4/3] w-full object-cover object-center'
+        
   - component: 'usage'
     folder: 'products'
     image: 'causes'

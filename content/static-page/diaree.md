@@ -17,6 +17,7 @@ resources:
   - name: studies
     src: '/images/about/studying-microorganism.jpg'
     title: 'Cercetarea microorganismelor în laborator'
+    
 blocksFolder: 'static-pages'
 blocks:
   - component: 'hero'
@@ -26,6 +27,7 @@ blocks:
       - label: 'Despre'
         href: '/despre/eubiotic/'
       - label: 'Diaree'
+        
   - component: 'content-row'
     ariaLabel: 'Ce este diareea'
     title: 'Diareea reprezintă eliminarea a trei sau mai multe scaune moi, apoase într-o zi și/sau o creștere a frecvenței scaunelor față de modul normal.'
@@ -34,6 +36,7 @@ blocks:
     images:
       - name: 'introduction'
         alt: 'Persoană așezată care ține o rolă de hârtie igienică'
+        
   - component: 'usage'
     folder: 'products'
     image: 'causes'
@@ -61,6 +64,7 @@ blocks:
           - 'Sindromul intestinului iritabil'
           - 'Alte cauze (intervenții chirurgicale abdominale, utilizarea pe termen lung a medicamentelor, cauze endocrine, cancere)'
     footnote: '1. Adaptat după: <a class="font-semibold underline" href="https://www.mayoclinic.org/diseases-conditions/diarrhea/symptoms-causes/syc-20352241" target="_blank" rel="noopener noreferrer">Diarrhea – Symptoms and causes – Mayo Clinic</a>'
+    
   - component: 'content-row'
     ariaLabel: 'Studii despre diareea asociată antibioterapiei'
     title: '<em class="underline decoration-2 underline-offset-8">Studii</em>'
