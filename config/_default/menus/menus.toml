@@ -210,12 +210,12 @@ weight      = 70
 
 [[main]]
 name        = 'Contact'
-url         = ''
+url         = 'https://zentiva.ro/contact'
 pre         = ''
 post        = ''
 title       = 'Contact'
 parent      = ''
-pageRef     = 'contact'
+pageRef     = ''
 identifier  = 'contact'
 weight      = 80
 
@@ -244,12 +244,12 @@ weight      = 20
 
 [[footer]]
 name        = 'Contact'
-url         = ''
+url         = 'https://zentiva.ro/contact'
 pre         = ''
 post        = ''
 title       = 'Contact'
 parent      = ''
-pageRef     = 'contact'
+pageRef     = ''
 identifier  = 'footer-contact'
 weight      = 30
 
@@ -328,7 +328,7 @@ post        = ''
 title       = 'Termeni și condiții'
 parent      = ''
 pageRef     = 'termeni-si-conditii'
-identifier  = 'terms-and-conditions'
+identifier  = 'termeni-si-conditii'
 weight      = 10
 
 [[legal]]
@@ -338,19 +338,19 @@ pre         = ''
 post        = ''
 title       = 'Politică de confidențialitate'
 parent      = ''
-pageRef     = 'privacy-policy'
-identifier  = 'privacy-policy'
+pageRef     = 'politica-de-confidentialitate'
+identifier  = 'politica-de-confidentialitate'
 weight      = 20
 
 [[legal]]
 name        = 'Politica de cookie-uri'
-url         = '/politica-de-cookie-uri/'
+url         = ''
 pre         = ''
 post        = ''
 title       = 'Politica de cookie-uri'
 parent      = ''
-pageRef     = ''
-identifier  = 'cookie-policy'
+pageRef     = 'politica-de-cookie-uri'
+identifier  = 'politica-de-cookie-uri'
 weight      = 30
 
 [[legal]]

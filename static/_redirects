@@ -1,0 +1,8 @@
+# =============================================================================
+# Static page redirects
+# =============================================================================
+/termeni-si-conditii-de-utilizare /termeni-si-conditii 301
+/termeni-si-conditii-de-utilizare/ /termeni-si-conditii 301
+
+/politica-de-cookie-uri /politica-de-cookies 301
+/politica-de-cookie-uri/ /politica-de-cookies 301

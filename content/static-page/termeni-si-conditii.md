@@ -1,11 +1,11 @@
 ---
-title: 'Termeni și condiții de utilizare pentru site-ul'
+title: 'Termeni și condiții de utilizare'
 linkTitle: 'Termeni și condiții de utilizare'
 description: 'Consultă termenii și condițiile de utilizare a site-ului Eubiotic pentru a înțelege drepturile și obligațiile utilizatorilor. Intră pe site pentru toate detaliile.'
 resources:
   - name: hero
     src: '/images/hero-images-eubiotic-cumpara.png'
-    title: 'Termeni și condiții de utilizare'
+    title: ''
 
 blocksFolder: 'static-pages'
 blocks:
@@ -13,6 +13,7 @@ blocks:
     title: 'Termeni și condiții de utilizare'
     image: 'hero'
     decorations: false
+    
   - component: 'legal-content'
     ariaLabel: 'Termeni și condiții de utilizare'
 ---

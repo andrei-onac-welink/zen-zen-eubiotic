@@ -2,7 +2,7 @@
   .markdown-content {
     @apply font-serif *:font-serif text-base *:text-base *:mb-4 max-w-[80ch] *:font-normal;
 
-    @apply *:[h1,h2,h3,h4,h5,h6]:font-bold *:[h1,h2,h3,h4,h5,h6]:font-sans;
+    @apply *:[h1,h2,h3,h4,h5,h6]:font-bold *:[h1,h2,h3,h4,h5,h6]:font-sans *:[h1,h2,h3,h4,h5,h6]:text-pretty;
     @apply *:[h1,h2]:text-3xl lg:*:[h1,h2]:text-5xl;
     @apply *:[h2,h3]:text-primary-500;
     @apply *:[h3]:text-2xl;
