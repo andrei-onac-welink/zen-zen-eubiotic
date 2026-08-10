@@ -12,28 +12,30 @@
     <span class="absolute inset-0 -z-10 bg-[#4d4d4d]/35" aria-hidden="true"></span>
     <div class="flex flex-col items-center text-center">
       <h1 class="text-lg font-semibold drop-shadow-sm sm:text-xl" id="hero-title">Ține viața în echilibru</h1>
-      <a class="mt-5 inline-flex items-center justify-center rounded-full bg-primary-500 px-7 py-4 text-base font-bold uppercase text-white shadow-lg transition hover:-translate-y-1 hover:bg-primary-700 sm:text-base" href="#beneficii">Află cum te ajută Eubiotic</a>
+      <span class="mt-5 inline-flex" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-out-quart">
+        <a class="inline-flex items-center justify-center rounded-full bg-primary-500 px-7 py-4 text-base font-bold uppercase text-white shadow-lg transition hover:-translate-y-1 hover:bg-primary-700 sm:text-base" href="#beneficii">Află cum te ajută Eubiotic</a>
+      </span>
     </div>
   </section>
 
   <section class="bg-primary-500 text-white" id="beneficii" aria-label="Beneficiile Eubiotic">
     <div class="container grid gap-16 py-24 text-center md:grid-cols-2 md:gap-x-10 lg:grid-cols-4 lg:gap-8 lg:py-28">
-      <article class="flex flex-col items-center">
+      <article class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="0" data-aos-duration="1000">
         <svg class="mb-5 size-14" aria-hidden="true" focusable="false"><use href="#medic-icon"></use></svg>
         <h2 class="text-xl font-bold">Tulpini recomandate</h2>
         <p class="mt-4 max-w-[270px] text-base leading-6">Conține tulpini bacteriene benefice organismului recomandate de Organizația Mondială de Gastro-Enterologie</p>
       </article>
-      <article class="flex flex-col items-center">
+      <article class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="100" data-aos-duration="1000">
         <svg class="mb-5 size-14" aria-hidden="true" focusable="false"><use href="#intestines-icon"></use></svg>
         <h2 class="text-xl font-bold">Garanția viabilității</h2>
         <p class="mt-4 max-w-[270px] text-base leading-6">Viabilitatea bacteriilor este garantată prin teste specifice</p>
       </article>
-      <article class="flex flex-col items-center">
+      <article class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="200" data-aos-duration="1000">
         <svg class="mb-5 size-14" aria-hidden="true" focusable="false"><use href="#cell-icon"></use></svg>
         <h2 class="text-xl font-bold">Bacterii benefice</h2>
         <p class="mt-4 max-w-[270px] text-base leading-6">Fiecare produs Eubiotic conține o combinație de microorganisme benefice ce sunt susținute de studii clinice publicate</p>
       </article>
-      <article class="flex flex-col items-center">
+      <article class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="300" data-aos-duration="1000">
         <svg class="mb-5 size-14" aria-hidden="true" focusable="false"><use href="#chemestry-icon"></use></svg>
         <h2 class="text-xl font-bold">Microfloră sănătoasă</h2>
         <p class="mt-4 max-w-[270px] text-base leading-6">Reechilibrează microflora intestinală în situațiile în care este necesară regenerarea acesteia</p>
@@ -47,7 +49,9 @@
       <p class="mx-auto mt-3 max-w-2xl text-base font-semibold lg:text-base">Gamă complexă adaptată fiecărei vârste, din prima zi de viață</p>
       {{ partial "components/product-carousel" (dict "id" "home-products") }}
       {{- with site.GetPage "product" -}}
-        <a class="mt-12 inline-flex rounded-full bg-primary-500 px-8 py-4 text-base font-bold uppercase text-white shadow-sm transition hover:-translate-y-1 hover:bg-primary-700" href="{{ .RelPermalink }}">Vezi întreaga gamă Eubiotic</a>
+        <span class="mt-12 inline-flex" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-out-quart">
+          <a class="inline-flex rounded-full bg-primary-500 px-8 py-4 text-base font-bold uppercase text-white shadow-sm transition hover:-translate-y-1 hover:bg-primary-700" href="{{ .RelPermalink }}">Vezi întreaga gamă Eubiotic</a>
+        </span>
       {{- end -}}
     </div>
   </section>

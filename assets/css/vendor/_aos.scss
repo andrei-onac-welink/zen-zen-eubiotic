@@ -1,0 +1,13 @@
+@use 'sass:meta';
+
+@layer vendor {
+  @include meta.load-css('aos/dist/aos.css');
+
+  @media (prefers-reduced-motion: reduce) {
+    [data-aos][data-aos] {
+      opacity: 1;
+      transform: none;
+      transition: none;
+    }
+  }
+}
