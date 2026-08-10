@@ -34,7 +34,7 @@
   }
 
   li::marker {
-    @apply text-2xl text-primary-500;
+    @apply text-lg text-primary-500;
   }
 
   :where(b, strong) {

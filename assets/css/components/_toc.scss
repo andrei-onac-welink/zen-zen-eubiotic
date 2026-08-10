@@ -1,7 +1,11 @@
 @layer components {
   .toc-container {
     ul {
-      @apply list-none p-0 m-0;
+      @apply list-none;
+
+      & > li > ul {
+        @apply ps-4 mt-4;
+      }
     }
 
     li {
@@ -12,7 +16,7 @@
       @apply text-neutral-800 font-medium block no-underline;
 
       &:hover {
-        @apply text-neutral-500;
+        @apply text-neutral-500 underline;
       }
     }
   }

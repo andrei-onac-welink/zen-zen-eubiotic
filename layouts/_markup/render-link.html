@@ -20,5 +20,5 @@
   {{- end -}}
 {{- end -}}
 
-<a class="link-primary | hover:underline wrap-break-word" href="{{ $href | safeURL }}" draggable="false" {{ with .Title }} title="{{ . }}" {{ end }} {{ if $u.IsAbs }} target="_blank" rel="external nofollow noopener noreferrer" aria-label='{{ .Text }} - ({{ T "aria.link.newTab" }})' {{ end }}>{{ .Text }}</a>
+<a class="link-underline | hover:underline wrap-break-word" href="{{ $href | safeURL }}" draggable="false" {{ with .Title }} title="{{ . }}" {{ end }} {{ if $u.IsAbs }} target="_blank" rel="external nofollow noopener noreferrer" aria-label='{{ .Text }} - ({{ T "aria.link.newTab" }})' {{ end }}>{{ .Text }}</a>
 {{- /**/ -}}

@@ -16,6 +16,6 @@
   }
 
   .link-underline {
-    @apply text-primary-500 underline underline-offset-2 outline-primary-500;
+    @apply text-primary-500 hover:underline underline-offset-2 outline-primary-500;
   }
 }

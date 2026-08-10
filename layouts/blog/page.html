@@ -1,0 +1,60 @@
+{{- define "bodyClass" -}} {{ .Kind }}-{{ .Type }} page--blog--{{ .Page.LinkTitle | anchorize -}} {{- end -}}
+
+{{ define "header" }}
+  {{ partialCached "blocks/header" . .Section .RelPermalink }}
+{{ end }}
+
+{{ define "main" }}
+  {{- $heroImage := partial "components/image-resource" (dict "page" . "name" "image") -}}
+
+  <section class="relative isolate h-80 overflow-hidden bg-secondary-700 sm:h-104 lg:h-152" id="top" aria-label="{{ .Title }}">
+    {{- if $heroImage -}}
+      {{ partial "components/image-responsive" (dict
+        "path" $heroImage
+        "class" "absolute inset-0 -z-20 size-full object-cover object-top"
+        "loading" "eager"
+        "fetchPriority" "high"
+        "alt" ""
+        "widths" (slice 640 960 1280 1600 1920)
+        "sizes" "100vw"
+      ) }}
+    {{- end -}}
+  </section>
+
+  <section class="bg-white py-12 lg:py-16" aria-labelledby="article-title">
+    <div class="container">
+      <nav class="mb-5 text-base text-secondary-500" aria-label="Breadcrumb">
+        <a class="transition-colors hover:text-primary-500" href="/">Acasă</a>
+        <span aria-hidden="true"> &gt; </span>
+        <a class="transition-colors hover:text-primary-500" href="{{ .Parent.RelPermalink }}">{{ .Parent.LinkTitle | default .Parent.Title }}</a>
+        <span aria-hidden="true"> &gt; </span>
+        <span aria-current="page">{{ .Title }}</span>
+      </nav>
+
+      <div class="grid items-start gap-12 lg:grid-cols-[minmax(0,1fr)_20rem] lg:gap-16">
+        <article>
+          <h1 class="max-w-3xl text-3xl font-bold uppercase leading-tight text-primary-500 lg:text-4xl" id="article-title">{{ .Title }}</h1>
+
+          <div class="markdown-content | max-w-full mt-10 border-t border-secondary-200 pt-8">
+            {{ .Content }}
+          </div>
+        </article>
+
+        {{- with .TableOfContents -}}
+          <aside class="lg:sticky lg:top-20" aria-labelledby="article-navigation-title">
+            <div class="bg-primary-50 p-5 shadow-lg">
+              <h2 class="mb-5 text-xl font-bold text-primary-500" id="article-navigation-title">În acest articol</h2>
+              <div class="toc-container text-base **:font-normal leading-5 [&_a]:transition-colors [&_a:hover]:text-primary-500 [&_li]:mb-4">
+                {{ . }}
+              </div>
+            </div>
+          </aside>
+        {{- end -}}
+      </div>
+    </div>
+  </section>
+{{ end }}
+
+{{ define "footer" }}
+  {{ partialCached "blocks/footer" . .Section .RelPermalink }}
+{{ end }}
