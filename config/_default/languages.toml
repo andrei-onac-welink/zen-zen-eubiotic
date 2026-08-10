@@ -1,7 +1,7 @@
 # Documentation: https://gohugo.io/configuration/languages/#language-settings
 
-[en]
+[ro]
 direction = 'ltr'
-label = 'English'
-locale = 'en-US'
+label = 'Română'
+locale = 'ro-RO'
 weight = 1
