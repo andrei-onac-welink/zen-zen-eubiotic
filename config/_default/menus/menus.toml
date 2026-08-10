@@ -222,55 +222,100 @@ weight      = 80
 # Footer Menu
 [[footer]]
 name        = 'Gama Eubiotic'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Gama Eubiotic'
+parent      = ''
 pageRef     = 'product'
 identifier  = 'footer-product'
 weight      = 10
 
 [[footer]]
 name        = 'Cumpără'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Cumpără'
+parent      = ''
 pageRef     = 'cumpara'
 identifier  = 'footer-buy'
 weight      = 20
 
 [[footer]]
 name        = 'Contact'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Contact'
+parent      = ''
 pageRef     = 'contact'
 identifier  = 'footer-contact'
 weight      = 30
 
 [[footer]]
 name        = 'Microbiomul'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Microbiomul'
+parent      = ''
 pageRef     = 'microbiom'
 identifier  = 'footer-microbiome'
 weight      = 40
 
 [[footer]]
 name        = 'Diaree'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Diaree'
+parent      = ''
 pageRef     = 'diaree'
 identifier  = 'footer-diarrhea'
 weight      = 50
 
 [[footer]]
 name        = 'Constipație'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Constipație'
+parent      = ''
 pageRef     = 'constipatie'
 identifier  = 'footer-constipation'
 weight      = 60
 
 [[footer]]
 name        = 'Colici'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Colici'
+parent      = ''
 pageRef     = 'colici'
 identifier  = 'footer-colic'
 weight      = 70
 
 [[footer]]
 name        = 'Balonare'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Balonare'
+parent      = ''
 pageRef     = 'balonare'
 identifier  = 'footer-bloating'
 weight      = 80
 
 [[footer]]
 name        = 'Farmacovigilență'
-url         = '/farmacovigilenta/'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Farmacovigilență'
+parent      = ''
+pageRef     = 'farmacovigilenta'
 identifier  = 'footer-pharmacovigilance'
 weight      = 90
 
@@ -278,11 +323,21 @@ weight      = 90
 [[legal]]
 name        = 'Termeni și condiții'
 url         = '/termeni-si-conditii/'
+pre         = ''
+post        = ''
+title       = 'Termeni și condiții'
+parent      = ''
+pageRef     = ''
 identifier  = 'terms-and-conditions'
 weight      = 10
 
 [[legal]]
 name        = 'Politică de confidențialitate'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Politică de confidențialitate'
+parent      = ''
 pageRef     = 'privacy-policy'
 identifier  = 'privacy-policy'
 weight      = 20
@@ -290,11 +345,21 @@ weight      = 20
 [[legal]]
 name        = 'Politica de cookie-uri'
 url         = '/politica-de-cookie-uri/'
+pre         = ''
+post        = ''
+title       = 'Politica de cookie-uri'
+parent      = ''
+pageRef     = ''
 identifier  = 'cookie-policy'
 weight      = 30
 
 [[legal]]
 name        = 'Schimbați preferințele cookie-urilor'
 url         = '#manage-consent'
+pre         = ''
+post        = ''
+title       = 'Schimbați preferințele cookie-urilor'
+parent      = ''
+pageRef     = ''
 identifier  = 'manage-consent'
 weight      = 40

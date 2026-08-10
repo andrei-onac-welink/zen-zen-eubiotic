@@ -1,13 +1,12 @@
 ---
 title: 'Cumpără'
 linkTitle: 'Cumpără'
-description: 'Află unde poți găsi și cumpăra produsele din gama Eubiotic în farmacii sau printr-o căutare online.'
-draft: false
-url: '/cumpara/'
+description: 'Accesează pagina de pe site-ul eubiotic.ro pentru a afla de unde poți cumpăra produsele Eubiotic. Găsește rapid un punct de vânzare accesând link-ul.'
 resources:
   - name: hero
     src: '/images/hero-images-eubiotic-cumpara.png'
     title: 'Cumpără Eubiotic'
+    
 blocksFolder: 'static-pages'
 blocks:
   - component: 'hero'
@@ -16,6 +15,7 @@ blocks:
     decorations: false
     breadcrumbs:
       - label: 'Cumpără'
+        
   - component: 'buy-content'
     ariaLabel: 'Unde găsești produsele Eubiotic'
     introduction: 'Eubiotic<sup>®</sup> este primul produs cu bacterii benefice lansat în România, în 2004. Misiunea sa de pionier în informarea și educarea pacienților, farmaciștilor și a medicilor despre beneficiile acestui tip de produs a pus bazele categoriei de produse cu microorganisme benefice în piața locală de suplimente alimentare.'

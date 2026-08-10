@@ -1,0 +1,5 @@
+<section class="bg-white py-16 lg:py-20" aria-label="{{ .ariaLabel | default .page.Title }}">
+  <div class="container space-y-5 text-base leading-7 text-secondary-700 [&_a]:text-primary-500 [&_a:hover]:underline">
+    {{ .body | markdownify }}
+  </div>
+</section>
