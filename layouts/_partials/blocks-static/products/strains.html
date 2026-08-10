@@ -1,5 +1,5 @@
 <section class="bg-secondary-100 py-14 lg:py-20" aria-label="Tulpinile Eubiotic">
-  <div class="container grid gap-6 lg:grid-cols-2 max-w-lg">
+  <div class="container grid gap-6 {{ if eq (len .items) 3 }}lg:grid-cols-2 xl:grid-cols-3{{ else }}max-w-lg lg:grid-cols-2{{ end }}">
     {{- range .items -}}
       {{- $imagePath := partial "components/image-resource" (dict "page" $.page "name" .image) -}}
       <article class="grid gap-4 sm:grid-cols-2">
@@ -18,9 +18,9 @@
             ) }}
           {{- end -}}
         </div>
-        <div class="flex min-h-48 flex-col items-center justify-center rounded-md bg-[#00549f] p-6 text-center text-white shadow-md">
+        <div class="flex min-h-48 flex-col items-center justify-center rounded-md bg-accent-500 p-4 text-center text-white shadow-md">
           <p class="text-base font-semibold leading-6">{{ .introduction | safeHTML }}</p>
-          <a class="mt-5 inline-flex rounded-full bg-white px-7 py-3 text-base font-bold text-[#00549f] transition hover:bg-primary-50" href="{{ .href }}" target="_blank" rel="noopener noreferrer">Află mai multe</a>
+          <a class="mt-5 inline-flex rounded-full bg-white px-5 py-3 text-base font-bold text-accent-500 transition hover:bg-primary-50" href="{{ .href }}" target="_blank" rel="noopener noreferrer">Află mai multe</a>
         </div>
       </article>
     {{- end -}}
