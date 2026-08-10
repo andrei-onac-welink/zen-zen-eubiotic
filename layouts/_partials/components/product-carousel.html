@@ -1,0 +1,28 @@
+{{- $id := .id | default "product-carousel" -}}
+{{- $previousID := printf "%s-previous" $id -}}
+{{- $nextID := printf "%s-next" $id -}}
+
+<div class="swiper-container container relative mt-14 px-8 sm:px-14">
+  <button class="absolute left-0 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center text-secondary-500 hover:text-primary-500" id="{{ $previousID }}" type="button" aria-label="Produsul anterior">
+    <svg class="size-8" aria-hidden="true" focusable="false"><use href="#chevron-left-icon"></use></svg>
+  </button>
+  <div class="swiper js-swiper" data-swiper-prev="#{{ $previousID }}" data-swiper-next="#{{ $nextID }}">
+    <div class="swiper-wrapper items-center">
+      {{ range slice
+        (dict "src" "https://www.eubiotic.ro/wp-content/uploads/box-Eubiotic-imunoflu_dr-800px.png" "alt" "Eubiotic ImunoFlu")
+        (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-baby-stick-20-dr-small.png" "alt" "Eubiotic Baby la plicuri")
+        (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-baby-picaturi-dr-small-1.png" "alt" "Eubiotic Baby picături")
+        (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-capsule-dr.png" "alt" "Eubiotic capsule")
+        (dict "src" "https://www.eubiotic.ro/wp-content/uploads/Eubiotic-Forte-800px.png" "alt" "Eubiotic Forte")
+        (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-baby-stick-10-dr-small.png" "alt" "Eubiotic Baby 10 plicuri")
+      }}
+        <div class="swiper-slide flex min-h-[290px] items-center justify-center">
+          <img class="mx-auto object-contain" src="{{ .src }}" alt="{{ .alt }}" loading="lazy" draggable="false" />
+        </div>
+      {{ end }}
+    </div>
+  </div>
+  <button class="absolute right-0 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center text-secondary-500 hover:text-primary-500" id="{{ $nextID }}" type="button" aria-label="Produsul următor">
+    <svg class="size-8" aria-hidden="true" focusable="false"><use href="#chevron-right-icon"></use></svg>
+  </button>
+</div>

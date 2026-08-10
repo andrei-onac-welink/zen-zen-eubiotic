@@ -228,7 +228,7 @@ weight      = 10
 
 [[footer]]
 name        = 'Cumpără'
-url         = '/cumpara/'
+pageRef     = 'cumpara'
 identifier  = 'footer-buy'
 weight      = 20
 

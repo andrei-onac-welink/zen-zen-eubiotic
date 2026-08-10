@@ -54,30 +54,7 @@
       <h2 class="text-3xl font-bold uppercase text-primary-500 lg:text-4xl" id="products-title">Gama Eubiotic</h2>
       <p class="mx-auto mt-3 max-w-2xl text-base font-semibold lg:text-base">Gamă complexă adaptată fiecărei vârste, din prima zi de viață</p>
 
-      <div class="swiper-container container relative mt-14 px-8 sm:px-14">
-        <button class="product-prev | absolute left-0 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center text-secondary-500 hover:text-primary-500" type="button" aria-label="Produsul anterior">
-          <svg class="size-8" aria-hidden="true" focusable="false"><use href="#chevron-left-icon"></use></svg>
-        </button>
-        <div class="swiper js-swiper" data-swiper-prev=".product-prev" data-swiper-next=".product-next">
-          <div class="swiper-wrapper items-center">
-            {{ range slice
-              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/box-Eubiotic-imunoflu_dr-800px.png" "alt" "Eubiotic ImunoFlu")
-              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-baby-stick-20-dr-small.png" "alt" "Eubiotic Baby la plicuri")
-              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-baby-picaturi-dr-small-1.png" "alt" "Eubiotic Baby picături")
-              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-capsule-dr.png" "alt" "Eubiotic capsule")
-              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/Eubiotic-Forte-800px.png" "alt" "Eubiotic Forte")
-              (dict "src" "https://www.eubiotic.ro/wp-content/uploads/eubiotic-baby-stick-10-dr-small.png" "alt" "Eubiotic Baby 10 plicuri")
-            }}
-              <div class="swiper-slide flex min-h-[290px] items-center justify-center">
-                <img class="mx-auto object-contain " src="{{ .src }}" alt="{{ .alt }}" loading="lazy" draggable="false" />
-              </div>
-            {{ end }}
-          </div>
-        </div>
-        <button class="product-next | absolute right-0 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center text-secondary-500 hover:text-primary-500" type="button" aria-label="Produsul următor">
-          <svg class="size-8" aria-hidden="true" focusable="false"><use href="#chevron-right-icon"></use></svg>
-        </button>
-      </div>
+      {{ partial "components/product-carousel" (dict "id" "home-products") }}
 
       <a class="mt-12 inline-flex rounded-full bg-primary-500 px-8 py-4 text-base font-bold uppercase text-white shadow-sm transition hover:-translate-y-1 hover:bg-primary-700" href="/gama-eubiotic/">Vezi întreaga gamă Eubiotic</a>
     </div>
