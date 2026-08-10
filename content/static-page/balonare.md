@@ -6,7 +6,7 @@ draft: false
 url: '/despre/balonare/'
 resources:
   - name: hero
-    src: '/images/about/hero-image-eubiotic-balonare-ezgif.com-avif-to-png-converter.png'
+    src: '/images/about/hero-image-eubiotic-balonare.png'
     title: 'Balonare'
   - name: introduction
     src: '/images/about/female-with-fit-slim-body-holding-cards-with-sad.jpg'
@@ -15,7 +15,7 @@ resources:
     src: '/images/about/chocolate-sweets.jpg'
     title: 'Selecție de dulciuri din ciocolată'
   - name: studies
-    src: '/images/about/senior-scientist-in-chemical--1024x683-ezgif.com-avif-to-png-converter.png'
+    src: '/images/about/senior-scientist-in-chemical.png'
     title: 'Cercetător care lucrează într-un laborator'
 blocksFolder: 'static-pages'
 blocks:

@@ -6,13 +6,13 @@ draft: false
 url: '/despre/diaree/'
 resources:
   - name: hero
-    src: '/images/about/hero-image-eubiotic-diaree-ezgif.com-avif-to-png-converter.png'
+    src: '/images/about/hero-image-eubiotic-diaree.png'
     title: 'Diaree'
   - name: introduction
-    src: '/images/about/concept-of-constipation-diarrhea-abdominal-1024x683-ezgif.com-avif-to-png-converter.png'
+    src: '/images/about/concept-of-constipation-diarrhea-abdominal.png'
     title: 'Persoană care ține o rolă de hârtie igienică'
   - name: causes
-    src: '/images/about/antibiotic-capsule-pills-scaled-e1686308404403-ezgif.com-avif-to-png-converter.png'
+    src: '/images/about/antibiotic-capsule-pills-scaled.png'
     title: 'Capsule și medicamente'
   - name: studies
     src: '/images/about/studying-microorganism.jpg'

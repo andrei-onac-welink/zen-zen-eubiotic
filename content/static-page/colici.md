@@ -6,13 +6,13 @@ draft: false
 url: '/despre/colici/'
 resources:
   - name: hero
-    src: '/images/about/baby-white-bg-ezgif.com-avif-to-png-converter.png'
+    src: '/images/about/baby-white-bg.png'
     title: 'Colici'
   - name: introduction
-    src: '/images/about/baby-scaled-ezgif.com-avif-to-png-converter.png'
+    src: '/images/about/baby-scaled.png'
     title: 'Picioarele unui bebeluș'
   - name: causes
-    src: '/images/about/the-legs-of-the-baby-ezgif.com-avif-to-png-converter.png'
+    src: '/images/about/the-legs-of-the-baby.png'
     title: 'Bebeluș întins pe un fundal deschis'
 blocksFolder: 'static-pages'
 blocks:
