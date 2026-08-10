@@ -7,12 +7,16 @@ modalTriggers.forEach((trigger) => {
   if (!(modal instanceof HTMLDialogElement)) return;
 
   const video = modal.querySelector('video');
+  const iframe = modal.querySelector('iframe[data-video-src]');
   const closeButton = modal.querySelector('[data-video-modal-close]');
 
   const closeModal = () => modal.close();
 
-  trigger.addEventListener('click', () => {
+  trigger.addEventListener('click', (event) => {
+    event.preventDefault();
     modal.showModal();
+
+    if (iframe) iframe.src = iframe.dataset.videoSrc;
 
     if (video) {
       video.play().catch(() => {
@@ -28,9 +32,11 @@ modalTriggers.forEach((trigger) => {
   });
 
   modal.addEventListener('close', () => {
-    if (!video) return;
+    if (iframe) iframe.removeAttribute('src');
 
-    video.pause();
-    video.currentTime = 0;
+    if (video) {
+      video.pause();
+      video.currentTime = 0;
+    }
   });
 });
