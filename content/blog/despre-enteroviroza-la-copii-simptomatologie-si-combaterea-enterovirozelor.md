@@ -4,6 +4,7 @@ title: 'Ce trebuie să știi despre enteroviroza la copii simptomatologie și co
 description: 'Enterovirozele, frecvente la copii, pot fi gestionate prin prevenție, hidratare corectă și suplimente cu bacterii benefice, ce ajută la reducerea simptomelor și susțin imunitatea.'
 date: 2024-12-02
 category: 'blog'
+featured: true
 resources:
   - name: image
     src: '/images/blog/despre-enteroviroza-la-copii.png'

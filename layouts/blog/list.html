@@ -5,7 +5,6 @@
 {{ end }}
 
 {{ define "main" }}
-  {{- $romanianMonths := slice "ianuarie" "februarie" "martie" "aprilie" "mai" "iunie" "iulie" "august" "septembrie" "octombrie" "noiembrie" "decembrie" -}}
   {{- $heroImage := partial "components/image-resource" (dict "page" . "name" "image") -}}
   {{- if and $heroImage (eq (path.Ext $heroImage) "") -}}
     {{- $webpPath := printf "%s.webp" $heroImage -}}
@@ -66,8 +65,7 @@
 
                 <div class="flex flex-1 flex-col p-6">
                   {{- if not .Date.IsZero -}}
-                    {{- $monthName := index $romanianMonths (sub (int .Date.Month) 1) -}}
-                    <time class="text-xs uppercase text-secondary-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ .Date.Day }} {{ $monthName }} {{ .Date.Year }}</time>
+                    <time class="text-xs uppercase text-secondary-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format "2 January 2006" .Date }}</time>
                   {{- end -}}
                   <h2 class="mt-3 text-xl font-bold leading-tight transition-colors duration-300 group-hover:text-primary-500" id="{{ $headingID }}">{{ .Title }}</h2>
                   <p class="mt-4 line-clamp-4 text-base leading-6 text-secondary-600">{{ .Summary | plainify }}</p>

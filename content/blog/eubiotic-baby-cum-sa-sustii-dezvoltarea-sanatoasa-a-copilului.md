@@ -4,6 +4,7 @@ title: 'Eubiotic Baby: Cum să susții dezvoltarea sănătoasă a copilului'
 description: 'Dezvoltarea sănătoasă a unui bebeluș depinde de o multitudine de factori, printre care se numără o nutriție adecvată, un mediu propice pentru creștere și susținerea unui microbiom intestinal echilibrat.'
 date: 2025-01-31
 category: 'bebelusi'
+featured: true
 resources:
   - name: image
     src: '/images/blog/2.png'

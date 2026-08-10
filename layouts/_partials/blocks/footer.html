@@ -19,19 +19,32 @@
     <section aria-labelledby="footer-blog-title">
       <h2 class="mb-5 text-base font-bold" id="footer-blog-title">Ultimele articole de pe Blog</h2>
       <div class="space-y-4">
-        {{ range slice
-          (dict "title" "Eubiotic Baby: Cum să susții dezvoltarea sănătoasă a copilului" "date" "31 ianuarie 2025" "image" "https://www.eubiotic.ro/wp-content/uploads/2-300x169.png" "url" "/eubiotic-baby-cum-sa-sustii-dezvoltarea-sanatoasa-a-copilului/")
-          (dict "title" "Ce trebuie să știi despre enteroviroza la copii" "date" "3 decembrie 2024" "image" "https://www.eubiotic.ro/wp-content/uploads/despre-enteroviroza-la-copii-300x300.png" "url" "/despre-enteroviroza-la-copii-simptomatologie-si-combaterea-enterovirozelor/")
-          (dict "title" "Ce este disbioza? Cauze, factori de risc" "date" "3 decembrie 2024" "image" "https://www.eubiotic.ro/wp-content/uploads/disbioza-300x300.png" "url" "/ce-este-disbioza-cauze-factori-de-risc-diagnostic-si-prevenire/")
-        }}
-          <a class="group grid grid-cols-[54px_1fr] gap-3" href="{{ .url }}">
-            <img class="size-[54px] rounded-sm object-cover" src="{{ .image }}" width="300" height="300" alt="" loading="lazy" draggable="false" />
+        {{- $blogPages := where site.RegularPages "Section" "blog" -}}
+        {{- $featuredPosts := where $blogPages "Params.featured" true -}}
+        {{- range $featuredPosts.ByDate.Reverse -}}
+          {{- $articleImage := partial "components/image-resource" (dict "page" . "name" "image") -}}
+          <a class="group grid grid-cols-[54px_1fr] gap-3" href="{{ .RelPermalink }}">
+            {{- if $articleImage -}}
+              {{ partial "components/image-responsive" (dict
+                "path" $articleImage
+                "class" "size-[54px] rounded-sm object-cover"
+                "loading" "lazy"
+                "fetchPriority" "auto"
+                "alt" ""
+                "widths" (slice 54 108)
+                "sizes" "54px"
+              ) }}
+            {{- else -}}
+              <span class="size-[54px] rounded-sm bg-secondary-200" aria-hidden="true"></span>
+            {{- end -}}
             <span>
-              <span class="block text-base font-semibold leading-4 group-hover:text-primary-500">{{ .title }}</span>
-              <span class="mt-1 block text-base text-secondary-500">{{ .date }}</span>
+              <span class="block text-base font-semibold leading-4 group-hover:text-primary-500">{{ .Title }}</span>
+              {{- if not .Date.IsZero -}}
+                <time class="mt-1 block text-base text-secondary-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format "2 January 2006" .Date }}</time>
+              {{- end -}}
             </span>
           </a>
-        {{ end }}
+        {{- end -}}
       </div>
     </section>
 

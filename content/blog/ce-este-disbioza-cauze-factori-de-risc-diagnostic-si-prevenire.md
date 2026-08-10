@@ -4,6 +4,7 @@ title: 'Ce este disbioza? Cauze, factori de risc, diagnostic și prevenire'
 description: 'Disbioza intestinală, un dezechilibru al microflorei, poate fi prevenită prin alimentație echilibrată, gestionarea stresului și suplimente cu bacterii benefice.'
 date: 2024-12-02
 category: 'blog'
+featured: true
 resources:
   - name: image
     src: '/images/blog/disbioza.png'
