@@ -6,7 +6,7 @@ date: 2024-01-31
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/microorganisme.avif'
+    src: '/images/blog/microorganisme.png'
     title: ''
 ---
 
@@ -16,8 +16,7 @@ Sunt bacterii bune care trăiesc în sistemul nostru digestiv și nu numai. Cele
 
 Există surse naturale de bacterii benefice, ca alimentele fermentate, dar și [suplimente pentru adulți](https://www.eubiotic.ro/gama-eubiotic/eubiotic-forte/) și copii. În ambele forme, te ajută să-ți protejezi flora intestinală în special în timpul tratamentelor cu antibiotice.
 
-Ce alimente conțin bacterii bune?
----------------------------------
+## Ce alimente conțin bacterii bune?
 
 Bacteriile bune se găsesc în alimentele fermentate. Dintre acestea, următoarele alimente au cele mai multe beneficii pentru sănătate:
 
@@ -29,8 +28,7 @@ Atenție, însă, la sortimentul de iaurt consumat. Alege iaurturi care conțin 
 *   Castraveții murați – atenție, însă, alege-i pe cei murați în apă cu sare și nu în oțet. Castraveții murați conțin multe bacterii bune, iar pe lângă asta, sunt slabi caloric și sunt bogați în vitamina K.
 *   Varza murată – la fel ca în cazul castraveților, modul prin care este obținută varza murată, poate aduce un aport de bacterii bune. Pe lângă acestea, varza murată mai conține și enzime digestive și vitamina C.
 
-Bacterii bune pentru adulți: beneficii
---------------------------------------
+## Bacterii bune pentru adulți: beneficii
 
 [Efectele pozitive ale bacteriilor benefice deja sunt studiate](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4045285/) și cunoscute de mult timp. Principalul lor beneficiu stă în echilibrarea microbiomului intestinal, dar are și o serie de alte beneficii pentru sănătate:
 
@@ -54,8 +52,7 @@ Un alt beneficiu important al bacteriilor bune este susținerea sistemului imuni
 
 Unii specialiști susțin că [suplimentele cu bacterii bune pot susține procesul de scădere în greutate pentru persoanele care suferă de obezitate și supraponderabilitate](https://www.hindawi.com/journals/ecam/2019/3862971/). Aceștia sugerează că aceste suplimente cresc nivelul de bacterii bune și pot reduce inflamația și pot influența apetitul și metabolismul.
 
-Cum se administrează suplimentele cu microorganisme vii?
---------------------------------------------------------
+## Cum se administrează suplimentele cu microorganisme vii?
 
 Este recomandat să aștepți minim 2 ore de la administrarea antibioticului pentru a lua un supliment care conține bacterii benefice pentru că antibioticul poate distruge tulpinile vii din suplimentele cu microorganisme benefice.
 

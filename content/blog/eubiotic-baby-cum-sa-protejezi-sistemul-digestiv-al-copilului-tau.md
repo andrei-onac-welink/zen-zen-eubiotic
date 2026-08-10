@@ -6,7 +6,7 @@ date: 2024-12-02
 category: 'bebelusi'
 resources:
   - name: image
-    src: '/images/blog/cum-sa-protejezi-sistemul-digestiv-al-copilului-tau.avif'
+    src: '/images/blog/cum-sa-protejezi-sistemul-digestiv-al-copilului-tau.png'
     title: ''
 ---
 
@@ -16,8 +16,7 @@ Există teorii și studii recente care sugerează că procesul de colonizare a i
 
 Aceste cercetări indică faptul că bacteriile pot traversa placenta și pot coloniza intestinul fătului înainte de naștere.
 
-Evidențe și teorii:
--------------------
+## Evidențe și teorii:
 
 Placenta și lichidul amniotic: Unele studii au identificat prezența bacteriilor în placentă și lichidul amniotic, sugerând că acestea ar putea contribui la colonizarea timpurie a intestinului fătului.
 
@@ -31,15 +30,13 @@ Flora intestinală a bebelușului continua să se dezvolte și să se diversific
 
 Astfel că în primele zile și săptămâni de viață, intestinul bebelușului este colonizat de bacterii benefice care joacă un rol important în dezvoltarea sistemului imunitar și în digestie.
 
-Influența tipului de naștere:
------------------------------
+## Influența tipului de naștere:
 
 Nașterea vaginală: Bebelușii născuți pe cale vaginală sunt expuși la bacteriile din canalul de naștere al mamei, ceea ce contribuie la o colonizare rapidă și diversă a intestinului cu bacterii benefice. Aceasta poate ajuta la reducerea riscului de alergii și la întărirea sistemului imunitar.
 
 Nașterea prin cezariană: Bebelușii născuți prin cezariană nu sunt expuși la aceleași bacterii și, în schimb, sunt colonizați mai mult de bacterii de pe pielea mamei și din mediul spitalicesc. Acest lucru poate duce la o diversitate microbiană mai redusă și la un risc crescut de anumite afecțiuni, cum ar fi alergiile și obezitatea.
 
-Influența tipului de alimentație:
----------------------------------
+## Influența tipului de alimentație:
 
 **Alăptarea:** Laptele matern este bogat în prebiotice și tulpini de microorganisme benefice care favorizează dezvoltarea unei flore intestinale sănătoase.
 
@@ -51,13 +48,11 @@ Echilibrul și diversitatea florei intestinale în primele luni /ani de viață 
 
 De aceea, alegerea unui supliment cu bacterii benefice adecvat pentru copilul tău poate părea complicată, dar iată câteva sfaturi:
 
-1\. Consultă medicul pediatru
------------------------------
+## 1\. Consultă medicul pediatru
 
 Înainte de a începe orice supliment cu microorganisme benefice, este esențial să discuți cu medicul pediatru al copilului tău. Acesta poate recomanda cel mai potrivit produs în funcție de nevoile specifice ale copilului.
 
-2\. Verifică tulpinile de microorganisme benefice
--------------------------------------------------
+## 2\. Verifică tulpinile de microorganisme benefice
 
 Alege un supliment care conține tulpini bine studiate și documentate pentru beneficiile lor asupra sănătății copiilor, cum ar fi cele din compoziția Eubiotic baby picături:
 
@@ -65,28 +60,23 @@ Alege un supliment care conține tulpini bine studiate și documentate pentru be
 
 *   Bifidobacterium animalis BB12
 
-3\. Concentrația de bacterii (CFU)
-----------------------------------
+## 3\. Concentrația de bacterii (CFU)
 
 Verifică numărul de unități formatoare de colonii (CFU) pe care le conține suplimentul. Pentru copii, o doză zilnică de 1-10 miliarde CFU este de obicei recomandată.
 
-4\. Forma farmaceutică
-----------------------
+## 4\. Forma farmaceutică
 
 Alege o formă farmaceutică potrivită pentru vârsta copilului tău. Picăturile și suspensiile orale sunt de obicei mai ușor de administrat copiilor mici.
 
-5\. Gustul
-----------
+## 5\. Gustul
 
 Asigură-te că suplimentul are un gust plăcut, astfel încât copilul să-l accepte cu ușurință.
 
-6\. Data de expirare
---------------------
+## 6\. Data de expirare
 
 Verifică data de expirare pentru a te asigura că produsul conține suficiente organisme vii până la sfârșitul perioadei de valabilitate.
 
-7\. Certificări și calitate
----------------------------
+## 7\. Certificări și calitate
 
 Preferă produsele care sunt înregistrate ca medicamente sau suplimente alimentare și care au certificări de calitate.
 

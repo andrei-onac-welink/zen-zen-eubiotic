@@ -6,7 +6,7 @@ date: 2023-07-20
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/image1-1.avif'
+    src: '/images/blog/image1-1.png'
     title: ''
 ---
 
@@ -14,8 +14,7 @@ Când vine vorba de călătorii, sănătatea noastră este esențială pentru a 
 
 Există o serie de cauze ale afecțiunii, dar și câteva remedii pentru [diaree](https://www.eubiotic.ro/despre/diaree/), pentru a vă bucura de o călătorie confortabilă.
 
-Cauzele diareei în timpul călătoriilor
---------------------------------------
+## Cauzele diareei în timpul călătoriilor
 
 Potrivit Mayo Clinic, centru medical academic american nonprofit, axat pe îngrijirea sănătății integrate, educație și cercetare, cauzele acestei afecțiuni pot varia de la schimbările bruște în dietă, până la stres și anxietate asociate cu călătoriile. Înțelegerea acestor cauze ne ajută să ne pregătim mai bine și să luăm măsuri preventive pentru a ne asigura că avem parte de călătorii confortabile și lipsite de probleme neplăcute.
 
@@ -31,8 +30,7 @@ O schimbare bruscă a dietei în timpul călătoriilor poate afecta sistemul dig
 
 Călătoriile pot fi stresante pentru organism. Stresul și anxietatea pot afecta funcționarea normală a sistemului digestiv și pot determina apariția diareei.
 
-Combaterea diareei în timpul călătoriilor
------------------------------------------
+## Combaterea diareei în timpul călătoriilor
 
 Există o serie de măsuri pe care le poți lua pentru a opri apariția diareei în timpul călătoriilor. Iată câteva sfaturi utile:
 

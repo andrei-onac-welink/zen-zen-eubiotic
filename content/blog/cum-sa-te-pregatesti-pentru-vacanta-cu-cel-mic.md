@@ -15,8 +15,7 @@ Vacanțele cu cei mici sunt adesea pline de provocări, dar planificarea în ava
 
 Cu vacanțele de vară la orizont, mulți părinți sunt îngrijorați de modul în care copiii lor vor face față schimbărilor de alimentație și de mediu. Diareea și constipația sunt afecțiunile cele mai des întâlnite la copii în timpul călătoriilor și le pot afecta starea de bine și distracția din vacanță. Există însă soluții simple și naturale pentru a-i ajuta pe copiii să-și mențină sănătatea pe durata călătoriilor: probioticele.
 
-Ce sunt probioticele?
----------------------
+## Ce sunt probioticele?
 
 Probioticele sunt bacterii benefice care trăiesc în tractul intestinal și contribuie la menținerea unui sistem digestiv sănătos. Aceste se regăsesc în alimente cum ar fi iaurtul, kefirul sau sub formă de suplimente alimentare.
 
@@ -42,8 +41,7 @@ Atunci când optați pentru un supliment alimentar cu probiotice pentru copii es
 
 În plus, puteți opta pentru a include în alimentația copilului alimente bogate în probiotice, cum ar fi iaurtul, kefirul, murăturile sau brânza de vaci. Astfel, puteți contribui la menținerea unui echilibru sănătos al bacteriilor din intestin într-un mod natural.
 
-**Concluzie**
--------------
+## **Concluzie**
 
 Planificarea din timp și luarea măsurilor de precauție adecvate pentru a preveni problemele digestive poate face o diferență semnificativă în timpul vacanțelor cu copiii mici. Probabilitatea de a întâmpina episoade de diaree și constipație poate fi redusă semnificativ prin utilizarea de probiotice.
 

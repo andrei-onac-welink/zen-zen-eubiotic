@@ -6,7 +6,7 @@ date: 2024-08-20
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/suplimente-cu-bacterii-benefice.avif'
+    src: '/images/blog/suplimente-cu-bacterii-benefice.png'
     title: ''
 ---
 
@@ -16,8 +16,7 @@ O posibilă soluție pentru restabilirea echilibrului microbiotei intestinale pe
 
 Aceste suplimente, care conțin microorganisme vii, acționează pentru a repopula intestinul și a susține o digestie sănătoasă.
 
-Avantajele bacteriilor benefice pe durata administrării antibioticului
-----------------------------------------------------------------------
+## Avantajele bacteriilor benefice pe durata administrării antibioticului
 
 Scopul antibioticelor este de a lupta împotriva infecțiilor bacteriene și de a le distruge. Deși acționează benefic pe de-o parte, pe de altă parte administrarea antibioticelor se resimte la nivelul sistemului digestiv. Rolul antibioticelor este să atace bacteriile dăunătoare, dar ele pot afecta și bacteriile benefice. Acest tip de tratament perturbă atât echilibrul, cât și cantitatea bacteriilor benefice, ceea ce poate duce la apariția unor simptome și afecțiuni, așa cum este diareea asociată tratamentului cu antibiotice.
 
@@ -29,8 +28,7 @@ Aici intervin suplimentele cu bacterii benefice. Acestea sunt constant recomanda
 *   Mențin echilibrul sistemului imunitar și îl ajută să lupte împotriva infecțiilor;
 *   Nu influențează efectele benefice ale antibioticelor.
 
-Menținerea echilibrului florei intestinale în și după antibioterapie
---------------------------------------------------------------------
+## Menținerea echilibrului florei intestinale în și după antibioterapie
 
 Bacteriile benefice se regăsesc atât în alimente, cât și sub formă de suplimente alimentare. Indiferent de forma de administrare, acestea sunt esențiale pentru flora intestinală și sistemul digestiv. Bacteriile benefice nu doar contribuie la digerarea alimentelor, ci te ajută să ai o digestie echilibrată și un tranzit intestinal normal.
 
@@ -38,8 +36,7 @@ Printre alimentele bogate în bacterii benefice se numără iaurtul, kefirul, mu
 
 Suplimentele cu bacterii benefice pot fi utile în și după tratamentele cu antibiotice. Acestea cresc aportul de bacterii bune de la nivelul intestinului, astfel că protejează sistemul digestiv și previn dezechilibrul florei intestinale. Bacteriile benefice din suplimentele alimentare sunt obținute din culturi vii și pot fi administrate pe termen lung, asigurând echilibrul florei și o digestie sănătoasă.
 
-Sfaturi pentru administrarea suplimentelor cu bacterii benefice
-----------------------------------------------------------------
+## Sfaturi pentru administrarea suplimentelor cu bacterii benefice
 
 Dacă îți dorești ca suplimentele cu bacterii benefice să aibă rezultatele dorite, îți venim în ajutor cu câteva sfaturi și recomandări. Administrate corect, bacteriile bune din alimente și suplimente pot fi de ajutor când apar dezechilibre ale microflorei intestinale. Iată ce trebuie să știi:
 

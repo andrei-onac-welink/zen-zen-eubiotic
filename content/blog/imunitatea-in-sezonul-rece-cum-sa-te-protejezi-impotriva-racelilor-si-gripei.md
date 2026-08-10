@@ -6,7 +6,7 @@ date: 2024-09-05
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/imunitatea-in-sezonul-rece.avif'
+    src: '/images/blog/imunitatea-in-sezonul-rece.png'
     title: ''
 ---
 
@@ -16,24 +16,20 @@ Dacă dorești să îți întărești sistemul imunitar și să îi oferi toate 
 
 Află ce factori afectează sistemul imunitar și ce rol joacă suplimentele alimentare cu bacterii benefice pentru creșterea imunității, suplimentele alimentare cu bacterii benefice pentru întărirea imunității.
 
-Tot ce trebuie să știi despre imunitate
-----------------------------------------
+## Tot ce trebuie să știi despre imunitate
 
 Deși este un sistem complex, esențial pentru apărarea organismului în fața agenților patogeni externi și interni, sistemul imunitar poate fi ușor dezechilibrat de o dietă nesănătoasă, stresul zilnic, lipsa mișcării și sportului și absența unui program bine stabilit de odihnă și somn. Astfel, toate structurile care formează sistemul imunitar și luptă cu patogenii vor avea un răspuns necorespunzător, apărând infecții și diverse afecțiuni la nivelul organismului.
 
-Imunitatea este de două tipuri:
--------------------------------
+## Imunitatea este de două tipuri:
 
 *   Imunitatea înnăscută, nespecifică prezentă de la naștere, care oferă protecție corpului de-a lungul vieții;
 *   Imunitatea dobândită (adaptativă sau specifică), pe care o dezvoltăm pe parcursul vieții prin expunerea la anumiți agenți patogeni, iar corpul creează anticorpi și celule cu rol de protecție pe termen lung.
 
-Factori care afectează sistemul imunitar
-----------------------------------------
+## Factori care afectează sistemul imunitar
 
 Fiecare element din viața ta are un impact asupra sănătății și stării generale de bine. De la alimentație și obiceiurile nocive, la consumul excesiv de medicamente, oboseală și stres, toate influențează buna funcționare a sistemului imunitar. Cum și în ce măsură își pun amprenta asupra imunității?
 
-Iată ce trebuie să știi:
-------------------------
+## Iată ce trebuie să știi:
 
 *   Alimentația zilnică și hidratarea corectă te ajută să oferi organismului toți nutrienții de care acesta are nevoie pentru o imunitate bună. Obiceiurile nocive precum fumatul și consumul excesiv de alcool pot modifica capacitatea sistemului imunitar de a lupta împotriva agenților patogeni.
 *   Stresul, oboseala și episoadele de insomnie pot afecta sistemul imunitar, influențându-l negativ sau pozitiv.

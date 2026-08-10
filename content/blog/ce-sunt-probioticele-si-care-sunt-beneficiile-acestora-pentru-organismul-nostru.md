@@ -14,22 +14,19 @@ Probioticele sunt microorganisme vii care sunt consumate ca supliment alimentar 
 
 Aceste microorganisme sunt, în principal, bacterii benefice care trăiesc în sistemul digestiv al oamenilor și al animalelor. Printre cele mai comune tipuri de bacterii probiotice se numără lactobacilii și bifidobacteriile, dar există și alte tipuri de bacterii care sunt considerate probiotice.
 
-**De ce sunt importante probioticele?**
----------------------------------------
+## **De ce sunt importante probioticele?**
 
 Probioticele joacă un rol important în menținerea sănătății sistemului digestiv și în susținerea sistemului imunitar. Aceste microorganisme ajută la menținerea echilibrului bacterian din sistemul digestiv și ajută la prevenirea creșterii bacteriilor dăunătoare.
 
 De asemenea, acestea pot ajuta la prevenirea și tratarea unor afecțiuni digestive, cum ar fi sindromul de colon iritabil, boala inflamatorie intestinală sau diareea.
 
-**Cum funcționează probioticele?**
-----------------------------------
+## **Cum funcționează probioticele?**
 
 Acestea funcționează prin colonizarea sistemului digestiv cu bacterii benefice, care ajută la menținerea echilibrului bacterian. Aceste bacterii benefice pot ajuta la eliminarea bacteriilor dăunătoare din sistemul digestiv și pot ajuta la prevenirea și tratarea unor afecțiuni digestive.
 
 De asemenea, probioticele pot stimula producția de acid lactic și acid acetic în sistemul digestiv, ceea ce poate ajuta la reducerea pH-ului din sistemul digestiv și la creșterea absorbției de nutrienți.
 
-**Ce alimente conțin probiotice?**
-----------------------------------
+## **Ce alimente conțin probiotice?**
 
 Există o varietate de alimente care conțin probiotice, cum ar fi:
 
@@ -45,8 +42,7 @@ Există o varietate de alimente care conțin probiotice, cum ar fi:
 
 Acestea sunt microorganisme vii care pot fi consumate sub formă de alimente sau suplimente alimentare pentru a îmbunătăți sănătatea sistemului digestiv și a sistemului imunitar. Acestea ajută la menținerea echilibrului bacterian din sistemul digestiv și pot ajuta la prevenirea și tratarea unor afecțiuni digestive.
 
-**Probioticele pentru adulți**
-------------------------------
+## **Probioticele pentru adulți**
 
 Pentru adulți, acestea pot fi benefice în următoarele moduri:
 
@@ -70,13 +66,11 @@ Probioticele pot fi utile în prevenirea și tratarea sindromului de colon irita
 
 Bolile inflamatorii intestinale, cum ar fi boala Crohn și colita ulcerativă, sunt afecțiuni cronice care afectează sistemul digestiv. Probioticele pot ajuta la reducerea inflamației din intestin și pot ajuta la prevenirea sau tratarea acestor boli.
 
-**Probioticele pentru copii și bebeluși**
------------------------------------------
+## **Probioticele pentru copii și bebeluși**
 
 Pe lângă beneficiile de mai sus, cele care se regăsesc și la adulți, pentru copii probioticele sunt foarte bune pentru prevenirea și tratarea colicilor la sugari. Colicii la sugari sunt o afecțiune frecventă care poate cauza disconfort și plâns la copii. Probioticele pot ajuta la prevenirea și tratarea colicilor la sugari, reducând simptomele de disconfort abdominal și de plâns.
 
-**Când se administrează probioticele? Înainte sau după antibiotic?**
---------------------------------------------------------------------
+## **Când se administrează probioticele? Înainte sau după antibiotic?**
 
 Antibioticele pot distruge bacteriile benefice din sistemul digestiv, ceea ce poate duce la perturbarea echilibrului bacterian și la apariția diareei sau altor probleme digestive. Prin urmare, administrarea probioticelor după tratamentul cu antibiotice poate ajuta la repopularea sistemului digestiv cu bacterii benefice și la restabilirea echilibrului bacterian normal.
 

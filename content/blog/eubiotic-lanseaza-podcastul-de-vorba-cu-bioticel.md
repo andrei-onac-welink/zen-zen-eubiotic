@@ -6,7 +6,7 @@ date: 2024-07-05
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/de-vorba-cu-bioticel.avif'
+    src: '/images/blog/de-vorba-cu-bioticel.png'
     title: ''
 ---
 

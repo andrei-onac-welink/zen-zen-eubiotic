@@ -6,26 +6,23 @@ date: 2024-12-02
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/despre-enteroviroza-la-copii.avif'
+    src: '/images/blog/despre-enteroviroza-la-copii.png'
     title: ''
 ---
 
-Introducere
------------
+## Introducere
 
 Enterovirozele reprezintă un grup de infecții virale cauzate de enterovirusuri, care afectează în principal tractul gastrointestinal. Aceste infecții sunt frecvente la copii și pot provoca simptome variate, de la ușoare la severe.
 
 Multe dintre tulpinile de microorganisme benefice au fost studiate pentru actiunea lor favorabila asupra evolutiei enterovirozelor.
 
-Etiologie și Epidemiologie
---------------------------
+## Etiologie și Epidemiologie
 
 [Enterovirusurile sunt virusuri de tip ARN din familia Picornaviridae si includ peste 70 de serotipuri](https://www.desprecopii.com/info-id-7741-nm-Enteroviroza-la-copil-tipuri-simptome-si-cum-se-trateaza-sfatul-medicului.htm). Acestea sunt clasificate în 4 grupuri: poliovirusuri, Coxsackie A si B si echovirusuri.
 
 [Infecțiile sunt mai frecvente în lunile de vară și toamnă timpurie și se transmit prin contact direct cu secrețiile respiratorii sau fecalele persoanelor infectate](https://medicool.ro/enteroviroza-la-copii-simptome-tratament-preventie-27118.html), cat si prin consumul de alimente și apă contaminate.
 
-Manifestări Clinice
--------------------
+## Manifestări Clinice
 
 Simptomele enterovirozelor variază în funcție de tipul de virus implicat și de starea imunologică a copilului.
 
@@ -39,8 +36,7 @@ Cele mai comune manifestări includ:
 
 [În cazuri rare, enterovirusurile pot provoca meningită, encefalită sau miocardită](https://www.desprecopii.com/info-id-7741-nm-Enteroviroza-la-copil-tipuri-simptome-si-cum-se-trateaza-sfatul-medicului.htm).
 
-Diagnostic și Tratament
------------------------
+## Diagnostic și Tratament
 
 Diagnosticul enterovirozelor se bazează pe anamneză, examenul clinic și teste de laborator, cum ar fi PCR pentru detectarea ARN-ului viral.
 
@@ -52,8 +48,7 @@ Este important să se asigure hidratarea adecvată a copilului ( prin rehidratar
 
 Prevenția include măsuri de igienă riguroase, cum ar fi spălarea frecventă a mâinilor, evitarea contactului cu persoane infectate și consumul de alimente și apă din surse sigure.
 
-Rolul suplimentelor cu bacterii benefice
-----------------------------------------
+## Rolul suplimentelor cu bacterii benefice
 
 Acestea contin microorganisme vii care, administrate în cantități adecvate, conferă beneficii sănătății gazdei.
 
@@ -61,8 +56,7 @@ Acestea contin microorganisme vii care, administrate în cantități adecvate, c
 
 Lactobacillus rhamnosus GG și Saccharomyces boulardii sunt printre cele mai studiate tulpini de microorganisme benefice în acest context.
 
-Mecanisme de Acțiune
---------------------
+## Mecanisme de Acțiune
 
 Bacteriile benefice din suplimente acționează prin mai multe mecanisme:
 
@@ -70,8 +64,7 @@ Bacteriile benefice din suplimente acționează prin mai multe mecanisme:
 2.  Reducerea duratei și severității simptomelor: Studiile au arătat că anumite tulpini de microorganisme benefice pot reduce durata diareei și severitatea simptomelor gastrointestinale.
 3.  Îmbunătățirea răspunsului imun: Suplimentele cu bacterii bune pot stimula sistemul imunitar, ajutând organismul să lupte mai eficient împotriva infecțiilor virale.
 
-Concluzii
----------
+## Concluzii
 
 Enterovirozele sunt infecții comune la copii, care pot fi gestionate eficient prin măsuri simptomatice și preventive.
 

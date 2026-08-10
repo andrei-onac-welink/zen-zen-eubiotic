@@ -6,7 +6,7 @@ date: 2024-07-10
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/afectiuni-digestive.avif'
+    src: '/images/blog/afectiuni-digestive.png'
     title: ''
 ---
 
@@ -14,15 +14,13 @@ Simptomele comune ale afecțiunilor sistemului digestiv includ dureri abdominale
 
 În cele ce urmează, vom detalia care sunt cele mai comune afecțiuni digestive și cum un stil de viață sănătos contribuie la menținerea echilibrului sistemului digestiv.
 
-Rolul sistemului digestiv
--------------------------
+## Rolul sistemului digestiv
 
 Sistemul digestiv are un rol important în buna funcționare a organismului^1^. Orice dezechilibru are un impact direct asupra stării generale de bine și a sănătății. Acesta preia alimentele consumate și le descompune, transformându-le în minerale, nutrienți și vitamine de care corpul are nevoie zilnic. De asemenea, la nivelul aparatului digestiv, substanțele neabsorbite sunt eliminate prin defecație. Procesul de digestie începe la nivelul cavității bucale la contactul cu alimentele, continuă la nivel gastric sub acțiunea sucului gastric acid, apoi la nivelul intestinului subțire cu ajutorul enzimelor pancreatice, intestinale și al bilei.
 
 Aparatul digestiv este un sistem complex, format din tubul digestiv și glandele anexe. Fiecare componentă are propriul rol, fără de care acesta nu ar putea funcționa în parametrii normali. Așadar, digestia poate fi cu ușurință afectată de orice dezechilibru sau schimbare în rutină.
 
-Cele mai comune afecțiuni ale aparatului digestiv
--------------------------------------------------
+## Cele mai comune afecțiuni ale aparatului digestiv
 
 Afecțiunile digestive^2^ sunt de două tipuri: boli digestive funcționale și boli care afectează structura tubului digestiv. Fiecare se manifestă diferit și sunt localizate în anumite zone ale aparatului digestiv. Trebuie să știi că fiecare parte a sistemului digestiv poate fi afectată de diverși factori, de aceea este esențial ca afecțiunea să fie localizată și diagnosticată corect.
 
@@ -32,8 +30,7 @@ Bolile organice ale tubului digestiv pot să afecteze orice segment al acestuia;
 
 Indiferent de localizarea afecțiunii, digestia este îngreunată de la primele semne de boală. De asemenea, pot apărea și alte simptome care semnalează o afecțiune digestivă, cum sunt starea de greață și vomă, flatulență și pierdere în greutate.
 
-Ameliorarea problemelor digestive
----------------------------------
+## Ameliorarea problemelor digestive
 
 Simptomele neplăcute cauzate de afecțiunile sistemului digestiv afectează stilul de viață și rutina zilnică a fiecăruia.
 

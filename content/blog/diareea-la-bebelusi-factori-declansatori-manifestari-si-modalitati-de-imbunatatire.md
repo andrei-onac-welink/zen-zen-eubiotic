@@ -6,7 +6,7 @@ date: 2024-06-25
 category: 'bebelusi'
 resources:
   - name: image
-    src: '/images/blog/diaree-bebelusi-simptome.avif'
+    src: '/images/blog/diaree-bebelusi-simptome.png'
     title: ''
 ---
 
@@ -18,8 +18,7 @@ Pentru ameliorarea diareei la bebeluși în primul rând trebuie identificate co
 asemenea, poți administra [suplimente cu bacterii benefice](https://www.eubiotic.ro/gama-eubiotic/eubiotic-baby/) ca adjuvant în lupta împotriva diareei și  
 pentru refacerea florei intestinale.
 
-Cauzele diareei la bebeluși
----------------------------
+## Cauzele diareei la bebeluși
 
 Diareea poate avea diverse cauze, fiind adesea influențată de factori precum alimentația, stilul de viață și infecțiile virale și bacteriene. De exemplu, în timpul sezonului rece, diareea poate să apară^1^ și în contextul unor infecții de tract respirator, în timp ce în sezonul cald poate să fie declanșată de consumul de alimente și băuturi contaminate sau de călătorii.
 
@@ -43,13 +42,11 @@ Diareea poate avea diverse cauze, fiind adesea influențată de factori precum a
 
 Una dintre cauzele obișnuite ale diareei la copii și sugari este introducerea alimentelorsolide în dieta lor. Atunci când sunt introduse noi alimente în regimul zilnic al celor mici, diareea poate fi o reacție obișnuită a organismului, dar de obicei se rezolvă de la sine în majoritatea cazurilor.
 
-Cele mai frecvente semne și simptome care însoțesc diareea
-----------------------------------------------------------
+## Cele mai frecvente semne și simptome care însoțesc diareea
 
 Diareea la cei mici poate fi însoțită de o varietate de simptome^2^ și semne cum ar fi: scaunele moi și mai frecvente decât de obicei, precum și disconfort abdominal, greață și vărsături, balonare, crampe. În cazul în care diareea are o cauză infecțioasă pot apărea și alte semne mai severe, precum febra, pierderea în greutate, oboseală, slăbiciune și deshidratare. În astfel de situații pot fi recomandate de către medicul curant antibiotice, împreună cu suplimente cu bacterii benefice pentru protejarea florei intestinale, alături de un regim alimentar corespunzător.
 
-Bacteriile benefice în ameliorarea diareei
-------------------------------------------
+## Bacteriile benefice în ameliorarea diareei
 
 O formă ușoară de diaree, cauzată de dezechilibre alimentare sau de schimbări în rutina copilului, de obicei se rezolvă de la sine în câteva zile. În cele mai multe cazuri, este suficient un plan alimentar adecvat și o hidratare eficientă. De asemenea, bacteriile benefice^3^ pot fi de ajutor în refacerea florei intestinale și în ameliorarea diareei la bebeluși.
 

@@ -6,7 +6,7 @@ date: 2024-01-31
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/balonarea.avif'
+    src: '/images/blog/balonarea.png'
     title: ''
 ---
 
@@ -14,8 +14,7 @@ Mesele bogate în familie pot aduce multă bucurie, dar și senzația de balonar
 
 Deși senzația de balonare este normală în anumite momente, balonarea excesivă poate aduce o stare accentuată de disconfort, însoțită de durere, crampe abdominale, gaze excesive sau flatulență. Din fericire, există alimente pe care le putem evita și sfaturi pentru a ameliora senzația de [balonare](https://www.eubiotic.ro/despre/balonare/).
 
-De ce apare balonarea?
-----------------------
+## De ce apare balonarea?
 
 Balonarea se intensifică, de cele mai multe ori, după masă și la finalul zilei. Poate apărea din cauza înghițirii unei cantități mai mari de aer în timpul ingerării alimentelor sau din cauza băuturilor carbogazoase care duc la creșterea volumului de aer din stomac și intestine. Alte cauze ale balonării pot fi:
 
@@ -24,8 +23,7 @@ Balonarea se intensifică, de cele mai multe ori, după masă și la finalul zil
 *   Modificarea florei intestinale;
 *   Sindromul de intestin iritabil.
 
-Alimente pe care să le eviți
-----------------------------
+## Alimente pe care să le eviți
 
 Multe categorii de alimente pot cauza balonare, inclusiv proteinele, grăsimile sau carbohidrații, și este recomandat să le consumi în cantități limitate. Ține cont că efectele acestora pot varia în funcție de organismul fiecărei persoane.
 
@@ -51,8 +49,7 @@ Ideal este să alegi alimentele ce conțin grăsimi nesaturate, ca avocado, nuci
 
 [Sucurile acidulate și chiar și apa minerală carbogazoasă pot cauza balonare](https://www.uchicagomedicine.org/forefront/health-and-wellness-articles/is-carbonated-water-good-for-you). Cea mai bună alegere este apa plată.
 
-Sfaturi care te ajută să eviți balonarea după masă
---------------------------------------------------
+## Sfaturi care te ajută să eviți balonarea după masă
 
 Există anumite metode simple care te ajută să previi și să ameliorezi senzația de balonare excesivă:
 

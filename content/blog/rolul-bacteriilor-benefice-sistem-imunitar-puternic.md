@@ -6,7 +6,7 @@ date: 2023-10-18
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/image1.avif'
+    src: '/images/blog/image1.png'
     title: ''
 ---
 
@@ -14,8 +14,7 @@ Sistemul imunitar este o rețea complexă de celule, țesuturi și organe al că
 
 În acest context, în ultimii ani, s-a acordat o atenție sporită [bacteriilor benefice și impactului lor asupra sistemului imunitar](https://www.eubiotic.ro/gama-eubiotic/eubiotic-forte/). Aceste microorganisme benefice, prezente în anumite alimente și suplimente, au un rol important pentru îmbunătățirea funcționării sistemului imunitar.
 
-Ce sunt suplimentele cu bacterii benefice?
-------------------------------------------
+## Ce sunt suplimentele cu bacterii benefice?
 
 Suplimentele cu bacterii benefice sunt microorganisme vii, care, atunci când sunt consumate în cantități adecvate, aduc beneficii sănătății. Aceste organisme benefice trăiesc în mod natural în intestinul nostru, dar și în alte părți ale corpului și au un impact pozitiv asupra echilibrului florei microbiene.
 
@@ -23,15 +22,13 @@ Rolul principal al bacteriilor benefice este de a menține un echilibru sănăto
 
 Atunci când alegem un supliment alimentar cu bacterii bune, este important să ținem cont de câteva criterii. Este esențial să acordăm o atenție deosebită tulpinii alese, deoarece fiecare specie de bacterie poate avea efecte diferite asupra sănătății. În plus, microorganismele incluse în suplimente trebuie să fie viabile la momentul ingerării, deoarece doar cele care rezistă enzimelor digestive pot supraviețui pentru a ajunge în colon, unde acționează în mod benefic. Un alt aspect important este capacitatea acestor bacterii de a adera ferm la mucoasa intestinală, asigurând astfel o colonizare eficientă. Astfel, un supliment bun cu bacterii benefice poate contribui la echilibrul florei intestinale și la funcționarea optimă a sistemului imunitar.
 
-Cum acționează suplimentele cu bacterii benefice asupra sistemului imunitar?
-----------------------------------------------------------------------------
+## Cum acționează suplimentele cu bacterii benefice asupra sistemului imunitar?
 
 Suplimentele cu bacterii benefice au capacitatea de a influența sistemul imunitar prin mai multe mecanisme. Ele ajută la menținerea unui echilibrul microbian sănătos în tractul gastrointestinal, care reprezintă o parte importantă a sistemului imunitar. Suplimentele cu bacterii benefice pot inhiba, prin competiție creșterea și activitatea bacteriilor patogene luptând contra infecțiilor digestive și a inflamațiilor.
 
 În plus, suplimentele cu bacterii benefice pot stimula producția de citokine și imunoglobuline^1^, substanțe cheie în răspunsul imunitar al organismului. Aceste substanțe ajută la creșterea activității celulelor imune și la îmbunătățirea capacității de a combate agenții patogeni.
 
-Beneficiile bacteriilor bune pentru sistemul imunitar:
-------------------------------------------------------
+## Beneficiile bacteriilor bune pentru sistemul imunitar:
 
 ### 1\. Reducerea riscului de infecții
 

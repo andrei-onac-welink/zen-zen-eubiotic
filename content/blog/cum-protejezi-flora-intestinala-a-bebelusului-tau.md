@@ -6,7 +6,7 @@ date: 2024-12-02
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/flora-intestinala-la-bebelusi.avif'
+    src: '/images/blog/flora-intestinala-la-bebelusi.png'
     title: ''
 ---
 
@@ -14,8 +14,7 @@ resources:
 
 Vrei să afli mai multe despre microbiota intestinală la sugari? Descoperă într-un articol detaliat rolul esențial al microbiotei în sănătatea bebelușilor, modul în care se formează și factorii care influențează acest proces.
 
-Rolul florei intestinale la bebeluși
-------------------------------------
+## Rolul florei intestinale la bebeluși
 
 Microbiota intestinală începe să se dezvolte încă de la primul contact al nou-născutului cu mediul extern, oferind protecția necesară pentru sănătatea acestuia. Similar cu microbiota intestinală a adulților, rolul acesteia este de a crea un mediu favorabil pentru digestie și de a susține sistemul imunitar. Bebelușii se nasc cu o floră intestinală și cu un sistem imunitar incomplet dezvoltate, care încep să se dezvolte odată cu expunerea la mediul extern. De aceea, este esențial ca microbiota intestinală să acționeze ca un aliat intern, fiind susținută printr-o alimentație echilibrată. Cele mai importante funcții ale microbiotei intestinale la sugari includ:
 
@@ -26,15 +25,13 @@ Microbiota intestinală începe să se dezvolte încă de la primul contact al n
 *   Producerea complexului de vitamine B, esențial pentru creștere și dezvoltare;
 *   Protejarea corpului împotriva afecțiunilor dermatologice și alergice.
 
-Cum se formează flora intestinală la bebeluși
----------------------------------------------
+## Cum se formează flora intestinală la bebeluși
 
 Uterul este un mediu steril, propice pentru dezvoltarea bebelușilor. Nașterea reprezintă primul contact al acestora cu mediul extern, inclusiv cu diverse bacterii și virusuri. Această etapă declanșează răspunsul natural al organismului și stimulează dezvoltarea microorganismelor benefice, care să ajute corpul să lupte cu factorii externi.
 
 Hrănirea este o altă etapă esențială pentru dezvoltarea florei intestinale a bebelușului. Laptele matern este bogat în bacterii benefice care populează tractul digestiv pentru o dezvoltare armonioasă. Deși formulele de lapte praf sunt constant îmbunătățite, acestea au un conținut mult mai redus de bacterii benefice, ceea ce poate îngreuna dezvoltarea completă a microbiotei intestinale a bebelușilor.
 
-Factori care dezechilibrează flora la bebeluși
-----------------------------------------------
+## Factori care dezechilibrează flora la bebeluși
 
 Microbiota intestinală a sugarilor continuă să se dezvolte până în jurul vârstei de 3 ani. În această perioadă, de la naștere până la dezvoltarea completă a microbiotei, bebelușii pot fi expuși la diverși factori care pot modifica procesul de colonizare a intestinului cu microorganisme benefice sau pot crea dezechilibre.Cei mai frecvent întâlniți factori care afectează microbiota intestinală la sugari includ:
 
@@ -45,8 +42,7 @@ Microbiota intestinală a sugarilor continuă să se dezvolte până în jurul v
 *   Colicile;
 *   Un mediu de creștere stresant pentru mamă sau pentru bebeluși.
 
-Cum protejezi flora intestinală a bebelușului
----------------------------------------------
+## Cum protejezi flora intestinală a bebelușului
 
 Din fericire, microbiota bebelușilor poate fi susținută de un stil de viață echilibrat și un mediu liniștit. La fel de importantă este și hrănirea. O trecere bruscă de la alăptat la hrănirea cu lapte praf poate dezechilibra flora. De aceea este recomandat ca această etapă să se facă treptat, diminuând riscul unor efecte secundare la nivel digestiv.
 

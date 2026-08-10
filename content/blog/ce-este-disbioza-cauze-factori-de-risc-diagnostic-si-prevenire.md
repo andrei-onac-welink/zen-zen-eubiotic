@@ -20,8 +20,7 @@ Pierderea echilibrului dintre speciile de microorganism rezidente la nivel intes
 
 Disbioza se referă de fapt la scăderea numărului, diversității și acțiunii bacteriilor sănătoase și creșterea celor potențial patogene.
 
-Cauzele disbiozei
------------------
+## Cauzele disbiozei
 
 Disbioza apare ca urmare a mai multor factori care modifică flora microbiană intestinală, printre cauzele principale numărându-se:
 
@@ -32,8 +31,7 @@ Disbioza apare ca urmare a mai multor factori care modifică flora microbiană i
 5.  [**Infecțiile**: Infecțiile gastrointestinale pot altera compoziția microbiotei](https://my.clevelandclinic.org/health/diseases/dysbiosis) ([_5_](https://www.frontiersin.org/journals/nutrition/articles/10.3389/fnut.2024.1330903/full)).
 6.  **Sedentarismul** – Lipsa activității fizice influențează negativ metabolismul și flora bacteriană.
 
-Factori de risc
----------------
+## Factori de risc
 
 Disbioza poate apărea la orice persoană, însă există anumiți factori care pot crește riscul de a dezvolta acest dezechilibru:
 
@@ -44,8 +42,7 @@ Disbioza poate apărea la orice persoană, însă există anumiți factori care 
 *   **Condițiile de mediu** – Expunerea la agenți poluanți sau contactul cu diverse microorganisme patogene pot contribui la modificarea florei intestinale.
 *   **Igiena orală precară**: O igienă orală deficitară poate duce la dezechilibre bacteriene în cavitatea bucală și nu numai.
 
-Cum este diagnosticată disbioza
--------------------------------
+## Cum este diagnosticată disbioza
 
 Diagnosticul disbiozei implică adesea un set de analize și evaluări menite să evalueze starea microbiotei intestinale. Cele mai utilizate metode de diagnostic includ:
 
@@ -56,8 +53,7 @@ Diagnosticul disbiozei implică adesea un set de analize și evaluări menite s�
 
 Consultati un specialist gastroenterolog pentru un diagnostic corect, mai ales că simptomele disbiozei pot semăna cu ale altor afecțiuni digestive.
 
-Disbioza poate fi prevenita?
-----------------------------
+## Disbioza poate fi prevenita?
 
 Prevenirea disbiozei este posibilă prin respectarea unui stil de viață sănătos și prin măsuri care promovează o floră intestinală echilibrată:
 
@@ -67,8 +63,7 @@ Prevenirea disbiozei este posibilă prin respectarea unui stil de viață sănă
 4.  **Hidratarea corespunzătoare** – Apa este esențială pentru menținerea sănătății intestinale și pentru eliminarea toxinelor.
 5.  **Exercițiile fizice** – Activitatea fizică regulată ajută la îmbunătățirea digestiei și la menținerea unei microbiote echilibrate.
 
-Tratarea disbiozei
-------------------
+## Tratarea disbiozei
 
 În cazul în care disbioza a fost diagnosticată, restabilirea echilibrului microflorei intestinale se poate realiza printr-o combinație de suplimente cu bacterii benefice, prebiotice și ajustări alimentare, toate coordonate de un specialist.
 
@@ -77,8 +72,7 @@ Tratarea disbiozei
 3.  **Dieta adaptată** – Dietele specializate, cum ar fi dieta FODMAP, pot fi de ajutor în tratarea disbiozei, prin reducerea alimentelor care contribuie la dezechilibrul microbian.
 4.  **Reducerea inflamației** – Anumite suplimente și alimente cu proprietăți antiinflamatoare (precum turmeric, ghimbir și Omega-3) pot ajuta la ameliorarea simptomelor.
 
-Concluzie
----------
+## Concluzie
 
 Disbioza este o condiție complexă, dar poate fi gestionată printr-un stil de viață sănătos, o alimentație echilibrată și, atunci când este necesar, prin tratamente medicale specifice.  
 Cunoașterea cauzelor de apariție a disbiozei, simptomelor și metodelor de tratament oferă un plus celor ce doresc să își mențină sănătatea intestinală în condiții optime.

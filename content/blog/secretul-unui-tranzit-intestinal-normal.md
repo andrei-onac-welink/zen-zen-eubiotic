@@ -6,7 +6,7 @@ date: 2024-06-15
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/tranzit-intestinal-normal.avif'
+    src: '/images/blog/tranzit-intestinal-normal.png'
     title: ''
 ---
 
@@ -17,8 +17,7 @@ Sistemul digestiv este supus zilnic unor factori de stres, fie că vorbim despre
 
 Diareea este o afecțiune des întâlnită atât în rândul copiilor, cât și în rândul adulților. Este caracterizată prin scaune apoase și dese și este un răspuns al corpului la dezechilibrul florei intestinale afectate de diverși factori. Cauzele diareei sunt fie o reacție la o infecție, fie un răspuns al corpului la afecțiuni gastrointestinale.
 
-Cauzele diareei la adulți
--------------------------
+## Cauzele diareei la adulți
 
 Orice modificare în alimentație și stilul de viață poate afecta tranzitul intestinal și sistemul digestiv. De aceea, te poți confrunta cu diverse afecțiuni și tulburări când încerci un aliment nou sau treci printr-o stare emoțională puternică. Cauzele diareei sunt diverse și trebuie identificate corect și înlăturate.
 
@@ -26,13 +25,11 @@ Factorii psihologici, cum ar fi stresul, anxietatea și adaptarea la noi situaț
 
 Alte cauze ale diareei la adulți pot include efectele secundare ale anumitor medicamente, infecții intestinale și afecțiuni endocrine. Pentru o digestie sănătoasă și normală, este important să susținem [bacteriile benefice](https://www.eubiotic.ro/rolul-bacteriilor-benefice-sistem-imunitar-puternic/) din colon. Orice schimbare în echilibrul tranzitului intestinal ar trebui să fie identificată corect de la primele semne și simptome digestive.
 
-Combaterea diareei
-------------------
+## Combaterea diareei
 
 Diareea nu numai că poate afecta activitățile zilnice și calitatea vieții, ci poate duce la deshidratare, crampe abdominale și o stare de slăbiciune accentuată. De la primele semne și simptome, este recomandat să adaptezi planul alimentar astfel încât să ajuți la gestionarea acestora. De asemenea, pentru rezultate vizibile și ameliorarea simptomelor deranjante trebuie să identifici cauzele care au dus la declanșarea tulburări de tranzit intestinal.
 
-Pentru refacerea echilibrului intestinal în caz de diaree, iată ce poți face:
------------------------------------------------------------------------------
+## Pentru refacerea echilibrului intestinal în caz de diaree, iată ce poți face:
 
 Dacă diareea a fost cauzată de intoleranțe alimentare, îți recomandăm să eviți pe viitor alimentele care îți creează disconfort și să apelezi la suplimentele care conțin bacterii benefice pentru refacerea florei intestinale. De asemenea, este indicat să eviți alimentele și băuturile care pot crește aciditatea și disconfortul gastric. În cazul diareei cauzate de infecții bacteriene, se știe că bacteriile benefic, alături de un regim alimentar adecvat joacă un rol important în ameliorarea simptomelor.
 

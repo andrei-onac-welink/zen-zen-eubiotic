@@ -6,7 +6,7 @@ date: 2024-01-31
 category: 'blog'
 resources:
   - name: image
-    src: '/images/blog/probleme-de-constipatie.avif'
+    src: '/images/blog/probleme-de-constipatie.png'
     title: ''
 ---
 
@@ -14,15 +14,13 @@ Poate pare un subiect tabu, dar, chiar dacă ne ferim să discutăm despre acest
 
 [Constipația](https://www.eubiotic.ro/gama-eubiotic/eubiotic-forte/) poate apărea în urma unor schimbări ale dietei alimentare sau ale rutinei de zi cu zi, ca atunci când călătorești. Partea bună este că de cele mai multe ori poate fi tratată și prevenită cu câteva schimbări ale stilului de viață sau suplimente alimentare.
 
-Ce este constipația și care sunt simptomele constipației?
----------------------------------------------------------
+## Ce este constipația și care sunt simptomele constipației?
 
 **Constipația** este un simptom medical, caracterizat de dificultatea sau imposibilitatea eliminării prin digestie a [materiilor fecale](https://ro.wikipedia.org/wiki/Fecale). Deși la fiecare om este diferit, de obicei, se consideră constipație atunci când trec mai mult de două, trei zile fără să aibă loc evacuarea intestinală. În acest caz, consistența scaunului va crește, iar evacuarea se va face cu mai multă dificultate și durere.
 
 Constipația poate provoca disconfort abdominal, balonare și senzație de plenitudine.
 
-Care sunt cauzele constipației la copii și adulți?
---------------------------------------------------
+## Care sunt cauzele constipației la copii și adulți?
 
 Deși cele mai multe cauze ale constipației pot fi identificate, uneori apare fără niciun motiv, sau din cauze psiho-emoționale. Cele mai frecvente cauze ale constipației la copii și adulți sunt:
 
@@ -35,8 +33,7 @@ Deși cele mai multe cauze ale constipației pot fi identificate, uneori apare f
 
 Constipația la bebeluși produce la fel de mult disconfort pentru cei mici, dar și îngrijorarea mămicilor
 
-Ce remedii pentru constipație există?
--------------------------------------
+## Ce remedii pentru constipație există?
 
 Cele mai importante schimbări pe care le poți face pentru a ameliora constipația se leagă de dieta alimentară și includerea exercițiilor fizice în rutina ta.
 
@@ -58,8 +55,7 @@ Poți folosi laxative în cazul în care constipația persistă, însă foloseș
 
 Unele studii susțin că suplimentele cu bacterii benefice [pot ameliora simptomele constipației](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC8838973/). Aceste microorganisme benefice joacă un rol semnificativ pentru sănătatea intestinală și în gestionarea constipației la adulți și copii.
 
-Cum previi constipația?
------------------------
+## Cum previi constipația?
 
 Alege o dietă bogată în fibre, hidratează-te corespunzător și fă mișcare de cel puțin 3 ori pe săptămână. Pe lângă asta, limitează consumul de alcool și cafeină, care pot duce la deshidratare.
 

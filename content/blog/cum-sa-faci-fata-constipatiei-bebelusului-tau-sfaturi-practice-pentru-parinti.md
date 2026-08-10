@@ -6,7 +6,7 @@ date: 2024-07-10
 category: 'bebelusi'
 resources:
   - name: image
-    src: '/images/blog/constipatie-bebelusi.avif'
+    src: '/images/blog/constipatie-bebelusi.png'
     title: ''
 ---
 
@@ -14,8 +14,7 @@ Constipația la bebeluși este o tulburare digestivă des întâlnită în prime
 
 Tranzitul intestinal diferă la fiecare bebeluș, la fel și cauzele care duc la apariția tulburărilor digestive: fie constipația, fie diareea. [Constipația poate fi gestionată](https://www.eubiotic.ro/despre/constipatie/) și prevenită prin diverse remedii adaptate vârstei micuțului tău.
 
-Constipația la bebeluși: cele mai comune cauze
-----------------------------------------------
+## Constipația la bebeluși: cele mai comune cauze
 
 Cauzele apariției constipației la bebeluși sunt strâns legate de mediul de viață și dieta zilnică. Uneori semnalează un simplu dezechilibru alimentar, alteori poate semnala o intoleranță sau alergie la anumite alimente. Este modul prin care corpul gestionează schimbările prin care trece micuțul tău, încercând să se adapteze noului regim alimentar sau stil de viață.
 
@@ -23,8 +22,7 @@ Cauzele apariției constipației la bebeluși sunt strâns legate de mediul de v
 *   Diverse boli de la nivelul sistemului digestiv, cum ar fi boala Hirschsprung, fibroza chistică, obstrucțiile intestinale sau anale duc la apariția constipației. În general, sunt însoțite și de alte simptome, precum voma, starea de slăbiciune sau stagnarea greutății bebelușului.
 *   Perioada de diversificare reprezintă o adevărată provocare pentru bebeluși și părinți. Fie că se face trecerea de la laptele matern, la laptele praf, fie că vorbim despre introducerea altor alimente în dietă, acestea pot cauza constipația la bebeluși. De aceea, trebuie identificate acele alimente greu de tolerat de sistemul digestiv al micuțului tău și înlocuite cu altele la fel de nutritive și sănătoase.
 
-Care sunt simptomele constipației la bebeluși
----------------------------------------------
+## Care sunt simptomele constipației la bebeluși
 
 Constipația se manifestă prin scaune rare și tari, cu dificultate la eliminare. Dar constipația la bebeluși poate fi însoțită și de alte semne, cum ar fi:
 
@@ -36,8 +34,7 @@ Constipația se manifestă prin scaune rare și tari, cu dificultate la eliminar
 
 În general, constipația la bebeluși se manifestă pe termen scurt și poate fi remediată prin adaptarea dietei la nevoile micuțului. Dacă simptomele constipației la bebeluși persistă, se pot încerca și alte abordări sub îndrumarea medicului specialist, cum sunt masarea abdomenului, creșterea aportului de fibre sau eliminarea din dietă a alimentelor care cresc riscul de apariție a constipației.
 
-Rolul bacteriilor benefice în ameliorarea și evitarea constipației la bebeluși
-------------------------------------------------------------------------------
+## Rolul bacteriilor benefice în ameliorarea și evitarea constipației la bebeluși
 
 De cele mai multe ori, constipația la bebeluși se ameliorează prin creșterea nivelului de hidratare și adaptarea dietei alimentare la nevoile micuțului tău. În funcție de frecvența acesteia, constipația trebuie monitorizată și poți apela la produsele care conțin bacterii benefice pentru a o evita. Bacteriile benefice sunt suplimente alimentare ușor de inclus în dieta bebelușilor și copiilor. Acestea contribuie la echilibrarea florei intestinale, reglând tranzitul intestinal evitând neplăceri precum constipația^1^.
 
