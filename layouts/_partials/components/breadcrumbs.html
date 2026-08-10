@@ -21,10 +21,10 @@
 <nav aria-label="Breadcrumb">
   <a class="{{ $linkClass }}" href="{{ site.Home.RelPermalink }}">Acasă</a>
   {{- with $parentEntry -}}
-    <span aria-hidden="true"> &gt; </span>
+    <span aria-hidden="true"> » </span>
     <a class="{{ $linkClass }}" href="{{ .URL }}">{{ .Name | safeHTML }}</a>
   {{- end -}}
-  <span aria-hidden="true"> &gt; </span>
+  <span aria-hidden="true"> » </span>
   <span aria-current="page">
     {{- with $currentEntry -}}
       {{ .Name | safeHTML }}
