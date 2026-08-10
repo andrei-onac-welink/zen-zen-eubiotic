@@ -322,12 +322,12 @@ weight      = 90
 # Legal Menu
 [[legal]]
 name        = 'Termeni și condiții'
-url         = '/termeni-si-conditii/'
+url         = ''
 pre         = ''
 post        = ''
 title       = 'Termeni și condiții'
 parent      = ''
-pageRef     = ''
+pageRef     = 'termeni-si-conditii'
 identifier  = 'terms-and-conditions'
 weight      = 10
 
