@@ -99,6 +99,72 @@ identifier  = 'product'
 weight      = 30
 
 [[main]]
+name        = 'Eubiotic'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Eubiotic'
+parent      = 'product'
+pageRef     = 'product/eubiotic'
+identifier  = 'eubiotic'
+weight      = 31
+
+[[main]]
+name        = 'Eubiotic Forte'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Eubiotic Forte'
+parent      = 'product'
+pageRef     = 'product/eubiotic-forte'
+identifier  = 'eubiotic-forte'
+weight      = 32
+
+[[main]]
+name        = 'Eubiotic Imunoflu'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Eubiotic Imunoflu'
+parent      = 'product'
+pageRef     = 'product/eubiotic-imunoflu'
+identifier  = 'eubiotic-imunoflu'
+weight      = 33
+
+[[main]]
+name        = 'Eubiotic Baby picături'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Eubiotic Baby picături'
+parent      = 'product'
+pageRef     = 'product/eubiotic-baby-picaturi'
+identifier  = 'eubiotic-baby-picaturi'
+weight      = 34
+
+[[main]]
+name        = 'Eubiotic Baby'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Eubiotic Baby'
+parent      = 'product'
+pageRef     = 'product/eubiotic-baby-stick'
+identifier  = 'eubiotic-baby'
+weight      = 35
+
+[[main]]
+name        = 'Eubiotic Baby 20 Stick-uri'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Eubiotic Baby 20 Stick-uri'
+parent      = 'product'
+pageRef     = 'product/eubiotic-baby-stick-20'
+identifier  = 'eubiotic-baby-20'
+weight      = 36
+
+[[main]]
 name        = 'Podcast'
 url         = ''
 pre         = ''
@@ -152,3 +218,83 @@ parent      = ''
 pageRef     = 'contact'
 identifier  = 'contact'
 weight      = 80
+
+# Footer Menu
+[[footer]]
+name        = 'Gama Eubiotic'
+pageRef     = 'product'
+identifier  = 'footer-product'
+weight      = 10
+
+[[footer]]
+name        = 'Cumpără'
+url         = '/cumpara/'
+identifier  = 'footer-buy'
+weight      = 20
+
+[[footer]]
+name        = 'Contact'
+pageRef     = 'contact'
+identifier  = 'footer-contact'
+weight      = 30
+
+[[footer]]
+name        = 'Microbiomul'
+pageRef     = 'microbiom'
+identifier  = 'footer-microbiome'
+weight      = 40
+
+[[footer]]
+name        = 'Diaree'
+pageRef     = 'diaree'
+identifier  = 'footer-diarrhea'
+weight      = 50
+
+[[footer]]
+name        = 'Constipație'
+pageRef     = 'constipatie'
+identifier  = 'footer-constipation'
+weight      = 60
+
+[[footer]]
+name        = 'Colici'
+pageRef     = 'colici'
+identifier  = 'footer-colic'
+weight      = 70
+
+[[footer]]
+name        = 'Balonare'
+pageRef     = 'balonare'
+identifier  = 'footer-bloating'
+weight      = 80
+
+[[footer]]
+name        = 'Farmacovigilență'
+url         = '/farmacovigilenta/'
+identifier  = 'footer-pharmacovigilance'
+weight      = 90
+
+# Legal Menu
+[[legal]]
+name        = 'Termeni și condiții'
+url         = '/termeni-si-conditii/'
+identifier  = 'terms-and-conditions'
+weight      = 10
+
+[[legal]]
+name        = 'Politică de confidențialitate'
+pageRef     = 'privacy-policy'
+identifier  = 'privacy-policy'
+weight      = 20
+
+[[legal]]
+name        = 'Politica de cookie-uri'
+url         = '/politica-de-cookie-uri/'
+identifier  = 'cookie-policy'
+weight      = 30
+
+[[legal]]
+name        = 'Schimbați preferințele cookie-urilor'
+url         = '#manage-consent'
+identifier  = 'manage-consent'
+weight      = 40

@@ -38,30 +38,28 @@
     <section aria-labelledby="footer-links-title">
       <h2 class="mb-5 text-base font-bold" id="footer-links-title">Legături rapide</h2>
       <ul class="m-0 list-none space-y-2 p-0 text-base">
-        <li><a class="hover:text-primary-500" href="/gama-eubiotic/">Gama Eubiotic</a></li>
-        <li><a class="hover:text-primary-500" href="/cumpara/">Cumpără</a></li>
-        <li><a class="hover:text-primary-500" href="/contact/">Contact</a></li>
-        <li><a class="hover:text-primary-500" href="/microbiomul/">Microbiomul</a></li>
-        <li><a class="hover:text-primary-500" href="/diaree/">Diaree</a></li>
-        <li><a class="hover:text-primary-500" href="/constipatie/">Constipație</a></li>
-        <li><a class="hover:text-primary-500" href="/colici/">Colici</a></li>
-        <li><a class="hover:text-primary-500" href="/balonare/">Balonare</a></li>
-        <li><a class="hover:text-primary-500" href="/farmacovigilenta/">Farmacovigilență</a></li>
+        {{- range site.Menus.footer -}}
+          {{- $isCurrent := eq $.RelPermalink .URL -}}
+          <li><a class="hover:text-primary-500 aria-current:text-primary-500 font-medium" href="{{ .URL }}" {{ if $isCurrent }}aria-current="page"{{ end }}>{{ .Name | safeHTML }}</a></li>
+        {{- end -}}
       </ul>
     </section>
 
     <section aria-labelledby="footer-contact-title">
       <h2 class="mb-5 text-base font-bold" id="footer-contact-title">Ia legătura cu noi</h2>
-      <p class="text-base leading-6">Poți lua legătura cu noi accesând pagina de contact <a class="font-semibold text-primary-500 underline underline-offset-2" href="/contact/">de aici</a>.</p>
+      <p class="text-base leading-6">Poți lua legătura cu noi accesând pagina de contact a <a class="font-medium text-primary-500 underline-offset-2" href="/contact/">zentiva.ro</a>.</p>
     </section>
   </div>
 
   <div class="bg-[#aaaaaa] px-5 py-8 text-center text-base leading-5 text-white md:px-8">
     <nav class="mb-3 flex flex-wrap justify-center gap-x-5 gap-y-1" aria-label="Linkuri juridice">
-      <a class="hover:text-primary-100" href="/termeni-si-conditii/">Termeni și condiții</a>
-      <a class="hover:text-primary-100" href="/privacy-policy/">Politică de confidențialitate</a>
-      <a class="hover:text-primary-100" href="/politica-de-cookie-uri/">Politica de cookie-uri</a>
-      <button class="hover:text-primary-100" type="button">Schimbați preferințele cookie-urilor</button>
+      {{- range site.Menus.legal -}}
+        {{- if ne .URL "#manage-consent" -}}
+          <a class="hover:text-primary-100" href="{{ .URL }}">{{ .Name | safeHTML }}</a>
+        {{- else -}}
+          <button class="hover:text-primary-100" type="button" data-cc="show-preferencesModal">{{ .Name }}</button>
+        {{- end -}}
+      {{- end -}}
     </nav>
     <small class="text-base">©<span class="js-copyright-year">{{ now.Year }}</span> <strong class="uppercase">{{ site.Title }}<sup>®</sup></strong> | {{ site.Copyright | safeHTML }}</small>
     <script>document.querySelector('.js-copyright-year').textContent = new Date().getFullYear();</script>
