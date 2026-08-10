@@ -363,3 +363,48 @@ parent      = ''
 pageRef     = ''
 identifier  = 'manage-consent'
 weight      = 40
+
+# Social Menu
+[[social]]
+name        = 'Facebook'
+url         = 'https://www.facebook.com/EUBIOTIC/'
+pre         = 'facebook-icon'
+post        = ''
+title       = 'Facebook'
+parent      = ''
+pageRef     = ''
+identifier  = 'facebook'
+weight      = 10
+
+[[social]]
+name        = 'Instagram'
+url         = 'https://www.instagram.com/_eubiotic/'
+pre         = 'instagram-icon'
+post        = ''
+title       = 'Instagram'
+parent      = ''
+pageRef     = ''
+identifier  = 'instagram'
+weight      = 20
+
+[[social]]
+name        = 'LinkedIn'
+url         = 'https://ro.linkedin.com/company/zentiva-romania'
+pre         = 'linkedin-icon'
+post        = ''
+title       = 'LinkedIn'
+parent      = ''
+pageRef     = ''
+identifier  = 'linkedin'
+weight      = 30
+
+[[social]]
+name        = 'YouTube'
+url         = 'https://www.youtube.com/@GamaEubiotic'
+pre         = 'youtube-icon'
+post        = ''
+title       = 'YouTube'
+parent      = ''
+pageRef     = ''
+identifier  = 'youtube'
+weight      = 40
