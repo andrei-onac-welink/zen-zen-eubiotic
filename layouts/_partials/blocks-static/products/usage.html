@@ -1,6 +1,6 @@
 {{- $backgroundImage := partial "components/image-resource" (dict "page" .page "name" .image) -}}
 
-<section class="relative isolate overflow-hidden bg-secondary-900 bg-fixed bg-cover bg-right-top bg-no-repeat py-16 text-white lg:py-24" {{ if $backgroundImage }}style="{{ printf "background-image:url('%s')" $backgroundImage | safeCSS }}"{{ end }} aria-labelledby="usage-title">
+<section class="relative isolate flex min-h-[28rem] items-center overflow-hidden bg-secondary-900 bg-fixed bg-cover bg-right-top bg-no-repeat py-16 text-white lg:min-h-[38rem] lg:py-24" {{ if $backgroundImage }}style="{{ printf "background-image:url('%s')" $backgroundImage | safeCSS }}"{{ end }} aria-labelledby="usage-title">
   <span class="absolute inset-0 z-0 {{ if eq .overlayVariant "primary" }}bg-(image:--color-gradient-product-usage-primary){{ else }}bg-(image:--color-gradient-product-usage){{ end }}" aria-hidden="true"></span>
 
   <div class="container relative z-10 grid grid-cols-1 xl:grid-cols-2">
@@ -19,10 +19,17 @@
       {{- range .sections -}}
         <section class="mt-6">
           {{- with .title -}}<h3 class="text-2xl font-bold">{{ . }}</h3>{{- end -}}
+          {{- $ordered := .ordered -}}
           {{- with .items -}}
-            <ul class="mt-3 list-disc space-y-2 pl-6 text-base leading-7">
-              {{- range . -}}<li>{{ . | safeHTML }}</li>{{- end -}}
-            </ul>
+            {{- if $ordered -}}
+              <ol class="mt-3 list-decimal space-y-2 pl-6 text-base leading-7">
+                {{- range . -}}<li>{{ . | safeHTML }}</li>{{- end -}}
+              </ol>
+            {{- else -}}
+              <ul class="mt-3 list-disc space-y-2 pl-6 text-base leading-7">
+                {{- range . -}}<li>{{ . | safeHTML }}</li>{{- end -}}
+              </ul>
+            {{- end -}}
           {{- end -}}
           {{- with .paragraphs -}}
             <div class="mt-3 space-y-4 text-base leading-7">
@@ -30,6 +37,10 @@
             </div>
           {{- end -}}
         </section>
+      {{- end -}}
+
+      {{- with .footnote -}}
+        <p class="mt-8 text-sm italic leading-6">{{ . | safeHTML }}</p>
       {{- end -}}
     </div>
   </div>
