@@ -1,0 +1,40 @@
+{{- $imagePath := partial "components/image-resource" (dict "page" .page "name" .image) -}}
+{{- $popoverID := printf "microbiome-tooltip-%s" (.image | urlize) -}}
+
+<section class="bg-white py-16 lg:py-24" aria-labelledby="microbiome-intro-title">
+  <div class="container">
+    <h2 class="text-xl font-bold leading-8 text-primary-500 sm:text-3xl sm:leading-9 font-serif" id="microbiome-intro-title">{{ .lead | safeHTML }}</h2>
+
+    <div class="mt-12 grid items-center gap-10 lg:grid-cols-2 lg:gap-16">
+      <div class="space-y-5 text-base leading-7 text-secondary-700">
+        {{- range .paragraphs -}}
+          <p>{{ . | safeHTML }}</p>
+        {{- end -}}
+      </div>
+
+      {{- if $imagePath -}}
+        <div class="relative">
+          {{ partial "components/image-responsive" (dict
+            "path" $imagePath
+            "class" "w-full object-cover"
+            "loading" "lazy"
+            "fetchPriority" "auto"
+            "alt" (.imageAlt | default .page.Title)
+            "format" "webp"
+            "quality" 84
+            "widths" (slice 400 640 800)
+            "sizes" "(max-width: 1023px) calc(100vw - 32px), 42vw"
+          ) }}
+
+          <button class="absolute left-1/2 top-1/2 grid size-12 -translate-x-1/2 -translate-y-1/2 cursor-help place-items-center rounded-full bg-primary-500 text-white shadow-lg transition-transform hover:scale-110 focus-visible:scale-110 [anchor-name:--microbiome-tooltip-anchor] lg:size-14" type="button" popovertarget="{{ $popoverID }}" aria-label="{{ .tooltip }}">
+            <svg class="size-7 lg:size-8" aria-hidden="true" focusable="false"><use href="#i-icon"></use></svg>
+          </button>
+
+          <div class="z-50 max-w-64 rounded-md border-0 bg-secondary-800 px-4 py-2 text-center text-sm font-semibold text-white shadow-xl [position-anchor:--microbiome-tooltip-anchor] [position-area:top]" id="{{ $popoverID }}" popover>
+            {{ .tooltip }}
+          </div>
+        </div>
+      {{- end -}}
+    </div>
+  </div>
+</section>

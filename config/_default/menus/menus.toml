@@ -12,14 +12,80 @@ weight      = 10
 
 [[main]]
 name        = 'Despre'
-url         = ''
+url         = '/despre/eubiotic/'
 pre         = ''
 post        = ''
 title       = 'Despre Eubiotic'
 parent      = ''
-pageRef     = 'despre-eubiotic'
+pageRef     = ''
 identifier  = 'about'
 weight      = 20
+
+[[main]]
+name        = 'Despre Eubiotic®'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Despre Eubiotic®'
+parent      = 'about'
+pageRef     = 'despre-eubiotic'
+identifier  = 'despre-eubiotic'
+weight      = 21
+
+[[main]]
+name        = 'Microbiomul'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Microbiomul'
+parent      = 'about'
+pageRef     = 'microbiom'
+identifier  = 'microbiom'
+weight      = 22
+
+[[main]]
+name        = 'Diaree'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Diaree'
+parent      = 'about'
+pageRef     = 'diaree'
+identifier  = 'diarrhea'
+weight      = 23
+
+[[main]]
+name        = 'Constipație'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Constipație'
+parent      = 'about'
+pageRef     = 'constipatie'
+identifier  = 'constipatie'
+weight      = 24
+
+[[main]]
+name        = 'Colici'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Colici'
+parent      = 'about'
+pageRef     = 'colici'
+identifier  = 'colici'
+weight      = 25
+
+[[main]]
+name        = 'Balonare'
+url         = ''
+pre         = ''
+post        = ''
+title       = 'Balonare'
+parent      = 'about'
+pageRef     = 'balonare'
+identifier  = 'balonare'
+weight      = 26
 
 [[main]]
 name        = 'Gama Eubiotic'
@@ -28,8 +94,8 @@ pre         = ''
 post        = ''
 title       = 'Gama Eubiotic'
 parent      = ''
-pageRef     = 'gama-eubiotic'
-identifier  = 'products'
+pageRef     = 'product'
+identifier  = 'product'
 weight      = 30
 
 [[main]]

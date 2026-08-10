@@ -1,0 +1,55 @@
+<section class="{{ if eq .background "muted" }}bg-primary-50{{ else }}bg-white{{ end }} py-16 lg:py-24" aria-label="{{ .ariaLabel | default .page.Title }}">
+  <div class="container grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
+    <div class="{{ if .mobileImageFirst }}order-2{{ end }} {{ if eq .imagePosition "left" }}lg:order-2{{ else }}lg:order-1{{ end }} space-y-5 text-base leading-7 text-secondary-700">
+      {{- range .paragraphs -}}
+        <p>{{ . | safeHTML }}</p>
+      {{- end -}}
+    </div>
+
+    <div class="{{ if .mobileImageFirst }}order-1{{ end }} {{ if eq .imagePosition "left" }}lg:order-1{{ else }}lg:order-2{{ end }} {{ if .compactImages }}space-y-8{{ end }}">
+      {{- range .images -}}
+        {{- $imagePath := partial "components/image-resource" (dict "page" $.page "name" .name) -}}
+        {{- if $imagePath -}}
+          {{- $imageClass := cond $.compactImages "mx-auto max-h-40 w-full max-w-md object-contain" "mx-auto w-full object-contain" -}}
+          {{- $image := partial "components/image-responsive" (dict
+              "path" $imagePath
+              "class" $imageClass
+              "loading" "lazy"
+              "fetchPriority" "auto"
+              "alt" (.alt | default $.page.Title)
+              "format" "webp"
+              "quality" 84
+              "widths" (slice 320 480 720)
+              "sizes" "(max-width: 1023px) calc(100vw - 32px), 42vw"
+            ) -}}
+
+          {{- if .video -}}
+            {{- $modalID := printf "video-modal-%s" (.name | urlize) -}}
+            <button class="group relative mx-auto block w-full cursor-pointer overflow-hidden" type="button" data-video-modal-open="{{ $modalID }}" aria-label="{{ .videoLabel | default "Redă videoclipul" }}">
+              {{ $image }}
+              <span class="absolute inset-0 grid place-items-center bg-secondary-900/0 transition-colors group-hover:bg-secondary-900/15 group-focus-visible:bg-secondary-900/15" aria-hidden="true">
+                <span class="grid size-16 place-items-center rounded-full border-2 border-white bg-transparent text-white shadow-lg transition-all group-hover:scale-110 group-hover:bg-white/10 group-focus-visible:scale-110 group-focus-visible:bg-white/10 lg:size-20">
+                  <svg class="ml-1 size-7 lg:size-9" aria-hidden="true" focusable="false"><use href="#player-play-icon"></use></svg>
+                </span>
+              </span>
+            </button>
+
+            <dialog class="container m-auto w-[calc(100%-2rem)] overflow-visible bg-transparent text-white backdrop:bg-secondary-900/85" id="{{ $modalID }}" data-video-modal aria-label="{{ .videoLabel | default "Videoclip" }}">
+              <div class="relative overflow-hidden rounded-lg bg-black shadow-2xl">
+                <button class="absolute right-3 top-3 z-10 grid size-11 cursor-pointer place-items-center rounded-full bg-black/70 text-3xl leading-none text-white transition-colors hover:bg-primary-500 focus-visible:bg-primary-500" type="button" data-video-modal-close aria-label="Închide videoclipul">
+                  <span aria-hidden="true">&times;</span>
+                </button>
+                <video class="aspect-video w-full bg-black" controls playsinline preload="metadata">
+                  <source src="{{ .video }}" type="video/mp4">
+                  Browserul tău nu acceptă redarea videoclipurilor.
+                </video>
+              </div>
+            </dialog>
+          {{- else -}}
+            {{ $image }}
+          {{- end -}}
+        {{- end -}}
+      {{- end -}}
+    </div>
+  </div>
+</section>
