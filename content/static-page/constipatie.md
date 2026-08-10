@@ -23,11 +23,6 @@ blocks:
   - component: 'hero'
     title: 'Constipație'
     image: 'hero'
-    breadcrumbs:
-      - label: 'Despre'
-        href: '/despre/eubiotic/'
-      - label: 'Constipație'
-        
   - component: 'content-row'
     ariaLabel: 'Ce este constipația'
     title: 'Constipația este în general descrisă ca având mai puțin de trei scaune pe săptămână.'

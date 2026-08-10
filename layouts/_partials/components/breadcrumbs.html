@@ -1,0 +1,35 @@
+{{- $page := .page -}}
+{{- $linkClass := .linkClass | default "hover:text-primary-500" -}}
+{{- $currentURL := $page.RelPermalink -}}
+{{- $currentEntry := false -}}
+{{- $parentEntry := false -}}
+
+{{- range site.Menus.main -}}
+  {{- $topLevelEntry := . -}}
+  {{- if eq $currentURL .URL -}}
+    {{- $currentEntry = . -}}
+    {{- $parentEntry = false -}}
+  {{- end -}}
+  {{- range .Children -}}
+    {{- if eq $currentURL .URL -}}
+      {{- $currentEntry = . -}}
+      {{- $parentEntry = $topLevelEntry -}}
+    {{- end -}}
+  {{- end -}}
+{{- end -}}
+
+<nav aria-label="Breadcrumb">
+  <a class="{{ $linkClass }}" href="{{ site.Home.RelPermalink }}">Acasă</a>
+  {{- with $parentEntry -}}
+    <span aria-hidden="true"> &gt; </span>
+    <a class="{{ $linkClass }}" href="{{ .URL }}">{{ .Name | safeHTML }}</a>
+  {{- end -}}
+  <span aria-hidden="true"> &gt; </span>
+  <span aria-current="page">
+    {{- with $currentEntry -}}
+      {{ .Name | safeHTML }}
+    {{- else -}}
+      {{ $page.LinkTitle | safeHTML }}
+    {{- end -}}
+  </span>
+</nav>

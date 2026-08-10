@@ -13,9 +13,6 @@ blocks:
     title: 'Cumpără'
     image: 'hero'
     decorations: false
-    breadcrumbs:
-      - label: 'Cumpără'
-        
   - component: 'buy-content'
     ariaLabel: 'Unde găsești produsele Eubiotic'
     introduction: 'Eubiotic<sup>®</sup> este primul produs cu bacterii benefice lansat în România, în 2004. Misiunea sa de pionier în informarea și educarea pacienților, farmaciștilor și a medicilor despre beneficiile acestui tip de produs a pus bazele categoriei de produse cu microorganisme benefice în piața locală de suplimente alimentare.'

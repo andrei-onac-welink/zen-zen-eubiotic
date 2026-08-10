@@ -28,16 +28,6 @@
   <h1 class="text-3xl font-bold uppercase drop-shadow-md lg:text-5xl" id="static-page-title">{{ .title | safeHTML }}</h1>
 
   <div class="container absolute inset-x-0 bottom-4 hidden text-base lg:block">
-    <nav aria-label="Breadcrumb">
-      <a class="transition-colors hover:text-primary-100" href="/">Acasă</a>
-      {{- range .breadcrumbs -}}
-        <span aria-hidden="true"> &gt; </span>
-        {{- if .href -}}
-          <a class="transition-colors hover:text-primary-100" href="{{ .href }}">{{ .label | safeHTML }}</a>
-        {{- else -}}
-          <span aria-current="page">{{ .label | safeHTML }}</span>
-        {{- end -}}
-      {{- end -}}
-    </nav>
+    {{ partial "components/breadcrumbs" (dict "page" .page "linkClass" "transition-colors hover:text-primary-100") }}
   </div>
 </section>

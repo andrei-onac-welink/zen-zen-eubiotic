@@ -14,8 +14,6 @@
           "loading" "eager"
           "fetchPriority" "high"
           "alt" .title
-          "format" "webp"
-          "quality" 86
           "widths" (slice 320 480 640)
           "sizes" "(max-width: 1023px) 75vw, 25vw"
         ) }}
@@ -39,12 +37,6 @@
   </div>
 
   <div class="container mt-10 hidden text-base text-secondary-500 lg:mt-auto lg:block lg:pt-10">
-    <nav aria-label="Breadcrumb">
-      <a class="hover:text-primary-500" href="/">Acasă</a>
-      <span aria-hidden="true"> &gt; </span>
-      <a class="hover:text-primary-500" href="/gama-eubiotic/">Gama Eubiotic</a>
-      <span aria-hidden="true"> &gt; </span>
-      <span aria-current="page">{{ .page.Title }}</span>
-    </nav>
+    {{ partial "components/breadcrumbs" (dict "page" .page "linkClass" "hover:text-primary-500") }}
   </div>
 </section>

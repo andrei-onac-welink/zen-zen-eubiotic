@@ -25,11 +25,6 @@ blocks:
   - component: 'hero'
     title: 'Eubiotic<sup>®</sup>'
     image: 'hero'
-    breadcrumbs:
-      - label: 'Despre'
-        href: '/despre/eubiotic/'
-      - label: 'Eubiotic<sup>®</sup>'
-        
   - component: 'content-row'
     ariaLabel: 'Despre brandul Eubiotic'
     compactImages: true
