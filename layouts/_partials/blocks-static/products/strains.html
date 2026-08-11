@@ -2,8 +2,8 @@
   <div class="container grid gap-6 {{ if eq (len .items) 3 }}lg:grid-cols-2 xl:grid-cols-3{{ else }}max-w-lg lg:grid-cols-2{{ end }}">
     {{- range .items -}}
       {{- $imagePath := partial "components/image-resource" (dict "page" $.page "name" .image) -}}
-      <article class="grid gap-4 sm:grid-cols-2">
-        <div class="p-4 flex min-h-48 items-center rounded-md bg-white shadow-md">
+      <article class="grid gap-3 sm:grid-cols-2">
+        <figure class="p-4 flex min-h-48 items-center rounded-md bg-white shadow-md">
           {{- if $imagePath -}}
             {{ partial "components/image-responsive" (dict
               "path" $imagePath
@@ -11,16 +11,14 @@
               "loading" "lazy"
               "fetchPriority" "auto"
               "alt" .alt
-              "format" "webp"
-              "quality" 86
               "widths" (slice 240 360 480)
               "sizes" "(max-width: 639px) calc(100vw - 32px), 25vw"
             ) }}
           {{- end -}}
-        </div>
-        <div class="flex min-h-48 flex-col items-center justify-center rounded-md bg-accent-500 p-4 text-center text-white shadow-md">
+        </figure>
+        <div class="flex min-h-48 flex-col items-center justify-center rounded-md bg-accent-500 p-3 text-center text-white shadow-md">
           <p class="text-base font-semibold leading-6">{{ .introduction | safeHTML }}</p>
-          <a class="mt-5 inline-flex rounded-full bg-white px-5 py-3 text-base font-bold text-accent-500 transition hover:bg-primary-50" href="{{ .href }}" target="_blank" rel="noopener noreferrer">Află mai multe</a>
+          <a class="btn-accent | mt-5 text-base py-2 px-6" href="{{ .href }}" target="_blank" rel="noopener noreferrer">Află mai multe</a>
         </div>
       </article>
     {{- end -}}

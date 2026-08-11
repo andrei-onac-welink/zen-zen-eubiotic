@@ -1,10 +1,10 @@
 <section class="bg-white py-12 lg:py-16" aria-labelledby="references-title">
   <div class="container">
-    <div>
-      <h2 class="text-base italic text-secondary-600" id="references-title">{{ .title }}</h2>
-      <ol class="mt-4 list-decimal space-y-2 pl-6 text-base italic leading-6 text-secondary-500">
-        {{- range .items -}}<li>{{ . }}</li>{{- end -}}
-      </ol>
-    </div>
+    <h2 class="text-base italic text-secondary-600" id="references-title">{{ .title }}</h2>
+    <ol class="mt-4 list-decimal pl-12 text-sm italic leading-6 text-secondary-500">
+      {{- range .items -}}
+        <li>{{ . }}</li>
+      {{- end -}}
+    </ol>
   </div>
 </section>

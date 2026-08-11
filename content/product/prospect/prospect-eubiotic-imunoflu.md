@@ -36,16 +36,16 @@ Eubiotic Imunoflu conține culturi vii de lactobacili și bifidobacterii benefic
 
 **Eubiotic Imunoflu conține:**
 
-| Compoziție                 | CANTITATE | UM  |
-|----------------------------|-----------|-----|
-| Vitamina D                 | 2000      | UI  |
-| Vitamina C                 | 100       | mg  |
-| Zinc                       | 10        | mg  |
-| Tulpini benefice           |
-| Bifidobacterium Lactis     | 1.46×109  | UFC |
-| Bifidobacterium Breve      | 3.22×108  | UFC |
-| Lactobacillus Casei        | 1.11×108  | UFC |
-| Lactobacillus Rhamnosus GG | 1.27×108  | UFC |
+| Compoziție                 | CANTITATE  | UM   |
+|:---------------------------|:-----------|:-----|
+| Vitamina D                 | 2000       | UI   |
+| Vitamina C                 | 100        | mg   |
+| Zinc                       | 10         | mg   |
+| **Tulpini benefice**       |
+| Bifidobacterium Lactis     | 1.46×109   | UFC  |
+| Bifidobacterium Breve      | 3.22×108   | UFC  |
+| Lactobacillus Casei        | 1.11×108   | UFC  |
+| Lactobacillus Rhamnosus GG | 1.27×108   | UFC  |
 
 **Stabilitatea produsului este asigurată de structura bistrat a comprimatului de Eubiotic Imunoflu.**
 

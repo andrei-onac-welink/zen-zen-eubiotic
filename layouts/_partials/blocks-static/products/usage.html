@@ -5,8 +5,10 @@
 
   <div class="container relative z-10 grid grid-cols-1 xl:grid-cols-2">
     <div class="hidden xl:block" aria-hidden="true"></div>
-    <div>
-      <h2 class="border-b-2 border-white pb-2 text-3xl font-bold italic lg:text-4xl" id="usage-title">{{ .title }}</h2>
+    <div class="block">
+      <div class="relative">
+        <h2 class="pb-2 text-3xl font-bold italic lg:text-4xl" id="usage-title">{{ .title }}</h2>
+      </div>
       {{- with .introduction -}}
         <p class="mt-5 text-base font-semibold leading-7">{{ . | safeHTML }}</p>
       {{- end -}}

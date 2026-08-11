@@ -2,7 +2,7 @@
 id: 6
 uuid: "31ac9f6a-33b7-46d7-84d8-33d9e3390010"
 title: 'Eubiotic Baby 20 Stick-uri - Pentru sănătatea digestivă a celor mici'
-linkTitle: 'Eubiotic Baby<sup>®</sup> 20 Stick-uri'
+linkTitle: 'Eubiotic Baby 20 Stick-uri'
 description: 'Eubiotic Baby susține sănătatea digestivă a micuților, contribuind la echilibrul microbiotei intestinale. Accesează site-ul pentru mai multe detalii.'
 slug: '/eubiotic-baby-20/'
 weight: 6

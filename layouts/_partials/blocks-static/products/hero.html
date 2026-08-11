@@ -1,4 +1,14 @@
 {{- $imagePath := partial "components/image-resource" (dict "page" .page "name" .image) -}}
+{{- $imageClass := "mx-auto w-auto object-contain" -}}
+{{- $imageWidths := slice 320 480 640 -}}
+{{- $imageSizes := "(max-width: 1023px) 75vw, 25vw" -}}
+{{- with resources.Get (strings.TrimPrefix "/" $imagePath) -}}
+  {{- if gt .Height .Width -}}
+    {{- $imageClass = "mx-auto max-h-110 w-auto object-contain" -}}
+    {{- $imageWidths = slice 240 320 480 -}}
+    {{- $imageSizes = "(max-width: 1023px) 320px, 350px" -}}
+  {{- end -}}
+{{- end -}}
 {{- $ctaHref := .ctaHref | default "" -}}
 {{- with .ctaPage -}}
   {{- with site.GetPage . -}}
@@ -7,27 +17,29 @@
 {{- end -}}
 
 <section class="relative isolate overflow-hidden bg-white pb-20 pt-32 lg:flex lg:min-h-[52rem] lg:flex-col lg:pb-8 lg:pt-36" id="top" aria-labelledby="product-title">
-  <span class="absolute -left-20 top-24 -z-10 size-64 rounded-full bg-primary-100 lg:-left-16 lg:top-24 lg:size-72" aria-hidden="true"></span>
-  <span class="absolute left-[10%] top-4 -z-10 size-28 rounded-full bg-primary-50 lg:left-[10%] lg:size-36" aria-hidden="true"></span>
-  <span class="absolute bottom-24 right-[-4rem] -z-10 size-56 rounded-full bg-primary-50 lg:right-[-3rem] lg:size-72" aria-hidden="true"></span>
+  <span class="absolute -left-20 top-24 -z-10 size-64 rounded-[45%] bg-[#FADADB] lg:-left-16 lg:top-24 lg:size-80" aria-hidden="true"></span>
+  <span class="absolute left-[10%] top-4 -z-10 size-28 rounded-[45%] bg-[#FDEDED] lg:left-[10%] lg:size-50" aria-hidden="true"></span>
+  <span class="absolute left-[5%] top-104 -z-10 size-20 rounded-[45%] bg-primary-50 lg:left-[5%] lg:size-36" aria-hidden="true"></span>
+  <span class="absolute top-30 right-[-4rem] -z-10 size-56 rounded-full bg-[#FADADB] lg:right-[-3rem] lg:size-72 blur-xl" aria-hidden="true"></span>
+  <span class="absolute right-[14rem] top-88 -z-10 size-20 rounded-[45%] bg-[#FDEDED] lg:right-[14rem] lg:size-52 blur-xl" aria-hidden="true"></span>
 
   <div class="container grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
     <div>
       {{- if $imagePath -}}
         {{ partial "components/image-responsive" (dict
           "path" $imagePath
-          "class" "mx-auto object-contain w-auto"
+          "class" $imageClass
           "loading" "eager"
           "fetchPriority" "high"
           "alt" .title
-          "widths" (slice 320 480 640)
-          "sizes" "(max-width: 1023px) 75vw, 25vw"
+          "widths" $imageWidths
+          "sizes" $imageSizes
         ) }}
       {{- end -}}
     </div>
 
     <div>
-      <h1 class="text-2xl font-bold uppercase text-primary-500 lg:text-5xl" id="product-title">{{ .title }}</h1>
+      <h1 class="text-2xl font-bold uppercase text-primary-500 lg:text-6xl" id="product-title">{{ .title }}</h1>
       <h2 class="mt-4 text-xl font-bold leading-tight text-primary-500 lg:text-3xl">{{ .productName | safeHTML }}</h2>
       <p class="text-lg font-bold text-primary-500 lg:text-3xl">{{ .heading }}</p>
       {{- with .introduction -}}
@@ -39,7 +51,7 @@
         </div>
       {{- end -}}
       {{- if and .ctaLabel $ctaHref -}}
-        <a class="btn-primary mt-6 text-base" href="{{ $ctaHref }}">{{ .ctaLabel }}</a>
+        <a class="btn-primary | mt-6" href="{{ $ctaHref }}">{{ .ctaLabel }}</a>
       {{- end -}}
     </div>
   </div>

@@ -31,8 +31,8 @@
     <div class="container absolute inset-x-0 bottom-4 hidden text-base lg:block">
       <nav aria-label="Breadcrumb">
         <a class="transition-colors hover:text-primary-100" href="/">Acasă</a>
-        <span aria-hidden="true"> &gt; </span>
-        <span aria-current="page">{{ .Title }}</span>
+        <span aria-hidden="true"> » </span>
+        <span aria-current="page">{{ .LinkTitle }}</span>
       </nav>
     </div>
   </section>
@@ -48,31 +48,41 @@
             {{- end -}}
           {{- end -}}
           {{- $headingID := printf "product-%s" (.Title | anchorize) -}}
+          {{- $imageClass := "mx-auto w-full object-contain" -}}
+          {{- $imageWidths := slice 320 480 640 -}}
+          {{- $imageSizes := "(max-width: 639px) calc(100vw - 32px), (max-width: 1023px) calc(100vw - 64px), 40vw" -}}
+          {{- with resources.Get $imagePath -}}
+            {{- if gt .Height .Width -}}
+              {{- $imageClass = "mx-auto max-h-80 w-auto object-contain sm:max-h-96 lg:max-h-[26rem]" -}}
+              {{- $imageWidths = slice 320 480 640 -}}
+              {{- $imageSizes = "(max-width: 639px) 300px, (max-width: 1023px) 360px, 400px" -}}
+            {{- end -}}
+          {{- end -}}
 
-          <article class="grid items-center gap-7 lg:grid-cols-5 lg:gap-12" aria-labelledby="{{ $headingID }}">
-            <a class="block lg:col-span-2" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
+          <article class="grid items-center gap-7 lg:grid-cols-[1fr_2fr] lg:gap-12" aria-labelledby="{{ $headingID }}">
+            <a class="w-full block" href="{{ .RelPermalink }}" tabindex="-1" aria-hidden="true">
               {{- if $imagePath -}}
                 {{ partial "components/image-responsive" (dict
                   "path" $imagePath
-                  "class" "mx-auto w-full object-contain"
+                  "class" $imageClass
                   "loading" "lazy"
                   "fetchPriority" "auto"
                   "alt" .Title
-                  "widths" (slice 320 480 640)
-                  "sizes" "(max-width: 639px) calc(100vw - 32px), (max-width: 1023px) calc(100vw - 64px), 40vw"
+                  "widths" $imageWidths
+                  "sizes" $imageSizes
                 ) }}
               {{- end -}}
             </a>
 
-            <div class="lg:col-span-3">
+            <header class="block">
               <h2 class="text-xl font-bold text-primary-500 lg:text-2xl" id="{{ $headingID }}">
-                <a class="transition-colors hover:text-primary-700" href="{{ .RelPermalink }}">{{ .Title }}</a>
+                <a class="transition-colors hover:text-primary-700" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
               </h2>
               <div class="mt-4 text-base leading-6 text-secondary-700 [&>p]:mb-3 [&>p:last-child]:mb-0">
                 {{ .Content }}
               </div>
               <a class="btn-primary mt-5 text-base" href="{{ .RelPermalink }}">Află mai multe</a>
-            </div>
+            </header>
           </article>
         {{- end -}}
       </div>

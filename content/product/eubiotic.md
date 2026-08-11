@@ -2,7 +2,7 @@
 id: 1
 uuid: "31ac9f6a-33b7-46d7-84d8-33d9e3390005"
 title: 'Eubiotic Capsule - bacterii benefice pentru sănătatea intestinală'
-linkTitle: 'Eubiotic<sup>®</sup>'
+linkTitle: 'Eubiotic'
 description: 'Descoperă Eubiotic Capsule, supliment cu bacterii benefice pentru echilibrarea microbiotei și susținerea sănătății intestinale. Mai multe detalii pe site.'
 slug: '/eubiotic-capsule/'
 weight: 1

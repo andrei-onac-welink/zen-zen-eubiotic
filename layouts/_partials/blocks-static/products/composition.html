@@ -9,15 +9,13 @@
     </div>
 
     {{- if $imagePath -}}
-      <figure>
+      <figure class="block">
         {{ partial "components/image-responsive" (dict
           "path" $imagePath
           "class" "mx-auto w-full object-contain"
           "loading" "lazy"
           "fetchPriority" "auto"
           "alt" .alt
-          "format" "webp"
-          "quality" 88
           "widths" (slice 480 720 960)
           "sizes" "(max-width: 1023px) 100vw, 50vw"
         ) }}
