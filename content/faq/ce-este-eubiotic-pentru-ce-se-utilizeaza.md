@@ -11,25 +11,25 @@ Produsele Eubiotic sunt suplimente alimentare care suplimenteaza flora intestina
 
 **EUBIOTIC CAPSULE**
 
-EUBIOTIC® capsule este o combinație de doua tulpini bacteriene benefice (tulpina BB-12® a Bifidobacterium animalis si tulpina LA-5® a Lactobacillus acidophilus) care, prin produșii lor de metabolism, influențeaza atât mediul intestinal, cat și mediul intern al organismului. Mediul intern al organismului se poate afla fie în stare fiziologică normală, fie dezechilibrată, fie caracterizată prin diferite patologii de fond dobândite în istoricul personal al fiecărui individ in parte.
+EUBIOTIC<sup>®</sup> capsule este o combinație de doua tulpini bacteriene benefice (tulpina BB-12<sup>®</sup> a Bifidobacterium animalis si tulpina LA-5<sup>®</sup> a Lactobacillus acidophilus) care, prin produșii lor de metabolism, influențeaza atât mediul intestinal, cat și mediul intern al organismului. Mediul intern al organismului se poate afla fie în stare fiziologică normală, fie dezechilibrată, fie caracterizată prin diferite patologii de fond dobândite în istoricul personal al fiecărui individ in parte.
 
-EUBIOTIC® este o combinație de:
+EUBIOTIC<sup>®</sup> este o combinație de:
 
-Culturi lactice vii: Bifidobacterium animalis, tulpina BB-12® si Lactobacillus acidophilus, tulpina LA-5® intr-o cantitate de 4×109 UFC (unități formatoare de colonii)/ capsulă.
+Culturi lactice vii: Bifidobacterium animalis, tulpina BB-12<sup>®</sup> si Lactobacillus acidophilus, tulpina LA-5<sup>®</sup> intr-o cantitate de 4 × 10<sup>9</sup> UFC (unități formatoare de colonii)/ capsulă.
 
 Bifidobacterium și Lactobacillus acidophilus se regăsesc în mod normal în flora intestinală sănătoasă, pot fi obținute prin alimentație naturala sau prin suplimentare, dar numărul lor poate să fie afectat de factori externi cum ar fi consumul de antibiotice, stresul, dietele dezechilibrate, consumul de alimente contaminate sau schimbarea mediului din timpul călătoriilor.
 
-Bifidobacterium animalis tulpina BB-12®  este o bacterie benefică studiată *in vitro, in vivo* și în studii clinice  pentru rolul asupra sistemului digestiv și al sistemului imunitar.
+Bifidobacterium animalis tulpina BB-12<sup>®</sup>  este o bacterie benefică studiată *in vitro, in vivo* și în studii clinice  pentru rolul asupra sistemului digestiv și al sistemului imunitar.
 
-Lactobacillus acidophilus tulpina LA-5® este o bacterie benefică bine studiată pentru rolul asupra sistemului digestiv.
+Lactobacillus acidophilus tulpina LA-5<sup>®</sup> este o bacterie benefică bine studiată pentru rolul asupra sistemului digestiv.
 
-Asocierea acestor două tulpini bacteriene benefice (tulpina BB-12® si tulpina LA-5®) – asociere cu efect sinergic – a fost studiată pentru rolul asupra tranzitului intestinal și echilibrarea acestuia. O altă direcție de cercetare științifică implică rolul asocierii tulpinilor BB-12® si LA-5® atât asupra sistemului imunitar cat și asupra compozitiei microbiotei (inclusiv după administrarea de antibiotice).
+Asocierea acestor două tulpini bacteriene benefice (tulpina BB-12<sup>®</sup> si tulpina LA-5<sup>®</sup>) – asociere cu efect sinergic – a fost studiată pentru rolul asupra tranzitului intestinal și echilibrarea acestuia. O altă direcție de cercetare științifică implică rolul asocierii tulpinilor BB-12<sup>®</sup> si LA-5<sup>®</sup> atât asupra sistemului imunitar cat și asupra compozitiei microbiotei (inclusiv după administrarea de antibiotice).
 
-Tulpina bacteriana BB-12® a Bifidobacterium animalis este sigură pentru consumul uman; a primit statutul QPS18 (Prezumție calificată de siguranță). A fost testată în studii clinice umane la niveluri de până la cel puțin 100 miliarde UFC/zi (unități formatoare de colonii), fără probleme de siguranță.
+Tulpina bacteriana BB-12<sup>®</sup> a Bifidobacterium animalis este sigură pentru consumul uman; a primit statutul QPS<sup>18</sup> (Prezumție calificată de siguranță). A fost testată în studii clinice umane la niveluri de până la cel puțin 100 miliarde UFC/zi (unități formatoare de colonii), fără probleme de siguranță.
 
-**EUBIOTIC FORTE – Ce este Eubiotic® Forte și pentru ce se utilizează**
+**EUBIOTIC FORTE – Ce este Eubiotic<sup>®</sup> Forte și pentru ce se utilizează**
 
-**Eubiotic**® **Forte** este o combinație de microorganisme vii (1 x I09 UFC Saccharomyces cerevisiae var.boulardi  și 4 x I09 UFC Lactobacillus rhamnosus GG), recomandată pentru reechilibrarea microflorei intestinale a carei alcătuire și structurare se află sub presiuni fiziologice, patologice sau de altă natură precum tulburările digestive sau administrarea de antibiotice.
+**Eubiotic<sup>®</sup> Forte** este o combinație de microorganisme vii (1 × 10<sup>9</sup> UFC Saccharomyces cerevisiae var.boulardi  și 4 × 10<sup>9</sup> UFC Lactobacillus rhamnosus GG), recomandată pentru reechilibrarea microflorei intestinale a carei alcătuire și structurare se află sub presiuni fiziologice, patologice sau de altă natură precum tulburările digestive sau administrarea de antibiotice.
 
 **Diareea** reprezintă una dintre manifestările digestive frecvente apărute în urma tratamentului cu antibiotice. Diareea poate debuta  la 2 ore după consumul antibioticului, până la 2 luni după terminarea tratamentului cu antibiotic.
 
@@ -73,6 +73,6 @@ Ingredientele din compozitia Eubiotic Imunoflu: Vitamina D, Vitamina C și Zinc 
 
 **EUBIOTIC BABY STICK**
 
-EUBIOTIC® Baby conţine o combinaţie de culturi lactice standardizate vii (Bifidobacterium BB-12®, Lactobacillus L.casei 431®, Streptococcus thermophilus TH-4®) 1 x I09 UFC (unităţi formatoare de colonii), ce suplimentează flora intestinală naturală.
+EUBIOTIC<sup>®</sup> Baby conţine o combinaţie de culturi lactice standardizate vii (Bifidobacterium BB-12<sup>®</sup>, Lactobacillus L.casei 431<sup>®</sup>, Streptococcus thermophilus TH-4<sup>®</sup>) 1 × 10<sup>9</sup> UFC (unităţi formatoare de colonii), ce suplimentează flora intestinală naturală.
 
 *EUBIOTIC BABY este recomandat in situaţiile în care este necesară regenerarea florei intestinale, în cazul tulburărilor de tranzit intestinal şi/sau al folosirii de antibiotice.*

@@ -85,7 +85,7 @@ blocks:
           - 'În cazul în care sunteți sub tratament cu antibiotic, se recomandă administrarea Eubiotic<sup>®</sup> Forte la 2-3 ore după acestea. Se recomandă continuarea administrării de Eubiotic<sup>®</sup> Forte timp de 5 zile după întreruperea administrării de antibiotic.'
 ---
 
-Eubiotic® Forte este o combinaţie de microorganisme vii (Saccharomyces cerevisiae var.boulardi și Lactobacillus rhamnosus GG), studiată pentru rolul asupra tranzitului intestinal și echilibrarea acestuia.
+Eubiotic<sup>®</sup> Forte este o combinaţie de microorganisme vii (Saccharomyces cerevisiae var.boulardi și Lactobacillus rhamnosus GG), studiată pentru rolul asupra tranzitului intestinal și echilibrarea acestuia.
 
 Pe durata episodului diareic este recomandat să ţineţi regim alimentar. Consumul de lichide pentru a preveni deshidratarea este, de asemenea, indicat.
 

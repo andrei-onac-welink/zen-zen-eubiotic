@@ -35,7 +35,7 @@ _Lactobacilus rhamnosus_ este cea mai documentată tulpină de bacterii benefice
 
 Bifidobacterium BB-12 este principala tulpină de microorganisme benefice din tubul digestiv al copiilor mici şi al sugarilor, ea regăsindu-se în laptele matern. Studiile pe populaţia pediatrică demonstrează beneficiile acestei tulpini în tulburările gastro-intestinale.
 
-Eubiotic® BABY picături este recomandat în situaţiile în care este necesară fie refacerea florei intestinale (afectată de stres, diete inadecvate, administrarea antibioticelor sau altor clase de medicamente, infecţii) fie menţinerea microflorei intestinale echilibrate pe termen lung.
+Eubiotic<sup>®</sup> BABY picături este recomandat în situaţiile în care este necesară fie refacerea florei intestinale (afectată de stres, diete inadecvate, administrarea antibioticelor sau altor clase de medicamente, infecţii) fie menţinerea microflorei intestinale echilibrate pe termen lung.
 
 Dovezile ştiinţifice susţin combinaţia celor două tulpini (Lactobacillus rhamnosus LGG şi Bifidobacterium BB-12) pentru situaţiile menţionate mai sus.
 
@@ -80,7 +80,7 @@ Produsul este contraindicat la persoane care prezintă sensibilitate la oricare 
 
 **Ingrediente:**
 
-Ulei de floarea soarelui cu conţinut ridicat de acid oleic (cu adaos de DL-alfa-tocoferol (E307) şi acid citric (E330)) (_agent de încărcare_), _Lactobacillus rhamnosus_ LGG<sup>#</sup>, _Bifidobacterium animalis subsp. lactis_ BB-12# (# în bază de zahăr, maltodextrină, ascorbat de sodiu).
+Ulei de floarea soarelui cu conţinut ridicat de acid oleic (cu adaos de DL-alfa-tocoferol (E307) şi acid citric (E330)) (_agent de încărcare_), _Lactobacillus rhamnosus_ LGG<sup>#</sup>, _Bifidobacterium animalis subsp. lactis_ BB-12<sup>#</sup> (<sup>#</sup> în bază de zahăr, maltodextrină, ascorbat de sodiu).
 
 **Dimensiunile ambalajului/Forma de comercializare şi cantitatea netă**
 

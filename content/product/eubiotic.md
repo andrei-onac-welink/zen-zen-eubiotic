@@ -77,8 +77,8 @@ blocks:
       - 'Johnston BC, Supina AL, Vohra S. Metaanaliza (6 studii, N=70); CMAJ. 2006 Aug 15;175(4):377-83; Cochrane Database Syst Rev. 2007 Apr 18;(2)'
 ---
 
-EUBIOTIC® capsule este o combinaţie de două tulpini bacteriene benefice (tulpina BB-12® a Bifidobacterium animalis și tulpina LA-5® a Lactobacillus acidophilus).
+EUBIOTIC<sup>®</sup> capsule este o combinaţie de două tulpini bacteriene benefice (tulpina BB-12<sup>®</sup> a Bifidobacterium animalis și tulpina LA-5<sup>®</sup> a Lactobacillus acidophilus).
 
-Se recomandă administrarea EUBIOTIC® la 2-3 ore după administrarea antibioticului, pe toată durata antibioterapiei și după.
+Se recomandă administrarea EUBIOTIC<sup>®</sup> la 2-3 ore după administrarea antibioticului, pe toată durata antibioterapiei și după.
 
 Produsul este destinat adulţilor și copiilor de peste 6 ani.

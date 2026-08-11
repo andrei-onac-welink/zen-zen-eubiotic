@@ -91,8 +91,8 @@ blocks:
       - 'Saavedra JM, Bauman NA, Oung I, Perman JA & Yolken RH. Feeding of Bifidobacterium bifidum and Streptococcus thermophilus to infants in hospital for prevention of diarrhea and shedding of rotavirus. The Lancet 1994;344:1046-1049.'
 ---
 
-Eubiotic Baby® Sticks conține o combinaţie de culturi lactice standardizate vii (Bifidobacterium BB-12®, Lactobacillus L.casei 431®, Streptococcus thermophilus TH-4®), ce suplimentează flora intestinală naturală.
+Eubiotic Baby<sup>®</sup> Sticks conține o combinaţie de culturi lactice standardizate vii (Bifidobacterium BB-12<sup>®</sup>, Lactobacillus L.casei 431<sup>®</sup>, Streptococcus thermophilus TH-4<sup>®</sup>), ce suplimentează flora intestinală naturală.
 
-Eubiotic Baby® este recomandat în situaţiile în care este necesară regenerarea florei intestinale, în cazul tulburărilor de tranzit intestinal şi/sau al folosirii de antibiotice.
+Eubiotic Baby<sup>®</sup> este recomandat în situaţiile în care este necesară regenerarea florei intestinale, în cazul tulburărilor de tranzit intestinal şi/sau al folosirii de antibiotice.
 
 Recomandat copiilor începând cu vârsta de 1 an.

@@ -110,8 +110,8 @@ blocks:
       - 'Saavedra JM, Abi-Hanna A, Moore N & Yolken RH. Long-term consumption of infant formulas containing live probiotic bacteria: tolerance and safety. Am J Clin Nutr 2004;79:261-267.'
 ---
 
-Eubiotic Baby® picături conţine culturi lactice vii selecţionate din cele mai bine documentate ştiinţific tulpini de Lactobacillus rhamnosus LGG® şi Bifidobacterium BB-12® pe populaţii reprezentate de sugari şi copii mici.
+Eubiotic Baby<sup>®</sup> picături conţine culturi lactice vii selecţionate din cele mai bine documentate ştiinţific tulpini de Lactobacillus rhamnosus LGG<sup>®</sup> şi Bifidobacterium BB-12<sup>®</sup> pe populaţii reprezentate de sugari şi copii mici.
 
-Eubiotic Baby® picături este recomandat în situaţiile în care este necesară regenerarea florei intestinale, cum ar fi cazurile de diaree produsă de consumul de antibiotice și agenți patogeni: virusuri, bacterii, paraziți.
+Eubiotic Baby<sup>®</sup> picături este recomandat în situaţiile în care este necesară regenerarea florei intestinale, cum ar fi cazurile de diaree produsă de consumul de antibiotice și agenți patogeni: virusuri, bacterii, paraziți.
 
 Produsul este destinat copiilor încă din prima zi de viață, precum și femeilor însărcinate și a celor care alăptează.

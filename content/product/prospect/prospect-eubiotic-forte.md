@@ -9,13 +9,13 @@ featuredImage:
   url: '/images/products/Eubiotic-forte.png'
 ---
 
-#### **EUBIOTIC® FORTE**
+#### **EUBIOTIC<sup>®</sup> FORTE**
 
 #### SUPLIMENT ALIMENTAR
 
 Susține reechilibrarea microflorei intestinale/microbiotei a cărei alcătuire și structurare se află sub presiuni fiziologice, patologice sau de altă natură precum tulburările digestive sau administrarea de antibiotice.
 
-Această prezentare vă oferă informaţii utile despre EUBIOTIC® Forte:
+Această prezentare vă oferă informaţii utile despre EUBIOTIC<sup>®</sup> Forte:
 
 1.  Ce este şi cum se utilizează
 2.  Ce precauţii sunt necesare înainte de utilizare
@@ -46,9 +46,9 @@ Dezechilibrul microflorei intestinale/microbiotei poate avea ca forme de manifes
 *   Infecțiile fungice
 
 
-**1\. Ce este Eubiotic® Forte și cum se utilizează**
+**1\. Ce este Eubiotic<sup>®</sup> Forte și cum se utilizează**
 
-Eubiotic® Forte este o combinație de microorganisme vii (1 x I09 UFC Saccharomyces cerevisiae var.boulardi și 4 x I09 UFC Lactobacillus rhamnosus GG), recomandată pentru reechilibrarea microflorei intestinale a cărei alcătuire și structurare se află sub presiuni fiziologice, patologice sau de altă natură precum tulburările digestive sau administrarea de antibiotice.
+Eubiotic<sup>®</sup> Forte este o combinație de microorganisme vii (1 × 10<sup>9</sup> UFC Saccharomyces cerevisiae var.boulardi și 4 × 10<sup>9</sup> UFC Lactobacillus rhamnosus GG), recomandată pentru reechilibrarea microflorei intestinale a cărei alcătuire și structurare se află sub presiuni fiziologice, patologice sau de altă natură precum tulburările digestive sau administrarea de antibiotice.
 
 Diareea reprezintă una dintre manifestările digestive frecvente apărute în urma tratamentului cu antibiotice. Diareea poate debuta la 2 ore după consumul antibioticului, până la 2 luni după terminarea tratamentului cu antibiotic.
 
@@ -56,7 +56,7 @@ Antibioticele sunt o grupă de medicamente necesare în tratamentul bolilor infe
 
 Acestea pot afecta microflora intestinală prin distrugerea bacteriilor benefice și proliferarea bacteriilor dăunătoare, ce pot infecta sistemul digestiv.
 
-**Ingrediente Eubiotic® Forte**
+**Ingrediente Eubiotic<sup>®</sup> Forte**
 
 Ingrediente/capsulă vegetală:
 
@@ -68,15 +68,15 @@ Saccharomyces cerevisiae var. boulardii este un microorganism viu (o tulpină de
 
 Lactobacillus rhamnosus GG este o tulpină prezentă în mod natural în flora intestinală. Lactobacilus rhamnosus este și una dintre cele mai documentate bacterii benefice, peste 1000 de publicații științifice si 300 de studii clinice demonstrându-i beneficiile. Este un microorganism bine studiat pentru rolul asupra sistemului digestiv la prematuri, nou-născuți, copii, femei însărcinate, adulți și vârstnici. Lactobacillus rhamnosus GG are o toleranță ridicată la aciditatea gastrică și la sucurile biliare, putând supraviețui trecerii prin tractul gastrointestinal.
 
-**Cum să utilizați Eubiotic® Forte:**
+**Cum să utilizați Eubiotic<sup>®</sup> Forte:**
 
-1 capsulă Eubiotic® Forte pe zi, cu o cantitate suficientă de lichid aflat la temperatura camerei, timp de 10-15 zile.
+1 capsulă Eubiotic<sup>®</sup> Forte pe zi, cu o cantitate suficientă de lichid aflat la temperatura camerei, timp de 10-15 zile.
 
-În cazul în care sunteți sub tratament cu antibiotice se recomandă administrarea Eubiotic® Forte la 2-3 ore după acestea. Se recomandă continuarea administrării de Eubiotic® Forte timp de 5 zile după întreruperea administrării de antibiotic.
+În cazul în care sunteți sub tratament cu antibiotice se recomandă administrarea Eubiotic<sup>®</sup> Forte la 2-3 ore după acestea. Se recomandă continuarea administrării de Eubiotic<sup>®</sup> Forte timp de 5 zile după întreruperea administrării de antibiotic.
 
 Produsul este destinat adulților și copiilor de peste 6 ani.
 
-Copiilor sub 6 ani nu le este recomandată utilizarea capsulelor (risc de aspirație). Pentru această grupă de vârstă recomandăm utilizarea Eubiotic® Baby, sub forma de picături sau pulbere.
+Copiilor sub 6 ani nu le este recomandată utilizarea capsulelor (risc de aspirație). Pentru această grupă de vârstă recomandăm utilizarea Eubiotic<sup>®</sup> Baby, sub forma de picături sau pulbere.
 
 Deoarece produsul conține microorganisme vii, nu trebuie combinat cu băuturi sau alimente foarte fierbinţi (peste 50°C), foarte reci sau cu alcool etilic.
 
@@ -86,7 +86,7 @@ Fără gluten. Fără Lactoză. Fără soia. Fără OMG (organisme modificate ge
 
 **2\. Ce precauţii sunt necesare înainte de utilizarea produsului?**
 
-Cereţi sfatul medicului înainte de a utiliza EUBIOTIC® Forte în următoarele situaţii: febră, scaune cu sânge/mucus, dureri abdominale intense sau diaree care persistă mai mult de 2 zile (semne de afecțiune medicală severă);
+Cereţi sfatul medicului înainte de a utiliza EUBIOTIC<sup>®</sup> Forte în următoarele situaţii: febră, scaune cu sânge/mucus, dureri abdominale intense sau diaree care persistă mai mult de 2 zile (semne de afecțiune medicală severă);
 
 - Produsul este contraindicat persoanelor:
   - cu hipersensibilitate la oricare dintre ingredientele sale; 

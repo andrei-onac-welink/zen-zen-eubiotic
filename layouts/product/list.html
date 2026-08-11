@@ -73,13 +73,12 @@
                 ) }}
               {{- end -}}
             </a>
-
             <header class="block">
               <h2 class="text-xl font-bold text-primary-500 lg:text-2xl" id="{{ $headingID }}">
                 <a class="transition-colors hover:text-primary-700" href="{{ .RelPermalink }}">{{ .LinkTitle }}</a>
               </h2>
               <div class="mt-4 text-base leading-6 text-secondary-700 [&>p]:mb-3 [&>p:last-child]:mb-0">
-                {{ .Content }}
+                {{ .Content | markdownify }}
               </div>
               <a class="btn-primary | mt-5 text-base" href="{{ .RelPermalink }}">Află mai multe</a>
             </header>

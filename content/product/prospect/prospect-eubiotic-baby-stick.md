@@ -9,7 +9,7 @@ featuredImage:
   url: '/images/products/eubiotic-baby-stick-10-stg.png'
 ---
 
-#### **EUBIOTIC® Baby**
+#### **EUBIOTIC<sup>®</sup> Baby**
 
 SUPLIMENT ALIMENTAR
 
@@ -26,9 +26,9 @@ Intestinul uman începe să fie colonizat cu bacterii benefice încă din timpul
 
 **Descriere produs**
 
-EUBIOTIC® Baby stick conţine o combinaţie de culturi lactice standardizate vii (_Bifidobacterium_ BB-12®, _Lactobacillus L.casei_ 431®, _Streptococcus thermophilus_ TH-4®) 1 x 109 UFC (unităţi formatoare de colonii), ce suplimentează flora intestinală naturală.
+EUBIOTIC<sup>®</sup> Baby stick conţine o combinaţie de culturi lactice standardizate vii (_Bifidobacterium_ BB-12<sup>®</sup>, _Lactobacillus L.casei_ 431<sup>®</sup>, _Streptococcus thermophilus_ TH-4<sup>®</sup>) 1 × 10<sup>9</sup> UFC (unităţi formatoare de colonii), ce suplimentează flora intestinală naturală.
 
-EUBIOTIC® BABY stick este recomandat în situaţiile în care este necesară refacerea florei intestinale, în cazul tulburărilor de tranzit intestinal şi/sau al folosirii de antibiotice.
+EUBIOTIC<sup>®</sup> BABY stick este recomandat în situaţiile în care este necesară refacerea florei intestinale, în cazul tulburărilor de tranzit intestinal şi/sau al folosirii de antibiotice.
 
 **Doza zilnică recomandată**
 
@@ -40,11 +40,11 @@ Administrarea la copii cu vârsta sub 3 ani se face la recomandarea consultantul
 
 Produsul se poate administra fie ca atare, fie împreună cu alimente sau lichide (fără ca acestea să fie fierbinţi pentru a nu afecta culturile lactice).
 
-În cazul în care sunteţi sub tratament cu antibiotice se recomandă administrarea EUBIOTIC® BABY stick la 3 ore după acestea pe toată durata antibioterapiei şi încă cel puţin o săptămână după terminarea acesteia.
+În cazul în care sunteţi sub tratament cu antibiotice se recomandă administrarea EUBIOTIC<sup>®</sup> BABY stick la 3 ore după acestea pe toată durata antibioterapiei şi încă cel puţin o săptămână după terminarea acesteia.
 
 **Precauţii**
 
-Cereţi avizul consultantului de specialitate înainte de a utiliza EUBIOTIC® Baby stick în următoarele situaţii:
+Cereţi avizul consultantului de specialitate înainte de a utiliza EUBIOTIC<sup>®</sup> Baby stick în următoarele situaţii:
 
 *   febră, scaune cu sânge/mucus, dureri abdominale intense sau diaree care persistă mai mult de 2 zile;
 *   boli cronice sau imunitate foarte scăzută;

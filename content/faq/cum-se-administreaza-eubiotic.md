@@ -7,19 +7,19 @@ featuredImage:
   url: '/images/intrebari-frecvente-eubiotic.png'
 ---
 
-**EUBIOTIC® CAPSULE**
+**EUBIOTIC<sup>®</sup> CAPSULE**
 
 Este recomandat copiilor de peste 6 ani și adulților.
 
-Utilizare:  1-2 capsule EUBIOTIC® zilnic, cu o cantitate suficientă de lichid aflat la temperatura camerei, preferabil în timpul mesei.
+Utilizare:  1-2 capsule EUBIOTIC<sup>®</sup> zilnic, cu o cantitate suficientă de lichid aflat la temperatura camerei, preferabil în timpul mesei.
 
-În cazul în care sunteți sub tratament cu antibiotice se recomandă administrarea EUBIOTIC® la 2-3 ore după acestea. Se recomandă continuarea administrarii de  EUBIOTIC® timp de 7 – 20 zile după întreruperea administrării de antibiotic.
+În cazul în care sunteți sub tratament cu antibiotice se recomandă administrarea EUBIOTIC<sup>®</sup> la 2-3 ore după acestea. Se recomandă continuarea administrarii de  EUBIOTIC<sup>®</sup> timp de 7 – 20 zile după întreruperea administrării de antibiotic.
 
  
 
-**EUBIOTIC® FORTE**
+**EUBIOTIC<sup>®</sup> FORTE**
 
-1 capsulă Eubiotic® Forte pe zi, cu o cantitate suficientă de lichid aflat la temperatura camerei, timp de 10-15 zile.
+1 capsulă Eubiotic<sup>®</sup> Forte pe zi, cu o cantitate suficientă de lichid aflat la temperatura camerei, timp de 10-15 zile.
 
  
 

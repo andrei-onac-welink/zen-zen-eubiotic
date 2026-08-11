@@ -105,8 +105,8 @@
   <section class="bg-primary-50 px-4 py-20 sm:px-8 lg:py-24" aria-labelledby="blog-title">
     <div class="container">
       <hgroup class="text-center">
-        <h2 class="text-3xl font-bold uppercase text-primary-500 lg:text-4xl" id="blog-title">Blog Eubiotic®</h2>
-        <p class="mx-auto mt-3 max-w-3xl text-base font-semibold lg:text-base">Cele mai noi articole de pe blogul Eubiotic®, tips&amp;tricks pentru vacanțe reușite și multe altele</p>
+        <h2 class="text-3xl font-bold uppercase text-primary-500 lg:text-4xl" id="blog-title">Blog Eubiotic<sup>®</sup></h2>
+        <p class="mx-auto mt-3 max-w-3xl text-base font-semibold lg:text-base">Cele mai noi articole de pe blogul Eubiotic<sup>®</sup>, tips&amp;tricks pentru vacanțe reușite și multe altele</p>
       </hgroup>
 
       <div class="container mt-12 grid gap-7 md:grid-cols-3">
@@ -154,8 +154,6 @@
       "loading" "lazy"
       "fetchPriority" "auto"
       "alt" ""
-      "format" "webp"
-      "quality" 84
       "widths" (slice 640 960 1280 1600 1920)
       "sizes" "100vw"
     ) }}
@@ -173,7 +171,7 @@
     <div class="container">
       <hgroup class="text-center">
         <h2 class="text-3xl font-bold uppercase text-primary-500 lg:text-4xl" id="faq-title">Întrebări frecvente</h2>
-        <p class="mx-auto mt-3 max-w-3xl text-base font-semibold lg:text-base">Cele mai frecvente întrebări despre ce este și cum se utilizează Eubiotic®</p>
+        <p class="mx-auto mt-3 max-w-3xl text-base font-semibold lg:text-base">Cele mai frecvente întrebări despre ce este și cum se utilizează Eubiotic<sup>®</sup></p>
       </hgroup>
 
       <div class="mt-14 grid items-center gap-6 lg:grid-cols-2 lg:gap-5">
@@ -183,13 +181,11 @@
           "loading" "lazy"
           "fetchPriority" "auto"
           "alt" "Familie petrecând timp împreună în natură"
-          "format" "webp"
-          "quality" 84
           "widths" (slice 480 768 1024 1536)
           "sizes" "(max-width: 1023px) calc(100vw - 32px), 50vw"
         ) }}
         <div class="space-y-5">
-          {{- with site.GetPage "/faq" -}}
+          {{- with site.GetPage "faq" -}}
             {{- range .RegularPages.ByWeight -}}
               <details class="group bg-white p-5 shadow-sm lg:p-6">
                 <summary class="flex list-none items-center justify-between gap-6 text-xl font-bold">
@@ -201,7 +197,7 @@
                 </summary>
                 <div class="mt-6 space-y-4 text-base leading-6 text-secondary-600">
                   <p>{{ .Description | default .Summary | plainify }}</p>
-                  <p>Pentru toate produsele din gama Eubiotic® <a class="font-semibold text-primary-500" href="{{ .RelPermalink }}">citește tot răspunsul.</a></p>
+                  <p>Pentru toate produsele din gama Eubiotic<sup>®</sup> <a class="font-semibold text-primary-500" href="{{ .RelPermalink }}">citește tot răspunsul.</a></p>
                 </div>
               </details>
             {{- end -}}
