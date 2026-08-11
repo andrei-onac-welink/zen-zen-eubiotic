@@ -33,7 +33,7 @@ blocks:
       - 'Acestea pot afecta microflora intestinală prin distrugerea bacteriilor benefice și proliferarea bacteriilor dăunătoare, ce pot infecta sistemul digestiv.'
       - '<em>*UFC – unități formatoare de colonii</em>'
     ctaLabel: 'Citește prospectul'
-    ctaHref: '/gama-eubiotic/eubiotic-forte/prospect-eubiotic-forte/'
+    ctaPage: 'product/prospect/prospect-eubiotic-forte'
     
   - component: 'details'
     ariaLabel: 'Microflora intestinală și microbiota'

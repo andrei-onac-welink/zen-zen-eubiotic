@@ -35,7 +35,7 @@ blocks:
       - 'Eubiotic Baby<sup>®</sup> picături conține culturi lactice vii selecționate din cele mai bine documentate științific tulpini de <strong>Lactobacillus rhamnosus LGG<sup>®</sup></strong> și <strong>Bifidobacterium BB-12<sup>®</sup></strong> pe populații reprezentate de sugari și copii mici.'
       - 'Eubiotic Baby<sup>®</sup> picături este recomandat în situațiile în care este necesară regenerarea florei intestinale, cum ar fi cazurile de diaree produsă de consumul de antibiotice și agenți patogeni: virusuri, bacterii, paraziți.'
     ctaLabel: 'Citește prospectul'
-    ctaHref: '/gama-eubiotic/eubiotic-baby-picaturi/prospect-eubiotic-baby-picaturi/'
+    ctaPage: 'product/prospect/prospect-eubiotic-baby-picaturi'
     
   - component: 'strains'
     items:

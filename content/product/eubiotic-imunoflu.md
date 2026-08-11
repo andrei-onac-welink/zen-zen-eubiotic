@@ -32,7 +32,7 @@ blocks:
       - 'EUBIOTIC<sup>®</sup> ImunoFLU este un supliment alimentar ce combină într-o formulă nouă tulpini multiple de microorganisme benefice pentru organism, bine studiate clinic, cu Vitamina D, Vitamina C și Zinc.'
       - '<strong>Tulpinile de bacterii benefice</strong> din compoziția EUBIOTIC<sup>®</sup> ImunoFLU conțin culturi lactice vii ce fac parte din flora intestinală deseori afectată de o dietă și un stil de viață nesănătoase, de utilizarea antibioticelor sau de stres.'
     ctaLabel: 'Citește prospectul'
-    ctaHref: '/gama-eubiotic/eubiotic-imunoflu/prospect-eubiotic-imunoflu/'
+    ctaPage: 'product/prospect/prospect-eubiotic-imunoflu'
     
   - component: 'details'
     ariaLabel: 'Bacterii benefice, vitamine și zinc'
