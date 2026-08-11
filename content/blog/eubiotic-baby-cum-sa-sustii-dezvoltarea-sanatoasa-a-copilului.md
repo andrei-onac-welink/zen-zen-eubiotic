@@ -5,6 +5,9 @@ description: 'Dezvoltarea sănătoasă a unui bebeluș depinde de o multitudine 
 date: 2025-01-31
 category: 'bebelusi'
 featured: true
+featuredImage:
+  url: '/images/blog/2.png'
+  
 resources:
   - name: image
     src: '/images/blog/2.png'

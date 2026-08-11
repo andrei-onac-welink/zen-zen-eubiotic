@@ -7,6 +7,7 @@ summary: 'Cum ne pot ajuta bacteriile benefice să ne menținem sănătatea în 
 videoUrl: 'https://player.vimeo.com/video/981404518?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=078598c494&autoplay=1#t='
 featuredImage:
   url: '/images/podcast/og/bioticel-ep-8-og.jpg'
+  
 resources:
   - name: image
     src: '/images/podcast/ep08.png'

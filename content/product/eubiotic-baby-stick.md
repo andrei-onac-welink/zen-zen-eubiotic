@@ -1,12 +1,15 @@
 ---
 id: 5
 uuid: "31ac9f6a-33b7-46d7-84d8-33d9e3390009"
-title: 'Eubiotic Baby Stick'
+title: 'Eubiotic Baby - Pentru sănătatea digestivă a celor mici'
 linkTitle: 'Eubiotic Baby<sup>®</sup> Stick'
-description: 'Descoperă Eubiotic Baby Stick, cu o combinație de culturi lactice vii care suplimentează flora intestinală naturală.'
+description: 'Eubiotic Baby susține sănătatea digestivă a micuților, contribuind la echilibrul microbiotei intestinale. Accesează site-ul pentru mai multe detalii.'
 slug: '/eubiotic-baby/'
 weight: 5
 ean: ''
+featuredImage:
+  url: '/images/products/eubiotic-baby-stick-10-stg.png'
+  
 resources:
   - name: image
     src: '/images/products/eubiotic-baby-stick-10-stg.png'

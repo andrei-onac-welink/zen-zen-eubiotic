@@ -1,8 +1,11 @@
 ---
-title: 'Despre Eubiotic'
+title: 'Despre Eubiotic și gama de produse cu bacterii benefice'
 linkTitle: 'Despre Eubiotic'
 description: 'Află mai multe despre Eubiotic și cum contribuie gama de produse la menținerea sănătății intestinale. Descoperă beneficiile bacteriilor benefice pentru organism!'
 url: '/despre/eubiotic/'
+featuredImage: 
+  url: '/images/products/extras/hero-image-eubiotic-large.png'
+  
 resources:
   - name: hero
     src: '/images/about/hero-image-about-eubiotic.png'

@@ -4,6 +4,9 @@ title: 'Secretul unui tranzit intestinal normal'
 description: 'Menținerea unui tranzit intestinal normal depinde de echilibrul florei intestinale și de gestionarea corectă a alimentației și stresului, prevenind diareea și alte tulburări digestive.'
 date: 2024-06-15
 category: 'blog'
+featuredImage:
+  url: '/images/blog/tranzit-intestinal-normal.png'
+  
 resources:
   - name: image
     src: '/images/blog/tranzit-intestinal-normal.png'

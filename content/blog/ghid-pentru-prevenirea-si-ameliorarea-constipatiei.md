@@ -4,6 +4,9 @@ title: 'Ghid pentru prevenirea și ameliorarea constipației'
 description: 'Accesează ghidul despre cum poți preveni și ameliora constipația în mod natural. Află cum poți menține un tranzit intestinal sănătos!'
 date: 2024-01-31
 category: 'blog'
+featuredImage:
+  url: '/images/blog/probleme-de-constipatie.png'
+  
 resources:
   - name: image
     src: '/images/blog/probleme-de-constipatie.png'

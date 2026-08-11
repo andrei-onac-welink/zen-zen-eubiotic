@@ -7,6 +7,7 @@ summary: 'Află de ce suplimentele cu mai multe tulpini bacteriene pot fi mai ef
 videoUrl: 'https://player.vimeo.com/video/981404435?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=686a0f77ef&autoplay=1#t='
 featuredImage:
   url: '/images/podcast/og/bioticel-ep-7-og.jpg'
+  
 resources:
   - name: image
     src: '/images/podcast/ep07.png'

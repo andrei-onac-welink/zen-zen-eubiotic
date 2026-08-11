@@ -4,6 +4,9 @@ title: 'Ce sunt probioticele șI care sunt beneficiile acestora pentru organismu
 description: 'Probioticele sunt microorganisme vii care sunt consumate ca supliment alimentar sau adăugate în anumite alimente, cu scopul de a îmbunătăți sănătatea sistemului digestiv și a sistemului imunitar.'
 date: 2023-05-11
 category: 'blog'
+featuredImage:
+  url: '/images/blog/fermented-food-probiotics-top-view-2021-08-30-18-54-34-utc-scaled.jpg'
+  
 resources:
   - name: image
     src: '/images/blog/fermented-food-probiotics-top-view-2021-08-30-18-54-34-utc-scaled.jpg'

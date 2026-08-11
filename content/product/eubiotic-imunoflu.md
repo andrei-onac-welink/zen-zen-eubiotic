@@ -1,12 +1,15 @@
 ---
 id: 3
 uuid: "31ac9f6a-33b7-46d7-84d8-33d9e3390007"
-title: 'Eubiotic ImunoFlu'
+title: 'Eubiotic Imunoflu - Pentru imunitate cu vitamina D, C și Zinc'
 linkTitle: 'Eubiotic<sup>®</sup> ImunoFlu'
-description: 'Descoperă Eubiotic ImunoFlu, cu bacterii benefice, vitamina D, vitamina C și zinc pentru buna funcționare a sistemului imunitar.'
+description: 'Descoperă Eubiotic ImunoFLU, supliment alimentar ce combină bacterii benefice cu Vitamina D, C și Zinc pentru susținerea imunității și sănătății intestinale.'
 slug: '/eubiotic-imunoflu/'
 weight: 3
 ean: ''
+featuredImage:
+  url: '/images/products/Eubiotic-imunoflu-1.png'
+  
 resources:
   - name: image
     src: '/images/products/Eubiotic-imunoflu-1.png'

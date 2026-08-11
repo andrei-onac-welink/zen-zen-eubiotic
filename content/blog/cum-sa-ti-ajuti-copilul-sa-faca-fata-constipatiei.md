@@ -4,6 +4,9 @@ title: 'Cum să-ți ajuți copilul să facă față constipației'
 description: 'Constipația la copii este frecventă și poate fi cauzată de dietă, hidratare insuficientă sau schimbări de rutină.'
 date: 2024-08-05
 category: 'blog'
+featuredImage:
+  url: '/images/blog/cauzele-constipatiei-la-copii.png'
+  
 resources:
   - name: image
     src: '/images/blog/cauzele-constipatiei-la-copii.png'

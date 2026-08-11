@@ -1,9 +1,11 @@
 ---
-title: 'Balonare'
+title: 'Balonare: Cauze, simptome și metode de ameliorare'
 linkTitle: 'Balonare'
-description: 'Află ce este balonarea, care sunt principalii factori favorizanți și ce arată studiile despre refacerea microbiomului după tratamentul cu antibiotice.'
-draft: false
+description: 'Informații despre balonare, care sunt cauzele posibile, simptomele asociate acesteia și opțiuni pentru gestionare a balonării cu ajutorul Eubiotic.'
 url: '/despre/balonare/'
+featuredImage:
+  url: '/images/about/senior-scientist-in-chemical.png'
+  
 resources:
   - name: hero
     src: '/images/about/hero-image-eubiotic-balonare.png'

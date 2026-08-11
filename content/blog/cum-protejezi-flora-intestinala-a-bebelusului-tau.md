@@ -4,6 +4,9 @@ title: 'Cum protejezi flora intestinală a bebelușului tău'
 description: 'Flora intestinală a bebelușului susține digestia și imunitatea. Hrănirea cu lapte matern și suplimentele cu bacterii benefice ajută la dezvoltarea sănătoasă.'
 date: 2024-12-02
 category: 'blog'
+featuredImage:
+  url: '/images/blog/flora-intestinala-la-bebelusi.png'
+  
 resources:
   - name: image
     src: '/images/blog/flora-intestinala-la-bebelusi.png'

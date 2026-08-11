@@ -4,6 +4,9 @@ title: 'Gestionarea colicilor la bebeluși: Ghidul complet al părinților'
 description: 'Colicile la bebeluși sunt o experiență comună, dar destul de solicitantă pentru părinți. Episoade prelungite de plâns, nopți nedormite și o stare agitată a bebelușului pot pune presiune pe părinți.'
 date: 2024-06-05
 category: 'blog'
+featuredImage:
+  url: '/images/blog/gestionare-colici-la-bebelusi.webp'
+  
 resources:
   - name: image
     src: '/images/blog/gestionare-colici-la-bebelusi.webp'

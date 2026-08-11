@@ -1,5 +1,5 @@
 ---
-title: 'Cumpără'
+title: 'Află de unde poți cumpăra produsele Eubiotic'
 linkTitle: 'Cumpără'
 description: 'Accesează pagina de pe site-ul eubiotic.ro pentru a afla de unde poți cumpăra produsele Eubiotic. Găsește rapid un punct de vânzare accesând link-ul.'
 resources:

@@ -4,6 +4,9 @@ title: 'Descoperă secretele unei călătorii confortabile: cauzele diareei și 
 description: 'Ghid practic despre cum să te pregătești pentru vacanță alături de copilul tău. Află cum să menții confortul și sănătatea micuțului tău în timpul călătoriilor.'
 date: 2023-07-20
 category: 'blog'
+featuredImage:
+  url: '/images/blog/image1-1.png'
+  
 resources:
   - name: image
     src: '/images/blog/image1-1.png'

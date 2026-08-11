@@ -4,6 +4,9 @@ title: 'Cum să reduci balonarea după mese: Tips and tricks'
 description: 'Mesele bogate în familie pot aduce multă bucurie, dar și senzația de balonare. Deși pot exista mai multe cauze ale balonării, aceasta apare în special după masă, mai ales dacă mesele conțin alimente bogate în glucide, proteine, grăsimi, aditivi alimentari, la care se adaugă băuturile carbogazoase sau alcoolice.'
 date: 2024-01-31
 category: 'blog'
+featuredImage:
+  url: '/images/blog/balonarea.png'
+  
 resources:
   - name: image
     src: '/images/blog/balonarea.png'

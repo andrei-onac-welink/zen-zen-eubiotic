@@ -1,7 +1,7 @@
 ---
-title: 'Articole despre sănătate și bacterii benefice'
+title: 'Totul despre sănătatea digestivă și bacterii benefice'
 linkTitle: 'Blog'
-description: 'Explorează articolele de pe eubiotic.ro cu informații despre bacterii benefice și află cum să-ți îmbunătățești sănătatea intestinală.'
+description: 'Explorează seria de podcasturi Eubiotic și află informații despre sănătatea digestivă, bacteriile benefice și microbiota. Ascultă episoadele noastre educative.'
 featuredImage:
   url: '/images/podcast/bioticel-podcast-SM.png'
 resources:

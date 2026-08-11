@@ -1,9 +1,11 @@
 ---
-title: 'Diaree'
+title: 'Diaree: Cauze, simptome și metode de ameliorare'
 linkTitle: 'Diaree'
-description: 'Află ce este diareea, care sunt cauzele acute și cronice și ce arată studiile despre diareea asociată tratamentului cu antibiotice.'
-draft: false
+description: 'Informații despre diaree, cauzele, simptomele caracteristice și opțiuni de ameliorare cu ajutorul bacteriilor benefice din produsele Eubiotic.'
 url: '/despre/diaree/'
+featuredImage:
+  url: '/images/about/concept-of-constipation-diarrhea-abdominal.png'
+  
 resources:
   - name: hero
     src: '/images/about/hero-image-eubiotic-diaree.png'

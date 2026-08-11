@@ -8,7 +8,9 @@
 
   {{- $siteTitle := or $configData.siteTitle site.Title -}}
   {{- $pageTitle := $siteTitle -}}
-  {{- if not .IsHome -}}
+  {{- if .IsHome -}}
+    {{- $pageTitle = or (.Title | plainify) $siteTitle -}}
+  {{- else -}}
     {{- $pageTitle = .Title | plainify -}}
     {{- if .Params.metaTags.seo.title -}}
       {{- $pageTitle = .Params.metaTags.seo.title -}}

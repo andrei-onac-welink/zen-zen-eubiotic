@@ -1,9 +1,11 @@
 ---
-title: 'Constipație'
+title: 'Constipație: Cauze, simptome și metode de ameliorare'
 linkTitle: 'Constipație'
-description: 'Află ce este constipația, care sunt principalele sale cauze și ce arată studiile despre modificarea tranzitului intestinal după tratamentul cu antibiotice.'
-draft: false
+description: 'Află totul despre constipație, inclusiv cauzele comune, simptomele și modelitățile prin care poți ameliora acest disconfortul creat de aceasta.'
 url: '/despre/constipatie/'
+featuredImage:
+  url: '/images/about/laboratory-worker-studying-blood-samples.jpg'
+  
 resources:
   - name: hero
     src: '/images/about/hero-image-constipatie.jpg'

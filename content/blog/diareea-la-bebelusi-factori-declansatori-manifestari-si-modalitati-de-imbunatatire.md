@@ -4,6 +4,9 @@ title: 'Diareea la bebeluși: Factori declanșatori, manifestări și modalită�
 description: 'Diareea la copii este frecventă și se manifestă prin scaune moi și dese, adesea însoțite de crampe abdominale.'
 date: 2024-06-25
 category: 'bebelusi'
+featuredImage:
+  url: '/images/blog/diaree-bebelusi-simptome.png'
+  
 resources:
   - name: image
     src: '/images/blog/diaree-bebelusi-simptome.png'

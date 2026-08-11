@@ -4,6 +4,9 @@ title: 'Ghidul microorganismelor benefice pentru adulți'
 description: 'Află totul despre microorganismele benefice și cum acestea pot susține sănătatea ta. Accesează eubiotic.ro pentru a citi articolul.'
 date: 2024-01-31
 category: 'blog'
+featuredImage:
+  url: '/images/blog/microorganisme.png'
+  
 resources:
   - name: image
     src: '/images/blog/microorganisme.png'

@@ -4,6 +4,9 @@ title: 'Eubiotic Forte: Protecția de care ai nevoie în tratamentul cu antibiot
 description: 'Atunci când suntem diagnosticați cu o infecție bacteriană, antibioticele devin în unele cazuri soluția esențială pentru vindecare. Însă vorbim despre medicamente puternice, care pot avea un impact semnificativ asupra corpului nostru, inclusiv asupra florei intestinale și a stomacului.'
 date: 2023-08-24
 category: 'blog'
+featuredImage:
+  url: '/images/blog/featured-image-eubiotic-forte.png'
+  
 resources:
   - name: image
     src: '/images/blog/featured-image-eubiotic-forte.png'

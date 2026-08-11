@@ -2,6 +2,9 @@
 title: 'Farmacovigilență'
 linkTitle: 'Farmacovigilență'
 description: 'Află mai multe despre programul de farmacovigilență Eubiotic, destinat monitorizării siguranței și eficacității produselor noastre. Detalii pe site!'
+featuredImage:
+  url: '/images/hero-farmacovigilenta-eubiotic.png'
+  
 resources:
   - name: hero
     src: '/images/hero-farmacovigilenta-eubiotic.png'

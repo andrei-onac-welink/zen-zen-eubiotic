@@ -4,6 +4,9 @@ title: 'Afecțiuni digestive și ameliorarea disconfortului digestiv'
 description: 'Simptomele comune ale afecțiunilor sistemului digestiv includ dureri abdominale și reflux gastroesofagian.'
 date: 2024-07-10
 category: 'blog'
+featuredImage:
+  url: '/images/blog/afectiuni-digestive.png'
+  
 resources:
   - name: image
     src: '/images/blog/afectiuni-digestive.png'

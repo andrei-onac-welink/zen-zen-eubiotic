@@ -1,9 +1,11 @@
 ---
-title: 'Colici'
+title: 'Eubiotic - informații și sfaturi despre colici'
 linkTitle: 'Colici'
-description: 'Află ce sunt colicile bebelușului, cum se manifestă și care sunt factorii ce pot agrava crampele și disconfortul abdominal.'
-draft: false
+description: 'Citește despre colici, cauze, simptome și rolul bacteriilor benefice pentru ameliorarea disconfortului abdominal. Mai multe detalii pe site.'
 url: '/despre/colici/'
+featuredImage:
+  url: '/images/about/baby-scaled.png'
+  
 resources:
   - name: hero
     src: '/images/about/baby-white-bg.png'

@@ -4,6 +4,9 @@ title: 'Imunitatea în sezonul rece: Cum să te protejezi împotriva răcelilor 
 description: 'Întărirea imunității în sezonul rece se face prin alimentație echilibrată, somn adecvat și suplimente cu bacterii benefice, care susțin organismul în lupta împotriva răcelilor și gripei.'
 date: 2024-09-05
 category: 'blog'
+featuredImage:
+  url: '/images/blog/imunitatea-in-sezonul-rece.png'
+  
 resources:
   - name: image
     src: '/images/blog/imunitatea-in-sezonul-rece.png'

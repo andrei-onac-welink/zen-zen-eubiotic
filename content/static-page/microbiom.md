@@ -1,8 +1,11 @@
 ---
-title: 'Microbiomul'
+title: 'Microbiomul: Importanța echilibrului intestinal pentru sănătate'
 linkTitle: 'Microbiomul'
-description: 'Descoperă ce este microbiomul, rolul său în organism și importanța echilibrului microbiotei pentru sănătate.'
+description: 'Descoperă importanța microbiomului intestinal pentru sănătatea generală și cum Eubiotic contribuie la menținerea unui echilibru sănătos al florei intestinale.'
 url: '/despre/microbiom/'
+featuredImage:
+  url: '/images/about/hero-image-microbiom-eubiotic.jpg'
+  
 resources:
   - name: hero
     src: '/images/about/hero-image-microbiom-eubiotic.jpg'

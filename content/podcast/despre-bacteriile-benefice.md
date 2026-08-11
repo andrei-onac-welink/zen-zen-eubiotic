@@ -7,6 +7,7 @@ summary: 'În acest prim episod, discutăm despre rolul bacteriilor benefice în
 videoUrl: 'https://player.vimeo.com/video/946495096?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=6e2804930f&autoplay=1#t='
 featuredImage:
   url: '/images/podcast/og/bioticel-ep-2-og.jpg'
+  
 resources:
   - name: image
     src: '/images/podcast/ep01-768x497.webp'

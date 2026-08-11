@@ -12,7 +12,7 @@
       {{- else -}}
         {{- with .Value -}}
           {{- if reflect.IsImageResourceProcessable . -}}
-            {{- $imageURL = (.Fill $resizeSpec).Permalink -}}
+            {{- $imageURL = (.Fit $resizeSpec).Permalink -}}
           {{- else -}}
             {{- $imageURL = .Permalink -}}
           {{- end -}}
@@ -23,7 +23,7 @@
     {{- $localPath := strings.TrimPrefix "/" $path -}}
     {{- with resources.Get $localPath -}}
       {{- if reflect.IsImageResourceProcessable . -}}
-        {{- $imageURL = (.Fill $resizeSpec).Permalink -}}
+        {{- $imageURL = (.Fit $resizeSpec).Permalink -}}
       {{- else -}}
         {{- $imageURL = .Permalink -}}
       {{- end -}}
@@ -37,7 +37,7 @@
           {{- else -}}
             {{- with .Value -}}
               {{- if reflect.IsImageResourceProcessable . -}}
-                {{- $imageURL = (.Fill $resizeSpec).Permalink -}}
+                {{- $imageURL = (.Fit $resizeSpec).Permalink -}}
               {{- else -}}
                 {{- $imageURL = .Permalink -}}
               {{- end -}}

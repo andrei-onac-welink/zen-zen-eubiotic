@@ -7,6 +7,7 @@ summary: 'Descoperă beneficiile multiple ale suplimentelor cu bacterii benefice
 videoUrl: 'https://player.vimeo.com/video/964534921?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=0263a7abe5&autoplay=1#t='
 featuredImage:
   url: '/images/podcast/og/bioticel-ep-4-og.jpg'
+  
 resources:
   - name: image
     src: '/images/podcast/ep04.webp'

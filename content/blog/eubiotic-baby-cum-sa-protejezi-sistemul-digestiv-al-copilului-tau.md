@@ -4,6 +4,9 @@ title: 'Eubiotic Baby: cum să protejezi sistemul digestiv al copilului tău'
 description: 'Colonizarea timpurie a intestinului cu bacterii benefice susține imunitatea și digestia copilului. Probioticele echilibrează flora intestinală.'
 date: 2024-12-02
 category: 'bebelusi'
+featuredImage:
+  url: '/images/blog/cum-sa-protejezi-sistemul-digestiv-al-copilului-tau.png'
+  
 resources:
   - name: image
     src: '/images/blog/cum-sa-protejezi-sistemul-digestiv-al-copilului-tau.png'

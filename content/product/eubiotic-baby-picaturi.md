@@ -1,12 +1,15 @@
 ---
 id: 4
 uuid: "31ac9f6a-33b7-46d7-84d8-33d9e3390008"
-title: 'Eubiotic Baby Picături'
+title: 'Eubiotic Baby Picături - pentru cei mici'
 linkTitle: 'Eubiotic Baby<sup>®</sup> Picături'
-description: 'Descoperă Eubiotic Baby Picături, cu tulpini documentate științific pentru susținerea florei intestinale a sugarilor și copiilor mici.'
+description: 'Eubiotic Baby Picături oferă o formulă de bacterii benefice special concepută pentru cei mici, contribuind la sănătatea digestivă și echilibrul microbiotei.'
 slug: '/eubiotic-baby-picaturi/'
 weight: 4
 ean: ''
+featuredImage:
+  url: '/images/products/eubiotic-baby-picaturi-stg.png'
+  
 resources:
   - name: image
     src: '/images/products/eubiotic-baby-picaturi-stg.png'

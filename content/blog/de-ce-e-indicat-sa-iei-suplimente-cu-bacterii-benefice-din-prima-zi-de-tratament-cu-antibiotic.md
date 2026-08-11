@@ -4,6 +4,9 @@ title: 'De ce e indicat să iei suplimente cu bacterii benefice din prima zi de 
 description: 'Suplimentele cu bacterii benefice protejează flora intestinală în timpul tratamentului cu antibiotice, prevenind dezechilibrele digestive și susținând imunitatea.'
 date: 2024-08-20
 category: 'blog'
+featuredImage:
+  url: '/images/blog/suplimente-cu-bacterii-benefice.png'
+  
 resources:
   - name: image
     src: '/images/blog/suplimente-cu-bacterii-benefice.png'

@@ -4,6 +4,9 @@ title: 'Rolul bacteriilor benefice în menținerea unui sistem imunitar puternic
 description: 'Descoperă importanța bacteriilor benefice pentru întărirea sistemului imunitar și menținerea sănătății generale. Află mai multe accesând blogul Eubiotic!'
 date: 2023-10-18
 category: 'blog'
+featuredImage:
+  url: '/images/blog/image1.png'
+  
 resources:
   - name: image
     src: '/images/blog/image1.png'

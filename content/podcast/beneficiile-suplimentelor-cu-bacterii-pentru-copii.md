@@ -7,6 +7,7 @@ summary: 'Explorăm rolul esențial al bacteriilor benefice pentru copii și mod
 videoUrl: 'https://player.vimeo.com/video/964534758?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=5762ffea29&autoplay=1#t='
 featuredImage:
   url: '/images/podcast/og/bioticel-ep-6-og.jpg'
+  
 resources:
   - name: image
     src: '/images/podcast/ep06.png'

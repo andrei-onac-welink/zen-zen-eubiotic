@@ -4,6 +4,9 @@ title: 'Cum să te pregătești pentru vacanță cu cel mic?'
 description: 'Ghid practic despre cum să te pregătești pentru vacanță alături de copilul tău. Află cum să menții confortul și sănătatea micuțului tău în timpul călătoriilor.'
 date: 2023-05-11
 category: 'vacanta'
+featuredImage:
+  url: '/images/blog/cum-sa-te-pregatesti-pentru-vacanta-blog.webp'
+  
 resources:
   - name: image
     src: '/images/blog/cum-sa-te-pregatesti-pentru-vacanta-blog.webp'

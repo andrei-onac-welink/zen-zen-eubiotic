@@ -1,12 +1,15 @@
 ---
 id: 2
 uuid: "31ac9f6a-33b7-46d7-84d8-33d9e3390006"
-title: 'Eubiotic Forte'
+title: 'Eubiotic Forte - supliment eficient cu bacterii benefice'
 linkTitle: 'Eubiotic<sup>®</sup> Forte'
-description: 'Descoperă Eubiotic Forte, o combinație de microorganisme vii pentru susținerea tranzitului intestinal și echilibrarea microbiotei.'
+description: 'Află despre Eubiotic Forte, un supliment cu bacterii benefice pentru susținerea sănătății digestive și a sistemului imunitar. Mai multe detalii pe site.'
 slug: '/eubiotic-forte/'
 weight: 2
 ean: ''
+featuredImage:
+  url: '/images/products/Eubiotic-forte.png'
+  
 resources:
   - name: image
     src: '/images/products/Eubiotic-forte.png'

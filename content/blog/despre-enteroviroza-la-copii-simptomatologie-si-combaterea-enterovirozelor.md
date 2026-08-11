@@ -5,6 +5,9 @@ description: 'Enterovirozele, frecvente la copii, pot fi gestionate prin preven»
 date: 2024-12-02
 category: 'blog'
 featured: true
+featuredImage:
+  url: '/images/blog/despre-enteroviroza-la-copii.png'
+  
 resources:
   - name: image
     src: '/images/blog/despre-enteroviroza-la-copii.png'

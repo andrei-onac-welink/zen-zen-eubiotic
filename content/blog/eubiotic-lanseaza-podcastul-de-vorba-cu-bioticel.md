@@ -4,6 +4,9 @@ title: 'Eubiotic lansează podcastul “De vorbă cu Bioticel”'
 description: 'Podcastul „De vorbă cu Bioticel” oferă informații esențiale despre sănătatea digestivă și rolul bacteriilor benefice, ajutând întreaga familie să înțeleagă importanța florei intestinale.'
 date: 2024-07-05
 category: 'blog'
+featuredImage:
+  url: '/images/blog/de-vorba-cu-bioticel.png'
+  
 resources:
   - name: image
     src: '/images/blog/de-vorba-cu-bioticel.png'

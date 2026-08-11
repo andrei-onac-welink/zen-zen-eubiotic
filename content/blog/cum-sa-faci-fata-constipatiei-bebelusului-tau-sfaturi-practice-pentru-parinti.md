@@ -4,6 +4,9 @@ title: 'Cum să faci față constipației bebelușului tău: Sfaturi practice pe
 description: 'Constipația la bebeluși este frecventă și poate fi cauzată de schimbări în dietă sau rutină. Identificarea cauzelor ajuta la prevenirea și gestionarea disconfortului.'
 date: 2024-07-10
 category: 'bebelusi'
+featuredImage:
+  url: '/images/blog/constipatie-bebelusi.png'
+  
 resources:
   - name: image
     src: '/images/blog/constipatie-bebelusi.png'

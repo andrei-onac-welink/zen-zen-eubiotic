@@ -5,6 +5,9 @@ description: 'Disbioza intestinală, un dezechilibru al microflorei, poate fi pr
 date: 2024-12-02
 category: 'blog'
 featured: true
+featuredImage:
+  url: '/images/blog/disbioza.png'
+  
 resources:
   - name: image
     src: '/images/blog/disbioza.png'

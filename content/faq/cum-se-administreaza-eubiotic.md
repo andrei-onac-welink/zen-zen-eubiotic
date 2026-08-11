@@ -3,6 +3,8 @@ title: 'Cum se administrează Eubiotic?'
 linkTitle: 'Cum se administrează Eubiotic?'
 description: 'EUBIOTIC® Capsule Este recomandat copiilor de peste 6 ani și adulților.'
 weight: 30
+featuredImage:
+  url: '/images/intrebari-frecvente-eubiotic.png'
 ---
 
 **EUBIOTIC® CAPSULE**

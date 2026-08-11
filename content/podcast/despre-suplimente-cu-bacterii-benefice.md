@@ -7,6 +7,7 @@ summary: 'Află totul despre suplimentele cu bacterii benefice din acest episod 
 videoUrl: 'https://player.vimeo.com/video/951959140?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=7809bf2bdd&autoplay=1#t='
 featuredImage: 
   url: '/images/podcast/og/bioticel-ep-1-og.png'
+  
 resources:
   - name: image
     src: '/images/podcast/ep02.webp'

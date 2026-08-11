@@ -7,6 +7,7 @@ summary: 'Cum afectează antibioticele echilibrul microflorei intestinale? În a
 videoUrl: 'https://player.vimeo.com/video/964534847?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=fdbcf63944&autoplay=1#t='
 featuredImage:
   url: '/images/podcast/og/bioticel-ep-5-og.jpg'
+  
 resources:
   - name: image
     src: '/images/podcast/ep05.png'
