@@ -16,6 +16,7 @@ blocks:
     title: 'Farmacovigilență'
     image: 'hero'
     decorations: false
+    
   - component: 'text-content'
     ariaLabel: 'Informații de farmacovigilență'
     body: |

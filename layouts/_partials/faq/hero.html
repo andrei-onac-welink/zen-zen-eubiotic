@@ -23,12 +23,12 @@
   <div class="container absolute inset-x-0 bottom-4 hidden text-base lg:block">
     <nav aria-label="Breadcrumb">
       <a class="transition-colors hover:text-primary-100" href="{{ site.Home.RelPermalink }}">Acasă</a>
-      <span aria-hidden="true"> &gt; </span>
+      <span aria-hidden="true"> » </span>
       {{- if $page.IsSection -}}
         <span aria-current="page">{{ $section.LinkTitle | default $section.Title }}</span>
       {{- else -}}
         <a class="transition-colors hover:text-primary-100" href="{{ $section.RelPermalink }}">{{ $section.LinkTitle | default $section.Title }}</a>
-        <span aria-hidden="true"> &gt; </span>
+        <span aria-hidden="true"> » </span>
         <span aria-current="page">{{ $page.LinkTitle | default $page.Title }}</span>
       {{- end -}}
     </nav>

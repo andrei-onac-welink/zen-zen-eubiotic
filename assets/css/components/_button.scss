@@ -1,6 +1,6 @@
 @layer components {
   .btn-primary {
-    @apply inline-flex items-center justify-center gap-2 text-center py-3 px-8 bg-primary-500 text-white font-bold rounded-full shadow-sm cursor-pointer list-none hover:bg-primary-700 active:bg-primary-700 transition-colors duration-300;
+    @apply inline-flex items-center justify-center gap-2 text-center text-lg py-3 px-8 bg-primary-500 text-white font-bold rounded-full shadow-sm cursor-pointer list-none hover:bg-primary-700 active:bg-primary-700 transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
   }
 
   .btn-secondary {
@@ -8,7 +8,7 @@
   }
 
   .btn-accent {
-    @apply inline-flex items-center justify-center gap-2 text-center py-3 px-8 bg-accent-500 text-black font-serif font-bold border rounded-full cursor-pointer list-none hover:bg-accent-700 hover:text-white hover:border-accent-700 transition-colors duration-300;
+    @apply inline-flex items-center justify-center gap-2 text-center text-lg py-3 px-8 bg-white text-accent-500 font-bold rounded-full shadow-sm cursor-pointer list-none transition-all duration-300 hover:-translate-y-1 hover:shadow-lg;
   }
 
   .link-primary {
