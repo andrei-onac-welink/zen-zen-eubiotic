@@ -9,7 +9,7 @@ weight: 4
 ean: ''
 resources:
   - name: image
-    src: '/images/products/eubiotic-baby-picaturi-stg.avif'
+    src: '/images/products/eubiotic-baby-picaturi-stg.png'
     title: ''
   - name: bb12
     src: '/images/products/extras/scb_bb-12_logo_blue_rgb.png'
@@ -18,7 +18,7 @@ resources:
     src: '/images/products/extras/scb_lgg_logo_blue_rgb.png'
     title: 'Lactobacillus rhamnosus LGG'
   - name: baby
-    src: '/images/products/extras/baby-white-bg.avif'
+    src: '/images/products/extras/baby-white-bg.png'
     title: 'Bebeluș'
     
 blocksFolder: 'products'

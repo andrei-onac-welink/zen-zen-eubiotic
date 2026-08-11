@@ -9,7 +9,7 @@ weight: 5
 ean: ''
 resources:
   - name: image
-    src: '/images/products/eubiotic-baby-stick-10-stg.avif'
+    src: '/images/products/eubiotic-baby-stick-10-stg.png'
     title: ''
   - name: bb12
     src: '/images/products/extras/scb_bb-12_logo_blue_rgb.png'

@@ -9,13 +9,13 @@ weight: 3
 ean: ''
 resources:
   - name: image
-    src: '/images/products/Eubiotic-imunoflu-1.avif'
+    src: '/images/products/Eubiotic-imunoflu-1.png'
     title: ''
   - name: composition
-    src: '/images/products/extras/imunoflu-explicat.avif'
+    src: '/images/products/extras/imunoflu-explicat.png'
     title: 'Structura bistrat a comprimatului Eubiotic ImunoFLU'
   - name: usage
-    src: '/images/products/extras/imunoflu-administrare.avif'
+    src: '/images/products/extras/imunoflu-administrare.png'
     title: 'Microorganisme benefice'
     
 blocksFolder: 'products'

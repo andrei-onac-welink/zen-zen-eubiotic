@@ -9,7 +9,7 @@ weight: 1
 ean: ''
 resources:
   - name: image
-    src: '/images/products/eubiotic-capsule-stg.avif'
+    src: '/images/products/eubiotic-capsule-stg.png'
     title: ''
   - name: bb12
     src: '/images/products/extras/scb_bb-12_logo_blue_rgb.png'

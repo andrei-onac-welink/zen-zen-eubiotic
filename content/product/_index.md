@@ -4,6 +4,6 @@ description: 'Explorează gama Eubiotic de suplimente cu bacterii benefice pentr
 url: '/gama-eubiotic/'
 resources:
   - name: image
-    src: '/images/products/hero-image-gama-eubiotic.avif'
+    src: '/images/products/hero-image-gama-eubiotic.png'
     title: ''
 ---

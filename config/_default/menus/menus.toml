@@ -105,7 +105,7 @@ pre         = ''
 post        = ''
 title       = 'Eubiotic'
 parent      = 'product'
-pageRef     = 'product/eubiotic'
+pageRef     = 'eubiotic'
 identifier  = 'eubiotic'
 weight      = 31
 
@@ -116,7 +116,7 @@ pre         = ''
 post        = ''
 title       = 'Eubiotic Forte'
 parent      = 'product'
-pageRef     = 'product/eubiotic-forte'
+pageRef     = 'eubiotic-forte'
 identifier  = 'eubiotic-forte'
 weight      = 32
 
@@ -127,7 +127,7 @@ pre         = ''
 post        = ''
 title       = 'Eubiotic Imunoflu'
 parent      = 'product'
-pageRef     = 'product/eubiotic-imunoflu'
+pageRef     = 'eubiotic-imunoflu'
 identifier  = 'eubiotic-imunoflu'
 weight      = 33
 
@@ -138,7 +138,7 @@ pre         = ''
 post        = ''
 title       = 'Eubiotic Baby picături'
 parent      = 'product'
-pageRef     = 'product/eubiotic-baby-picaturi'
+pageRef     = 'eubiotic-baby-picaturi'
 identifier  = 'eubiotic-baby-picaturi'
 weight      = 34
 
@@ -149,7 +149,7 @@ pre         = ''
 post        = ''
 title       = 'Eubiotic Baby'
 parent      = 'product'
-pageRef     = 'product/eubiotic-baby-stick'
+pageRef     = 'eubiotic-baby-stick'
 identifier  = 'eubiotic-baby'
 weight      = 35
 
@@ -160,7 +160,7 @@ pre         = ''
 post        = ''
 title       = 'Eubiotic Baby 20 Stick-uri'
 parent      = 'product'
-pageRef     = 'product/eubiotic-baby-stick-20'
+pageRef     = 'eubiotic-baby-stick-20'
 identifier  = 'eubiotic-baby-20'
 weight      = 36
 
@@ -194,7 +194,7 @@ post        = ''
 title       = 'Farmacovigilență'
 parent      = ''
 pageRef     = 'farmacovigilenta'
-identifier  = 'pharmacovigilance'
+identifier  = 'farmacovigilenta'
 weight      = 60
 
 [[main]]
@@ -205,7 +205,7 @@ post        = ''
 title       = 'Cumpără'
 parent      = ''
 pageRef     = 'cumpara'
-identifier  = 'buy'
+identifier  = 'cumpara'
 weight      = 70
 
 [[main]]
