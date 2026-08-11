@@ -16,7 +16,7 @@
           {{- $isCurrent := eq $.RelPermalink .URL -}}
           {{- $hasCurrentChild := $.HasMenuCurrent "main" . -}}
           <li class="group/nav-item relative w-full lg:w-auto">
-            <a class="w-full flex items-center justify-center gap-1 text-center text-base font-bold uppercase tracking-wide transition hover:text-primary-500 aria-current:text-primary-500 lg:group-data-[scrolled=true]:hover:text-primary-500 lg:group-data-[scrolled=true]:aria-current:text-primary-500 {{ if $hasCurrentChild }}text-primary-500 lg:group-data-[scrolled=true]:text-primary-500{{ end }}" href="{{ .URL }}" {{ if $isCurrent }}aria-current="page"{{ end }} draggable="false">
+            <a class="w-full flex items-center justify-center gap-1 text-center text-base font-bold uppercase tracking-wide transition hover:text-primary-500 aria-current:text-primary-500 lg:group-data-[scrolled=true]:hover:text-primary-500 lg:group-data-[scrolled=true]:aria-current:text-primary-500 {{ if $hasCurrentChild }} text-primary-500 lg:group-data-[scrolled=true]:text-primary-500 {{ end }}" href="{{ .URL }}" {{ if $isCurrent }} aria-current="page" {{ end }} draggable="false">
               {{ .Name }}
               {{- if .HasChildren }}
                 <svg class="size-4 transition-transform lg:group-hover/nav-item:rotate-180 lg:group-focus-within/nav-item:rotate-180" aria-hidden="true" focusable="false"><use href="#chevron-down-icon"></use></svg>
@@ -27,7 +27,7 @@
               <ul class="mt-3 flex list-none flex-col items-center gap-2 border-t border-secondary-200 pt-3 lg:absolute lg:left-0 lg:top-full lg:mt-0 lg:hidden lg:min-w-48 lg:items-stretch lg:gap-0 lg:border-0 lg:bg-white lg:p-0 lg:text-secondary-700 lg:shadow-xl lg:group-hover/nav-item:flex lg:group-focus-within/nav-item:flex w-max">
                 {{- range .Children }}
                   <li>
-                    <a class="w-full block px-4 py-2 text-center text-base font-semibold uppercase transition-colors hover:bg-primary-500 hover:text-white aria-current:bg-primary-500 aria-current:text-white lg:px-5 lg:py-4 lg:text-left" href="{{ .URL }}" {{ if eq $.RelPermalink .URL }}aria-current="page"{{ end }} draggable="false">{{ .Name }}</a>
+                    <a class="w-full block px-4 py-2 text-center text-base font-semibold uppercase transition-colors hover:bg-primary-500 hover:text-white aria-current:bg-primary-500 aria-current:text-white lg:px-5 lg:py-4 lg:text-left" href="{{ .URL }}" {{ if eq $.RelPermalink .URL }} aria-current="page" {{ end }} draggable="false">{{ .Name }}</a>
                   </li>
                 {{- end }}
               </ul>

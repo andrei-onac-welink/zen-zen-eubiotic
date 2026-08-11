@@ -11,9 +11,9 @@
     </video>
     <span class="absolute inset-0 -z-10 bg-[#4d4d4d]/35" aria-hidden="true"></span>
     <div class="flex flex-col items-center text-center">
-      <h1 class="text-lg font-semibold drop-shadow-sm sm:text-xl" id="hero-title">Ține viața în echilibru</h1>
+      <h1 class="text-lg font-semibold drop-shadow-sm sm:text-2xl" id="hero-title">Ține viața în echilibru</h1>
       <span class="mt-5 inline-flex" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-out-quart">
-        <a class="inline-flex items-center justify-center rounded-full bg-primary-500 px-7 py-4 text-base font-bold uppercase text-white shadow-lg transition hover:-translate-y-1 hover:bg-primary-700 sm:text-base" href="#beneficii">Află cum te ajută Eubiotic</a>
+        <a class="btn-primary | text-base uppercase text-white" href="#beneficii">Află cum te ajută Eubiotic</a>
       </span>
     </div>
   </section>
@@ -50,7 +50,7 @@
       {{ partial "components/product-carousel" (dict "id" "home-products") }}
       {{- with site.GetPage "product" -}}
         <span class="mt-12 inline-flex" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-out-quart">
-          <a class="inline-flex rounded-full bg-primary-500 px-8 py-4 text-base font-bold uppercase text-white shadow-sm transition hover:-translate-y-1 hover:bg-primary-700" href="{{ .RelPermalink }}">Vezi întreaga gamă Eubiotic</a>
+          <a class="btn-primary | text-base uppercase" href="{{ .RelPermalink }}">Vezi întreaga gamă Eubiotic</a>
         </span>
       {{- end -}}
     </div>

@@ -27,7 +27,7 @@
     <span class="absolute inset-0 -z-10 bg-(image:--color-gradient-primary-500)" aria-hidden="true"></span>
     <span class="absolute -bottom-20 right-[-4rem] -z-10 size-40 rounded-full bg-primary-500/85 lg:-bottom-16 lg:right-[22%] lg:size-24" aria-hidden="true"></span>
     <span class="absolute bottom-7 right-[15%] -z-10 size-5 rounded-full bg-primary-500 lg:bottom-9 lg:right-[28%] lg:size-8" aria-hidden="true"></span>
-    <h1 class="text-2xl font-bold uppercase drop-shadow-md lg:text-4xl" id="products-title">{{ .LinkTitle }}</h1>
+    <h1 class="text-2xl font-bold uppercase drop-shadow-md lg:text-7xl" id="products-title">{{ .LinkTitle }}</h1>
     <div class="container absolute inset-x-0 bottom-4 hidden text-base lg:block">
       <nav aria-label="Breadcrumb">
         <a class="transition-colors hover:text-primary-100" href="/">Acasă</a>
@@ -81,7 +81,7 @@
               <div class="mt-4 text-base leading-6 text-secondary-700 [&>p]:mb-3 [&>p:last-child]:mb-0">
                 {{ .Content }}
               </div>
-              <a class="btn-primary mt-5 text-base" href="{{ .RelPermalink }}">Află mai multe</a>
+              <a class="btn-primary | mt-5 text-base" href="{{ .RelPermalink }}">Află mai multe</a>
             </header>
           </article>
         {{- end -}}

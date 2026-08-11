@@ -16,7 +16,7 @@
       {{- with .buttons -}}
         <div class="mt-8 grid gap-6 sm:grid-cols-2">
           {{- range . -}}
-            <a class="justify-self-center inline-flex min-w-64 items-center justify-center rounded-full bg-primary-500 px-8 py-4 text-base font-bold uppercase text-white shadow-sm transition hover:-translate-y-1 hover:bg-primary-700" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
+            <a class="btn-primary | justify-self-center min-w-64 px-8 py-4 text-base font-bold uppercase" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
           {{- end -}}
         </div>
       {{- end -}}

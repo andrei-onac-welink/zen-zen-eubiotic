@@ -23,6 +23,7 @@ blocks:
     title: 'Colici'
     image: 'hero'
     decorations: false
+    
   - component: 'content-row'
     ariaLabel: 'Ce sunt colicile'
     title: 'Colicile reprezintă dureri, crampe abdominale care creează o stare de disconfort și agitație bebelușului.'

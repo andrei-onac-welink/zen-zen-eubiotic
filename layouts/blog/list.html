@@ -26,7 +26,7 @@
       ) }}
     {{- end -}}
     <span class="absolute inset-0 -z-10 bg-(image:--color-gradient-primary-500)" aria-hidden="true"></span>
-    <h1 class="text-3xl font-bold uppercase drop-shadow-md lg:text-5xl" id="blog-title">{{ .LinkTitle | default .Title }}</h1>
+    <h1 class="text-3xl font-bold uppercase drop-shadow-md lg:text-7xl" id="blog-title">{{ .LinkTitle | default .Title }}</h1>
 
     <div class="container absolute inset-x-0 bottom-4 hidden text-base lg:block">
       <nav aria-label="Breadcrumb">
@@ -40,7 +40,7 @@
   <section class="bg-white py-14 lg:py-20" aria-label="Articole Eubiotic">
     <div class="container">
       {{- with .RegularPages -}}
-        <div class="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+        <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {{- range .ByWeight.Reverse -}}
             {{- $articleImage := partial "components/image-resource" (dict "page" . "name" "image") -}}
             {{- $headingID := printf "article-%s" (.Title | anchorize) -}}

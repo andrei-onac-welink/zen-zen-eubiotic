@@ -48,7 +48,7 @@ blocks:
         
   - component: 'details'
     paragraphs:
-      - 'EUBIOTIC<sup>®</sup> este o combinație de culturi lactice vii (<strong>Bifidobacterium animalis</strong>, tulpina <strong>BB-12<sup>®</sup></strong>) și <strong>Lactobacillus acidophilus</strong>, tulpina <strong>LA-5<sup>®</sup></strong> într-o cantitate de 4×10<sup>9</sup> UFC (unități formatoare de colonii)/ capsulă.'
+      - '<strong>EUBIOTIC<sup>®</sup></strong> este o combinație de culturi lactice vii (<strong>Bifidobacterium animalis</strong>, tulpina <strong>BB-12<sup>®</sup></strong>) și <strong>Lactobacillus acidophilus</strong>, tulpina <strong>LA-5<sup>®</sup></strong> într-o cantitate de 4×10<sup>9</sup> UFC (unități formatoare de colonii)/ capsulă.'
       - '<strong>Bifidobacterium</strong> și <strong>Lactobacillus acidophilus</strong> se regăsesc în mod normal în flora intestinală sănătoasă, pot fi obținute prin alimentație naturală sau prin suplimentare, iar numărul lor poate să fie afectat de factori externi cum ar fi consumul de antibiotice, stresul, dietele dezechilibrate, consumul de alimente contaminate sau schimbarea mediului din timpul călătoriilor.'
       - '<strong>Bifidobacterium animalis</strong> tulpina <strong>BB-12<sup>®</sup></strong> este o bacterie benefică studiată in vitro, in vivo și în studii clinice pentru rolul asupra sistemului digestiv și al sistemului imunitar.'
       - '<strong>Lactobacillus acidophilus</strong> tulpina <strong>LA-5<sup>®</sup></strong> este o bacterie benefică bine studiată pentru rolul asupra sistemului digestiv.'

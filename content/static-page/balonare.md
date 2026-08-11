@@ -26,6 +26,7 @@ blocks:
     title: 'Balonare'
     image: 'hero'
     decorations: false
+    
   - component: 'content-row'
     ariaLabel: 'Ce este balonarea'
     title: 'Balonarea este un simptom comun al organismului uman<sup>1</sup>.'
