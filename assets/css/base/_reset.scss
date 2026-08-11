@@ -48,7 +48,7 @@
     @apply line-through;
   }
 
-  em {
+  :where(em, q, cite) {
     @apply italic;
   }
 

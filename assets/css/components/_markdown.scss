@@ -18,6 +18,7 @@
     @apply *:[ol]:list-decimal;
     @apply *:[ul,ol]:ps-8;
     @apply *:[ul,ol]:mb-4 **:[ul,ol]:mb-4;
+    @apply **:[li>ul]:list-[circle] **:[li>ul]:ps-8 **:[li>ul]:mb-0;
 
     @apply *:[img]:rounded-lg;
 

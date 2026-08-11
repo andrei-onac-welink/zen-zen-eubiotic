@@ -16,7 +16,7 @@
           {{- $isCurrent := eq $.RelPermalink .URL -}}
           {{- $hasCurrentChild := $.HasMenuCurrent "main" . -}}
           <li class="group/nav-item relative w-full lg:w-auto">
-            <a class="w-full flex items-center justify-center gap-1 text-center text-base font-bold uppercase tracking-wide transition hover:text-primary-500 aria-current:text-primary-500 lg:hover:text-primary-300 lg:aria-current:text-primary-300 lg:group-data-[scrolled=true]:hover:text-primary-500 lg:group-data-[scrolled=true]:aria-current:text-primary-500 {{ if $hasCurrentChild }}text-primary-500 lg:text-primary-300 lg:group-data-[scrolled=true]:text-primary-500{{ end }}" href="{{ .URL }}" {{ if $isCurrent }}aria-current="page"{{ end }} draggable="false">
+            <a class="w-full flex items-center justify-center gap-1 text-center text-base font-bold uppercase tracking-wide transition hover:text-primary-500 aria-current:text-primary-500 lg:group-data-[scrolled=true]:hover:text-primary-500 lg:group-data-[scrolled=true]:aria-current:text-primary-500 {{ if $hasCurrentChild }}text-primary-500 lg:group-data-[scrolled=true]:text-primary-500{{ end }}" href="{{ .URL }}" {{ if $isCurrent }}aria-current="page"{{ end }} draggable="false">
               {{ .Name }}
               {{- if .HasChildren }}
                 <svg class="size-4 transition-transform lg:group-hover/nav-item:rotate-180 lg:group-focus-within/nav-item:rotate-180" aria-hidden="true" focusable="false"><use href="#chevron-down-icon"></use></svg>
