@@ -33,3 +33,10 @@ procesăm datele personale în Politica noastră de confidențialitate.
 
 Ce cookie-uri folosim:
 
+| Cookie Name      | Category                               | Description                                                                                                                                                                                    | Duration  |
+|------------------|----------------------------------------|------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------------|-----------|
+| _fbp             | Marketing{.badge .badge--marketing}    | Facebook{.badge} Used by Facebook to deliver a series of advertisement products such as real time bidding from third party advertisers                                                         | 4 months  |
+| _ga              | Analytics{.badge .badge--analytics}    | Google Analytics{.badge} ID used to identify users                                                                                                                                             | 2 years   |
+| _ga_S10KTEPZ0V   | Analytics{.badge .badge--analytics}    | Google Analytics{.badge} ID used to identify users                                                                                                                                             | 2 years   |
+| cc_cookie        | Functional{.badge .badge--functional}  | Orestbida{.badge} A script that displays a cookie consent banner, manages user preferences, and ensures compliance with privacy regulations by controlling cookie usage based on user consent. | 6 months  |
+{data-variant="cookie-consent"}

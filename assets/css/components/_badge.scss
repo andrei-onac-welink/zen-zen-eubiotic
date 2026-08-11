@@ -1,0 +1,21 @@
+@layer components {
+  .badge {
+    @apply inline-flex items-center rounded-full bg-neutral-100 px-3 py-1 text-xs leading-none font-semibold text-neutral-800 whitespace-nowrap;
+  }
+
+  .badge--analytics {
+    @apply bg-[#fd7e14] text-white text-sm;
+  }
+
+  .badge--functional {
+    @apply bg-[#17a2b8] text-white text-sm;
+  }
+
+  .badge--marketing {
+    @apply bg-[#dc3545] text-white text-sm;
+  }
+
+  .badge--unknown {
+    @apply bg-[#6c757d] text-white text-sm;
+  }
+}

@@ -349,8 +349,8 @@ pre         = ''
 post        = ''
 title       = 'Politica de cookie-uri'
 parent      = ''
-pageRef     = 'politica-de-cookie-uri'
-identifier  = 'politica-de-cookie-uri'
+pageRef     = 'politica-de-cookies'
+identifier  = 'politica-de-cookies'
 weight      = 30
 
 [[legal]]
