@@ -5,6 +5,7 @@
 {{ end }}
 
 {{ define "main" }}
+
   {{- $desktopImage := partial "components/image-resource" (dict "page" . "name" "imageDesktop") -}}
   {{- $mobileImage := partial "components/image-resource" (dict "page" . "name" "imageMobile") -}}
 
@@ -36,8 +37,6 @@
           "loading" "eager"
           "fetchPriority" "high"
           "alt" "Podcast De vorbă cu Bioticel"
-          "formats" (slice "webp")
-          "quality" 86
           "widths" (slice 640 960 1200)
           "sizes" "(min-width: 1200px) 1200px, 100vw"
         ) }}
@@ -70,15 +69,13 @@
                       "loading" "lazy"
                       "fetchPriority" "auto"
                       "alt" .Title
-                      "format" "webp"
-                      "quality" 82
                       "widths" (slice 320 480 640 800)
                       "sizes" "(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) 50vw, 33vw"
                     ) }}
                   {{- end -}}
                 </a>
 
-                <div class="flex flex-1 flex-col p-6">
+                <header class="flex flex-1 flex-col p-6">
                   {{- if $episodeNumber -}}
                     <span class="text-base font-bold text-primary-500">Episodul {{ $episodeNumber }}</span>
                   {{- end -}}
@@ -89,7 +86,7 @@
                   <div class="mt-auto pt-5">
                     <a class="btn-primary | px-4 py-2 text-base" href="{{ .RelPermalink }}">Ascultă aici</a>
                   </div>
-                </div>
+                </header>
               </div>
             </article>
           {{- end -}}
@@ -99,6 +96,7 @@
       {{- end -}}
     </div>
   </section>
+
 {{ end }}
 
 {{ define "footer" }}

@@ -1,8 +1,7 @@
 ---
 weight: 6
 title: 'Beneficiile suplimentelor cu bacterii pentru copii'
-linkTitle: 'Un supliment cu bacterii benefice poate fi util pentru mai multe situații în care se află cel mic?'
-description: 'Despre “Impactul tratamentelor cu antibiotice asupra bacteriilor benefice din intestin”. Antibioticele pot perturba echilibrul microflorei intestinale.'
+description: 'Suplimentele cu bacterii benefice sunt utile pentru sănătatea copiilor, inclusiv în susținerea sănătății digestive și a sistemului imunitar.'
 summary: 'Explorăm rolul esențial al bacteriilor benefice pentru copii și modul în care acestea pot susține sănătatea, contribuind la dezvoltarea unui sistem imunitar puternic și la o digestie sănătoasă.'
 videoUrl: 'https://player.vimeo.com/video/964534758?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=5762ffea29&autoplay=1#t='
 featuredImage:
@@ -12,6 +11,12 @@ resources:
   - name: image
     src: '/images/podcast/ep06.png'
     title: ''
+
+blocksFolder: 'podcast'
+blocks:
+  - component: 'hero'
+    title: 'Despre Beneficiile suplimentelor cu bacterii pentru copii'
+    description: 'Un supliment cu bacterii benefice poate fi util pentru mai multe situații în care se află cel mic?'
 ---
 
 În acest episod, discutăm despre “Beneficiile suplimentelor cu bacterii pentru copii”.

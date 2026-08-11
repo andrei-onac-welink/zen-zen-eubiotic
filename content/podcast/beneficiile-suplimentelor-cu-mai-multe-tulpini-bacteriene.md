@@ -1,7 +1,6 @@
 ---
 weight: 7
 title: 'Beneficiile suplimentelor cu mai multe tulpini bacteriene'
-linkTitle: 'Este adevărat că un supliment cu bacterii benefice este mai bun dacă are mai multe tulpini în compoziția lui?'
 description: 'În acest episod, discutăm despre beneficiile suplimentelor cu mai multe tulpini bacteriene pentru sănătatea intestinală și imunitară.'
 summary: 'Află de ce suplimentele cu mai multe tulpini bacteriene pot fi mai eficiente și cum să alegi cel mai potrivit supliment pentru nevoile tale din acest episod al podcastului.'
 videoUrl: 'https://player.vimeo.com/video/981404435?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=686a0f77ef&autoplay=1#t='
@@ -12,6 +11,12 @@ resources:
   - name: image
     src: '/images/podcast/ep07.png'
     title: ''
+
+blocksFolder: 'podcast'
+blocks:
+  - component: 'hero'
+    title: 'Despre Beneficiile suplimentelor cu mai multe tulpini bacteriene'
+    description: 'Este adevărat că un supliment cu bacterii benefice este mai bun dacă are mai multe tulpini în compoziția lui?'
 ---
 
 În acest episod, discutăm despre “Beneficiile suplimentelor cu mai multe tulpini bacteriene”.

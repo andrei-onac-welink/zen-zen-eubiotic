@@ -1,7 +1,6 @@
 ---
 weight: 5
 title: 'Influența antibioticelor asupra bacteriilor benefice'
-linkTitle: 'Cum influențează tratamentele cu antibiotice bacteriile benefice ?'
 description: 'Despre “Impactul tratamentelor cu antibiotice asupra bacteriilor benefice din intestin”. Antibioticele pot perturba echilibrul microflorei intestinale.'
 summary: 'Cum afectează antibioticele echilibrul microflorei intestinale? În acest episod vorbim despre relația dintre antibiotice și microbiomul nostru.'
 videoUrl: 'https://player.vimeo.com/video/964534847?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=fdbcf63944&autoplay=1#t='
@@ -12,6 +11,12 @@ resources:
   - name: image
     src: '/images/podcast/ep05.png'
     title: ''
+
+blocksFolder: 'podcast'
+blocks:
+  - component: 'hero'
+    title: 'Despre Influența antibioticelor asupra bacteriilor benefice'
+    description: 'Cum influențează tratamentele cu antibiotice bacteriile benefice ?'
 ---
 
 În acest episod, discutăm despre “Impactul tratamentelor cu antibiotice asupra bacteriilor benefice din intestin”.
