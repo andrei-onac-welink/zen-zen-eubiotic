@@ -3,14 +3,18 @@
     <h2 class="text-center text-2xl font-bold text-secondary-500 lg:text-5xl" id="microbiome-stats-title">{{ .title | safeHTML }}</h2>
 
     <div class="mt-10 grid grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
-      {{- range .items -}}
+      {{- $counterIndex := 0 -}}
+      {{- range $item := .items -}}
         <div class="text-center">
-          {{- if .icon -}}
-            <svg class="mx-auto size-20 text-primary-500" aria-hidden="true" focusable="false"><use href="#{{ .icon }}"></use></svg>
+          {{- if $item.icon -}}
+            <svg class="mx-auto size-20 text-primary-500" aria-hidden="true" focusable="false"><use href="#{{ $item.icon }}"></use></svg>
           {{- else -}}
-            <p class="text-4xl font-bold leading-none text-primary-500 lg:text-7xl">{{ .value | safeHTML }}</p>
+            {{- $prefix := $item.prefix | default "" -}}
+            {{- $suffix := $item.suffix | default "" -}}
+            <p class="text-4xl font-bold leading-none tabular-nums text-primary-500 lg:text-7xl" data-countup-end="{{ $item.value }}" data-countup-prefix="{{ $prefix }}" data-countup-suffix="{{ $suffix }}" data-countup-delay="{{ mul $counterIndex 100 }}">{{ $prefix }}{{ $item.value }}{{ $suffix }}</p>
+            {{- $counterIndex = add $counterIndex 1 -}}
           {{- end -}}
-          <p class="mx-auto mt-3 max-w-40 text-sm font-semibold leading-5 text-secondary-500">{{ .label | safeHTML }}</p>
+          <p class="mx-auto mt-3 max-w-40 text-sm font-semibold leading-5 text-secondary-500">{{ $item.label | safeHTML }}</p>
         </div>
       {{- end -}}
     </div>
