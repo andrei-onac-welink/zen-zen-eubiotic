@@ -24,7 +24,7 @@
   <span class="absolute right-[14rem] top-88 -z-10 size-20 rounded-[45%] bg-[#FDEDED] lg:right-[14rem] lg:size-52 blur-xl" aria-hidden="true"></span>
 
   <div class="container grid items-center gap-8 lg:grid-cols-2 lg:gap-12">
-    <div>
+    <figure class="block">
       {{- if $imagePath -}}
         {{ partial "components/image-responsive" (dict
           "path" $imagePath
@@ -36,12 +36,12 @@
           "sizes" $imageSizes
         ) }}
       {{- end -}}
-    </div>
+    </figure>
 
-    <div>
-      <h1 class="text-2xl font-bold uppercase text-primary-500 lg:text-6xl" id="product-title">{{ .title }}</h1>
-      <h2 class="mt-4 text-xl font-bold leading-tight text-primary-500 lg:text-3xl">{{ .productName | safeHTML }}</h2>
-      <p class="text-lg font-bold text-primary-500 lg:text-3xl">{{ .heading }}</p>
+    <header class="block">
+      <h1 class="text-3xl font-bold uppercase text-primary-500 lg:text-6xl" id="product-title">{{ .title }}</h1>
+      <h2 class="mt-4 text-2xl font-bold leading-tight text-primary-500 lg:text-3xl">{{ .productName | safeHTML }}</h2>
+      <p class="text-2xl font-bold text-primary-500 lg:text-3xl">{{ .heading }}</p>
       {{- with .introduction -}}
         <div class="mt-4 text-base leading-6 text-secondary-800">{{ . | safeHTML }}</div>
       {{- end -}}
@@ -53,7 +53,7 @@
       {{- if and .ctaLabel $ctaHref -}}
         <a class="btn-primary | mt-6" href="{{ $ctaHref }}">{{ .ctaLabel }}</a>
       {{- end -}}
-    </div>
+    </header>
   </div>
 
   <div class="container mt-10 hidden text-base text-secondary-500 lg:mt-auto lg:block lg:pt-10">

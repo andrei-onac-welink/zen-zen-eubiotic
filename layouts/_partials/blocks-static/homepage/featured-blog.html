@@ -1,11 +1,11 @@
-<section class="bg-primary-50 px-4 py-20 sm:px-8 lg:py-24" aria-labelledby="blog-title">
+<section class="bg-primary-50 py-20 lg:py-24" aria-labelledby="blog-title">
   <div class="container">
     <hgroup class="text-center">
       <h2 class="text-3xl font-bold uppercase text-primary-500 lg:text-4xl" id="blog-title">{{ .title | safeHTML }}</h2>
       <p class="mx-auto mt-3 max-w-3xl text-base font-semibold lg:text-xl font-serif">{{ .description | safeHTML }}</p>
     </hgroup>
 
-    <div class="container mt-12 grid gap-7 md:grid-cols-3">
+    <div class="mt-12 grid grid-cols-1 md:grid-cols-2 gap-7 lg:grid-cols-3">
       {{- $blogPages := where site.RegularPages "Section" "blog" -}}
       {{- $featuredPosts := where $blogPages "Params.featured" true -}}
       {{- range $featuredPosts.ByDate.Reverse -}}

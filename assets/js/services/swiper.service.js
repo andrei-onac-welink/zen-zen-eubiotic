@@ -23,7 +23,11 @@ const swiperConfigurations = [
         slideRole: null
       },
       breakpoints: {
-        576: {
+        768: {
+          slidesPerView: 2,
+          spaceBetween: 20,
+        },
+        992: {
           slidesPerView: 3,
           spaceBetween: 20,
         },

@@ -23,7 +23,7 @@
     <span class="absolute bottom-8 right-[27%] -z-10 size-10 rounded-full bg-primary-500" aria-hidden="true"></span>
   {{- end -}}
 
-  <h1 class="text-3xl font-bold uppercase drop-shadow-md lg:text-7xl" id="static-page-title">{{ .title | safeHTML }}</h1>
+  <h1 class="mb-8 text-3xl font-bold uppercase drop-shadow-md lg:text-7xl" id="static-page-title">{{ .title | safeHTML }}</h1>
 
   <div class="container absolute inset-x-0 bottom-4 hidden text-base lg:block">
     {{ partial "components/breadcrumbs" (dict "page" .page "linkClass" "transition-colors hover:text-primary-100") }}

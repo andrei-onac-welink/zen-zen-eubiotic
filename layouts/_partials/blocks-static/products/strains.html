@@ -1,13 +1,13 @@
 <section class="bg-secondary-100 py-14 lg:py-20" aria-label="Tulpinile Eubiotic">
-  <div class="container grid gap-6 {{ if eq (len .items) 3 }}lg:grid-cols-2 xl:grid-cols-3{{ else }}max-w-lg lg:grid-cols-2{{ end }}">
+  <div class="container grid gap-6 max-md:max-w-[420px] {{ if eq (len .items) 3 }} lg:grid-cols-2 xl:grid-cols-3 {{ else }} lg:max-w-lg md:grid-cols-2 {{ end }}">
     {{- range .items -}}
       {{- $imagePath := partial "components/image-resource" (dict "page" $.page "name" .image) -}}
-      <article class="grid gap-3 sm:grid-cols-2">
+      <article class="grid gap-3 md:grid-cols-2">
         <figure class="p-4 flex min-h-48 items-center rounded-md bg-white shadow-md">
           {{- if $imagePath -}}
             {{ partial "components/image-responsive" (dict
               "path" $imagePath
-              "class" "h-40 w-full object-contain"
+              "class" "lg:h-40 w-full object-contain"
               "loading" "lazy"
               "fetchPriority" "auto"
               "alt" .alt
@@ -16,10 +16,10 @@
             ) }}
           {{- end -}}
         </figure>
-        <div class="flex min-h-48 flex-col items-center justify-around rounded-md bg-accent-500 p-3 text-center text-white shadow-md">
+        <header class="flex lg:min-h-48 flex-col items-center justify-around rounded-md bg-accent-500 p-3 text-center text-white shadow-md">
           <p class="text-base font-normal leading-6">{{ .introduction | safeHTML }}</p>
-          <a class="btn-accent | mt-5 text-base py-2 px-6" href="{{ .href }}" target="_blank" rel="noopener noreferrer">Află mai multe</a>
-        </div>
+          <a class="btn-accent | mt-5 text-base py-2 px-4 lg:px-6" href="{{ .href }}" target="_blank" rel="noopener noreferrer">Află mai multe</a>
+        </header>
       </article>
     {{- end -}}
   </div>

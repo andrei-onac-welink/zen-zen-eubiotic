@@ -12,9 +12,9 @@
     "sizes" "100vw"
   ) }}
   <span class="absolute inset-0 -z-10 bg-[#061728]/15" aria-hidden="true"></span>
-  <div class="container flex w-full items-stretch">
-    <div class="flex w-full flex-col justify-center bg-primary-500/72 px-7 py-20 text-left backdrop-saturate-150 sm:px-12 lg:w-[600px] lg:px-14 lg:py-24">
-      <h2 class="text-4xl font-extrabold uppercase leading-[1.08] sm:text-5xl" id="immunity-title">{{ .title | safeHTML }}</h2>
+  <div class="lg:container flex w-full items-stretch">
+    <div class="flex w-full flex-col justify-center bg-primary-500/72 px-5 py-20 text-left backdrop-saturate-150 sm:px-12 lg:w-[600px] lg:px-14 lg:py-24">
+      <h2 class="text-3xl font-extrabold uppercase leading-[1.08] lg:text-5xl" id="immunity-title">{{ .title | safeHTML }}</h2>
       <p class="mt-5 text-base font-semibold sm:text-xl font-serif">{{ .description | safeHTML }}</p>
       <button class="w-full group relative mt-12 block cursor-pointer overflow-hidden rounded-sm shadow-2xl" type="button" data-video-modal-open="{{ .modalId }}" aria-controls="{{ .modalId }}" aria-haspopup="dialog" aria-label="{{ .videoLabel }}">
         {{ partial "components/image-responsive" (dict

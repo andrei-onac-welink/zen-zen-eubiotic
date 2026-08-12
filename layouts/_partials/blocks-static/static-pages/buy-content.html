@@ -14,7 +14,7 @@
         <p class="mt-5 text-base leading-7">{{ . | safeHTML }}</p>
       {{- end -}}
       {{- with .buttons -}}
-        <div class="mt-8 grid gap-6 sm:grid-cols-2">
+        <div class="mt-8 grid gap-6 md:grid-cols-2">
           {{- range . -}}
             <a class="btn-primary | justify-self-center min-w-64 px-8 py-4 text-base font-bold uppercase" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
           {{- end -}}
