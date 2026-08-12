@@ -1,0 +1,35 @@
+{{- $page := .page -}}
+{{- $episodeImage := partial "components/image-resource" (dict "page" $page "name" "image") -}}
+{{- $headingID := printf "podcast-%s" ($page.RelPermalink | anchorize) -}}
+{{- $episodeNumber := $page.Params.episode | default $page.Weight -}}
+
+<article class="group flex overflow-hidden rounded-sm bg-white shadow-md transition-shadow duration-300 hover:shadow-xl" aria-labelledby="{{ $headingID }}">
+  <div class="flex w-full flex-col">
+    <a class="block overflow-hidden bg-secondary-100" href="{{ $page.RelPermalink }}" tabindex="-1" aria-hidden="true">
+      {{- if $episodeImage -}}
+        {{ partial "components/image-responsive" (dict
+          "path" $episodeImage
+          "class" "aspect-[4/2.5] w-full object-cover transition-transform duration-300 group-hover:scale-[1.025]"
+          "loading" "lazy"
+          "fetchPriority" "auto"
+          "alt" $page.Title
+          "widths" (slice 320 480 640 800)
+          "sizes" "(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) 50vw, 33vw"
+        ) }}
+      {{- end -}}
+    </a>
+
+    <header class="flex flex-1 flex-col p-6">
+      {{- if $episodeNumber -}}
+        <span class="text-base font-bold text-primary-500">Episodul {{ $episodeNumber }}</span>
+      {{- end -}}
+      <h2 class="mt-2 text-xl font-bold leading-tight text-secondary-700 transition-colors group-hover:text-primary-500 text-pretty" id="{{ $headingID }}">
+        <a class="block" href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a>
+      </h2>
+      <p class="mt-4 line-clamp-5 text-base leading-6 text-secondary-600">{{ $page.Summary | plainify }}</p>
+      <div class="mt-auto pt-5">
+        <a class="btn-primary | px-4 py-2 text-base" href="{{ $page.RelPermalink }}">Ascultă aici</a>
+      </div>
+    </header>
+  </div>
+</article>

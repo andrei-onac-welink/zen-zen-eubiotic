@@ -1,0 +1,14 @@
+{{- $page := .page -}}
+{{- $headingID := printf "faq-%s" ($page.RelPermalink | anchorize) -}}
+
+<article class="flex min-h-64 flex-col bg-white p-6 shadow-md transition-shadow duration-300 hover:shadow-xl lg:p-7" aria-labelledby="{{ $headingID }}">
+  <h2 class="text-xl font-bold leading-tight text-secondary-600" id="{{ $headingID }}">{{ $page.Title }}</h2>
+  <p class="mt-6 line-clamp-3 text-base leading-6 text-secondary-500">{{ $page.Description | default $page.Summary | plainify }}</p>
+
+  <a class="group mt-auto inline-flex items-center gap-3 pt-8 text-base font-bold uppercase text-primary-500" href="{{ $page.RelPermalink }}">
+    Răspunsul complet
+    <span class="grid size-9 place-items-center rounded-full bg-secondary-700 text-white transition-colors duration-300 group-hover:bg-primary-500" aria-hidden="true">
+      <svg class="size-5" focusable="false"><use href="#chevron-right-icon"></use></svg>
+    </span>
+  </a>
+</article>

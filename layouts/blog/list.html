@@ -42,42 +42,7 @@
       {{- with .RegularPages -}}
         <div class="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
           {{- range .ByWeight.Reverse -}}
-            {{- $articleImage := partial "components/image-resource" (dict "page" . "name" "image") -}}
-            {{- $headingID := printf "article-%s" (.Title | anchorize) -}}
-
-            <article class="group flex overflow-hidden rounded-sm bg-white shadow-md transition-shadow duration-300 ease-in-out hover:shadow-xl" aria-labelledby="{{ $headingID }}">
-              <a class="flex w-full flex-col" href="{{ .RelPermalink }}">
-                <div class="relative overflow-hidden bg-secondary-100">
-                  {{- if $articleImage -}}
-                    {{ partial "components/image-responsive" (dict
-                      "path" $articleImage
-                      "class" "aspect-[16/9] w-full object-cover transition-transform duration-300 ease-in-out group-hover:scale-[1.025]"
-                      "loading" "lazy"
-                      "fetchPriority" "auto"
-                      "alt" .Title
-                      "widths" (slice 320 480 640 800)
-                      "sizes" "(max-width: 767px) calc(100vw - 32px), (max-width: 1023px) 50vw, 33vw"
-                    ) }}
-                  {{- end -}}
-                  <span class="pointer-events-none absolute inset-x-0 bottom-0 h-1/2 bg-linear-to-t from-black/40 to-transparent transition-opacity duration-300 group-hover:opacity-0" aria-hidden="true"></span>
-                  <span class="absolute right-3 top-3 z-10 rounded-full bg-primary-500 px-3 py-1 text-xs font-bold uppercase text-white">{{ .Params.category | default "Blog" }}</span>
-                </div>
-
-                <div class="flex flex-1 flex-col p-6">
-                  {{- if not .Date.IsZero -}}
-                    <time class="text-xs uppercase text-secondary-500" datetime="{{ .Date.Format "2006-01-02" }}">{{ time.Format "2 January 2006" .Date }}</time>
-                  {{- end -}}
-                  <h2 class="mt-3 text-xl font-bold leading-tight transition-colors duration-300 group-hover:text-primary-500" id="{{ $headingID }}">{{ .Title }}</h2>
-                  <p class="mt-4 line-clamp-4 text-base leading-6 text-secondary-600">{{ .Summary | plainify }}</p>
-                  <span class="mt-auto inline-flex items-center gap-3 pt-5 text-base font-semibold transition-colors duration-300 group-hover:text-primary-500">
-                    Citește mai departe
-                    <span class="grid size-8 place-items-center rounded-full bg-[#4d4d4d] text-white transition-colors duration-300 group-hover:bg-primary-500" aria-hidden="true">
-                      <svg class="size-4" focusable="false"><use href="#chevron-right-icon"></use></svg>
-                    </span>
-                  </span>
-                </div>
-              </a>
-            </article>
+            {{ partialCached "view-mode/blog/card" (dict "page" . "headingLevel" 2) .RelPermalink 2 }}
           {{- end -}}
         </div>
       {{- else -}}

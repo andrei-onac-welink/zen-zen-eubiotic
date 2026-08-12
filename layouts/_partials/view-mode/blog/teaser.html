@@ -1,0 +1,24 @@
+{{- $page := .page -}}
+{{- $articleImage := partial "components/image-resource" (dict "page" $page "name" "image") -}}
+
+<a class="group grid grid-cols-[88px_1fr] gap-3" href="{{ $page.RelPermalink }}" draggable="false">
+  {{- if $articleImage -}}
+    {{ partial "components/image-responsive" (dict
+      "path" $articleImage
+      "class" "size-[88px] rounded-sm object-cover"
+      "loading" "lazy"
+      "fetchPriority" "auto"
+      "alt" ""
+      "widths" (slice 88 176)
+      "sizes" "88px"
+    ) }}
+  {{- else -}}
+    <span class="size-[88px] rounded-sm bg-secondary-200" aria-hidden="true"></span>
+  {{- end -}}
+  <span>
+    <span class="line-clamp-3 text-base font-semibold leading-4 group-hover:text-primary-500">{{ $page.Title }}</span>
+    {{- if not $page.Date.IsZero -}}
+      <time class="mt-1 block text-base text-secondary-500" datetime="{{ $page.Date.Format "2006-01-02" }}">{{ time.Format "2 January 2006" $page.Date }}</time>
+    {{- end -}}
+  </span>
+</a>
