@@ -1,16 +1,18 @@
-{{- define "bodyClass" -}} {{ .Kind }}-{{ .Type }} {{ .Page.LinkTitle | anchorize -}} {{- end -}}
+{{- define "bodyClass" -}}error-page bg-primary-500{{- end -}}
+
+{{ define "header" }}
+  {{ partialCached "blocks/header" . .Section .RelPermalink }}
+{{ end }}
 
 {{ define "main" }}
+  {{ partial "blocks/404" (dict
+    "page" .
+    "title" "Ups! Pagina nu a fost găsită"
+    "description" "Pagina pe care o cauți este posibil să fi fost eliminată, să își fi schimbat numele sau să fie temporar indisponibilă."
+    "ctaLabel" "Înapoi acasă"
+  ) }}
+{{ end }}
 
-  <section class="min-h-dvh text-center flex flex-col gap-4 items-center justify-center" aria-label="Section - {{ .Title | plainify }}">
-    <svg class="size-100 text-primary-400" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1" stroke-linecap="round" stroke-linejoin="round">
-      <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-      <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"/>
-      <path d="M12 9v4"/>
-      <path d="M12 16v.01"/>
-    </svg>
-    <h1 class="text-5xl font-bold mb-4">Pagina nu a putut fi găsită!</h1>
-    <a class="btn-primary" href="{{ site.Home.RelPermalink }}" draggable="false" aria-label="Link to Homepage">Înapoi acasă</a>
-  </section>
-
+{{ define "footer" }}
+  {{ partialCached "blocks/footer" . .Section .RelPermalink }}
 {{ end }}
