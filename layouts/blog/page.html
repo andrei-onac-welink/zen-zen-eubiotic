@@ -35,16 +35,16 @@
         <article>
           <h1 class="max-w-3xl text-3xl font-bold uppercase leading-tight text-primary-500 lg:text-4xl" id="article-title">{{ .Title }}</h1>
 
-          <div class="markdown-content | max-w-full mt-10 border-t border-secondary-200 pt-8">
+          <div class="markdown-content | max-w-full mt-10 border-t border-secondary-200 pt-8" data-blog-content>
             {{ .Content }}
           </div>
         </article>
 
         {{- with .TableOfContents -}}
           <aside class="lg:sticky lg:top-20" aria-labelledby="article-navigation-title">
-            <div class="bg-primary-50 p-5 shadow-lg">
+            <div class="bg-primary-50 p-5 shadow-sm rounded-md">
               <h2 class="mb-5 text-xl font-bold text-primary-500" id="article-navigation-title">În acest articol</h2>
-              <div class="toc-container text-base **:font-normal leading-5 [&_a]:transition-colors [&_a:hover]:text-primary-500 [&_li]:mb-4">
+              <div class="toc-container text-base **:font-normal leading-5 [&_a]:transition-colors [&_a:hover]:text-primary-500 [&_li]:mb-4" data-blog-toc>
                 {{ . }}
               </div>
             </div>
