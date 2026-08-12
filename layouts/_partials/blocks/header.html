@@ -6,34 +6,75 @@
       {{ $headerLogo | safeHTML }}
     </a>
 
-    <input class="nav-toggle | peer sr-only" type="checkbox" id="site-navigation-toggle" aria-controls="site-navigation" />
-    <label class="relative z-20 grid size-10 cursor-pointer place-items-center lg:hidden" for="site-navigation-toggle">
-      <span class="sr-only bg-black text-white">Deschide meniul</span>
-      <svg class="size-6" aria-hidden="true" focusable="false"><use href="#menu-icon"></use></svg>
+    <input class="nav-toggle | peer sr-only" type="checkbox" id="site-navigation-toggle" aria-controls="mobile-navigation" aria-expanded="false" />
+    <label class="relative z-20 grid size-10 cursor-pointer place-items-center peer-checked:[&_.navigation-close-icon]:block peer-checked:[&_.navigation-open-icon]:hidden lg:hidden" for="site-navigation-toggle">
+      <span class="sr-only bg-black text-white" data-navigation-label>Deschide meniul</span>
+      <svg class="navigation-open-icon size-6 text-primary-500" aria-hidden="true" focusable="false"><use href="#menu-icon"></use></svg>
+      <svg class="navigation-close-icon hidden size-6 text-primary-500" aria-hidden="true" focusable="false"><use href="#close-icon"></use></svg>
     </label>
 
-    <nav class="fixed inset-x-0 top-[var(--header-height)] z-10 h-[calc(100svh-var(--header-height))] translate-x-full overflow-y-auto bg-white px-6 py-10 text-[#4d4d4d] transition-[top,height,transform] duration-300 peer-checked:translate-x-0 lg:static lg:h-auto lg:translate-x-0 lg:overflow-visible lg:bg-transparent lg:p-0 lg:text-white lg:group-data-[scrolled=true]:text-[#4d4d4d]" id="site-navigation" aria-label="Navigație principală">
-      <menu class="m-0 flex list-none flex-col items-center gap-7 p-0 lg:flex-row lg:gap-6 xl:gap-8">
+    <nav class="scrollbar-xs invisible pointer-events-none absolute inset-x-0 top-full z-10 max-h-[calc(100svh-var(--header-height))] -translate-y-2 overflow-y-auto bg-white text-[#4d4d4d] opacity-0 shadow-xl transition-[opacity,transform,visibility] duration-300 peer-checked:visible peer-checked:pointer-events-auto peer-checked:translate-y-0 peer-checked:opacity-100 lg:hidden" id="mobile-navigation" aria-label="Navigație principală mobilă">
+      <menu class="m-0 list-none p-0">
         {{ range site.Menus.main }}
           {{- $isCurrent := eq $.RelPermalink .URL -}}
           {{- $hasCurrentChild := $.HasMenuCurrent "main" . -}}
-          <li class="group/nav-item relative w-full lg:w-auto">
-            <a class="w-full flex items-center justify-center gap-1 text-center text-base font-bold uppercase tracking-wide transition hover:text-primary-500 aria-current:text-primary-500 lg:group-data-[scrolled=true]:hover:text-primary-500 lg:group-data-[scrolled=true]:aria-current:text-primary-500 {{ if $hasCurrentChild }} text-primary-500 lg:group-data-[scrolled=true]:text-primary-500 {{ end }}" href="{{ .URL }}" {{ if $isCurrent }} aria-current="page" {{ end }} draggable="false">
-              {{ .Name }}
-              {{- if .HasChildren }}
-                <svg class="size-4 transition-transform lg:group-hover/nav-item:rotate-180 lg:group-focus-within/nav-item:rotate-180" aria-hidden="true" focusable="false"><use href="#chevron-down-icon"></use></svg>
-              {{- end }}
-            </a>
+          <li>
+            {{- if .HasChildren -}}
+              <details class="group/mobile-menu">
+                <summary class="flex cursor-pointer list-none items-center gap-2 px-4 py-5 text-base font-bold uppercase transition-none hover:bg-primary-500 hover:text-white group-open/mobile-menu:bg-primary-500 group-open/mobile-menu:text-white [&::-webkit-details-marker]:hidden {{ if or $isCurrent $hasCurrentChild }} bg-primary-500 text-white {{ end }}">
+                  {{- if .URL -}}
+                    <a class="transition-colors duration-200 ease-in-out aria-current:text-current" href="{{ .URL }}" {{ if $isCurrent }} aria-current="page" {{ end }} draggable="false">{{ .Name | safeHTML }}</a>
+                  {{- else -}}
+                    <span>{{ .Name | safeHTML }}</span>
+                  {{- end -}}
+                  <svg class="size-4 transition-transform group-open/mobile-menu:rotate-180" aria-hidden="true" focusable="false"><use href="#chevron-down-icon"></use></svg>
+                </summary>
+                <ul class="m-0 list-none bg-white p-0 text-secondary-800">
+                  {{- range .Children }}
+                    <li>
+                      <a class="block w-full px-6 py-4 text-base font-medium uppercase transition-colors hover:bg-primary-50 hover:text-primary-500 aria-current:text-primary-500" href="{{ .URL }}" {{ if eq $.RelPermalink .URL }} aria-current="page" {{ end }} draggable="false">{{ .Name | safeHTML }}</a>
+                    </li>
+                  {{- end }}
+                </ul>
+              </details>
+            {{- else -}}
+              <a class="block w-full px-4 py-4 text-base font-medium uppercase transition-colors hover:bg-primary-500 hover:text-white aria-current:bg-primary-500 aria-current:text-white" href="{{ .URL }}" {{ if $isCurrent }} aria-current="page" {{ end }} draggable="false">{{ .Name | safeHTML }}</a>
+            {{- end -}}
+          </li>
+        {{ end }}
+      </menu>
+    </nav>
 
-            {{- if .HasChildren }}
-              <ul class="mt-3 flex list-none flex-col items-center gap-2 border-t border-secondary-200 pt-3 lg:absolute lg:left-0 lg:top-full lg:mt-0 lg:hidden lg:min-w-48 lg:items-stretch lg:gap-0 lg:border-0 lg:bg-white lg:p-0 lg:text-secondary-700 lg:shadow-xl lg:group-hover/nav-item:flex lg:group-focus-within/nav-item:flex w-max">
-                {{- range .Children }}
-                  <li>
-                    <a class="w-full block px-4 py-2 text-center text-base font-semibold uppercase transition-colors hover:bg-primary-500 hover:text-white aria-current:bg-primary-500 aria-current:text-white lg:px-5 lg:py-4 lg:text-left" href="{{ .URL }}" {{ if eq $.RelPermalink .URL }} aria-current="page" {{ end }} draggable="false">{{ .Name | safeHTML }}</a>
-                  </li>
-                {{- end }}
-              </ul>
-            {{- end }}
+    <nav class="hidden text-white group-data-[scrolled=true]:text-secondary-800 lg:block" aria-label="Navigație principală">
+      <menu class="m-0 flex list-none items-center gap-6 lg:gap-4 p-0 2xl:gap-8">
+        {{ range site.Menus.main }}
+          {{- $isCurrent := eq $.RelPermalink .URL -}}
+          {{- $hasCurrentChild := $.HasMenuCurrent "main" . -}}
+          <li class="relative">
+            {{- if .HasChildren -}}
+              <details class="group/desktop-menu" name="menu-desktop" data-desktop-menu>
+                <summary class="flex shrink-0 cursor-pointer list-none items-center justify-center gap-1 whitespace-nowrap text-center text-base font-bold uppercase tracking-wide transition-none hover:text-primary-500 group-open:text-primary-500 [&::-webkit-details-marker]:hidden {{ if $hasCurrentChild }} text-primary-500 {{ end }}">
+                  {{- if .URL -}}
+                    <a class="transition-colors duration-200 ease-in-out hover:text-primary-500 aria-current:text-primary-500" href="{{ .URL }}" {{ if $isCurrent }} aria-current="page" {{ end }} draggable="false">{{ .Name | safeHTML }}</a>
+                  {{- else -}}
+                    <span>{{ .Name | safeHTML }}</span>
+                  {{- end -}}
+                  <svg class="size-4 transition-all group-hover/desktop-menu:rotate-180 group-open/desktop-menu:rotate-180" aria-hidden="true" focusable="false"><use href="#chevron-down-icon"></use></svg>
+                </summary>
+                <div class="absolute left-0 top-full z-10 hidden w-max min-w-48 list-none flex-col p-0 text-secondary-800 group-open/desktop-menu:flex">
+                  <span class="block pt-[1rem]"></span>
+                  <ul class="bg-white shadow-xl">
+                    {{- range .Children }}
+                      <li>
+                        <a class="block w-full px-5 py-4 text-left text-base font-semibold uppercase transition-colors hover:bg-primary-500 hover:text-white aria-current:bg-primary-500 aria-current:text-white" href="{{ .URL }}" {{ if eq $.RelPermalink .URL }} aria-current="page" {{ end }} draggable="false">{{ .Name | safeHTML }}</a>
+                      </li>
+                    {{- end }}
+                  </ul>
+                </div>
+              </details>
+            {{- else -}}
+              <a class="flex shrink-0 items-center justify-center whitespace-nowrap text-center text-base font-bold uppercase tracking-wide transition-colors duration-200 ease-in-out hover:text-primary-500 aria-current:text-primary-500" href="{{ .URL }}" {{ if $isCurrent }} aria-current="page" {{ end }} draggable="false">{{ .Name | safeHTML }}</a>
+            {{- end -}}
           </li>
         {{ end }}
       </menu>
