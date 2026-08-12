@@ -25,7 +25,6 @@ blocks:
   - component: 'hero'
     title: 'Balonare'
     image: 'hero'
-    decorations: false
     
   - component: 'content-row'
     ariaLabel: 'Ce este balonarea'

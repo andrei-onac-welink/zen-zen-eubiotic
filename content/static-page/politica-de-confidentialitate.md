@@ -12,7 +12,6 @@ blocks:
   - component: 'hero'
     title: 'Politică de confidențialitate'
     image: 'hero'
-    decorations: false
     
   - component: 'legal-content'
     ariaLabel: 'Politică de confidențialitate'

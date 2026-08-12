@@ -12,7 +12,6 @@ blocks:
   - component: 'hero'
     title: 'Termeni și condiții de utilizare'
     image: 'hero'
-    decorations: false
     
   - component: 'legal-content'
     ariaLabel: 'Termeni și condiții de utilizare'

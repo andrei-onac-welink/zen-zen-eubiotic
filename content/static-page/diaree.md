@@ -25,6 +25,7 @@ blocks:
   - component: 'hero'
     title: 'Diaree'
     image: 'hero'
+    
   - component: 'content-row'
     ariaLabel: 'Ce este diareea'
     title: 'Diareea reprezintă eliminarea a trei sau mai multe scaune moi, apoase într-o zi și/sau o creștere a frecvenței scaunelor față de modul normal.'

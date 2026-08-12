@@ -22,7 +22,6 @@ blocks:
   - component: 'hero'
     title: 'Colici'
     image: 'hero'
-    decorations: false
     
   - component: 'content-row'
     ariaLabel: 'Ce sunt colicile'

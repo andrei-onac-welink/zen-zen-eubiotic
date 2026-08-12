@@ -12,7 +12,6 @@ blocks:
   - component: 'hero'
     title: 'Politica de cookie-uri'
     image: 'hero'
-    decorations: false
     
   - component: 'legal-content'
     ariaLabel: 'Politica de cookie-uri'

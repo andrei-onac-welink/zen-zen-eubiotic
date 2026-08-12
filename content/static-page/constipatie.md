@@ -25,6 +25,7 @@ blocks:
   - component: 'hero'
     title: 'Constipație'
     image: 'hero'
+    
   - component: 'content-row'
     ariaLabel: 'Ce este constipația'
     title: 'Constipația este în general descrisă ca având mai puțin de trei scaune pe săptămână.'

@@ -12,7 +12,6 @@ blocks:
   - component: 'hero'
     title: 'Cumpără'
     image: 'hero'
-    decorations: false
     
   - component: 'buy-content'
     ariaLabel: 'Unde găsești produsele Eubiotic'
