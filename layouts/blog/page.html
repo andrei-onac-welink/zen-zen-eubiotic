@@ -23,10 +23,10 @@
 
   <section class="bg-white py-12 lg:py-16" aria-labelledby="article-title">
     <div class="container">
-      <nav class="mb-5 text-base text-secondary-500" aria-label="Breadcrumb">
-        <a class="transition-colors hover:text-primary-500" href="/">Acasă</a>
+      <nav class="mb-5 text-base text-secondary-800" aria-label="Breadcrumb">
+        <a class="text-primary-500 transition-colors hover:text-primary-700" href="/">Acasă</a>
         <span aria-hidden="true"> » </span>
-        <a class="transition-colors hover:text-primary-500" href="{{ .Parent.RelPermalink }}">{{ .Parent.LinkTitle | default .Parent.Title }}</a>
+        <a class="text-primary-500 transition-colors hover:text-primary-700" href="{{ .Parent.RelPermalink }}">{{ .Parent.LinkTitle | default .Parent.Title }}</a>
         <span aria-hidden="true"> » </span>
         <span aria-current="page">{{ .Title }}</span>
       </nav>
