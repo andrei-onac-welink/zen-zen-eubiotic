@@ -3,9 +3,9 @@ title: 'Despre Eubiotic și gama de produse cu bacterii benefice'
 linkTitle: 'Despre Eubiotic'
 description: 'Află mai multe despre Eubiotic și cum contribuie gama de produse la menținerea sănătății intestinale. Descoperă beneficiile bacteriilor benefice pentru organism!'
 url: '/despre/eubiotic/'
-featuredImage: 
+featuredImage:
   url: '/images/products/extras/hero-image-eubiotic-large.png'
-  
+
 resources:
   - name: hero
     src: '/images/about/hero-image-about-eubiotic.png'
@@ -22,25 +22,26 @@ resources:
   - name: zentiva
     src: '/images/about/Zentiva-Romania-60-de-ani-de-activitate-neintrerupta.png'
     title: 'Zentiva România – 60 de ani de activitate neîntreruptă'
-    
+
 blocksFolder: 'static-pages'
 blocks:
   - component: 'hero'
     title: 'Eubiotic<sup>®</sup>'
     image: 'hero'
+
   - component: 'content-row'
     ariaLabel: 'Despre brandul Eubiotic'
     compactImages: true
     paragraphs:
       - '<strong>Eubiotic<sup>®</sup> este un brand Labormed Pharma.</strong>'
       - 'Eubiotic este primul produs cu bacterii benefice lansat în România, în 2004. Misiunea sa de pionier în informarea și educarea pacienților, farmaciștilor și a medicilor despre beneficiile acestui tip de produs a pus bazele categoriei de produse cu microorganisme benefice în piața locală de suplimente alimentare.'
-      - 'Gama Eubiotic se adresează adulților și copiilor, fiind accesibilă la nivel național atât în lanțurile de farmacii, cât și în farmaciile independente. Formula sa este creată în parteneriat <span class="font-bold text-primary-500">Chr. Hansen/Danemarca</span> și <span class="font-bold text-primary-500">Biocare/Danemarca</span>.'
+      - 'Gama Eubiotic se adresează adulților și copiilor, fiind accesibilă la nivel național atât în lanțurile de farmacii, cât și în farmaciile independente. Formula sa este creată în parteneriat <strong><a class="text-primary-500 transition-colors hover:text-primary-700" href="https://www.chr-hansen.com/en/human-health-and-probiotics/our-probiotic-strains" target="_blank" rel="noopener noreferrer">Chr. Hansen/Danemarca</a> și <a class="text-primary-500 transition-colors hover:text-primary-700" href="https://www.biocarecph.com" target="_blank" rel="noopener noreferrer">Biocare/Danemarca</a>.</strong>'
     images:
       - name: 'chrHansen'
         alt: 'Logo Chr. Hansen'
       - name: 'bioCare'
         alt: 'Logo BioCare Copenhagen'
-        
+
   - component: 'content-row'
     ariaLabel: 'Labormed și Zentiva'
     background: 'muted'
@@ -51,7 +52,7 @@ blocks:
     images:
       - name: 'labormed'
         alt: 'Labormed, o companie Zentiva'
-        
+
   - component: 'content-row'
     ariaLabel: 'Zentiva în România'
     mobileImageFirst: true

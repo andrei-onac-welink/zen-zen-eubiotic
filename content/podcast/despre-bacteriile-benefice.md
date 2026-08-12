@@ -1,6 +1,7 @@
 ---
 weight: 1
 title: 'Podcast despre bacteriile benefice si sănătate intestinală'
+linkTitle: 'Bacteriile benefice'
 description: 'Ascultă podcastul Eubiotic și află mai multe despre menținerea sănătății digestive și imunitare. Descoperă informații utile și recomandări pe site.'
 summary: 'În acest prim episod, discutăm despre rolul bacteriilor benefice în menținerea sănătății noastre. Descoperă cum aceste microorganisme ne pot îmbunătăți digestia și susține sistemul imunitar.'
 videoUrl: 'https://player.vimeo.com/video/946495096?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=6e2804930f&autoplay=1#t='

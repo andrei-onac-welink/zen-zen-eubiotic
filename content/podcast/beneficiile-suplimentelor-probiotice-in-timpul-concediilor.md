@@ -1,6 +1,7 @@
 ---
 weight: 8
 title: 'Beneficiile suplimentelor probiotice în timpul concediilor'
+linkTitle: 'Beneficiile suplimentelor probiotice în timpul concediilor'
 description: 'În acest episod, discutăm despre beneficiile suplimentelor probiotice ce susțin sănătatea digestivă și imunitară în timpul călătoriilor.'
 summary: 'Cum ne pot ajuta bacteriile benefice să ne menținem sănătatea în timpul călătoriilor? Descoperă sfaturi și recomandări în acest episod pentru vacanțe fără griji.'
 videoUrl: 'https://player.vimeo.com/video/981404518?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=078598c494&autoplay=1#t='

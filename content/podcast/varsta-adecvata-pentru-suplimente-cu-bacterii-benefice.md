@@ -1,6 +1,7 @@
 ---
 weight: 3
 title: 'Vârsta adecvată pentru suplimente cu bacterii benefice'
+linkTitle: 'Vârsta adecvată pentru suplimente cu bacterii benefice'
 description: 'Suplimentele cu bacterii benefice pot fi administrate la orice vârstă, inclusiv din prima zi de viață.'
 summary: 'Există o vârstă optimă pentru a începe suplimentarea cu bacterii benefice? În acest episod, explorăm recomandările pentru diferite grupe de vârstă.'
 videoUrl: 'https://player.vimeo.com/video/964522383?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=c6dd4d6b3d&autoplay=1#t='

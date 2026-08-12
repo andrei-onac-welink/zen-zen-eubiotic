@@ -42,11 +42,11 @@ blocks:
       - image: 'bb12'
         alt: 'Logo Bifidobacterium BB-12'
         introduction: 'Află ce beneficii aduce <strong>Bifidobacterium, BB-12<sup>®</sup></strong>, chiar de la producător'
-        href: 'https://www.chr-hansen.com/'
+        href: 'https://www.chr-hansen.com/en/human-health-and-probiotics/our-probiotic-strains/bb-12'
       - image: 'lgg'
         alt: 'Logo Lactobacillus rhamnosus LGG'
         introduction: 'Află ce beneficii aduce <strong>Lactobacillus rhamnosus, LGG<sup>®</sup></strong>, pentru copilul tău chiar de la producător'
-        href: 'https://www.chr-hansen.com/'
+        href: 'https://www.chr-hansen.com/en/human-health-and-probiotics/our-probiotic-strains/lgg'
         
   - component: 'details'
     ariaLabel: 'Beneficiile tulpinilor Eubiotic Baby Picături'

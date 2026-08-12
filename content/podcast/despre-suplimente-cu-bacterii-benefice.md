@@ -1,6 +1,7 @@
 ---
 weight: 2
 title: 'Podcast Eubiotic - despre suplimente cu bacterii benefice'
+linkTitle: 'Suplimente cu bacterii benefice'
 description: 'Ascultă podcastul Eubiotic despre suplimentele cu bacterii benefice, rolul lor în sănătatea intestinală și cum contribuie la menținerea echilibrului microbiotei.'
 summary: 'Află totul despre suplimentele cu bacterii benefice din acest episod despre cum și când ar trebui să le integrăm în rutina noastră zilnică pentru a ne îmbunătăți starea de bine.'
 videoUrl: 'https://player.vimeo.com/video/951959140?color&autopause=0&dnt=true&loop=0&muted=0&title=0&texttrack=ro&portrait=0&byline=0&h=7809bf2bdd&autoplay=1#t='

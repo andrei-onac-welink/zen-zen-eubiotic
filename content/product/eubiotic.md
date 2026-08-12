@@ -40,11 +40,11 @@ blocks:
       - image: 'bb12'
         alt: 'Logo Bifidobacterium BB-12'
         introduction: 'Află ce beneficii aduce <strong>Bifidobacterium, BB-12<sup>®</sup></strong>, chiar de la producător'
-        href: 'https://www.chr-hansen.com/'
+        href: 'https://www.chr-hansen.com/en/human-health-and-probiotics/our-probiotic-strains/bb-12'
       - image: 'la5'
         alt: 'Logo Lactobacillus acidophilus LA-5'
         introduction: 'Află ce beneficii aduce <strong>Lactobacillus acidophilus, LA-5<sup>®</sup></strong>, chiar de la producător'
-        href: 'https://www.chr-hansen.com/'
+        href: 'https://www.chr-hansen.com/en/human-health-and-probiotics/our-probiotic-strains/la-5'
         
   - component: 'details'
     paragraphs:
