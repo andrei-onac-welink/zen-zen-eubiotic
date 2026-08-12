@@ -16,6 +16,7 @@ temp/*
 .idea
 .vscode
 .env
+.cache
 
 # Yarn 2 files
 /.yarn/install-state.gz
