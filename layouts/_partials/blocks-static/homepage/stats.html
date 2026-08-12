@@ -1,0 +1,22 @@
+{{- $backgroundImage := partial "components/image-resource" (dict "page" .page "name" .image) -}}
+
+<section class="relative isolate overflow-hidden bg-secondary-700 text-white" aria-label="{{ .ariaLabel }}">
+  {{ partial "components/image-responsive" (dict
+    "path" $backgroundImage
+    "class" "absolute inset-0 -z-20 size-full object-cover object-center"
+    "loading" "lazy"
+    "fetchPriority" "auto"
+    "alt" ""
+    "widths" (slice 640 960 1280 1600 1920)
+    "sizes" "100vw"
+  ) }}
+  <span class="absolute inset-0 -z-10 bg-[#4d4d4d]/55" aria-hidden="true"></span>
+  <ul class="container grid gap-14 py-20 text-center sm:grid-cols-2 lg:grid-cols-4 lg:gap-8 lg:py-24">
+    {{- range .items -}}
+      <li>
+        <strong class="block text-7xl leading-none tabular-nums" data-countup-end="{{ .value }}"{{ with .prefix }} data-countup-prefix="{{ . }}"{{ end }}{{ with .suffix }} data-countup-suffix="{{ . }}"{{ end }}{{ with .animationDelay }} data-countup-delay="{{ . }}"{{ end }}>{{ .prefix }}{{ .value }}{{ .suffix }}</strong>
+        <span class="mt-3 block text-base">{{ .label | safeHTML }}</span>
+      </li>
+    {{- end -}}
+  </ul>
+</section>

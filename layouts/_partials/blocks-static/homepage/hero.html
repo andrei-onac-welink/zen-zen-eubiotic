@@ -1,0 +1,14 @@
+<section class="relative isolate flex min-h-svh items-end justify-center overflow-hidden bg-[#4d4d4d] pb-[13vh] text-white" id="top" aria-labelledby="hero-title">
+  <video class="absolute inset-0 -z-20 size-full object-cover object-center" autoplay muted loop playsinline preload="metadata" poster="{{ .poster }}" aria-hidden="true">
+    <source src="{{ .video }}" type="video/mp4" />
+  </video>
+  <span class="absolute inset-0 -z-10 bg-[#4d4d4d]/35" aria-hidden="true"></span>
+  <div class="flex flex-col items-center text-center">
+    <h1 class="text-lg font-semibold drop-shadow-sm sm:text-2xl" id="hero-title">{{ .title | safeHTML }}</h1>
+    {{- if and .ctaLabel .ctaHref -}}
+      <span class="mt-5 inline-flex" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-out-quart">
+        <a class="btn-primary | text-base uppercase text-white" href="{{ .ctaHref }}">{{ .ctaLabel }}</a>
+      </span>
+    {{- end -}}
+  </div>
+</section>

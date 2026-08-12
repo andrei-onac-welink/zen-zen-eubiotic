@@ -1,0 +1,41 @@
+{{- $faqImage := partial "components/image-resource" (dict "page" .page "name" .image) -}}
+
+<section class="bg-[#fafafa] py-20 lg:py-28" aria-labelledby="faq-title">
+  <div class="container">
+    <hgroup class="text-center">
+      <h2 class="text-3xl font-bold uppercase text-primary-500 lg:text-4xl" id="faq-title">{{ .title | safeHTML }}</h2>
+      <p class="mx-auto mt-3 max-w-3xl text-base font-semibold lg:text-xl font-serif">{{ .description | safeHTML }}</p>
+    </hgroup>
+
+    <div class="mt-14 grid items-center gap-6 lg:grid-cols-2 lg:gap-5">
+      {{ partial "components/image-responsive" (dict
+        "path" $faqImage
+        "class" "aspect-[3/2] w-full object-cover"
+        "loading" "lazy"
+        "fetchPriority" "auto"
+        "alt" .imageAlt
+        "widths" (slice 480 768 1024 1536)
+        "sizes" "(max-width: 1023px) calc(100vw - 32px), 50vw"
+      ) }}
+      <div class="space-y-5">
+        {{- with site.GetPage "faq" -}}
+          {{- range .RegularPages.ByWeight -}}
+            <details class="group bg-white p-5 shadow-sm lg:p-6">
+              <summary class="flex list-none items-center justify-between gap-6 text-xl font-bold">
+                <span>{{ .Title }}</span>
+                <span class="shrink-0 text-secondary-700" aria-hidden="true">
+                  <svg class="size-6 group-open:hidden" focusable="false"><use href="#plus-icon"></use></svg>
+                  <svg class="hidden size-6 group-open:block" focusable="false"><use href="#minus-icon"></use></svg>
+                </span>
+              </summary>
+              <div class="mt-6 space-y-4 text-base leading-6 text-secondary-600">
+                <p>{{ .Description | default .Summary | plainify }}</p>
+                <p>{{ $.answerLabel | safeHTML }} <a class="font-semibold text-primary-500" href="{{ .RelPermalink }}">{{ $.answerLinkLabel }}</a></p>
+              </div>
+            </details>
+          {{- end -}}
+        {{- end -}}
+      </div>
+    </div>
+  </div>
+</section>

@@ -1,0 +1,46 @@
+{{- $backgroundImage := partial "components/image-resource" (dict "page" .page "name" .image) -}}
+{{- $videoPoster := partial "components/image-resource" (dict "page" .page "name" .videoPoster) -}}
+
+<section class="relative isolate flex min-h-svh overflow-hidden bg-[#061728] text-white" aria-labelledby="immunity-title">
+  {{ partial "components/image-responsive" (dict
+    "path" $backgroundImage
+    "class" "absolute inset-0 -z-20 size-full object-cover object-center"
+    "loading" "lazy"
+    "fetchPriority" "auto"
+    "alt" ""
+    "widths" (slice 640 960 1280 1600 1920 2560)
+    "sizes" "100vw"
+  ) }}
+  <span class="absolute inset-0 -z-10 bg-[#061728]/15" aria-hidden="true"></span>
+  <div class="container flex w-full items-stretch">
+    <div class="flex w-full flex-col justify-center bg-primary-500/72 px-7 py-20 text-left backdrop-saturate-150 sm:px-12 lg:w-[600px] lg:px-14 lg:py-24">
+      <h2 class="text-4xl font-extrabold uppercase leading-[1.08] sm:text-5xl" id="immunity-title">{{ .title | safeHTML }}</h2>
+      <p class="mt-5 text-base font-semibold sm:text-xl font-serif">{{ .description | safeHTML }}</p>
+      <button class="w-full group relative mt-12 block cursor-pointer overflow-hidden rounded-sm shadow-2xl" type="button" data-video-modal-open="{{ .modalId }}" aria-controls="{{ .modalId }}" aria-haspopup="dialog" aria-label="{{ .videoLabel }}">
+        {{ partial "components/image-responsive" (dict
+          "path" $videoPoster
+          "class" "aspect-video w-full object-cover"
+          "loading" "lazy"
+          "fetchPriority" "auto"
+          "alt" .videoPosterAlt
+          "widths" (slice 320 480 640 960)
+          "sizes" "(max-width: 767px) calc(100vw - 56px), 480px"
+        ) }}
+        <span class="absolute inset-0 grid place-items-center bg-black/5 transition group-hover:bg-black/15">
+          <span class="grid size-14 place-items-center rounded-full bg-white/90 text-primary-500 shadow-lg">
+            <svg class="ml-1 size-6" aria-hidden="true" focusable="false"><use href="#player-play-icon"></use></svg>
+          </span>
+        </span>
+      </button>
+    </div>
+  </div>
+
+  <dialog class="container m-auto w-[calc(100%-2rem)] overflow-visible bg-transparent text-white backdrop:bg-secondary-900/85" id="{{ .modalId }}" data-video-modal aria-label="{{ .videoLabel }}">
+    <div class="relative overflow-hidden rounded-lg bg-black shadow-2xl">
+      <button class="absolute right-3 top-3 z-10 grid size-11 cursor-pointer place-items-center rounded-full bg-black/70 text-3xl leading-none text-white transition-colors hover:bg-primary-500 focus-visible:bg-primary-500" type="button" data-video-modal-close aria-label="Închide videoclipul">
+        <span aria-hidden="true">&times;</span>
+      </button>
+      <iframe class="aspect-video w-full border-0 bg-black" data-video-src="{{ .videoUrl }}" title="{{ .videoPosterAlt }}" loading="lazy" allow="autoplay; fullscreen; picture-in-picture; encrypted-media" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
+    </div>
+  </dialog>
+</section>

@@ -1,0 +1,12 @@
+<section class="bg-white px-4 py-20 text-center sm:px-8 lg:py-28" aria-labelledby="products-title">
+  <div class="container">
+    <h2 class="text-3xl font-bold uppercase text-primary-500 lg:text-4xl" id="products-title">{{ .title | safeHTML }}</h2>
+    <p class="mx-auto mt-3 max-w-2xl text-base font-semibold lg:text-xl font-serif">{{ .description | safeHTML }}</p>
+    {{ partial "components/product-carousel" (dict "id" (.carouselId | default "home-products")) }}
+    {{- with site.GetPage "product" -}}
+      <span class="mt-12 inline-flex" data-aos="fade-up" data-aos-duration="2500" data-aos-easing="ease-out-quart">
+        <a class="btn-primary | text-base uppercase" href="{{ .RelPermalink }}">{{ $.ctaLabel }}</a>
+      </span>
+    {{- end -}}
+  </div>
+</section>
