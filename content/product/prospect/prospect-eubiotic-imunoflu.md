@@ -2,7 +2,7 @@
 title: 'Prospect Eubiotic Imunoflu - administrare și beneficii'
 linkTitle: 'Prospect Eubiotic Imunoflu'
 description: 'Citește prospectul pentru Eubiotic Imunoflu și află cum să administrezi acest supliment pentru a beneficia de avantajele sale. Mai multe detalii pe site.'
-url: '/gama-eubiotic/eubiotic-capsule/prospect-eubiotic-imunoflu/'
+url: '/gama-eubiotic/eubiotic-imunoflu/prospect-eubiotic-imunoflu/'
 layout: 'prospect'
 productPage: 'product/eubiotic-imunoflu'
 featuredImage:

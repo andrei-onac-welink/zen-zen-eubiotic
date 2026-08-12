@@ -2,7 +2,7 @@
 title: 'Prospect Eubiotic Baby Picături - administrare și beneficii'
 linkTitle: 'Prospect Eubiotic Baby Picături'
 description: 'Află despre Eubiotic Baby Picături, un supliment bacterii benefice destinat celor mici. Citește prospectul pentru informații despre administrare și beneficii.'
-url: '/gama-eubiotic/eubiotic-capsule/prospect-eubiotic-baby-picaturi/'
+url: '/gama-eubiotic/eubiotic-baby-picaturi/prospect-eubiotic-baby-picaturi/'
 layout: 'prospect'
 productPage: 'product/eubiotic-baby-picaturi'
 featuredImage:

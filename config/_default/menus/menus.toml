@@ -22,7 +22,7 @@ identifier  = 'about'
 weight      = 20
 
 [[main]]
-name        = 'Despre Eubiotic®'
+name        = 'Despre Eubiotic<sup>®</sup>'
 url         = ''
 pre         = ''
 post        = ''
@@ -149,8 +149,8 @@ pre         = ''
 post        = ''
 title       = 'Eubiotic Baby'
 parent      = 'product'
-pageRef     = 'eubiotic-baby-stick'
-identifier  = 'eubiotic-baby'
+pageRef     = 'eubiotic-baby-stick-10'
+identifier  = 'eubiotic-baby-stick-10'
 weight      = 35
 
 [[main]]
@@ -161,7 +161,7 @@ post        = ''
 title       = 'Eubiotic Baby 20 Stick-uri'
 parent      = 'product'
 pageRef     = 'eubiotic-baby-stick-20'
-identifier  = 'eubiotic-baby-20'
+identifier  = 'eubiotic-baby-stick-20'
 weight      = 36
 
 [[main]]

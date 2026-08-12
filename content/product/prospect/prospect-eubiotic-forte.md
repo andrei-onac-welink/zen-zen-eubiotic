@@ -2,7 +2,7 @@
 title: 'Prospect Eubiotic Forte - administrare și beneficii'
 linkTitle: 'Prospect Eubiotic Forte'
 description: 'Află informații detaliate despre Eubiotic Forte, inclusiv administrare și beneficii. Suplimentul cu bacterii benefice ajută la echilibrarea microbiotei intestinale.'
-url: '/gama-eubiotic/eubiotic-capsule/prospect-eubiotic-forte/'
+url: '/gama-eubiotic/eubiotic-forte/prospect-eubiotic-forte/'
 layout: 'prospect'
 productPage: 'product/eubiotic-forte'
 featuredImage:

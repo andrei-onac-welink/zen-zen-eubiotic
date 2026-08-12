@@ -2,7 +2,7 @@
 title: 'Prospect Eubiotic Baby 20 Stick-uri'
 linkTitle: 'Prospect Eubiotic Baby'
 description: 'Află detalii despre Eubiotic Baby, un supliment pentru sănătatea digestivă a celor mici. Citește prospectul pentru informații despre administrare și beneficii.'
-url: '/gama-eubiotic/eubiotic-capsule/prospect-eubiotic-baby-20/'
+url: '/gama-eubiotic/eubiotic-baby-20/prospect-eubiotic-baby-20/'
 layout: 'prospect'
 productPage: 'product/eubiotic-baby-stick-20'
 featuredImage:
