@@ -12,12 +12,12 @@ weight      = 10
 
 [[main]]
 name        = 'Despre'
-url         = '/despre/eubiotic/'
+url         = ''
 pre         = ''
 post        = ''
 title       = 'Despre Eubiotic'
 parent      = ''
-pageRef     = ''
+pageRef     = 'despre-eubiotic'
 identifier  = 'about'
 weight      = 20
 

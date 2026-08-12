@@ -56,7 +56,7 @@
     <script>document.querySelector('.js-copyright-year').textContent = new Date().getFullYear();</script>
   </div>
 
-  <a class="fixed bottom-4 right-4 z-40 grid size-12 place-items-center rounded-full bg-primary-500 text-white shadow-lg hover:bg-primary-700" href="#top" aria-label="Înapoi sus" draggable="false">
+  <a class="fixed bottom-4 right-4 z-40 grid size-12 place-items-center rounded-full bg-primary-500 text-white shadow-lg transition-[opacity,transform,background-color] duration-300 ease-out hover:bg-primary-700" href="#top" aria-label="Înapoi sus" aria-hidden="true" data-back-to-top draggable="false" style="opacity:0;transform:translateY(0.75rem);pointer-events:none" tabindex="-1">
     <svg class="size-8" aria-hidden="true" focusable="false"><use href="#arrow-up-icon"></use></svg>
   </a>
 </footer>

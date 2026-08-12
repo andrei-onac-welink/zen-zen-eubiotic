@@ -1,4 +1,5 @@
 import './aos.service';
+import './backToTop.service';
 import './blogScrollspy.service';
 import './cookieConsent.service';
 import './counter.service';
