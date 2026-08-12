@@ -31,10 +31,10 @@
     {{- end -}}
   </a>
   <header class="block">
-    <h2 class="text-xl font-bold text-primary-500 lg:text-2xl" id="{{ $headingID }}">
+    <h2 class="text-xl font-bold text-primary-500 lg:text-3xl font-serif" id="{{ $headingID }}">
       <a class="transition-colors hover:text-primary-700" href="{{ $page.RelPermalink }}">{{ $page.LinkTitle }}</a>
     </h2>
-    <div class="mt-4 text-base font-medium leading-6 text-secondary-700 [&>p]:mb-3 [&>p:last-child]:mb-0">
+    <div class="mt-4 text-base font-medium leading-6 text-secondary-700 [&>p]:mb-3 [&>p:last-child]:mb-0 font-serif">
       {{ $page.Content | markdownify }}
     </div>
     <a class="btn-primary | mt-5 text-base" href="{{ $page.RelPermalink }}">Află mai multe</a>

@@ -10,6 +10,7 @@
   {{- $mobileImage := partial "components/image-resource" (dict "page" . "name" "imageMobile") -}}
 
   <section class="bg-white" id="top" aria-label="Podcast Eubiotic">
+    <h1 class="sr-only">{{ .Title }}</h1>
     {{- if or $desktopImage $mobileImage -}}
       <figure class="mx-auto max-w-4xl">
         {{- $sources := slice -}}

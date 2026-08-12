@@ -16,7 +16,7 @@
     </section>
 
     <section aria-labelledby="footer-blog-title">
-      <h2 class="mb-5 text-base font-bold" id="footer-blog-title">Ultimele articole de pe Blog</h2>
+      <h2 class="mb-5 text-xl font-bold" id="footer-blog-title">Ultimele articole de pe Blog</h2>
       <div class="space-y-4">
         {{- $blogPages := where site.RegularPages "Section" "blog" -}}
         {{- $featuredPosts := where $blogPages "Params.featured" true -}}
@@ -27,7 +27,7 @@
     </section>
 
     <section aria-labelledby="footer-links-title">
-      <h2 class="mb-5 text-base font-bold" id="footer-links-title">Legături rapide</h2>
+      <h2 class="mb-5 text-xl font-bold" id="footer-links-title">Legături rapide</h2>
       <ul class="m-0 list-none space-y-2 p-0 text-base">
         {{- range site.Menus.footer -}}
           {{- $isCurrent := eq $.RelPermalink .URL -}}
@@ -37,7 +37,7 @@
     </section>
 
     <section aria-labelledby="footer-contact-title">
-      <h2 class="mb-5 text-base font-bold" id="footer-contact-title">Ia legătura cu noi</h2>
+      <h2 class="mb-5 text-xl font-bold" id="footer-contact-title">Ia legătura cu noi</h2>
       <p class="text-base leading-6">Poți lua legătura cu noi accesând pagina de contact a <a class="font-medium text-primary-500 underline-offset-2" href="https://zentiva.ro/contact" target="_blank" draggable="false">zentiva.ro</a>.</p>
     </section>
   </div>
