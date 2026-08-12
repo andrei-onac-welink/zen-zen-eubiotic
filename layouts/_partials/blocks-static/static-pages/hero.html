@@ -14,7 +14,7 @@
   {{- end -}}
   <span class="absolute inset-0 -z-10 bg-(image:--color-gradient-primary-500)" aria-hidden="true"></span>
   <h1 class="mb-8 text-3xl font-bold uppercase drop-shadow-md lg:text-7xl" id="static-page-title">{{ .title | safeHTML }}</h1>
-  <div class="container absolute inset-x-0 bottom-4 hidden text-base lg:block">
+  <div class="container absolute inset-x-0 bottom-4 text-base">
     {{ partial "components/breadcrumbs" (dict "page" .page "linkClass" "transition-colors hover:text-primary-100") }}
   </div>
 </section>
