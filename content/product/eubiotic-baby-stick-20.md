@@ -35,8 +35,8 @@ blocks:
     heading: 'Ce este și cum se utilizează'
     image: 'image'
     paragraphs:
-      - 'Eubiotic Baby<sup>®</sup> Sticks conține o combinație de culturi lactice standardizate vii (<strong>Bifidobacterium BB-12<sup>®</sup>, Lactobacillus L. casei 431<sup>®</sup>, Streptococcus thermophilus TH-4<sup>®</sup></strong>), ce suplimentează flora intestinală naturală.'
-      - 'Eubiotic Baby<sup>®</sup> este recomandat în situațiile în care este necesară regenerarea florei intestinale, în cazul tulburărilor de tranzit intestinal și/sau al folosirii de antibiotice.'
+      - '<strong>Eubiotic Baby<sup>®</sup></strong> Sticks conține o combinație de culturi lactice standardizate vii (<strong>Bifidobacterium BB-12<sup>®</sup>, Lactobacillus L. casei 431<sup>®</sup>, Streptococcus thermophilus TH-4<sup>®</sup></strong>), ce suplimentează flora intestinală naturală.'
+      - '<strong>Eubiotic Baby<sup>®</sup></strong> este recomandat în situațiile în care este necesară regenerarea florei intestinale, în cazul tulburărilor de tranzit intestinal și/sau al folosirii de antibiotice.'
     ctaLabel: 'Citește prospectul'
     ctaPage: 'product/prospect/prospect-eubiotic-baby-stick-20'
     

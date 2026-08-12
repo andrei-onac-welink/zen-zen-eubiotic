@@ -26,8 +26,8 @@ blocks:
     heading: 'Ce este și cum se utilizează'
     image: 'image'
     paragraphs:
-      - 'EUBIOTIC<sup>®</sup> Forte susține reechilibrarea microflorei intestinale/microbiotei a cărei alcătuire și structurare se află sub presiuni fiziologice, patologice sau de altă natură precum tulburările digestive sau administrarea de antibiotice.'
-      - 'EUBIOTIC<sup>®</sup> Forte este o combinație de microorganisme vii (1 × 10<sup>9</sup> UFC* <strong>Saccharomyces cerevisiae var. boulardi</strong> și 4 × 10<sup>9</sup> UFC* <strong>Lactobacillus rhamnosus GG</strong>), recomandată pentru reechilibrarea microflorei intestinale a cărei alcătuire și structurare se află sub presiuni fiziologice, patologice sau de altă natură precum tulburările digestive sau administrarea de antibiotice.'
+      - '<strong>EUBIOTIC<sup>®</sup> Forte</strong> susține reechilibrarea microflorei intestinale/microbiotei a cărei alcătuire și structurare se află sub presiuni fiziologice, patologice sau de altă natură precum tulburările digestive sau administrarea de antibiotice.'
+      - '<strong>EUBIOTIC<sup>®</sup> Forte</strong> este o combinație de microorganisme vii (1 × 10<sup>9</sup> UFC* Saccharomyces cerevisiae var. boulardi și 4 × 10<sup>9</sup> UFC* Lactobacillus rhamnosus GG), recomandată pentru reechilibrarea microflorei intestinale a cărei alcătuire și structurare se află sub presiuni fiziologice, patologice sau de altă natură precum tulburările digestive sau administrarea de antibiotice.'
       - 'Diareea reprezintă una dintre manifestările digestive frecvente apărute în urma tratamentului cu antibiotice. Diareea poate debuta la 2 ore după consumul antibioticului, până la 2 luni după terminarea tratamentului cu antibiotic.'
       - 'Antibioticele sunt o grupă de medicamente necesare în tratamentul bolilor infecțioase cauzate de bacterii.'
       - 'Acestea pot afecta microflora intestinală prin distrugerea bacteriilor benefice și proliferarea bacteriilor dăunătoare, ce pot infecta sistemul digestiv.'

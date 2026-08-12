@@ -30,7 +30,7 @@ blocks:
     title: 'Eubiotic Capsule'
     productName: 'Eubiotic<sup>®</sup> capsule'
     heading: 'Ce este și cum se utilizează'
-    introduction: 'EUBIOTIC<sup>®</sup> capsule este o combinație de două tulpini bacteriene benefice (tulpina BB-12<sup>®</sup> a <strong>Bifidobacterium animalis</strong> și tulpina LA-5<sup>®</sup> a <strong>Lactobacillus acidophilus</strong>) care, prin produșii lor de metabolism, influențează atât mediul intestinal, cât și mediul intern al organismului. Mediul intern al organismului se poate afla fie în stare fiziologică normală, fie dezechilibrată, fie caracterizată prin diferite patologii de fond dobândite în istoricul personal al fiecărui individ în parte.'
+    introduction: '<strong>EUBIOTIC<sup>®</sup></strong> capsule este o combinație de două tulpini bacteriene benefice (tulpina BB-12<sup>®</sup> a <strong>Bifidobacterium animalis</strong> și tulpina LA-5<sup>®</sup> a <strong>Lactobacillus acidophilus</strong>) care, prin produșii lor de metabolism, influențează atât mediul intestinal, cât și mediul intern al organismului. Mediul intern al organismului se poate afla fie în stare fiziologică normală, fie dezechilibrată, fie caracterizată prin diferite patologii de fond dobândite în istoricul personal al fiecărui individ în parte.'
     image: 'image'
     ctaLabel: 'Citește prospectul'
     ctaPage: 'product/prospect/prospect-eubiotic'
