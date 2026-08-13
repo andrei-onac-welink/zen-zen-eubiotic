@@ -14,6 +14,9 @@ resources:
   - name: image
     src: '/images/products/Eubiotic-imunoflu-1.png'
     title: ''
+  - name: carouselImage
+    src: '/images/products/box-Eubiotic-imunoflu_dr-800px.png'
+    title: 'Eubiotic ImunoFLU'
   - name: composition
     src: '/images/products/extras/imunoflu-explicat.png'
     title: 'Structura bistrat a comprimatului Eubiotic ImunoFLU'

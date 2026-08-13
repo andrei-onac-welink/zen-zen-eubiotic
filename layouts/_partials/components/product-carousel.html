@@ -8,18 +8,18 @@
     <nav class="swiper js-swiper">
       <ul class="swiper-wrapper items-center">
         {{- range . -}}
-          {{- $productImage := partial "components/image-resource" (dict "page" . "name" "image") -}}
+          {{- $productImage := partial "components/image-resource" (dict "page" . "name" "carouselImage") -}}
           <li class="swiper-slide flex min-h-[290px] items-center justify-center">
             <a class="flex size-full min-h-[290px] items-center justify-center" href="{{ .RelPermalink }}" aria-label="Vezi {{ .LinkTitle }}">
               {{- if $productImage -}}
                 {{ partial "components/image-responsive" (dict
                   "path" $productImage
-                  "class" "mx-auto max-h-[290px] w-full object-contain transition-transform duration-300 hover:scale-[1.025]"
+                  "class" "mx-auto w-full object-contain transition-transform duration-300 hover:scale-[1.025]"
                   "loading" "lazy"
                   "fetchPriority" "auto"
                   "alt" .LinkTitle
                   "widths" (slice 240 360 480 640)
-                  "sizes" "(max-width: 575px) calc(100vw - 112px), (max-width: 1023px) 30vw, 360px"
+                  "sizes" "(max-width: 575px) calc(100vw - 112px), (max-width: 1023px) 30vw, 480px"
                 ) }}
               {{- end -}}
             </a>

@@ -14,6 +14,9 @@ resources:
   - name: image
     src: '/images/products/eubiotic-baby-picaturi-stg.png'
     title: ''
+  - name: carouselImage
+    src: '/images/products/eubiotic-baby-picaturi-dr-small-1.png'
+    title: 'Eubiotic Baby Picături'
   - name: bb12
     src: '/images/products/extras/scb_bb-12_logo_blue_rgb.png'
     title: 'Bifidobacterium BB-12'

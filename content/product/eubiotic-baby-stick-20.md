@@ -14,6 +14,9 @@ resources:
   - name: image
     src: '/images/products/eubiotic-baby-stick-20-stg.png'
     title: ''
+  - name: carouselImage
+    src: '/images/products/eubiotic-baby-stick-20-dr-small.png'
+    title: 'Eubiotic Baby 20 Stick-uri'
   - name: bb12
     src: '/images/products/extras/scb_bb-12_logo_blue_rgb.png'
     title: 'Bifidobacterium BB-12'

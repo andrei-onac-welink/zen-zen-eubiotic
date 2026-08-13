@@ -14,6 +14,9 @@ resources:
   - name: image
     src: '/images/products/Eubiotic-forte.png'
     title: ''
+  - name: carouselImage
+    src: '/images/products/Eubiotic-Forte-800px.png'
+    title: 'Eubiotic Forte'
   - name: family
     src: '/images/products/extras/happy-family-in-garden-looking-at-plants-on-sunny-2022-09-27-00-46-36-utc-scaled.webp'
     title: 'Familie în grădină'

@@ -14,6 +14,9 @@ resources:
   - name: image
     src: '/images/products/eubiotic-capsule-stg.png'
     title: ''
+  - name: carouselImage
+    src: '/images/products/eubiotic-capsule-dr.png'
+    title: 'Eubiotic Capsule'
   - name: bb12
     src: '/images/products/extras/scb_bb-12_logo_blue_rgb.png'
     title: 'Bifidobacterium BB-12'
