@@ -20,15 +20,15 @@
       <div class="space-y-5">
         {{- with site.GetPage "faq" -}}
           {{- range .RegularPages.ByWeight -}}
-            <details class="group bg-white p-5 shadow-sm lg:p-6">
-              <summary class="flex list-none items-center justify-between gap-6 text-xl font-bold">
+            <details class="group bg-white p-5 shadow-sm [interpolate-size:allow-keywords] [&::details-content]:overflow-hidden [&::details-content]:[block-size:0] [&::details-content]:transition-[block-size,content-visibility] [&::details-content]:duration-500 [&::details-content]:ease-in-out [&::details-content]:[transition-behavior:allow-discrete] open:[&::details-content]:block open:[&::details-content]:[block-size:auto] starting:open:[&::details-content]:[block-size:0] motion-reduce:[&::details-content]:transition-none lg:p-6">
+              <summary class="flex cursor-pointer list-none items-center justify-between gap-6 text-xl font-bold">
                 <span>{{ .Title }}</span>
                 <span class="shrink-0 text-secondary-800" aria-hidden="true">
                   <svg class="size-6 group-open:hidden" focusable="false"><use href="#plus-icon"></use></svg>
                   <svg class="hidden size-6 group-open:block" focusable="false"><use href="#minus-icon"></use></svg>
                 </span>
               </summary>
-              <div class="mt-6 space-y-4 text-base leading-6 text-secondary-800">
+              <div class="space-y-4 pt-6 text-base leading-6 text-secondary-800">
                 <div class="space-y-4">{{ .Summary | safeHTML }}</div>
                 <p>{{ $.answerLabel | safeHTML }} <a class="font-semibold text-primary-500" href="{{ .RelPermalink }}">{{ $.answerLinkLabel }}</a></p>
               </div>
