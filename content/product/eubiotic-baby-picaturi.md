@@ -89,6 +89,7 @@ blocks:
     image: 'baby'
     overlayVariant: 'primary'
     title: 'Cui se adresează Eubiotic Baby Picături?'
+    animateText: 'Cui se adresează'
     introduction: 'Eubiotic Baby picături este recomandat în situațiile în care:'
     sections:
       - items:

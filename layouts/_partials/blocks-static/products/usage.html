@@ -1,4 +1,5 @@
 {{- $backgroundImage := partial "components/image-resource" (dict "page" .page "name" .image) -}}
+{{- $title := .title | default "" -}}
 
 <section class="relative isolate flex min-h-[28rem] items-center overflow-hidden bg-secondary-900 bg-fixed bg-cover bg-right-top bg-no-repeat py-16 text-white lg:min-h-[38rem] lg:py-24" {{ if $backgroundImage }}style="{{ printf "background-image:url('%s')" $backgroundImage | safeCSS }}"{{ end }} aria-labelledby="usage-title">
   <span class="absolute inset-0 z-0 {{ if eq .overlayVariant "primary" }}bg-(image:--color-gradient-product-usage-primary){{ else }}bg-(image:--color-gradient-product-usage){{ end }}" aria-hidden="true"></span>
@@ -7,7 +8,11 @@
     <div class="hidden xl:block" aria-hidden="true"></div>
     <div class="block">
       <div class="relative">
-        <h2 class="pb-2 text-3xl font-bold italic lg:text-4xl" id="usage-title">{{ .title }}</h2>
+        {{- if .animateText -}}
+          {{ partial "components/animated-headline" (dict "id" "usage-title" "class" "pb-2 text-3xl font-bold lg:text-4xl" "title" $title "animateText" .animateText "highlightClass" "text-white italic") }}
+        {{- else -}}
+          <h2 class="pb-2 text-3xl font-bold italic lg:text-4xl" id="usage-title">{{ $title }}</h2>
+        {{- end -}}
       </div>
       {{- with .introduction -}}
         <p class="mt-5 text-base font-semibold leading-7">{{ . | safeHTML }}</p>

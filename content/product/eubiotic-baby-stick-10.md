@@ -74,6 +74,7 @@ blocks:
   - component: 'usage'
     image: 'beach'
     title: 'Cui se adresează Eubiotic Baby Stick?'
+    animateText: 'Cui se adresează'
     introduction: 'EUBIOTIC BABY stick este recomandat:'
     sections:
       - items:

@@ -62,6 +62,7 @@ blocks:
   - component: 'usage'
     image: 'family'
     title: 'Cui se adresează Eubiotic?'
+    animateText: 'Cui se adresează'
     introduction: 'EUBIOTIC<sup>®</sup> capsule este recomandat copiilor de peste 6 ani și adulților.'
     sections:
       - title: 'Mod de prezentare'

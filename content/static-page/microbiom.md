@@ -30,7 +30,8 @@ blocks:
     tooltip: 'Placă de cultură a microbiomului'
 
   - component: 'microbiome-stats'
-    title: 'Să ne cunoaștem <em class="text-primary-500 underline">microbiomul</em>'
+    title: 'Să ne cunoaștem microbiomul'
+    animateText: 'microbiomul'
     items:
       - value: 95
         suffix: '%'

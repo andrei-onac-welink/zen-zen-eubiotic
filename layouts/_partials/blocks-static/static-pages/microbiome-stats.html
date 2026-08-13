@@ -1,6 +1,6 @@
 <section class="bg-primary-50 py-16 lg:py-20" aria-labelledby="microbiome-stats-title">
   <div class="container">
-    <h2 class="text-center text-2xl font-bold text-secondary-500 lg:text-5xl" id="microbiome-stats-title">{{ .title | safeHTML }}</h2>
+    {{ partial "components/animated-headline" (dict "id" "microbiome-stats-title" "class" "text-center text-2xl font-bold text-secondary-500 lg:text-5xl" "title" .title "animateText" .animateText) }}
 
     <div class="mt-10 grid grid-cols-1 xs:grid-cols-2 gap-x-6 gap-y-10 sm:grid-cols-3 lg:grid-cols-5">
       {{- $counterIndex := 0 -}}

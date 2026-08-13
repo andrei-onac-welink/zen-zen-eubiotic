@@ -7,6 +7,8 @@
   --animate-ping: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
   --animate-pulse: pulse 2s cubic-bezier(0.4, 0, 0.6, 1) infinite;
   --animate-bounce: bounce 1s infinite;
+  --animate-headline-dash: headline-dash 1.2s forwards;
+  --animate-headline-hide: headline-hide 0.4s forwards;
 
   @keyframes spin {
     to {
@@ -38,6 +40,30 @@
     50% {
       transform: none;
       animation-timing-function: cubic-bezier(0, 0, 0.2, 1);
+    }
+  }
+
+  @keyframes headline-dash {
+    0% {
+      opacity: 1;
+      stroke-dasharray: 0 1500;
+    }
+
+    100% {
+      opacity: 1;
+      stroke-dasharray: 1500 1500;
+    }
+  }
+
+  @keyframes headline-hide {
+    0% {
+      opacity: 1;
+      stroke-dasharray: 1500 1500;
+    }
+
+    100% {
+      opacity: 0;
+      filter: blur(10px);
     }
   }
 }

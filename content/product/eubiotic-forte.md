@@ -73,6 +73,7 @@ blocks:
     image: 'family'
     overlayVariant: 'primary'
     title: 'Cui se adresează Eubiotic Forte?'
+    animateText: 'Cui se adresează'
     paragraphs:
       - 'Produsul este destinat adulților și copiilor de peste 6 ani.'
       - 'Copiilor sub 6 ani nu le este recomandată utilizarea capsulelor (risc de aspirație). <em>Pentru această grupă de vârstă recomandăm utilizarea Eubiotic<sup>®</sup> Baby, sub formă de picături sau pulbere.</em>'
