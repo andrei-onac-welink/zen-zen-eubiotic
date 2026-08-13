@@ -1,7 +1,7 @@
 <section class="bg-primary-500 text-white" id="{{ .id | default "beneficii" }}" aria-label="{{ .ariaLabel }}">
   <div class="container grid gap-10 py-24 text-center md:grid-cols-2 md:gap-x-10 lg:grid-cols-4 lg:gap-8 lg:py-28">
     {{- range .items -}}
-      <article class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="{{ .animationDelay | default 0 }}" data-aos-duration="1000">
+      <article class="flex flex-col items-center" data-aos="fade-up" data-aos-delay="{{ .animationDelay | default 0 }}">
         <svg class="mb-5 size-14" aria-hidden="true" focusable="false"><use href="#{{ .icon }}"></use></svg>
         <h2 class="text-2xl font-bold font-serif">{{ .title | safeHTML }}</h2>
         <p class="mt-4 text-base leading-6">{{ .description | safeHTML }}</p>

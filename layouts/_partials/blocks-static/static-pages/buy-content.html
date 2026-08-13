@@ -1,12 +1,12 @@
 <section class="bg-white py-16 lg:py-24" aria-label="{{ .ariaLabel | default .page.Title }}">
   <div class="container">
     {{- with .introduction -}}
-      <p class="text-base leading-7 text-secondary-700">{{ . | safeHTML }}</p>
+      <p class="text-base leading-7 text-secondary-800">{{ . | safeHTML }}</p>
     {{- end -}}
 
     {{ partial "components/product-carousel" (dict "id" "buy-products") }}
 
-    <div class="mt-12 text-center text-secondary-700">
+    <div class="mt-12 text-center text-secondary-800">
       {{- with .statement -}}
         <h2 class="text-xl font-bold leading-8 text-primary-500">{{ . | safeHTML }}</h2>
       {{- end -}}
@@ -16,7 +16,9 @@
       {{- with .buttons -}}
         <div class="mt-8 grid gap-6 md:grid-cols-2">
           {{- range . -}}
-            <a class="btn-primary | justify-self-center min-w-64 px-8 py-4 text-base font-bold uppercase" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
+            <span class="inline-flex justify-self-center" data-aos="fade-up">
+              <a class="btn-primary | min-w-64 px-8 py-4 text-base font-bold uppercase" href="{{ .url }}" target="_blank" rel="noopener noreferrer">{{ .label }}</a>
+            </span>
           {{- end -}}
         </div>
       {{- end -}}

@@ -4,7 +4,7 @@
 {{- end -}}
 
 {{- with $products -}}
-  <div class="swiper-container container relative mt-14 px-8 sm:px-14">
+  <div class="swiper-container container relative ">
     <nav class="swiper js-swiper">
       <ul class="swiper-wrapper items-center">
         {{- range . -}}
@@ -27,11 +27,11 @@
         {{- end -}}
       </ul>
     </nav>
-    <button class="swiper-button-prev | absolute left-0 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center text-secondary-500 hover:text-primary-500" type="button" aria-label="Produsul anterior">
-      <svg class="size-8" aria-hidden="true" focusable="false"><use href="#chevron-left-icon"></use></svg>
+    <button class="swiper-button-prev | absolute -left-5 top-1/2 z-10 grid size-12 -translate-y-1/2 place-items-center text-secondary-500 hover:text-primary-500" type="button" aria-label="Produsul anterior">
+      <svg class="shrink-0 size-10" aria-hidden="true" focusable="false"><use href="#chevron-left-icon"></use></svg>
     </button>
-    <button class="swiper-button-next | absolute right-0 top-1/2 z-10 grid size-11 -translate-y-1/2 place-items-center text-secondary-500 hover:text-primary-500" type="button" aria-label="Produsul următor">
-      <svg class="size-8" aria-hidden="true" focusable="false"><use href="#chevron-right-icon"></use></svg>
+    <button class="swiper-button-next | absolute -right-5 top-1/2 z-10 grid size-12 -translate-y-1/2 place-items-center text-secondary-500 hover:text-primary-500" type="button" aria-label="Produsul următor">
+      <svg class="shrink-0 size-10" aria-hidden="true" focusable="false"><use href="#chevron-right-icon"></use></svg>
     </button>
   </div>
 {{- end -}}

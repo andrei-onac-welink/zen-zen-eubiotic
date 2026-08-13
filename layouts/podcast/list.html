@@ -46,23 +46,23 @@
 
     {{- with .Content -}}
       <div class="container pb-10 lg:pb-12">
-        <div class="space-y-5 text-base leading-7 text-secondary-700 [&_p]:m-0">{{ . }}</div>
+        <div class="space-y-4 text-base leading-7 text-secondary-800">{{ . }}</div>
       </div>
     {{- end -}}
   </section>
 
   <section class="bg-white pb-16 lg:pb-24" aria-label="Episoade podcast">
-    <div class="container">
+    <ul class="container">
       {{- with .RegularPages -}}
-        <div class="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
+        <li class="grid gap-7 md:grid-cols-2 lg:grid-cols-3">
           {{- range .ByWeight -}}
             {{ partialCached "view-mode/podcast/card" (dict "page" .) .RelPermalink }}
           {{- end -}}
-        </div>
+        </li>
       {{- else -}}
         <p class="text-center text-base text-secondary-600">Episoadele vor fi disponibile în curând.</p>
       {{- end -}}
-    </div>
+    </ul>
   </section>
 
 {{ end }}

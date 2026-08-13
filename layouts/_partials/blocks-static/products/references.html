@@ -1,9 +1,9 @@
 <section class="bg-white py-12 lg:py-16" aria-labelledby="references-title">
   <div class="container">
     <h2 class="text-base italic text-secondary-600" id="references-title">{{ .title }}</h2>
-    <ol class="mt-4 list-decimal pl-12 text-sm italic leading-6 text-secondary-500">
+    <ol class="mt-4 list-decimal pl-12 text-sm italic leading-6 text-secondary-500 marker:text-secondary-500">
       {{- range .items -}}
-        <li>{{ . }}</li>
+        <li class="marker:text-base">{{ . }}</li>
       {{- end -}}
     </ol>
   </div>

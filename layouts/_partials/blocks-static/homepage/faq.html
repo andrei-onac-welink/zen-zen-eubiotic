@@ -23,12 +23,12 @@
             <details class="group bg-white p-5 shadow-sm lg:p-6">
               <summary class="flex list-none items-center justify-between gap-6 text-xl font-bold">
                 <span>{{ .Title }}</span>
-                <span class="shrink-0 text-secondary-700" aria-hidden="true">
+                <span class="shrink-0 text-secondary-800" aria-hidden="true">
                   <svg class="size-6 group-open:hidden" focusable="false"><use href="#plus-icon"></use></svg>
                   <svg class="hidden size-6 group-open:block" focusable="false"><use href="#minus-icon"></use></svg>
                 </span>
               </summary>
-              <div class="mt-6 space-y-4 text-base leading-6 text-secondary-600">
+              <div class="mt-6 space-y-4 text-base leading-6 text-secondary-800">
                 <div class="space-y-4">{{ .Summary | safeHTML }}</div>
                 <p>{{ $.answerLabel | safeHTML }} <a class="font-semibold text-primary-500" href="{{ .RelPermalink }}">{{ $.answerLinkLabel }}</a></p>
               </div>

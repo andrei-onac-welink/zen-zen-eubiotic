@@ -14,7 +14,7 @@
             <p class="text-4xl font-bold leading-none tabular-nums text-primary-500 lg:text-7xl" data-countup-end="{{ $item.value }}" data-countup-prefix="{{ $prefix }}" data-countup-suffix="{{ $suffix }}" data-countup-delay="{{ mul $counterIndex 100 }}">{{ $prefix }}{{ $item.value }}{{ $suffix }}</p>
             {{- $counterIndex = add $counterIndex 1 -}}
           {{- end -}}
-          <p class="mx-auto mt-3 max-w-40 text-sm font-semibold leading-5 text-secondary-500">{{ $item.label | safeHTML }}</p>
+          <p class="mx-auto mt-3 text-base font-semibold leading-5 text-secondary-500">{{ $item.label | safeHTML }}</p>
         </div>
       {{- end -}}
     </div>
