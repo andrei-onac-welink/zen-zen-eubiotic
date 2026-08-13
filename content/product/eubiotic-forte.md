@@ -6,7 +6,8 @@ linkTitle: 'Eubiotic Forte'
 description: 'Află despre Eubiotic Forte, un supliment cu bacterii benefice pentru susținerea sănătății digestive și a sistemului imunitar. Mai multe detalii pe site.'
 slug: '/eubiotic-forte/'
 weight: 2
-ean: ''
+ean: '5944719010194'
+prospectPage: 'product/prospect/prospect-eubiotic-forte'
 featuredImage:
   url: '/images/products/Eubiotic-forte.png'
   

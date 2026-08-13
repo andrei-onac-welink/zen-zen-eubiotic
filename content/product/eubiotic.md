@@ -6,7 +6,8 @@ linkTitle: 'Eubiotic'
 description: 'Descoperă Eubiotic Capsule, supliment cu bacterii benefice pentru echilibrarea microbiotei și susținerea sănătății intestinale. Mai multe detalii pe site.'
 slug: '/eubiotic-capsule/'
 weight: 1
-ean: ''
+ean: '5944719007996'
+prospectPage: 'product/prospect/prospect-eubiotic'
 featuredImage:
   url: '/images/products/eubiotic-capsule-stg.png'
   

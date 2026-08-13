@@ -6,7 +6,8 @@ linkTitle: 'Eubiotic ImunoFlu'
 description: 'Descoperă Eubiotic ImunoFLU, supliment alimentar ce combină bacterii benefice cu Vitamina D, C și Zinc pentru susținerea imunității și sănătății intestinale.'
 slug: '/eubiotic-imunoflu/'
 weight: 3
-ean: ''
+ean: '5944719011047'
+prospectPage: 'product/prospect/prospect-eubiotic-imunoflu'
 featuredImage:
   url: '/images/products/Eubiotic-imunoflu-1.png'
   

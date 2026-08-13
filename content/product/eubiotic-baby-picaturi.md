@@ -6,7 +6,8 @@ linkTitle: 'Eubiotic Baby Picături'
 description: 'Eubiotic Baby Picături oferă o formulă de bacterii benefice special concepută pentru cei mici, contribuind la sănătatea digestivă și echilibrul microbiotei.'
 slug: '/eubiotic-baby-picaturi/'
 weight: 4
-ean: ''
+ean: '5944719009976'
+prospectPage: 'product/prospect/prospect-eubiotic-baby-picaturi'
 featuredImage:
   url: '/images/products/eubiotic-baby-picaturi-stg.png'
   

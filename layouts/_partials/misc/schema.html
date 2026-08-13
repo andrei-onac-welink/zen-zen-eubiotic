@@ -28,3 +28,75 @@
   {{- end -}}
   {{- dict "@context" "https://schema.org" "@type" "BreadcrumbList" "itemListElement" $items | jsonify | safeJS -}}
 </script>
+
+{{ if and .IsPage (eq .Section "product") }}
+  {{- $page := . -}}
+  {{- $productImage := "" -}}
+  {{- range (.Params.resources | default (slice)) -}}
+    {{- $resourceURL := .src | default "" -}}
+    {{- with $resourceURL -}}
+      {{- $url := urls.Parse . -}}
+      {{- if not $url.IsAbs -}}
+        {{- $resourcePath := strings.TrimPrefix "/" $url.Path -}}
+        {{- with or ($page.Resources.Get $resourcePath) (resources.Get $resourcePath) -}}
+          {{- $resourceURL = .Permalink -}}
+        {{- else -}}
+          {{- $resourceURL = absURL $resourceURL -}}
+        {{- end -}}
+      {{- end -}}
+    {{- end -}}
+
+    {{- if and (not $productImage) (or (eq .name "image") (eq .name "featuredImage")) -}}
+      {{- $productImage = $resourceURL -}}
+    {{- end -}}
+  {{- end -}}
+
+  <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Product",
+      "@id": {{ .Permalink | safeURL }},
+      "url": {{ .Permalink | safeURL }},
+      "name": "{{ .Title | plainify }}",
+      "description": "{{- or .Params.description .Summary | plainify | htmlUnescape | safeHTML -}}",
+      {{ if .Params.sku }}
+        "sku": "{{ .Params.sku }}",
+      {{ end }}
+      {{ if .Params.ean }}
+        "gtin13": "{{ .Params.ean }}",
+      {{ end }}
+      "category": "Supliment alimentar",
+      "brand": {
+        "@type": "Brand",
+        "name": "{{ site.Title | plainify }}"
+      },
+      "manufacturer": {
+        "@type": "Organization",
+        "name": "Zentiva"
+      },
+      "inLanguage": "{{ site.Language.Locale }}",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "5",
+        "bestRating": "5",
+        "worstRating": "1",
+        "reviewCount": "1"
+      }
+      {{ with .Summary }},
+        "disambiguatingDescription": "{{ . | plainify | htmlUnescape | safeHTML }}"
+      {{ end }}
+      {{ with $productImage }},
+        "image": [{{ . | safeURL }}]
+      {{ end }}
+      {{ with .Params.prospectPage }}
+        {{ with site.GetPage . }},
+          "subjectOf": {
+            "@type": "DigitalDocument",
+            "name": {{ .LinkTitle | jsonify | safeJS }},
+            "url": {{ .Permalink | jsonify | safeJS }}
+          }
+        {{ end }}
+      {{ end }}
+    }
+  </script>
+{{ end }}

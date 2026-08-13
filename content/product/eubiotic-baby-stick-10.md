@@ -6,7 +6,8 @@ linkTitle: 'Eubiotic Baby Stick'
 description: 'Eubiotic Baby susține sănătatea digestivă a micuților, contribuind la echilibrul microbiotei intestinale. Accesează site-ul pentru mai multe detalii.'
 slug: '/eubiotic-baby/'
 weight: 5
-ean: ''
+ean: '5944719010156'
+prospectPage: 'product/prospect/prospect-eubiotic-baby-stick-10'
 featuredImage:
   url: '/images/products/eubiotic-baby-stick-10-stg.png'
   
