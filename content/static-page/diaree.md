@@ -40,6 +40,8 @@ blocks:
     image: 'causes'
     overlayVariant: 'primary'
     title: 'Cauze'
+    animateText: 'Cauze'
+    animationMarker: 'circle'
     introduction: 'Diareea se caracterizează prin scaune anormale, moi sau apoase, și nevoia imperioasă de defecare. În timp ce majoritatea cazurilor de diaree sunt cauzate de bacterii, virusuri sau paraziți, unele afecțiuni ale sistemului digestiv pot provoca, de asemenea, diaree, în special cu evoluție cronică.'
     sections:
       - title: 'Cauze de diaree acută:'
@@ -65,7 +67,9 @@ blocks:
     
   - component: 'content-row'
     ariaLabel: 'Studii despre diareea asociată antibioterapiei'
-    title: '<em class="underline decoration-2 underline-offset-8">Studii</em>'
+    title: 'Studii'
+    animateText: 'Studii'
+    animationMarker: 'studies'
     paragraphs:
       - 'Diareea asociată antibioterapiei se instalează la 5% până la 39% din pacienții care primesc antibioterapie<sup>2, 3</sup> încă de la începutul antibioterapiei sau chiar și la două luni post-tratament.<sup>4</sup>'
       - '<small class="block italic leading-6"><sup>2</sup> Wiström, J., et al., (2001). Frequency of antibiotic-associated diarrhoea in 2462 antibiotic-treated hospitalized patients: a prospective study. J. Antimicrob. Chemother</small>'

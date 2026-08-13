@@ -42,12 +42,16 @@ blocks:
     image: 'causes'
     overlayVariant: 'primary'
     title: 'Cauze'
+    animateText: 'Cauze'
+    animationMarker: 'circle'
     paragraphs:
       - 'Principalii factori favorizanți sunt mesele îmbelșugate, consumul de dulciuri, stresul sau anumite tulburări de natură hormonală. Mai mult, datele statistice susțin că la femei această senzație neplăcută de balonare este de două ori mai frecventă decât la bărbați. De asemenea, antibioticele determină balonarea excesivă a abdomenului. Ele distrug bacteriile prezente în mod normal în tractul digestiv, care ajută la digestia alimentelor.'
       
   - component: 'content-row'
     ariaLabel: 'Studii despre balonare și refacerea microbiomului'
-    title: '<em class="underline decoration-2 underline-offset-8">Studii</em>'
+    title: 'Studii'
+    animateText: 'Studii'
+    animationMarker: 'studies'
     paragraphs:
       - 'Aproape 18% din populația generală se confruntă cu balonarea cel puțin o dată pe săptămână. Prevalența raportată a balonării este mai mică în grupurile de vârstă mai înaintată, dar este cel mai frecventă la femei și este strâns asociată cu dureri abdominale.'
       - 'Reconstituirea microbiomului uman după tratamentul cu antibiotice este adesea lentă și incompletă<sup>1, 2, 3</sup> și, în unele cazuri, poate dura ani pentru a reveni la configurația inițială.<sup>4</sup>'

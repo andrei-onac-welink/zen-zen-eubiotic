@@ -1,8 +1,17 @@
 <section class="{{ if eq .background "muted" }}bg-primary-50{{ else }}bg-white{{ end }} py-16 lg:py-24" aria-label="{{ .ariaLabel | default .page.Title }}">
   <div class="container grid items-center gap-12 lg:grid-cols-2 lg:gap-20">
     <div class="{{ if .mobileImageFirst }}order-2{{ end }} {{ if eq .imagePosition "left" }}lg:order-2{{ else }}lg:order-1{{ end }} space-y-5 text-base leading-7 text-secondary-800">
-      {{- with .title -}}
-        <h2 class="text-2xl font-bold leading-9 text-primary-500 lg:text-3xl">{{ . | safeHTML }}</h2>
+      {{- if .animateText -}}
+        {{- partial "components/animated-headline" (dict
+          "class" "text-center text-2xl font-bold leading-9 text-primary-500 lg:text-3xl"
+          "title" .title
+          "animateText" .animateText
+          "animationMarker" .animationMarker
+        ) -}}
+      {{- else -}}
+        {{- with .title -}}
+          <h2 class="text-2xl font-bold leading-9 text-primary-500 lg:text-3xl">{{ . | safeHTML }}</h2>
+        {{- end -}}
       {{- end -}}
       {{- range .paragraphs -}}
         <p>{{ . | safeHTML }}</p>
@@ -51,7 +60,7 @@
           {{- else -}}
             {{ $image }}
           {{- end -}}
-        {{- end -}}
+      {{- end -}}
       {{- end -}}
     </div>
   </div>

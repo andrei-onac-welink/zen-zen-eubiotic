@@ -45,6 +45,8 @@ blocks:
     image: 'causes'
     overlayVariant: 'primary'
     title: 'Cauze'
+    animateText: 'Cauze'
+    animationMarker: 'circle'
     introduction: 'Principalele cauze ale apariției constipației sunt:'
     sections:
       - items:
@@ -56,7 +58,9 @@ blocks:
     
   - component: 'content-row'
     ariaLabel: 'Studii despre modificarea tranzitului intestinal'
-    title: '<em class="underline decoration-2 underline-offset-8">Studii</em>'
+    title: 'Studii'
+    animateText: 'Studii'
+    animationMarker: 'studies'
     paragraphs:
       - 'Conform studiilor, modificarea tranzitului intestinal în urma consumului de antibiotice poate apărea chiar și la 2 luni distanță după încheierea tratamentului, și asta pentru că flora intestinală are nevoie de timp pentru a se reface.'
       - '<small class="block italic leading-6"><sup>2</sup> McFarland, L.V. Epidemiology, risk factors and treatments for antibiotic-associated diarrhea. Dig. Dis. (Basel Switz.) 1998</small>'

@@ -39,6 +39,8 @@ blocks:
     image: 'causes'
     overlayVariant: 'primary'
     title: 'Cauze'
+    animateText: 'Cauze'
+    animationMarker: 'circle'
     paragraphs:
       - 'Colicile apar, în general, ca rezultat al imaturității intestinale, putând fi agravate de înghițirea de aer în timpul alăptării, de consumul anumitor alimente de către mama care alăptează, de disconfort sau stres. Intestinul bebelușului nu este pregătit să digere hrana, fie că este vorba de lapte matern sau de lapte praf. Statistic, intestinul nou-născutului are nevoie de 6 săptămâni pentru a învăța să digere alimentele cu care este hrănit.'
 ---
