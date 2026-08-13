@@ -1,5 +1,13 @@
 {{ if eq hugo.Environment "production" }}
+  <script>
+    const GTM_ID = 'GTM-MZGCHNK';
+  </script>
 
+  <script src="https://cdn.welink.dev/zentiva/cookie-consent.js"></script>
 {{ else }}
+  <script>
+    const GTM_ID = '';
+  </script>
 
+  <script src="https://cdn.welink.dev/zentiva/cookie-consent.js"></script>
 {{ end }}
