@@ -1,13 +1,14 @@
 ---
 title: 'Ce este Eubiotic? Pentru ce se utilizează?'
 linkTitle: 'Ce este Eubiotic? Pentru ce se utilizează?'
-description: 'Produsele Eubiotic sunt suplimente alimentare care suplimenteaza flora intestinala naturala cu microorganisme vii'
+description: 'Produsele Eubiotic sunt suplimente alimentare care suplimenteaza flora intestinala naturala cu microorganisme vii.'
+summary: 'Produsele Eubiotic<sup>®</sup> sunt suplimente alimentare care suplimentează flora intestinală naturală cu microorganisme vii.'
 weight: 20
 featuredImage:
   url: '/images/intrebari-frecvente-eubiotic.png'
 ---
 
-Produsele Eubiotic sunt suplimente alimentare care suplimenteaza flora intestinala naturala cu microorganisme vii
+Produsele Eubiotic sunt suplimente alimentare care suplimenteaza flora intestinala naturala cu microorganisme vii.
 
 **EUBIOTIC CAPSULE**
 

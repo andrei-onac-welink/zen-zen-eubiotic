@@ -2,6 +2,13 @@
 title: 'Cum se administrează Eubiotic?'
 linkTitle: 'Cum se administrează Eubiotic?'
 description: 'EUBIOTIC® Capsule Este recomandat copiilor de peste 6 ani și adulților.'
+summary: |
+  **EUBIOTIC<sup>®</sup> Capsule**
+  
+  Este recomandat copiilor de peste 6 ani și adulților.
+
+  Utilizare: 1-2 capsule EUBIOTIC<sup>®</sup> zilnic, cu o cantitate suficientă de lichid aflat la temperatura camerei, preferabil în timpul mesei.
+
 weight: 30
 featuredImage:
   url: '/images/intrebari-frecvente-eubiotic.png'

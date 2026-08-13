@@ -2,6 +2,7 @@
 title: 'Când se ia Eubiotic, înainte sau după antibiotic?'
 linkTitle: 'Când se ia Eubiotic, înainte sau după antibiotic?'
 description: 'În cazul în care sunteți sub tratament cu antibiotice, se recomandă administrarea Eubiotic la 3 ore după antibiotic.'
+summary: 'În cazul în care sunteți sub tratament cu antibiotice, se recomandă administrarea Eubiotic<sup>®</sup> la **3 ore după antibiotic**.'
 weight: 10
 featuredImage:
   url: '/images/intrebari-frecvente-eubiotic.png'
