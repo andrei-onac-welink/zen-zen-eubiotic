@@ -50,7 +50,7 @@ Eubiotic Imunoflu conține culturi vii de lactobacili și bifidobacterii benefic
 **Stabilitatea produsului este asigurată de structura bistrat a comprimatului de Eubiotic Imunoflu.**
 
 ![](/images/products/extras/imunoflu-explicat.png)
-{.float-left .max-w-100}
+{.md:float-start .me-4 .max-w-100}
 
 **Stratul 1 (portocaliu) conține:** 154 mg Acid L-ascorbic (echivalent a 100 mg Vitamina C); 50 micrograme Vitamina D3 ( 2000 UI); 32,25 mg citrat de Zinc (echivalent a 10 mg Zinc), sorbitol, inulină, xilitol, isomalț, mono și digliceride ale acizilor grași, celuloză microcristalină, aromă de portocală, săruri de magneziu ale acizilor grași, dioxid de siliciu, oxizi si hidroxizi de fier, sucraloză.
 

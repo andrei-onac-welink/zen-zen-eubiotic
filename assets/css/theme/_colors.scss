@@ -279,6 +279,8 @@
   --color-primary-900: #5e0b1d;
   --color-primary-950: #34030c;
   --color-gradient-primary-500: linear-gradient(180deg, #4d4d4d80 0%, #c8102e80 100%);
+  --color-gradient-product-usage-mobile: linear-gradient(180deg, #ffffff00 0%, var(--color-secondary-800) 0%);
+  --color-gradient-product-usage-primary-mobile: linear-gradient(180deg, #ffffff00 0%, var(--color-primary-700) 0%);
   --color-gradient-product-usage: linear-gradient(90deg, #ffffff00 0%, #4d4d4d 85%);
   --color-gradient-product-usage-primary: linear-gradient(90deg, #ffffff00 0%, #850016 85%);
 

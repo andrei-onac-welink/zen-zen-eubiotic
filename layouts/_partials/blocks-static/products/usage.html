@@ -1,8 +1,8 @@
 {{- $backgroundImage := partial "components/image-resource" (dict "page" .page "name" .image) -}}
 {{- $title := .title | default "" -}}
 
-<section class="relative isolate flex min-h-[28rem] items-center overflow-hidden bg-secondary-900 bg-fixed bg-cover bg-right-top bg-no-repeat py-16 text-white lg:min-h-[38rem] lg:py-24" {{ if $backgroundImage }}style="{{ printf "background-image:url('%s')" $backgroundImage | safeCSS }}"{{ end }} aria-labelledby="usage-title">
-  <span class="absolute inset-0 z-0 {{ if eq .overlayVariant "primary" }}bg-(image:--color-gradient-product-usage-primary){{ else }}bg-(image:--color-gradient-product-usage){{ end }}" aria-hidden="true"></span>
+<section class="relative isolate flex items-center overflow-hidden bg-secondary-900 bg-cover bg-no-repeat py-16 text-white {{ if eq .overlayVariant "primary" }}min-h-[30rem] bg-bottom bg-scroll lg:bg-fixed{{ else }}min-h-[28rem] bg-right-top bg-fixed{{ end }} lg:min-h-[38rem] lg:py-24" {{ if $backgroundImage }}style="{{ printf "background-image:url('%s')" $backgroundImage | safeCSS }}"{{ end }} aria-labelledby="usage-title">
+  <span class="absolute inset-0 z-0 md:opacity-100 {{ if eq .overlayVariant "primary" }}bg-(image:--color-gradient-product-usage-primary-mobile) opacity-70 md:bg-(image:--color-gradient-product-usage-primary){{ else }}bg-(image:--color-gradient-product-usage-mobile) opacity-80 md:bg-(image:--color-gradient-product-usage){{ end }}" aria-hidden="true"></span>
 
   <div class="container relative z-10 grid grid-cols-1 xl:grid-cols-[1fr_1.5fr]">
     <div class="hidden xl:block" aria-hidden="true"></div>

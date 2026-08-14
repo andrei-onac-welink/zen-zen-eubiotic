@@ -7,7 +7,7 @@
 {{ define "main" }}
   {{- $heroImage := partial "components/image-resource" (dict "page" . "name" "image") -}}
 
-  <section class="relative isolate h-80 overflow-hidden bg-secondary-700 sm:h-104 lg:h-152" id="top" aria-label="{{ .Title }}">
+  <section class="relative isolate h-80 overflow-hidden bg-secondary-700 h-120 lg:h-152" id="top" aria-label="{{ .Title }}">
     {{- if $heroImage -}}
       {{ partial "components/image-responsive" (dict
         "path" $heroImage

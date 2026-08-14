@@ -10,7 +10,7 @@
     {{ partialCached "funcs/render-static-blocks" . .Section .RelPermalink }}
   {{- end -}}
 
-  <article class="bg-white pb-16 pt-12 lg:pb-20 lg:pt-16" aria-labelledby="podcast-title">
+  <article class="pb-16 pt-12 lg:pb-20 lg:pt-16" aria-labelledby="podcast-title">
     <div class="container">
       {{- with .Params.videoUrl -}}
         <div class="mx-auto aspect-video overflow-hidden bg-black shadow-sm">
