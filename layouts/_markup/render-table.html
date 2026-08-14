@@ -3,7 +3,7 @@
 {{- if eq $tableVariant "cookie-consent" -}}
   {{- $cellClassPattern := `(?s)^(.*)\{((?:\.[A-Za-z_][A-Za-z0-9_-]*\s*)+)\}(.*)$` -}}
   <div class="w-full overflow-x-auto break-normal rounded-xl border border-neutral-100 bg-white shadow-[0_10px_30px_rgba(15,23,42,0.06)]">
-    <table class="w-full border-collapse bg-white text-neutral-600 [&_thead_th]:border-b [&_thead_th]:border-neutral-200 [&_thead_th]:px-5 [&_thead_th]:py-5 [&_thead_th]:text-left [&_thead_th]:align-middle [&_thead_th]:leading-none [&_thead_th]:font-semibold [&_thead_th]:uppercase [&_thead_th]:tracking-[0.045em] [&_thead_th]:text-neutral-800 [&_thead_th:first-child]:whitespace-nowrap [&_thead_th:last-child]:whitespace-nowrap [&_tbody_td]:border-b [&_tbody_td]:border-neutral-200 [&_tbody_td]:px-5 [&_tbody_td]:py-4 [&_tbody_td]:align-top [&_tbody_td]:leading-[1.75] [&_tbody_tr:last-child_td]:border-b-0 [&_tbody_td:first-child]:font-mono [&_tbody_td:first-child]:font-semibold [&_tbody_td:first-child]:tracking-[0.01em] [&_tbody_td:first-child]:text-neutral-900 [&_tbody_td:first-child]:whitespace-nowrap [&_tbody_td:nth-child(2)]:font-medium [&_tbody_td:nth-child(2)]:text-neutral-800 [&_tbody_td:nth-child(2)]:whitespace-nowrap [&_tbody_td:last-child]:whitespace-nowrap [&_tbody_td:last-child]:text-neutral-500"
+    <table class="w-full border-collapse bg-white text-neutral-600 [&_thead_th]:border-b [&_thead_th]:border-neutral-200 [&_thead_th]:px-5 [&_thead_th]:py-5 [&_thead_th]:text-left [&_thead_th]:align-middle [&_thead_th]:leading-none [&_thead_th]:font-semibold [&_thead_th]:uppercase [&_thead_th]:tracking-[0.045em] [&_thead_th]:text-neutral-800 [&_thead_th:first-child]:whitespace-nowrap [&_thead_th:nth-child(3)]:min-w-80 [&_thead_th:last-child]:whitespace-nowrap [&_tbody_td]:border-b [&_tbody_td]:border-neutral-200 [&_tbody_td]:px-5 [&_tbody_td]:py-4 [&_tbody_td]:align-top [&_tbody_td]:leading-[1.75] [&_tbody_tr:last-child_td]:border-b-0 [&_tbody_td:first-child]:font-mono [&_tbody_td:first-child]:font-semibold [&_tbody_td:first-child]:tracking-[0.01em] [&_tbody_td:first-child]:text-neutral-900 [&_tbody_td:first-child]:whitespace-nowrap [&_tbody_td:nth-child(2)]:font-medium [&_tbody_td:nth-child(2)]:text-neutral-800 [&_tbody_td:nth-child(2)]:whitespace-nowrap [&_tbody_td:nth-child(3)]:min-w-80 [&_tbody_td:last-child]:whitespace-nowrap [&_tbody_td:last-child]:text-neutral-500"
       {{- range $k, $v := .Attributes }}
         {{- if $v }}
           {{- printf " %s=%q" $k $v | safeHTMLAttr }}
@@ -53,7 +53,7 @@
   </div>
 {{- else -}}
   <div class="overflow-x-auto w-full border border-gray-300 rounded-xl break-normal **:[li]:mb-2">
-    <table class="w-full divide-y divide-gray-300 mb-4"
+    <table class="w-full divide-y divide-gray-300"
       {{- range $k, $v := .Attributes }}
         {{- if $v }}
           {{- printf " %s=%q" $k $v | safeHTMLAttr }}
