@@ -51,7 +51,7 @@
     {{ partial "misc/css" . }}
   {{ end }}
 
-{{/*  {{ partialCached "misc/favicon" . }}*/}}
+  {{ partialCached "misc/favicon" . }}
   {{ partialCached "misc/redirect" . .Section .RelPermalink }}
 
   {{ partialCached "misc/opengraph" . .Section .RelPermalink }}
