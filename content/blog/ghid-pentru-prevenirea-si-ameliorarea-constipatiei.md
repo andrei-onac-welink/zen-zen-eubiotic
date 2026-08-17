@@ -15,7 +15,7 @@ resources:
 
 Poate pare un subiect tabu, dar, chiar dacă ne ferim să discutăm despre acest subiect, constipația este o problemă frecvent întâlnită în viața adulților și copiilor. Cum procedăm să nu ne afecteze starea de bine și activitățile zilnice? Află în cele ce urmează!
 
-[Constipația](https://www.eubiotic.ro/gama-eubiotic/eubiotic-forte/) poate apărea în urma unor schimbări ale dietei alimentare sau ale rutinei de zi cu zi, ca atunci când călătorești. Partea bună este că de cele mai multe ori poate fi tratată și prevenită cu câteva schimbări ale stilului de viață sau suplimente alimentare.
+[Constipația](/gama-eubiotic/eubiotic-forte/) poate apărea în urma unor schimbări ale dietei alimentare sau ale rutinei de zi cu zi, ca atunci când călătorești. Partea bună este că de cele mai multe ori poate fi tratată și prevenită cu câteva schimbări ale stilului de viață sau suplimente alimentare.
 
 ## Ce este constipația și care sunt simptomele constipației?
 

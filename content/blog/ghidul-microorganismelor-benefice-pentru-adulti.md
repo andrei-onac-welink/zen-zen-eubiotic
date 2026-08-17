@@ -17,7 +17,7 @@ Ce sunt microorganismele benefice?
 
 Sunt bacterii bune care trăiesc în sistemul nostru digestiv și nu numai. Cele mai cunoscute microorganisme benefice fac parte din genurile Lactobacillus și Bifidobacterium. Majoritatea suplimentelor combină cele două tipuri de bacterii. Specialiștii estimează că [în organismul uman trăiesc aproximativ 38 de trilioane de bacterii](https://www.ncbi.nlm.nih.gov/pmc/articles/PMC4991899/). Dintre acestea, majoritatea sunt inofensive, iar o parte sunt chiar de ajutor și aduc o mulțime de beneficii pentru sănătate.
 
-Există surse naturale de bacterii benefice, ca alimentele fermentate, dar și [suplimente pentru adulți](https://www.eubiotic.ro/gama-eubiotic/eubiotic-forte/) și copii. În ambele forme, te ajută să-ți protejezi flora intestinală în special în timpul tratamentelor cu antibiotice.
+Există surse naturale de bacterii benefice, ca alimentele fermentate, dar și [suplimente pentru adulți](/gama-eubiotic/eubiotic-forte/) și copii. În ambele forme, te ajută să-ți protejezi flora intestinală în special în timpul tratamentelor cu antibiotice.
 
 ## Ce alimente conțin bacterii bune?
 

@@ -18,7 +18,7 @@ aibă mai multe scaune pe zi în comparație cu copiii mai mari și adulții, co
 frecvența neregulată sunt primele semnale de alarmă.
 
 Pentru ameliorarea diareei la bebeluși în primul rând trebuie identificate corect cauzele. De  
-asemenea, poți administra [suplimente cu bacterii benefice](https://www.eubiotic.ro/gama-eubiotic/eubiotic-baby/) ca adjuvant în lupta împotriva diareei și  
+asemenea, poți administra [suplimente cu bacterii benefice](/gama-eubiotic/eubiotic-baby/) ca adjuvant în lupta împotriva diareei și  
 pentru refacerea florei intestinale.
 
 ## Cauzele diareei la bebeluși
@@ -28,7 +28,7 @@ Diareea poate avea diverse cauze, fiind adesea influențată de factori precum a
 ### Cauze de natură infecțioasă:
 
 *   Infecții virale, cum sunt (rotavirusurile, norovirusurile sau adenovirusurile)
-*   Infecții bacteriene cu (E.coli, salmonella sau alte bacterii), care [afectează sistemul digestiv](https://www.eubiotic.ro/afectiuni-digestive-si-ameliorarea-disconfortului-digestiv/)
+*   Infecții bacteriene cu (E.coli, salmonella sau alte bacterii), care [afectează sistemul digestiv](/blog/afectiuni-digestive-si-ameliorarea-disconfortului-digestiv/)
 *   Paraziții intestinali, cum este giardia
 
 ### Cauze legate de alimentație:

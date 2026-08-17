@@ -16,7 +16,7 @@ resources:
 Sistemul digestiv este supus zilnic unor factori de stres, fie că vorbim despre digerarea alimentelor, fie despre factori psihologici și afecțiuni medicale. După fiecare masă, sistemul digestiv începe procesul de prelucrare a alimentelor consumate, moment în care pot apărea senzația de balonare, constipație sau chiar diaree.  
 În ritmul alert al vieții de zi cu zi poate fi dificil să menții un tranzit intestinal normal. Ți-am pregătit un scurt ghid în care vei descoperi care sunt cele mai frecvente afecțiuni care determină tulburări ale tranzitului, cauzele și modalități de ameliorare.
 
-[Diareea](https://www.eubiotic.ro/despre/diaree/) este o tulburare comună a tranzitului intestinal, care afectează atât copiii, cât și adulții. Aceasta se caracterizează prin scaune apoase și frecvente și apare atunci când echilibrul interior al organismului este perturbat, afectând în special flora intestinală.
+[Diareea](/despre/diaree/) este o tulburare comună a tranzitului intestinal, care afectează atât copiii, cât și adulții. Aceasta se caracterizează prin scaune apoase și frecvente și apare atunci când echilibrul interior al organismului este perturbat, afectând în special flora intestinală.
 
 Diareea este o afecțiune des întâlnită atât în rândul copiilor, cât și în rândul adulților. Este caracterizată prin scaune apoase și dese și este un răspuns al corpului la dezechilibrul florei intestinale afectate de diverși factori. Cauzele diareei sunt fie o reacție la o infecție, fie un răspuns al corpului la afecțiuni gastrointestinale.
 
@@ -26,7 +26,7 @@ Orice modificare în alimentație și stilul de viață poate afecta tranzitul i
 
 Factorii psihologici, cum ar fi stresul, anxietatea și adaptarea la noi situații sau locuri, pot juca un rol important în declanșarea diareei. De asemenea, factorii dietetici și de alimentație, precum consumul excesiv de fibre sau grăsimi, o alimentație dezechilibrată și intoleranțe alimentare, cum ar fi intoleranța la lactoză sau gluten, pot contribui la apariția diareei. Mesele neregulate și consumul de ceaiuri laxative pot fi, de asemenea, factori predispozanți.
 
-Alte cauze ale diareei la adulți pot include efectele secundare ale anumitor medicamente, infecții intestinale și afecțiuni endocrine. Pentru o digestie sănătoasă și normală, este important să susținem [bacteriile benefice](https://www.eubiotic.ro/rolul-bacteriilor-benefice-sistem-imunitar-puternic/) din colon. Orice schimbare în echilibrul tranzitului intestinal ar trebui să fie identificată corect de la primele semne și simptome digestive.
+Alte cauze ale diareei la adulți pot include efectele secundare ale anumitor medicamente, infecții intestinale și afecțiuni endocrine. Pentru o digestie sănătoasă și normală, este important să susținem [bacteriile benefice](/blog/rolul-bacteriilor-benefice-sistem-imunitar-puternic/) din colon. Orice schimbare în echilibrul tranzitului intestinal ar trebui să fie identificată corect de la primele semne și simptome digestive.
 
 ## Combaterea diareei
 

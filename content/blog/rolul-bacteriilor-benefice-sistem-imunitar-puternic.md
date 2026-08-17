@@ -15,7 +15,7 @@ resources:
 
 Sistemul imunitar este o rețea complexă de celule, țesuturi și organe al cărui rol principal este acela de a proteja organismul împotriva agenților patogeni și de a menține starea de sănătate. Este o armată de apărare a corpului, care recunoaște și luptă împotriva bacteriilor, virusurilor, ciupercilor, dar și alte microorganisme nocive.
 
-În acest context, în ultimii ani, s-a acordat o atenție sporită [bacteriilor benefice și impactului lor asupra sistemului imunitar](https://www.eubiotic.ro/gama-eubiotic/eubiotic-forte/). Aceste microorganisme benefice, prezente în anumite alimente și suplimente, au un rol important pentru îmbunătățirea funcționării sistemului imunitar.
+În acest context, în ultimii ani, s-a acordat o atenție sporită [bacteriilor benefice și impactului lor asupra sistemului imunitar](/gama-eubiotic/eubiotic-forte/). Aceste microorganisme benefice, prezente în anumite alimente și suplimente, au un rol important pentru îmbunătățirea funcționării sistemului imunitar.
 
 ## Ce sunt suplimentele cu bacterii benefice?
 

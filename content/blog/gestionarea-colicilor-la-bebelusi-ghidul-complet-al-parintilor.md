@@ -52,7 +52,7 @@ Există mai multe trucuri și remedii pentru a calma și ameliora colicile la be
 
 Acestea se aleg în funcție de vârsta copilului și necesitate. Datorită componentelor naturale, bacteriile benefice sunt considerate extrem de sigure, chiar și pentru sugari. Chiar și așa, cere întotdeauna sfatul medicului înainte săi le administrezi bebelușului.
 
-Chiar dacă apariția colicilor poate reprezenta o perioadă stresantă pentru părinți și bebeluș deopotrivă, gândește-te că este o afecțiune comună, tranzitorie, care poate fi ameliorată prin diverse modalități. Anumite poziții, o băiță caldă sau [suplimentele cu microorganisme benefice](https://www.eubiotic.ro/gama-eubiotic/eubiotic-baby-picaturi/) îți pot fi de ajutor în calmarea bebelușului.
+Chiar dacă apariția colicilor poate reprezenta o perioadă stresantă pentru părinți și bebeluș deopotrivă, gândește-te că este o afecțiune comună, tranzitorie, care poate fi ameliorată prin diverse modalități. Anumite poziții, o băiță caldă sau [suplimentele cu microorganisme benefice](/gama-eubiotic/eubiotic-baby-picaturi/) îți pot fi de ajutor în calmarea bebelușului.
 
 _Referințe:_
 

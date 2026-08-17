@@ -13,7 +13,7 @@ resources:
     title: ''
 ---
 
-Vrei să afli mai multe despre sănătatea digestivă? Descoperă podcastul “De vorbă cu Bioticel” dedicat curioșilor care își doresc să afle mai multe despre cum funcționează sistemul digestiv la copii și adulți, dar și cum suplimentele cu [bacterii benefice](https://www.eubiotic.ro/rolul-bacteriilor-benefice-sistem-imunitar-puternic/) pot contribui la echilibrul florei intestinale.
+Vrei să afli mai multe despre sănătatea digestivă? Descoperă podcastul “De vorbă cu Bioticel” dedicat curioșilor care își doresc să afle mai multe despre cum funcționează sistemul digestiv la copii și adulți, dar și cum suplimentele cu [bacterii benefice](/blog/rolul-bacteriilor-benefice-sistem-imunitar-puternic/) pot contribui la echilibrul florei intestinale.
 
 “De vorbă cu Bioticel” este sursa ta de informații care te ajută să înțelegi rolul sistemului digestiv și toate provocările la care acesta este supus zilnic. Esențial pentru sănătatea organismului, sistemul digestiv trece prin diferite schimbări încă de la naștere și trebuie să se adapteze constant stilului nostru de viață. Informațiile pe care le vei afla în fiecare episod sunt susținute de cunoștințele și experiența dobândită de-a lungul anilor în furnizarea suplimentelor cu bacterii benefice. Eubiotic își propune să atragă atenția asupra acestui subiect, fiind un prim pas pentru promovarea unui stil de viață echilibrat și menținerea sănătății sistemului digestiv.
 
@@ -34,4 +34,4 @@ Fiecare episod din podcast abordează diferite teme care au în comun sistemul d
 *   Este mit sau realitate că suplimentele cu bacterii benefice pot fi utile atunci când pleci cu cei mici în concediu?
 
 Podcastul te va ajuta să înțelegi mai bine cum funcționează sistemul digestiv și cât de predispus este la diferite afecțiuni. Împreună cu suplimentele alimentare cu bacterii benefice, podcastul își propune să evidențieze importanța sănătății sistemului digestiv pentru o viață echilibrată și o sănătate bună la orice vârstă.  
-Urmărește alături de întreaga familie cele mai noi [episoade din podcastul “De vorbă cu Bioticel”](https://www.eubiotic.ro/podcast/). Află sfaturi și informații utile într-un cadru prietenos și ușor de înțeles.
+Urmărește alături de întreaga familie cele mai noi [episoade din podcastul “De vorbă cu Bioticel”](/podcast/). Află sfaturi și informații utile într-un cadru prietenos și ușor de înțeles.

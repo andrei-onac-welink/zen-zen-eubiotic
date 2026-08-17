@@ -109,4 +109,4 @@ EUBIOTIC<sup>®</sup> este produs de Christian Hansen A/S Danemarca pentru Labor
 
 B-dul. Theodor Pallady nr. 44B, Sector 3, București.
 
-[www.eubiotic.ro](https://www.eubiotic.ro/)
+[www.eubiotic.ro](/)

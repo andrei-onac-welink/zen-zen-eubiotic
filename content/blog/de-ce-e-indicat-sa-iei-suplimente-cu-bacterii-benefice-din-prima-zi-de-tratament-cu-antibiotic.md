@@ -15,7 +15,7 @@ resources:
 
 Administrarea antibioticelor este eficientă în combaterea infecțiilor bacteriene, dar poate avea efecte adverse asupra microbiotei intestinale. Bacteriile benefice din sistemul digestiv funcționează ca o barieră împotriva agenților patogeni, dar această barieră devine mai vulnerabilă în timpul tratamentului cu antibiotice.
 
-O posibilă soluție pentru restabilirea echilibrului microbiotei intestinale pe durata administrării antibioticelor este utilizarea suplimentelor cu [bacterii benefice](https://www.eubiotic.ro/rolul-bacteriilor-benefice-sistem-imunitar-puternic/).
+O posibilă soluție pentru restabilirea echilibrului microbiotei intestinale pe durata administrării antibioticelor este utilizarea suplimentelor cu [bacterii benefice](/blog/rolul-bacteriilor-benefice-sistem-imunitar-puternic/).
 
 Aceste suplimente, care conțin microorganisme vii, acționează pentru a repopula intestinul și a susține o digestie sănătoasă.
 
@@ -44,7 +44,7 @@ Suplimentele cu bacterii benefice pot fi utile în și după tratamentele cu ant
 Dacă îți dorești ca suplimentele cu bacterii benefice să aibă rezultatele dorite, îți venim în ajutor cu câteva sfaturi și recomandări. Administrate corect, bacteriile bune din alimente și suplimente pot fi de ajutor când apar dezechilibre ale microflorei intestinale. Iată ce trebuie să știi:
 
 *   Administrează suplimentele cu cel puțin 30 de minute înainte de masă;
-*   Evită administrarea simultană a antibioticelor și [suplimentelor cu bacterii benefice](https://www.eubiotic.ro/gama-eubiotic/) și menține o distanță de câteva ore între cele două;
+*   Evită administrarea simultană a antibioticelor și [suplimentelor cu bacterii benefice](/gama-eubiotic/) și menține o distanță de câteva ore între cele două;
 *   Continuă cura cu suplimente și după terminarea tratamentului cu antibiotice;
 *   Asigură-te că ai ales suplimentele potrivite pentru tine;
 *   Menține un echilibru între alimentație și suplimente alimentare pentru un organism sănătos.

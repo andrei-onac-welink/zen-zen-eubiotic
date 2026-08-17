@@ -15,7 +15,7 @@ resources:
 
 Mesele bogate în familie pot aduce multă bucurie, dar și senzația de balonare. Deși pot exista mai multe cauze ale balonării, aceasta apare în special după masă, mai ales dacă mesele conțin alimente bogate în glucide, proteine, grăsimi, aditivi alimentari, la care se adaugă băuturile carbogazoase sau alcoolice.
 
-Deși senzația de balonare este normală în anumite momente, balonarea excesivă poate aduce o stare accentuată de disconfort, însoțită de durere, crampe abdominale, gaze excesive sau flatulență. Din fericire, există alimente pe care le putem evita și sfaturi pentru a ameliora senzația de [balonare](https://www.eubiotic.ro/despre/balonare/).
+Deși senzația de balonare este normală în anumite momente, balonarea excesivă poate aduce o stare accentuată de disconfort, însoțită de durere, crampe abdominale, gaze excesive sau flatulență. Din fericire, există alimente pe care le putem evita și sfaturi pentru a ameliora senzația de [balonare](/despre/balonare/).
 
 ## De ce apare balonarea?
 

@@ -15,7 +15,7 @@ resources:
 
 Când vine vorba de călătorii, sănătatea noastră este esențială pentru a ne bucura pe deplin de experiențe noi și de destinații exotice. Cu toate acestea, uneori, plăcerea unei călătorii poate fi umbrită de probleme de sănătate, cum ar fi diareea. Diareea este o afecțiune comună care poate apărea atunci când călătorim în destinații exotice sau în țări cu condiții sanitare precare.
 
-Există o serie de cauze ale afecțiunii, dar și câteva remedii pentru [diaree](https://www.eubiotic.ro/despre/diaree/), pentru a vă bucura de o călătorie confortabilă.
+Există o serie de cauze ale afecțiunii, dar și câteva remedii pentru [diaree](/despre/diaree/), pentru a vă bucura de o călătorie confortabilă.
 
 ## Cauzele diareei în timpul călătoriilor
 

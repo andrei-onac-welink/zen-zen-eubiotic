@@ -15,7 +15,7 @@ resources:
 
 Atunci când suntem diagnosticați cu o infecție bacteriană, antibioticele devin în unele cazuri soluția esențială pentru vindecare. Însă vorbim despre medicamente puternice, care pot avea un impact semnificativ asupra corpului nostru, inclusiv asupra florei intestinale și a stomacului.
 
-Pentru a minimiza efectele secundare neplăcute și pentru a asigura o recuperare cât mai rapidă și mai eficientă, un supliment precum [Eubiotic Forte](https://www.eubiotic.ro/gama-eubiotic/eubiotic-forte/) poate juca un rol important în protecția stomacului și a organismului în timpul tratamentului cu antibiotice.
+Pentru a minimiza efectele secundare neplăcute și pentru a asigura o recuperare cât mai rapidă și mai eficientă, un supliment precum [Eubiotic Forte](/gama-eubiotic/eubiotic-forte/) poate juca un rol important în protecția stomacului și a organismului în timpul tratamentului cu antibiotice.
 
 ## Impactul antibioticelor asupra sistemului digestiv
 

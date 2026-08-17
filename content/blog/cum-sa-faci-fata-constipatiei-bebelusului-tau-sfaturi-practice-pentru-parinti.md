@@ -15,7 +15,7 @@ resources:
 
 Constipația la bebeluși este o tulburare digestivă des întâlnită în primele luni de viață. Orice modificare în dieta bebelușului sau în rutina zilnică poate avea impact asupra sistemului digestiv, crescând astfel riscul constipației. Disconfortul provocat de dificultatea eliminării scaunului poate fi redus din primele momente, odată ce ai identificat cauzele care au dus la apariția constipației.
 
-Tranzitul intestinal diferă la fiecare bebeluș, la fel și cauzele care duc la apariția tulburărilor digestive: fie constipația, fie diareea. [Constipația poate fi gestionată](https://www.eubiotic.ro/despre/constipatie/) și prevenită prin diverse remedii adaptate vârstei micuțului tău.
+Tranzitul intestinal diferă la fiecare bebeluș, la fel și cauzele care duc la apariția tulburărilor digestive: fie constipația, fie diareea. [Constipația poate fi gestionată](/despre/constipatie/) și prevenită prin diverse remedii adaptate vârstei micuțului tău.
 
 ## Constipația la bebeluși: cele mai comune cauze
 

@@ -41,7 +41,7 @@ Microbiota intestinală a sugarilor continuă să se dezvolte până în jurul v
 *   Schimbările bruște în alimentație și înlocuirea laptelui matern cu lapte praf;
 *   Expunerea prelungită la diverse bacterii sau virusuri;
 *   Anumite afecțiuni medicale;
-*   Apariția primelor episoade de [diaree](https://www.eubiotic.ro/diareea-la-bebelusi-factori-declansatori-manifestari-si-modalitati-de-imbunatatire/) și constipație;
+*   Apariția primelor episoade de [diaree](/blog/diareea-la-bebelusi-factori-declansatori-manifestari-si-modalitati-de-imbunatatire/) și constipație;
 *   Colicile;
 *   Un mediu de creștere stresant pentru mamă sau pentru bebeluși.
 

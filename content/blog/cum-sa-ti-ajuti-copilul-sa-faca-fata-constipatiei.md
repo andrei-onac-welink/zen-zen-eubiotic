@@ -19,7 +19,7 @@ Vrei să afli mai multe despre cum scapi de constipație rapid la copii? Află t
 
 ## Cauzele constipației la copii
 
-[Constipația](https://www.eubiotic.ro/despre/constipatie/) poate apărea din diferite motive care sunt strâns legate de alimentație, hidratare și stilul de viață. Copiii sunt zilnic predispuși la diverși factori care au impact direct asupra echilibrului interior al corpului. Sistemul digestiv este strâns conectat cu sistemul nervos al corpului, astfel că orice schimbare în stilul de viață se resimte la nivel digestiv și poate apărea fie diareea, fie constipația.
+[Constipația](/despre/constipatie/) poate apărea din diferite motive care sunt strâns legate de alimentație, hidratare și stilul de viață. Copiii sunt zilnic predispuși la diverși factori care au impact direct asupra echilibrului interior al corpului. Sistemul digestiv este strâns conectat cu sistemul nervos al corpului, astfel că orice schimbare în stilul de viață se resimte la nivel digestiv și poate apărea fie diareea, fie constipația.
 
 ## Cele mai comune cauze care duc la apariția constipației la copii:
 
@@ -55,7 +55,7 @@ De la primele simptome de constipație poți lua primele măsuri pentru ameliora
 
 ## Rolul bacteriilor benefice în ameliorarea constipației la copii
 
-[Bacteriile benefice](https://www.eubiotic.ro/rolul-bacteriilor-benefice-sistem-imunitar-puternic/) pot fi asimilate fie din alimente fermentate (iaurt, kefir, legume murate), fie prin suplimente alimentare. Acestea bacterii reglează și susțin buna funcționare a florei intestinale, acționând împotriva afecțiunilor sistemului digestiv. De asemenea, bacteriile benefice te ajută să scapi rapid de constipație la copii, fiind la fel de eficiente și după apariția primelor simptome. Culturile de bacterii care stau la baza suplimentelor alimentare pentru copii acționează rapid și refac flora intestinală.
+[Bacteriile benefice](/blog/rolul-bacteriilor-benefice-sistem-imunitar-puternic/) pot fi asimilate fie din alimente fermentate (iaurt, kefir, legume murate), fie prin suplimente alimentare. Acestea bacterii reglează și susțin buna funcționare a florei intestinale, acționând împotriva afecțiunilor sistemului digestiv. De asemenea, bacteriile benefice te ajută să scapi rapid de constipație la copii, fiind la fel de eficiente și după apariția primelor simptome. Culturile de bacterii care stau la baza suplimentelor alimentare pentru copii acționează rapid și refac flora intestinală.
 
 Acționează împotriva constipației la copii de la primele simptome și redă sănătatea sistemului digestiv al micuțului tău.
 
