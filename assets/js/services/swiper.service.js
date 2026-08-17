@@ -8,6 +8,11 @@ const swiperConfigurations = [
     config: {
       enabled: true,
       loop: true,
+      autoplay: {
+        delay: 3000,
+        disableOnInteraction: false,
+        pauseOnMouseEnter: true,
+      },
       observer: true,
       observeParents: true,
       observeSlideChildren: true,
