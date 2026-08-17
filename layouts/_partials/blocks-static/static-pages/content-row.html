@@ -46,11 +46,11 @@
               </span>
             </button>
 
-            <dialog class="max-sm:container m-auto sm:w-[calc(90%-2rem)] overflow-visible bg-transparent text-white backdrop:bg-secondary-900/85" id="{{ $modalID }}" data-video-modal aria-label="{{ .videoLabel | default "Videoclip" }}">
+            <dialog class="m-auto w-[calc(100vw_-_2rem)] max-w-[calc(177.78svh_-_12.45rem)] overflow-visible bg-transparent text-white backdrop:bg-secondary-900/85 sm:w-[calc(90%_-_2rem)] lg:max-w-[calc(177.78svh_-_16rem)]" id="{{ $modalID }}" data-video-modal aria-label="{{ .videoLabel | default "Videoclip" }}">
+              <button class="absolute -top-14 right-0 z-10 grid size-11 cursor-pointer place-items-center rounded-full bg-black/70 text-3xl leading-none text-white transition-colors hover:bg-primary-500 focus-visible:bg-primary-500" type="button" data-video-modal-close aria-label="Închide videoclipul">
+                <span aria-hidden="true">&times;</span>
+              </button>
               <div class="relative overflow-hidden rounded-lg bg-black shadow-2xl">
-                <button class="absolute right-3 top-3 z-10 grid size-11 cursor-pointer place-items-center rounded-full bg-black/70 text-3xl leading-none text-white transition-colors hover:bg-primary-500 focus-visible:bg-primary-500" type="button" data-video-modal-close aria-label="Închide videoclipul">
-                  <span aria-hidden="true">&times;</span>
-                </button>
                 <video class="aspect-video w-full bg-black" controls playsinline preload="metadata">
                   <source src="{{ .video }}" type="video/mp4">
                   Browserul tău nu acceptă redarea videoclipurilor.
