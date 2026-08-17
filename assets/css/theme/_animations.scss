@@ -9,6 +9,7 @@
   --animate-bounce: bounce 1s infinite;
   --animate-headline-dash: headline-dash 1.2s forwards;
   --animate-headline-hide: headline-hide 0.4s forwards;
+  --animate-mobile-menu-scrollbar: mobile-menu-scrollbar 1ms 500ms forwards;
 
   @keyframes spin {
     to {
@@ -64,6 +65,12 @@
     100% {
       opacity: 0;
       filter: blur(10px);
+    }
+  }
+
+  @keyframes mobile-menu-scrollbar {
+    to {
+      scrollbar-width: auto;
     }
   }
 }

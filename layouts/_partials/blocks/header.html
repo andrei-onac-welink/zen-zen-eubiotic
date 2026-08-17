@@ -13,7 +13,7 @@
       <svg class="navigation-close-icon hidden size-6 text-primary-500" aria-hidden="true" focusable="false"><use href="#close-icon"></use></svg>
     </label>
 
-    <nav class="scrollbar-xs invisible pointer-events-none absolute inset-x-0 top-full z-10 max-h-[calc(100svh-var(--header-height))] -translate-y-2 overflow-y-auto bg-white text-[#4d4d4d] opacity-0 shadow-xl transition-[opacity,transform,visibility] duration-300 peer-checked:visible peer-checked:pointer-events-auto peer-checked:translate-y-0 peer-checked:opacity-100 lg:hidden" id="mobile-navigation" aria-label="Navigație principală mobilă">
+    <nav class="scrollbar-none invisible pointer-events-none absolute inset-x-0 top-full z-10 h-0 max-h-[calc(100svh-var(--header-height))] -translate-y-2 overflow-y-auto bg-white text-[#4d4d4d] opacity-0 shadow-xl [interpolate-size:allow-keywords] transition-[height,opacity,translate,visibility] duration-500 ease-in-out peer-checked:visible peer-checked:pointer-events-auto peer-checked:h-auto peer-checked:translate-y-0 peer-checked:opacity-100 peer-checked:animate-mobile-menu-scrollbar motion-reduce:transition-none lg:hidden" id="mobile-navigation" aria-label="Navigație principală mobilă">
       <menu class="m-0 list-none p-0">
         {{ range site.Menus.main }}
           {{- $isCurrent := eq $.RelPermalink .URL -}}
